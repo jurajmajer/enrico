@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="nzl">
+
+	<metadata>
+		<reference>http://www.dol.govt.nz/er/holidaysandleave/publicholidays/publicholidaydates/index.asp</reference>
+	</metadata>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="3" nth="2" />
+		</date>
+		<name lang="en">Taranaki Anniversary Day</name>
+	</holiday>
+
+</holidays>

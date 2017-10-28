@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="usa">
+
+	<metadata>
+		<reference>http://www.das.state.ne.us/personnel/holidayschedule.htm</reference>
+	</metadata>
+	
+	<holiday validFrom="2014-01-01" validTo="2014-12-31">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="en">Day after Christmas</name>
+	</holiday>
+
+</holidays>

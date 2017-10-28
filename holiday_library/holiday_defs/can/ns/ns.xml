@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
+
+	<metadata>
+		<reference>http://www.gov.ns.ca/lae/employmentrights/vacation.asp</reference>
+		<reference>http://www.workrights.ca/content.php?doc=14</reference>
+	</metadata>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
+		</date>
+		<name lang="en">Heritage Day</name>
+		<name lang="fr">Jour D'Héritage</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="en">Good Friday</name>
+		<name lang="fr">Vendredi saint</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="en">Easter Sunday</name>
+		<name lang="fr">Le dimanche de Pâques</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+		<note lang="en">Designated retail closing day</note>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="7" />
+		</date>
+		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<name lang="en">Canada Day</name>
+		<name lang="fr">Fête du Canada</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
+		</date>
+		<name lang="en">Thanksgiving Day</name>
+		<name lang="fr">Action de grâce</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+		<note lang="en">Designated retail closing day</note>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="en">Remembrance Day</name>
+		<name lang="fr">Jour du Souvenir</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+		<note lang="en">Remembrance Day Act includes rules prohibiting many businesses from operating</note>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="en">Boxing Day</name>
+		<name lang="fr">Lendemain de Noël</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+		<note lang="en">Designated retail closing day</note>
+	</holiday>
+
+</holidays>

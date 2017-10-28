@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
+
+	<metadata>
+		<reference>http://www.gov.pe.ca/psc/holidays</reference>
+	</metadata>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
+		</date>
+		<name lang="en">Islander Day</name>
+		<name lang="fr">Fête des Insulaires</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="en">Good Friday</name>
+		<name lang="fr">Vendredi saint</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="en">Easter Sunday</name>
+		<name lang="fr">Le dimanche de Pâques</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="17" month="5" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="en">Victoria Day</name>
+		<name lang="fr">Fête de la Reine ou Journée nationale des Patriotes</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="7" />
+		</date>
+		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<name lang="en">Canada Day</name>
+		<name lang="fr">Fête du Canada</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="5" month="8" nth="3" />
+		</date>
+		<name lang="en">Gold Cup Parade Day</name>
+		<name lang="fr">Parade de la Gold Cup</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
+		</date>
+		<name lang="en">Thanksgiving Day</name>
+		<name lang="fr">Action de grâce</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="en">Remembrance Day</name>
+		<name lang="fr">Jour du Souvenir</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="24" month="12" />
+		</date>
+		<name lang="en">Christmas Eve Afternoon</name>
+		<name lang="fr">Réveillon de Noël</name>
+		<flag>PART_DAY_HOLIDAY</flag>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="en">Boxing Day</name>
+		<name lang="fr">Lendemain de Noël</name>
+	</holiday>
+
+</holidays>

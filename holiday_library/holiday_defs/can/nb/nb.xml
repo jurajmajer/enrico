@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
+
+	<metadata>
+		<reference>http://www2.gnb.ca/content/gnb/en/departments/human_resources/about_us/policies_and_guidelines/leave_policies/statutory_public_holidays.html</reference>
+	</metadata>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="en">Good Friday</name>
+		<name lang="fr">Vendredi saint</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="17" month="5" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="en">Victoria Day</name>
+		<name lang="fr">Fête de la Reine ou Journée nationale des Patriotes</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="7" />
+		</date>
+		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<name lang="en">Canada Day</name>
+		<name lang="fr">Fête du Canada</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="8" nth="1" />
+		</date>
+		<name lang="en">New Brunswick Day</name>
+		<name lang="fr">Jour du Nouveau-Brunswick</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
+		</date>
+		<name lang="en">Thanksgiving Day</name>
+		<name lang="fr">Action de grâce</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="en">Remembrance Day</name>
+		<name lang="fr">Jour du Souvenir</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="en">Boxing Day</name>
+		<name lang="fr">Lendemain de Noël</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+	</holiday>
+
+</holidays>

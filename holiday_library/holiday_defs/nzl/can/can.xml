@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="nzl">
+
+	<metadata>
+		<reference>http://www.dol.govt.nz/er/holidaysandleave/publicholidays/publicholidaydates/index.asp</reference>
+	</metadata>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="9" nth="4" />
+		</date>
+		<name lang="en">Dominion Day</name>
+		<flag>REGIONAL</flag>
+		<note lang="en">Observed in South Canterbury</note>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<dateTransformation>
+						<baseDate>
+							<nthWeekdayRuleDate dayOfWeek="2" month="11" nth="1" />
+						</baseDate>
+						<addDays>4</addDays>
+					</dateTransformation>
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="5" />
+			</dateTransformation>
+		</date>
+		<name lang="en">Christchurch Show Day</name>
+		<flag>REGIONAL</flag>
+		<note lang="en">Observed in Northern &amp; Central Canterbury</note>
+	</holiday>
+
+</holidays>

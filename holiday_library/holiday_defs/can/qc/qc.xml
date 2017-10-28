@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
+
+	<metadata>
+		<reference>http://www.cnt.gouv.qc.ca/en/leaves-and-absences/statutory-holidays/index.html</reference>
+	</metadata>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="2" month="1" />
+		</date>
+		<name lang="en">New Year’s Holiday</name>
+		<name lang="fr">Vacances nouvel an</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+		<note lang="en">Only employees of the clothing industry</note>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="en">Good Friday</name>
+		<name lang="fr">Vendredi saint</name>
+		<note lang="en">Either Good Friday or Easter Monday must be given as a paid statutory holiday, however most will give both days.</note>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="en">Easter Monday</name>
+		<name lang="fr">Lundi de Pâques</name>
+		<note lang="en">Either Good Friday or Easter Monday must be given as a paid statutory holiday, however most will give both days.</note>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="17" month="5" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="en">National Patriots’ Day</name>
+		<name lang="fr">Journée nationale des patriotes</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="24" month="6" />
+		</date>
+		<name lang="en">National Holiday of Quebec</name>
+		<name lang="fr">Fête nationale du Québec</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="7" />
+		</date>
+		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<name lang="en">Canada Day</name>
+		<name lang="fr">Fête du Canada</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
+		</date>
+		<name lang="en">Thanksgiving Day</name>
+		<name lang="fr">Action de grâce</name>
+	</holiday>
+
+</holidays>

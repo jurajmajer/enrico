@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="chn">
+
+	<metadata>
+		<reference>http://www.china-briefing.com/news/2016/12/02/china-announces-2017-official-holiday-schedule.html</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2013-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="zh">元旦</name>
+		<name lang="en">New Year's Day</name>
+		<note lang="en">1 weekday long, 3 days in total. Other weekdays are compensated with working Saturday, Sunday or both.</note>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<specialDate>CHINESE_MONTH_1ST_START</specialDate>
+		</date>
+		<name lang="zh">春节</name>
+		<name lang="en">Spring Festival (Chinese New Year)</name>
+		<note lang="en">3 weekdays long, 7 days in total. Other weekdays are compensated with working Saturday, Sunday or both.</note>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>MARCH_EQUINOX</specialDate>
+				</baseDate>
+				<addSeconds>1339200</addSeconds>	<!-- 15 days + Beijing time offset + 4 hours? -->
+			</dateTransformation>
+		</date>
+		<name lang="zh">清明节</name>
+		<name lang="en">Tomb Sweeping Day</name>
+		<note lang="en">1 weekday long, 3 days in total. Other weekdays are compensated with working Saturday, Sunday or both.</note>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="zh">劳动节</name>
+		<name lang="en">Labor Day</name>
+		<note lang="en">1 weekday long, 3 days in total. Other weekdays are compensated with working Saturday, Sunday or both.</note>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>CHINESE_MONTH_5TH_START</specialDate>
+				</baseDate>
+				<addDays>4</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="zh">端午节</name>
+		<name lang="en">Dragon Boat Festival</name>
+		<note lang="en">1 weekday long, 3 days in total. Other weekdays are compensated with working Saturday, Sunday or both.</note>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>CHINESE_MONTH_8TH_START</specialDate>
+				</baseDate>
+				<addDays>14</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="zh">中秋节</name>
+		<name lang="en">Mid-Autumn Festival</name>
+		<note lang="en">1 weekday long, 3 days in total. Other weekdays are compensated with working Saturday, Sunday or both.</note>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<fixedDate day="1" month="10" />
+		</date>
+		<name lang="zh">国庆节</name>
+		<name lang="en">National Day</name>
+		<note lang="en">3 weekdays long, 7 days in total. Other weekdays are compensated with working Saturday, Sunday or both.</note>
+	</holiday>
+
+</holidays>

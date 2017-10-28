@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="usa">
+
+	<metadata>
+		<reference>http://humanresources.vermont.gov/about/holiday_schedule</reference>
+	</metadata>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="en">New Year's Day</name>
+		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
+		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="1" nth="3" />
+		</date>
+		<name lang="en">Martin Luther King Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
+		</date>
+		<name lang="en">Presidents' Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="2" month="3" nth="1" />
+		</date>
+		<name lang="en">Town Meeting Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="last" />
+		</date>
+		<name lang="en">Memorial Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="4" month="7" />
+		</date>
+		<name lang="en">Independence Day</name>
+		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
+		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="16" month="8" />
+		</date>
+		<name lang="en">Bennington Battle Day</name>
+		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
+		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="9" nth="1" />
+		</date>
+		<name lang="en">Labor Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="en">Veterans' Day</name>
+		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
+		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="4" month="11" nth="4" />
+		</date>
+		<name lang="en">Thanksgiving Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="en">Christmas Day</name>
+		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
+		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+	</holiday>
+	
+	<!-- Old Holidays -->
+	<holiday validFrom="2011-01-01" validTo="2012-12-31">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
+		</date>
+		<name lang="en">Columbus Day</name>
+	</holiday>
+
+</holidays>

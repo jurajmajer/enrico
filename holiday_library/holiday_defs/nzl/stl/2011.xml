@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="nzl">
+
+	<metadata>
+		<reference>http://www.dol.govt.nz/er/holidaysandleave/publicholidays/publicholidaydates/index.asp</reference>
+	</metadata>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="17" month="1" />
+				</baseDate>
+				<nearestWeekday dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="en">Southland Anniversary Day</name>
+	</holiday>
+
+</holidays>

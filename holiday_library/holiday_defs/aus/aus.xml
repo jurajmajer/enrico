@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="aus">
+
+	<metadata>
+		<reference>http://australia.gov.au/topics/australian-facts-and-figures/public-holidays</reference>
+	</metadata>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="26" month="1" />
+		</date>
+		<observanceRule>ADD_2DAYS_IF_SATURDAY</observanceRule>
+		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<name lang="en">Australia Day</name>
+	</holiday>
+
+</holidays>
