@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="https://kayaposoft.com/enrico/xsd/1.0" xmlns:tns="https://kayaposoft.com/enrico/xsd/1.0" elementFormDefault="qualified">
+
+<element name="holidays">
+	<complexType>
+		<sequence>
+			<element name="metadata" type="tns:metadataType" minOccurs="0" />
+			<element name="holiday" type="tns:holidayType" minOccurs="0" maxOccurs="unbounded" />
+		</sequence>
+		<attribute name="country" type="tns:countryType" use="required"/>
+	</complexType>
+</element>
+
+<!-- element types -->
+<complexType name="metadataType">
+	<sequence>
+		<element name="reference" type="anyURI" maxOccurs="unbounded" />
+	</sequence>
+</complexType>
+
+<complexType name="holidayType">
+	<sequence>
+		<element name="date" type="tns:dateType" />
+		<element name="dateTo" type="tns:dateType" minOccurs="0" />
+		<element name="observanceRule" type="tns:observanceRuleType" minOccurs="0" maxOccurs="unbounded" />
+		<element name="name" type="tns:localizedStringType" maxOccurs="unbounded" />
+		<element name="flag" type="tns:holidayFlagType" minOccurs="0" maxOccurs="unbounded" />
+		<element name="note" type="tns:localizedStringType" minOccurs="0" maxOccurs="unbounded" />
+	</sequence>
+	<attribute name="validFrom" type="date" use="required" />
+	<attribute name="validTo" type="date" />
+	<attribute name="type" type="tns:holidayTypeType" default="PUBLIC_HOLIDAY" />
+	<attribute name="frequency" type="string" />	<!-- E.g.: '4%0' means holiday occurs only in year when remainder after division of year by 4 is 0  -->
+</complexType>
+
+<complexType name="dateType">
+	<choice>
+		<element name="fixedDate" type="tns:fixedDateType" />
+		<element name="specialDate" type="tns:specialDateType" />
+		<element name="nthWeekdayRuleDate" type="tns:nthWeekdayRuleDateType" />
+		<element name="dateTransformation" type="tns:dateTransformationType" />
+	</choice>
+</complexType>
+
+<complexType name="fixedDateType">
+	<attribute name="day" type="tns:dayOfMonthType" use="required" />
+	<attribute name="month" type="tns:monthType" use="required" />
+</complexType>
+
+<simpleType name="specialDateType">
+    <restriction base="string">
+		<enumeration value="EASTER_SUNDAY"/>
+		<enumeration value="ORTHODOX_EASTER_SUNDAY"/>
+		<enumeration value="CHINESE_MONTH_1ST_START"/>
+		<enumeration value="CHINESE_MONTH_5TH_START"/>
+		<enumeration value="CHINESE_MONTH_8TH_START"/>
+		<enumeration value="MARCH_EQUINOX"/>
+		<enumeration value="SEPTEMBER_EQUINOX"/>
+    </restriction>
+</simpleType>
+
+<complexType name="nthWeekdayRuleDateType">
+	<attribute name="dayOfWeek" type="tns:dayOfWeekType" use="required" />
+	<attribute name="month" type="tns:monthType" use="required" />
+	<attribute name="nth" type="tns:nthType" use="required" />
+</complexType>
+
+<complexType name="dateTransformationType">
+	<sequence>
+		<element name="baseDate" type="tns:dateType" />
+		<choice>
+			<element name="addDays" type="integer" />
+			<element name="addSeconds" type="integer" />
+			<element name="nearestWeekday" type="tns:nearestWeekdayType" />
+			<element name="nearestWeekdayAfter" type="tns:nearestWeekdayType" />
+		</choice>
+	</sequence>
+</complexType>
+
+<complexType name="nearestWeekdayType">
+	<attribute name="dayOfWeek" type="tns:dayOfWeekType" use="required" />
+</complexType>
+
+<simpleType name="observanceRuleType">
+    <restriction base="string">
+		<enumeration value="SUB_1DAY_IF_FRIDAY"/>
+		<enumeration value="SUB_1DAY_IF_SATURDAY"/>
+		<enumeration value="SUB_2DAYS_IF_SUNDAY"/>
+		<enumeration value="ADD_2DAYS_IF_SATURDAY"/>
+		<enumeration value="ADD_1DAY_IF_SUNDAY"/>
+		<enumeration value="ADD_2DAYS_IF_SUNDAY"/>
+		<enumeration value="ADD_1DAY_IF_MONDAY"/>
+		<enumeration value="ADD_1DAY_IF_TUESDAY"/>
+		<enumeration value="ADDITIONAL_HOLIDAY_2DAYS_AFTER_IF_SATURDAY"/>
+		<enumeration value="ADDITIONAL_HOLIDAY_1DAY_AFTER_IF_SUNDAY"/>
+		<enumeration value="ADDITIONAL_HOLIDAY_2DAYS_AFTER_IF_SUNDAY"/>
+		<enumeration value="ADDITIONAL_HOLIDAY_1DAY_AFTER_IF_MONDAY"/>
+    </restriction>
+</simpleType>
+
+<complexType name="localizedStringType">
+	<simpleContent>
+      <extension base="string">
+        <attribute name="lang" type="language" />
+      </extension>
+    </simpleContent>
+</complexType>
+
+<simpleType name="holidayFlagValueType">
+	<restriction base="string">
+		<enumeration value="SHOP_CLOSING_DAY"/>
+		<enumeration value="REGIONAL"/>
+		<enumeration value="BRIDGE_HOLIDAY"/>
+		<enumeration value="ADDITIONAL_HOLIDAY"/>
+		<enumeration value="BANK_HOLIDAY"/>
+		<enumeration value="PART_DAY_HOLIDAY"/>
+		<enumeration value="OPTIONAL_HOLIDAY"/>
+	</restriction>
+</simpleType>
+
+<complexType name="holidayFlagType">  
+	<simpleContent>  
+		<extension base="tns:holidayFlagValueType">  
+			<attribute name="validFrom" type="date" />
+			<attribute name="validTo" type="date" />
+		</extension>  
+	</simpleContent>  
+</complexType>
+
+<!-- attribute types -->
+<simpleType name="countryType">
+	<restriction base="string">
+		<length value="3"/>
+	</restriction>
+</simpleType>
+
+<simpleType name="holidayTypeType">
+	<restriction base="string">
+		<enumeration value="PUBLIC_HOLIDAY"/>
+		<enumeration value="FLAG_DAY"/>
+		<enumeration value="SCHOOL_HOLIDAY"/>
+		<enumeration value="OTHER_DAY"/>
+	</restriction>
+</simpleType>
+
+<simpleType name="dayOfMonthType">
+	<restriction base="integer">
+	  <minInclusive value="1"/>
+	  <maxInclusive value="31"/>
+	</restriction>
+</simpleType>
+
+<simpleType name="monthType">
+	<restriction base="integer">
+	  <minInclusive value="1"/>
+	  <maxInclusive value="12"/>
+	</restriction>
+</simpleType>
+
+<simpleType name="dayOfWeekType">
+	<restriction base="integer">
+	  <minInclusive value="1"/>
+	  <maxInclusive value="7"/>
+	</restriction>
+</simpleType>
+
+<simpleType name="directionType">
+	<restriction base="string">
+		<enumeration value="+"/>
+		<enumeration value="-"/>
+	</restriction>
+</simpleType>
+
+<simpleType name="nthType">
+	<restriction base="string">
+		<enumeration value="first"/>
+		<enumeration value="second"/>
+		<enumeration value="third"/>
+		<enumeration value="fourth"/>
+		<enumeration value="last"/>
+	</restriction>
+</simpleType> 
+
+</schema>
