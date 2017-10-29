@@ -38,7 +38,7 @@
 			</dateTransformation>
 		</date>
 		<name lang="en">Mardi Gras</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 		<note lang="en">Observed only in Baldwin and Mobile Counties</note>
 	</holiday>
 	

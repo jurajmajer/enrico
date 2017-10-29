@@ -10,7 +10,7 @@
 			<nthWeekdayRuleDate dayOfWeek="1" month="9" nth="4" />
 		</date>
 		<name lang="en">Dominion Day</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 		<note lang="en">Observed in South Canterbury</note>
 	</holiday>
 	
@@ -29,7 +29,7 @@
 			</dateTransformation>
 		</date>
 		<name lang="en">Christchurch Show Day</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 		<note lang="en">Observed in Northern &amp; Central Canterbury</note>
 	</holiday>
 

@@ -109,8 +109,7 @@
 <simpleType name="holidayFlagValueType">
 	<restriction base="string">
 		<enumeration value="SHOP_CLOSING_DAY"/>
-		<enumeration value="REGIONAL"/>
-		<enumeration value="BRIDGE_HOLIDAY"/>
+		<enumeration value="REGIONAL_HOLIDAY"/>
 		<enumeration value="ADDITIONAL_HOLIDAY"/>
 		<enumeration value="BANK_HOLIDAY"/>
 		<enumeration value="PART_DAY_HOLIDAY"/>
@@ -137,7 +136,7 @@
 <simpleType name="holidayTypeType">
 	<restriction base="string">
 		<enumeration value="PUBLIC_HOLIDAY"/>
-		<enumeration value="FLAG_DAY"/>
+		<enumeration value="OBSERVANCE"/>
 		<enumeration value="SCHOOL_HOLIDAY"/>
 		<enumeration value="OTHER_DAY"/>
 	</restriction>

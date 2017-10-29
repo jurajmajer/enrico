@@ -10,7 +10,7 @@
 			<fixedDate day="10" month="8" />
 		</date>
 		<name lang="en">Royal Queensland Show</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 		<note lang="en">Brisbane Area Only</note>
 	</holiday>
 	

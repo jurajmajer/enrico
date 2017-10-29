@@ -78,7 +78,7 @@
 			</dateTransformation>
 		</date>
 		<name lang="en">Return Day</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 		<flag>PART_DAY_HOLIDAY</flag>
 		<note lang="en">Observed only in Sussex County (after 12:00 noon)</note>
 	</holiday>

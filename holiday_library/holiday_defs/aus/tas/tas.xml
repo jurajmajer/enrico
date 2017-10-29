@@ -19,7 +19,7 @@
 			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="2" />
 		</date>
 		<name lang="en">Royal Hobart Regatta</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 		<note lang="en">South - all parts of Tasmania south of And including Oatlands and Swansea excluding Bronte Park Catagunya, Strathgordon, Tarraleah, Wayatinah and the West Coast</note>
 	</holiday>
 	
@@ -85,7 +85,7 @@
 			<nthWeekdayRuleDate dayOfWeek="1" month="11" nth="1" />
 		</date>
 		<name lang="en">Recreation Day</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 		<note lang="en">Northern Tasmania only - all parts of Tasmania in which a statutory holiday is not observed for the Royal Hobart Regatta</note>
 	</holiday>
 	

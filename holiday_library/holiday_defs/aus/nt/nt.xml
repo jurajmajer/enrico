@@ -104,7 +104,7 @@
 			<nthWeekdayRuleDate dayOfWeek="5" month="6" nth="last" />
 		</date>
 		<name lang="en">Borroloola Show Day</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 	</holiday>
 	
 	<holiday validFrom="2015-01-01">
@@ -112,7 +112,7 @@
 			<nthWeekdayRuleDate dayOfWeek="5" month="7" nth="1" />
 		</date>
 		<name lang="en">Alice Springs Show Day</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 	</holiday>
 	
 	<holiday validFrom="2015-01-01">
@@ -120,7 +120,7 @@
 			<nthWeekdayRuleDate dayOfWeek="5" month="7" nth="2" />
 		</date>
 		<name lang="en">Tennant Creek Show Day</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 	</holiday>
 	
 	<holiday validFrom="2015-01-01">
@@ -128,7 +128,7 @@
 			<nthWeekdayRuleDate dayOfWeek="5" month="7" nth="3" />
 		</date>
 		<name lang="en">Katherine Show Day</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 	</holiday>
 	
 	<holiday validFrom="2015-01-01">
@@ -136,7 +136,7 @@
 			<nthWeekdayRuleDate dayOfWeek="5" month="7" nth="4" />
 		</date>
 		<name lang="en">Darwin Show Day</name>
-		<flag>REGIONAL</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
 	</holiday>
 
 </holidays>
