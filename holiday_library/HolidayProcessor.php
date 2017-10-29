@@ -9,40 +9,56 @@ include_once("utils/EquinoxUtils.php");
 
 class HolidayProcessor {
 	
-	private $commonHolidayDefs;
 	private $dateUtils;
 	private $orthodoxCalUtils;
 	private $chineseCalUtils;
 	private $equinoxUtils;
-	private $holidayDefsDir;
-	private $holidayDefsRegionDir;
+	private $countryCode;
+	private $region;
 	public static $ENRICO_NAMESPACE = "https://kayaposoft.com/enrico/xsd/1.0";
 	
 	public function __construct($countryCode, $region) {
-		$this->holidayDefsDir = __DIR__."/holiday_defs/$countryCode/";
-		$this->commonHolidayDefs = $this->loadHolidayDefs("$this->holidayDefsDir$countryCode.xml");
-		if(isset($region) && strlen($region) > 0) {
-			$this->commonHolidayDefs = array_merge($this->commonHolidayDefs, $this->loadHolidayDefs("$this->holidayDefsDir$region/$region.xml"));
-			$this->holidayDefsRegionDir = "$this->holidayDefsDir$region/";
-		}
+		$this->countryCode = $countryCode;
+		$this->region = $region;
 		$this->dateUtils = new DateUtils();
 		$this->orthodoxCalUtils = new OrthodoxCalUtils();
 		$this->chineseCalUtils = new ChineseCalUtils();
 		$this->equinoxUtils = new EquinoxUtils();
 	}
 	
-	public function getHolidays($year) {
+	public function getHolidays($year, $holidayType) {
 		
-		$retVal = $this->transformHolidayDefs($this->commonHolidayDefs, $year);
-		$yearFile = "$this->holidayDefsDir$year.xml";
-		if(file_exists($yearFile)) {
-			$retVal = array_merge($retVal, $this->transformHolidayDefs($this->loadHolidayDefs($yearFile), $year));
+		$retVal = array();
+		$holidayDefsPathes = $this->constructHolidayDefsPaths($year, $holidayType);
+		for($i=0; $i<sizeof($holidayDefsPathes); $i++) {
+			$retVal = array_merge($retVal, $this->transformHolidayDefs($this->loadHolidayDefs($holidayDefsPathes[$i]), $year));
 		}
-		if(isset($this->holidayDefsRegionDir)) {
-			$yearFile = "$this->holidayDefsRegionDir$year.xml";
-			if(file_exists($yearFile)) {
-				$retVal = array_merge($retVal, $this->transformHolidayDefs($this->loadHolidayDefs($yearFile), $year));
-			}
+		return $retVal;
+	}
+	
+	private function constructHolidayDefsPaths($year, $holidayType) {
+		$retVal = array();
+		$holidayType = strtolower($holidayType);
+		$holidayDefsDir = __DIR__."/holiday_defs/";
+		if(file_exists($holidayDefsDir.$holidayType."/")) {
+			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, $holidayDefsDir.$holidayType."/"));
+		} else {
+			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, $holidayDefsDir."public_holiday/"));
+			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, $holidayDefsDir."observance/"));
+			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, $holidayDefsDir."school_holiday/"));
+			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, $holidayDefsDir."other_day/"));
+		}
+		return $retVal;
+	}
+	
+	private function constructHolidayDefsFileNames($year, $rootPath) {
+		$retVal = array();
+		$countryCodePath = $rootPath . $this->countryCode . "/";
+		array_push($retVal, "$countryCodePath$this->countryCode.xml");
+		array_push($retVal, "$countryCodePath$year.xml");
+		if(isset($this->region) && strlen($this->region) > 0) {
+			array_push($retVal, "$countryCodePath$this->region/$this->region.xml");
+			array_push($retVal, "$countryCodePath$this->region/$year.xml");
 		}
 		return $retVal;
 	}
@@ -92,6 +108,12 @@ class HolidayProcessor {
 		$flags = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "flag");
 		for($i=0; $i<$flags->length; $i++) {
 			array_push($retVal->flags, $flags[$i]->nodeValue);
+		}
+		$holidayType = $holidayDef->getAttribute("holidayType");
+		if($holidayType != NULL) {
+			$retVal->holidayType = $holidayType;
+		} else {
+			$retVal->holidayType = "PUBLIC_HOLIDAY";
 		}
 		$additionalHolidays = $this->resolveObservance($holidayDef, $retVal);
 		$retVal = array($retVal);
@@ -258,6 +280,7 @@ class HolidayProcessor {
 			$additionalDate = $this->dateUtils->addDays($additionalDate, $additionalHolidayDaysPlus);
 			$additionalHoliday = new Holiday($additionalDate);
 			$additionalHoliday->name = $holiday->name;
+			$additionalHoliday->holidayType = $holiday->holidayType;
 			array_push($additionalHoliday->flags, "ADDITIONAL_HOLIDAY");
 			return array($additionalHoliday);
 		}

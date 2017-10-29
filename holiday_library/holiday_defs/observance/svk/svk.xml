@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="svk">
+	<metadata>
+		<reference>https://www.slovensko.sk/sk/agendy/agenda/_statne-sviatky-dni-pracovneho-pokoja/</reference>
+		<reference>http://www.vlada.gov.sk/statne-sviatky/</reference>
+		<reference>https://en.wikipedia.org/wiki/Remembrance_days_in_Slovakia</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="25" month="3" />
+		</date>
+		<name lang="sk">Deň zápasu za ľudské práva</name>
+		<name lang="en">Struggle for Human Rights Day</name>
+		<note lang="en">Commemorates Candle demonstration in Bratislava</note>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="13" month="4" />
+		</date>
+		<name lang="sk">Deň nespravodlivo stíhaných</name>
+		<name lang="en">Unfairly Prosecuted Persons Day</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="sk">Deň pristúpenia Slovenskej republiky k Európskej únii</name>
+		<name lang="en">The Date of Accession of the Slovak Republic to the European Union</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="4" month="5" />
+		</date>
+		<name lang="sk">Výročie úmrtia M. R. Štefánika</name>
+		<name lang="en">Anniversary of the Decease of Milan Rastislav Štefánik</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="7" month="6" />
+		</date>
+		<name lang="sk">Výročie Memoranda národa slovenského</name>
+		<name lang="en">Anniversary of the Memorandum of the Slovak Nation</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="5" month="7" />
+		</date>
+		<name lang="sk">Deň zahraničných Slovákov</name>
+		<name lang="en">Foreign Slovaks Day</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="17" month="7" />
+		</date>
+		<name lang="sk">Výročie deklarácie o zvrchovanosti SR</name>
+		<name lang="en">Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="4" month="8" />
+		</date>
+		<name lang="sk">Deň Matice Slovenskej</name>
+		<name lang="en">Matica Slovenská Day</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="9" month="9" />
+		</date>
+		<name lang="sk">Deň obetí holokaustu a rasového násilia</name>
+		<name lang="en">Day of the Victims of Holocaust and of racial violence</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="19" month="9" />
+		</date>
+		<name lang="sk">Deň vzniku Slovenskej národnej rady</name>
+		<name lang="en">Day of the First Public Appearance of the Slovak National Council</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="6" month="10" />
+		</date>
+		<name lang="sk">Deň obetí Dukly</name>
+		<name lang="en">Dukla Pass Victims Day</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="27" month="10" />
+		</date>
+		<name lang="sk">Deň černovskej tragédie</name>
+		<name lang="en">Černová Tragedy Day</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="28" month="10" />
+		</date>
+		<name lang="sk">Deň vzniku samostatného Česko-slovenského štátu</name>
+		<name lang="en">Day of the Establishment of an Independent Czecho-Slovak State</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="29" month="10" />
+		</date>
+		<name lang="sk">Deň narodenia Ľ. Štúra</name>
+		<name lang="en">Birth of Ľudovít Štúr Day</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="30" month="10" />
+		</date>
+		<name lang="sk">Výročie Deklarácie slovenského národa</name>
+		<name lang="en">Anniversary of the Declaration of the Slovak Nation</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="31" month="10" />
+		</date>
+		<name lang="sk">Deň reformácie</name>
+		<name lang="en">Reformation Day</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="30" month="12" />
+		</date>
+		<name lang="sk">Deň vyhlásenia Slovenska za samostatnú cirkevnú provinciu</name>
+		<name lang="en">Day of the Declaration of Slovakia as an Independent Ecclesiastic Province</name>
+	</holiday>
+
+</holidays>

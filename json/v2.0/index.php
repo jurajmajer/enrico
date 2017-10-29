@@ -38,28 +38,28 @@
 		return $json;
 	}
 	
-	function getHolidaysForMonth($holidayCalendar)
+	function getHolidaysForMonth($holidayCalendar, $holidayType)
 	{
 		validateMandatoryQueryParam('month');
 		validateMandatoryQueryParam('year');
-		$result = $holidayCalendar->getHolidaysForMonth($_REQUEST["month"], $_REQUEST["year"]);
+		$result = $holidayCalendar->getHolidaysForMonth($_REQUEST["month"], $_REQUEST["year"], $holidayType);
 		return getJson($result);
 	}
 	
-	function getHolidaysForYear($holidayCalendar) 
+	function getHolidaysForYear($holidayCalendar, $holidayType) 
 	{
 		validateMandatoryQueryParam('year');
-		$result = $holidayCalendar->getHolidaysForYear($_REQUEST["year"]);
+		$result = $holidayCalendar->getHolidaysForYear($_REQUEST["year"], $holidayType);
 		return getJson($result);
 	}
 	
-	function getHolidaysForDateRange($holidayCalendar) 
+	function getHolidaysForDateRange($holidayCalendar, $holidayType) 
 	{
 		validateMandatoryQueryParam('fromDate');
 		validateMandatoryQueryParam('toDate');
 		$fromDate = createDate($_REQUEST["fromDate"]);
 		$toDate = createDate($_REQUEST["toDate"]);
-		$result = $holidayCalendar->getHolidaysForDateRange($fromDate, $toDate);
+		$result = $holidayCalendar->getHolidaysForDateRange($fromDate, $toDate, $holidayType);
 		return getJson($result);
 	}
 	
@@ -95,12 +95,17 @@
 		}
 		$holidayCalendar = new HolidayCalendar($_REQUEST["country"], $region);
 		
+		$holidayType = "ALL";
+		if(isset($_REQUEST["holidayType"])) {
+			$holidayType = $_REQUEST["holidayType"];
+		}
+		
 		if(strcmp($_REQUEST['action'], "getHolidaysForMonth") == 0)
-			echo getHolidaysForMonth($holidayCalendar);
+			echo getHolidaysForMonth($holidayCalendar, $holidayType);
 		else if(strcmp($_REQUEST['action'], "getHolidaysForYear") == 0)
-			echo getHolidaysForYear($holidayCalendar);
+			echo getHolidaysForYear($holidayCalendar, $holidayType);
 		else if(strcmp($_REQUEST['action'], "getHolidaysForDateRange") == 0)
-			echo getHolidaysForDateRange($holidayCalendar);
+			echo getHolidaysForDateRange($holidayCalendar, $holidayType);
 		else if(strcmp($_REQUEST['action'], "isPublicHoliday") == 0)
 			echo isPublicHoliday($holidayCalendar);
 		else

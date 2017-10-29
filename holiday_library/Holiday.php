@@ -7,7 +7,7 @@ class Holiday {
     public $name = array();
     public $flags = array();
     public $note = array();
-	public $type;
+	public $holidayType;
 	public $observedOn;
 
     public function __construct($date) {
@@ -35,6 +35,9 @@ class Holiday {
 		}
 		if($this->flags != NULL) {
 			$retVal['flags'] = $this->flags;
+		}
+		if($this->holidayType != NULL) {
+			$retVal['holidayType'] = $this->holidayType;
 		}
 		return $retVal;
 	}

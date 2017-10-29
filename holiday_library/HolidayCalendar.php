@@ -23,22 +23,22 @@ class HolidayCalendar {
 		}
 	}
 	
-	public function getHolidaysForMonth($month, $year) {
+	public function getHolidaysForMonth($month, $year, $holidayType="ALL") {
 		$fromDate = new EnricoDate(1, $month, $year);
 		$lastDay = 31;
 		while(checkdate($month, $lastDay, $year) == FALSE)
 			$lastDay--;
 		$toDate = new EnricoDate($lastDay, $month, $year);
-		return $this->getHolidaysForDateRange($fromDate, $toDate);
+		return $this->getHolidaysForDateRange($fromDate, $toDate, $holidayType);
 	}
 
-	public function getHolidaysForYear($year) {
+	public function getHolidaysForYear($year, $holidayType="ALL") {
 		$fromDate = new EnricoDate(1, 1, $year);
 		$toDate = new EnricoDate(31, 12, $year);
-		return $this->getHolidaysForDateRange($fromDate, $toDate);
+		return $this->getHolidaysForDateRange($fromDate, $toDate, $holidayType);
 	}
 	
-	public function getHolidaysForDateRange($fromDate, $toDate) {
+	public function getHolidaysForDateRange($fromDate, $toDate, $holidayType="ALL") {
 		
 		if(checkdate($fromDate->month, $fromDate->day, $fromDate->year) == FALSE)
 			throw new Exception($fromDate->toString() . " is not a valid date");
@@ -56,15 +56,15 @@ class HolidayCalendar {
 		$holidayProcessor = new HolidayProcessor($this->countryCode, $this->region);
 		$year = $fromDate->year;
 		while($year <= $toDate->year) {
-			$holidays = $holidayProcessor->getHolidays($year);
+			$holidays = $holidayProcessor->getHolidays($year, $holidayType);
 			$retVal = array_merge($retVal, $this->pickHolidaysBetweeenDates($fromDate, $toDate, $holidays));
 			$year += 1;
 		}
 		return $retVal;
 	}
 	
-	public function isHoliday($date) {
-		$retVal = $this->getHolidaysForDateRange($date, $date);
+	public function isPublicHoliday($date) {
+		$retVal = $this->getHolidaysForDateRange($date, $date, "public_holiday");
 		if(count($retVal) > 0)
 			return TRUE;
 

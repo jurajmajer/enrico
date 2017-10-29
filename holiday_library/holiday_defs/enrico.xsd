@@ -29,7 +29,7 @@
 	</sequence>
 	<attribute name="validFrom" type="date" use="required" />
 	<attribute name="validTo" type="date" />
-	<attribute name="type" type="tns:holidayTypeType" default="PUBLIC_HOLIDAY" />
+	<attribute name="holidayType" type="tns:holidayTypeType" default="PUBLIC_HOLIDAY" />
 	<attribute name="frequency" type="string" />	<!-- E.g.: '4%0' means holiday occurs only in year when remainder after division of year by 4 is 0  -->
 </complexType>
 
