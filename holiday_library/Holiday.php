@@ -21,6 +21,10 @@ class Holiday {
 	public function getArray() {
 		$this->date->calculateDayOfWeek();
 		$retVal = array('date' => array('day' => $this->date->day, 'month' => $this->date->month, 'year' => $this->date->year, 'dayOfWeek' => $this->date->dayOfWeek));
+		if($this->dateTo != NULL) {
+			$this->dateTo->calculateDayOfWeek();
+			$retVal = array('dateTo' => array('day' => $this->dateTo->day, 'month' => $this->dateTo->month, 'year' => $this->dateTo->year, 'dayOfWeek' => $this->dateTo->dayOfWeek));
+		}
 		if($this->observedOn != NULL) {
 			$this->observedOn->calculateDayOfWeek();
 			$retVal['observedOn'] = array('day' => $this->observedOn->day, 'month' => $this->observedOn->month, 'year' => $this->observedOn->year, 'dayOfWeek' => $this->observedOn->dayOfWeek);

@@ -145,62 +145,6 @@ class DateUtils {
 		}
 		return $this->addDays($baseDate, (7 - $delta) * $sig);
 	}
-	
-	/*public function diffDates($date1, $date2) {
-		$compare = $date1->compare($date2);
-		if($compare == 0) return 0;
-		$earlierDate = Date::createNew($date1);
-		$laterDate = Date::createNew($date2);
-		if($compare > 0) {
-			$earlierDate = Date::createNew($date2);
-			$laterDate = Date::createNew($date1);
-		}
-		$retVal = 0;
-		while($earlierDate->compare($laterDate) != 0) {
-			$retVal++;
-			$earlierDate = $this->addDays($earlierDate, 1);
-		}
-		
-		return $retVal;
-	}
-	
-	public function getFirstDayOfWeeekAfter($dayOfWeek, $afterDate) {
-		$num = $this->getDayOfWeek($afterDate);
-		if($num < $dayOfWeek)
-			return $this->addDays($afterDate, $dayOfWeek - $num);
-		return $this->addDays($afterDate, 7 - $num + $dayOfWeek);
-	}
-	
-	public function getFirstDayOfWeeekOnOrAfter($dayOfWeek, $date) {
-		$num = $this->getDayOfWeek($date);
-		if($num == $dayOfWeek) {
-			return $date;
-		}
-		return $this->getFirstDayOfWeeekAfter($dayOfWeek, $date);
-	}
-	
-	public function getNearestDayOfWeek($dayOfWeek, $date) {
-		$num = $this->getDayOfWeek($date);
-		if($num == $dayOfWeek) return $date;
-		$delta = $num - $dayOfWeek;
-		$sig = 1;
-		if($delta < 0) {
-			$sig = -1;
-			$delta = -1 * $delta;
-		}
-		if($delta < 4) {
-			return $this->addDays($date, -1 * $delta * $sig);
-		}
-		return $this->addDays($date, (7 - $delta) * $sig);
-//		if($delta > 0) {
-//			if($delta < 4) return $this->substractDays($date, $delta);
-//			return $this->addDays($date, 7 - $delta);
-//		}
-//		else {
-//			if($delta > -4) return $this->addDays($date, -1 * $delta);
-//				return $this->substractDays($date, 7 - (-1 *  $delta));
-//		}
-	}*/
 }
 
 ?>

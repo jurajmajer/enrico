@@ -12,7 +12,7 @@
 			<nthWeekdayRuleDate dayOfWeek="7" month="3" nth="last" />
 		</date>
 		<name lang="sk">Zmena času - letný čas</name>
-		<name lang="en">Daylight Saving Time Started</name>
+		<name lang="en">Daylight Saving Time Starts</name>
 		<note lang="sk">Letný čas sa začína o 2:00, keď sa ručičky posunú na 3:00</note>
 		<note lang="en">A one-hour shift occurs at 02:00 local time, the clock jumps forward to 03:00</note>
 	</holiday>
@@ -38,7 +38,7 @@
 			<nthWeekdayRuleDate dayOfWeek="7" month="10" nth="last" />
 		</date>
 		<name lang="sk">Zmena času - zimný čas</name>
-		<name lang="en">Daylight Saving Time Ended</name>
+		<name lang="en">Daylight Saving Time Ends</name>
 		<note lang="sk">Zimný čas sa začína o 3:00, keď sa ručičky posunú na 2:00</note>
 		<note lang="en">A one-hour shift occurs at 03:00 local time, the clock jumps backward to 02:00</note>
 	</holiday>

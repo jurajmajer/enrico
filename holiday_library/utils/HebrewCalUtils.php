@@ -2,7 +2,7 @@
 //Jewish calendar calculations from Judaism 101, http://www.jewfaq.org
 //Designed to illustrate the principles of calendar calculation discussed at http://www.jewfaq.org/calendr2.htm
 
-include_once("/data/k/a/kayaposoft.com/web/enrico/libs/HolidayLibrary/Date.php");
+include_once("../EnricoDate.php");
 include_once("DateUtils.php");
 
 class HebrewMonth {

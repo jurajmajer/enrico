@@ -14,7 +14,7 @@
 	{
 		$parts = explode("-", $string);
 		if(count($parts) != 3)
-			throw new Exception("Invalid date '" . $string . "'! Date string must be in format dd-mm-YYYY, e.g. 15-01-2012");
+			throw new Exception("Invalid date '" . $string . "'! Date string must be in format dd-mm-YYYY, e.g. 15-01-2035");
 		return new Date($parts[0], $parts[1], $parts[2]);
 	}
 	
