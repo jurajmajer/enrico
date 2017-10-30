@@ -16,6 +16,8 @@ class HolidayProcessor {
 	private $countryCode;
 	private $region;
 	public static $ENRICO_NAMESPACE = "https://kayaposoft.com/enrico/xsd/1.0";
+	public static $HOLIDAY_DEFS_DIR = __DIR__."/holiday_defs/";
+	public static $HOLIDAY_TYPES = array("PUBLIC_HOLIDAY", "OBSERVANCE", "SCHOOL_HOLIDAY", "OTHER_DAY");
 	
 	public function __construct($countryCode, $region) {
 		$this->countryCode = $countryCode;
@@ -39,14 +41,12 @@ class HolidayProcessor {
 	private function constructHolidayDefsPaths($year, $holidayType) {
 		$retVal = array();
 		$holidayType = strtolower($holidayType);
-		$holidayDefsDir = __DIR__."/holiday_defs/";
-		if(file_exists($holidayDefsDir.$holidayType."/")) {
-			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, $holidayDefsDir.$holidayType."/"));
+		if(file_exists(HolidayProcessor::$HOLIDAY_DEFS_DIR.$holidayType."/")) {
+			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, HolidayProcessor::$HOLIDAY_DEFS_DIR.$holidayType."/"));
 		} else {
-			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, $holidayDefsDir."public_holiday/"));
-			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, $holidayDefsDir."observance/"));
-			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, $holidayDefsDir."school_holiday/"));
-			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, $holidayDefsDir."other_day/"));
+			for($i=0; $i<sizeof(HolidayProcessor::$HOLIDAY_TYPES); $i++) {
+				$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, HolidayProcessor::$HOLIDAY_DEFS_DIR.strtolower(HolidayProcessor::$HOLIDAY_TYPES[$i])."/"));
+			}
 		}
 		return $retVal;
 	}
