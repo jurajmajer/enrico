@@ -71,6 +71,14 @@
 		return resolveJsonp(json_encode(array('isPublicHoliday' => $result)));
 	}
 	
+	function isSchoolHoliday($holidayCalendar)
+	{
+		validateMandatoryQueryParam('date');
+		$date = createDate($_REQUEST["date"]);
+		$result = $holidayCalendar->isSchoolHoliday($date);
+		return resolveJsonp(json_encode(array('isSchoolHoliday' => $result)));
+	}
+	
 	function getSupportedCountries()
 	{
 		$supportedCountries = HolidayCalendar::getSupportedCountries();
@@ -108,6 +116,8 @@
 			echo getHolidaysForDateRange($holidayCalendar, $holidayType);
 		else if(strcmp($_REQUEST['action'], "isPublicHoliday") == 0)
 			echo isPublicHoliday($holidayCalendar);
+		else if(strcmp($_REQUEST['action'], "isSchoolHoliday") == 0)
+			echo isSchoolHoliday($holidayCalendar);
 		else
 			throw new Exception("Unknown action!");
 	}

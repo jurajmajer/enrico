@@ -58,10 +58,19 @@ class HolidayCalendar {
 	}
 	
 	public function isPublicHoliday($date) {
-		$retVal = $this->getHolidaysForDateRange($date, $date, "public_holiday");
-		if(count($retVal) > 0)
-			return TRUE;
-
+		return $this->isHoliday($this->getHolidaysForDateRange($date, $date, "PUBLIC_HOLIDAY"));
+	}
+	
+	public function isSchoolHoliday($date) {
+		return $this->isHoliday($this->getHolidaysForDateRange($date, $date, "SCHOOL_HOLIDAY"));
+	}
+	
+	private function isHoliday($holidays) {
+		for($i=0; $i<sizeof($holidays); $i++) {
+			if(!in_array("REGIONAL_HOLIDAY", $holidays[$i]->flags) && !in_array("OPTIONAL_HOLIDAY", $holidays[$i]->flags)) {
+				return TRUE;
+			}
+		}
 		return FALSE;
 	}
 	
