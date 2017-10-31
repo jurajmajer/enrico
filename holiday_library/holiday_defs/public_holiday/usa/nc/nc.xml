@@ -10,8 +10,8 @@
 			<fixedDate day="1" month="1" />
 		</date>
 		<name lang="en">New Year's Day</name>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -45,8 +45,8 @@
 			<fixedDate day="4" month="7" />
 		</date>
 		<name lang="en">Independence Day</name>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -61,8 +61,8 @@
 			<fixedDate day="11" month="11" />
 		</date>
 		<name lang="en">Veterans Day</name>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -89,8 +89,8 @@
 			<fixedDate day="24" month="12" />
 		</date>
 		<name lang="en">Christmas</name>
-		<observanceRule>ADD_2DAYS_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -98,9 +98,9 @@
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="en">Christmas</name>
-		<observanceRule>ADD_1DAY_IF_MONDAY</observanceRule>
-		<observanceRule>ADD_2DAYS_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_2DAYS_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 	</holiday>
 
 </holidays>

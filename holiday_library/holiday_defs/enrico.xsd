@@ -81,22 +81,11 @@
 	<attribute name="dayOfWeek" type="tns:dayOfWeekType" use="required" />
 </complexType>
 
-<simpleType name="observanceRuleType">
-    <restriction base="string">
-		<enumeration value="SUB_1DAY_IF_FRIDAY"/>
-		<enumeration value="SUB_1DAY_IF_SATURDAY"/>
-		<enumeration value="SUB_2DAYS_IF_SUNDAY"/>
-		<enumeration value="ADD_2DAYS_IF_SATURDAY"/>
-		<enumeration value="ADD_1DAY_IF_SUNDAY"/>
-		<enumeration value="ADD_2DAYS_IF_SUNDAY"/>
-		<enumeration value="ADD_1DAY_IF_MONDAY"/>
-		<enumeration value="ADD_1DAY_IF_TUESDAY"/>
-		<enumeration value="ADDITIONAL_HOLIDAY_2DAYS_AFTER_IF_SATURDAY"/>
-		<enumeration value="ADDITIONAL_HOLIDAY_1DAY_AFTER_IF_SUNDAY"/>
-		<enumeration value="ADDITIONAL_HOLIDAY_2DAYS_AFTER_IF_SUNDAY"/>
-		<enumeration value="ADDITIONAL_HOLIDAY_1DAY_AFTER_IF_MONDAY"/>
-    </restriction>
-</simpleType>
+<complexType name="observanceRuleType">
+	<attribute name="dayOfWeek" type="tns:dayOfWeekType" use="required" />
+	<attribute name="addDays" type="integer" use="required" />
+	<attribute name="additionalHoliday" type="boolean" use="required" />
+</complexType>
 
 <complexType name="localizedStringType">
 	<simpleContent>

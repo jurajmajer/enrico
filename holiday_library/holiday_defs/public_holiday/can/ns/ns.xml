@@ -41,7 +41,7 @@
 		<date>
 			<fixedDate day="1" month="7" />
 		</date>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 		<name lang="en">Canada Day</name>
 		<name lang="fr">Fête du Canada</name>
 	</holiday>

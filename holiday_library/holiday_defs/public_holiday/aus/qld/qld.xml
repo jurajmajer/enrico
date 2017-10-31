@@ -9,8 +9,8 @@
 		<date>
 			<fixedDate day="1" month="1" />
 		</date>
-		<observanceRule>ADDITIONAL_HOLIDAY_2DAYS_AFTER_IF_SATURDAY</observanceRule>
-		<observanceRule>ADDITIONAL_HOLIDAY_1DAY_AFTER_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
 		<name lang="en">New Year's Day</name>
 	</holiday>
 	
@@ -102,8 +102,8 @@
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="en">Christmas Day</name>
-		<observanceRule>ADDITIONAL_HOLIDAY_2DAYS_AFTER_IF_SATURDAY</observanceRule>
-		<observanceRule>ADDITIONAL_HOLIDAY_2DAYS_AFTER_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="true" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -111,8 +111,8 @@
 			<fixedDate day="26" month="12" />
 		</date>
 		<name lang="en">Boxing Day</name>
-		<observanceRule>ADDITIONAL_HOLIDAY_2DAYS_AFTER_IF_SATURDAY</observanceRule>
-		<observanceRule>ADDITIONAL_HOLIDAY_2DAYS_AFTER_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="true" />
 	</holiday>
 	
 	<!-- old holidays -->

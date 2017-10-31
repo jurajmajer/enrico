@@ -9,8 +9,8 @@
 		<date>
 			<fixedDate day="1" month="1" />
 		</date>
-		<observanceRule>ADD_2DAYS_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_2DAYS_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 		<name lang="en">New Year's Day</name>
 	</holiday>
 	
@@ -18,8 +18,8 @@
 		<date>
 			<fixedDate day="2" month="1" />
 		</date>
-		<observanceRule>ADD_2DAYS_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_2DAYS_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 		<name lang="en">Day after New Year's Day</name>
 	</holiday>
 	
@@ -27,8 +27,8 @@
 		<date>
 			<fixedDate day="6" month="2" />
 		</date>
-		<observanceRule>ADD_2DAYS_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 		<name lang="en">Waitangi Day</name>
 	</holiday>
 	
@@ -60,8 +60,8 @@
 		<date>
 			<fixedDate day="25" month="4" />
 		</date>
-		<observanceRule>ADD_2DAYS_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 		<name lang="en">ANZAC Day</name>
 	</holiday>
 	
@@ -83,8 +83,8 @@
 		<date>
 			<fixedDate day="25" month="12" />
 		</date>
-		<observanceRule>ADD_2DAYS_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_2DAYS_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 		<name lang="en">Christmas Day</name>
 	</holiday>
 	
@@ -92,8 +92,8 @@
 		<date>
 			<fixedDate day="26" month="12" />
 		</date>
-		<observanceRule>ADD_2DAYS_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_2DAYS_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 		<name lang="en">Boxing Day</name>
 	</holiday>
 

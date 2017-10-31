@@ -10,7 +10,7 @@
 			<fixedDate day="4" month="7" />
 		</date>
 		<name lang="en">Independence Day</name>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2015-01-01" validTo="2015-12-31">

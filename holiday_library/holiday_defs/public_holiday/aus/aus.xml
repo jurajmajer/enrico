@@ -9,8 +9,8 @@
 		<date>
 			<fixedDate day="26" month="1" />
 		</date>
-		<observanceRule>ADD_2DAYS_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 		<name lang="en">Australia Day</name>
 	</holiday>
 

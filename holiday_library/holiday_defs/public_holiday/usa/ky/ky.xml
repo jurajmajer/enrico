@@ -10,9 +10,9 @@
 			<fixedDate day="1" month="1" />
 		</date>
 		<name lang="en">New Year's</name>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_MONDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -48,8 +48,8 @@
 			<fixedDate day="4" month="7" />
 		</date>
 		<name lang="en">Independence Day</name>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -76,8 +76,8 @@
 			<fixedDate day="11" month="11" />
 		</date>
 		<name lang="en">Veterans Day</name>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -104,9 +104,9 @@
 			<fixedDate day="24" month="12" />
 		</date>
 		<name lang="en">Christmas</name>
-		<observanceRule>SUB_1DAY_IF_FRIDAY</observanceRule>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="5" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -114,9 +114,9 @@
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="en">Christmas</name>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_MONDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2015-01-01">
@@ -124,9 +124,9 @@
 			<fixedDate day="31" month="12" />
 		</date>
 		<name lang="en">New Year's Eve</name>
-		<observanceRule>SUB_1DAY_IF_FRIDAY</observanceRule>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="5" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<!-- Old Holidays -->
@@ -135,9 +135,9 @@
 			<fixedDate day="24" month="12" />
 		</date>
 		<name lang="en">Christmas</name>
-		<observanceRule>SUB_1DAY_IF_FRIDAY</observanceRule>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="5" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01" validTo="2013-12-31">
@@ -145,9 +145,9 @@
 			<fixedDate day="31" month="12" />
 		</date>
 		<name lang="en">New Year's Eve</name>
-		<observanceRule>SUB_1DAY_IF_FRIDAY</observanceRule>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="5" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 

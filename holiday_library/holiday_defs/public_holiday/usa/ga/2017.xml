@@ -17,8 +17,8 @@
 			<fixedDate day="11" month="11" />
 		</date>
 		<name lang="en">Veterans Day</name>
-		<observanceRule>SUB_1DAY_IF_SATURDAY</observanceRule>
-		<observanceRule>ADD_1DAY_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 
 </holidays>

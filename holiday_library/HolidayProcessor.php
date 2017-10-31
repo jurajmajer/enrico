@@ -210,81 +210,39 @@ class HolidayProcessor {
 	private function resolveObservance($holidayDef, $holiday) {
 		$observanceRules = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "observanceRule");
 		$observedOn = EnricoDate::createNew($holiday->date);
-		$retVal = array();
 		for($i=0; $i<$observanceRules->length; $i++) {
-			$retVal = array_merge($retVal, $this->resolveObservanceRule($observanceRules[$i]->nodeValue, $observedOn, $holiday));
+			$retVal = $this->resolveObservanceRule($observanceRules[$i], $observedOn, $holiday);
 			if (!empty($retVal)) {
-				break;
+				return $retVal;
 			}
 			if($observedOn->compare($holiday->date) != 0) {
 				$holiday->observedOn = $observedOn;
-				break;
+				return array();
 			}
 		}
-		return $retVal;
+		return array();
 	}
 	
 	private function resolveObservanceRule($observanceRule, $date, $holiday) {
-		$additionalHolidayDaysPlus = NULL;
-		if(strcmp($observanceRule, "SUB_1DAY_IF_FRIDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 5) {
-				$this->dateUtils->addDays($date, -1);
-			}
-		} else if(strcmp($observanceRule, "SUB_1DAY_IF_SATURDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 6) {
-				$this->dateUtils->addDays($date, -1);
-			}
-		} else if(strcmp($observanceRule, "SUB_2DAYS_IF_SUNDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 7) {
-				$this->dateUtils->addDays($date, -2);
-			}
-		} else if(strcmp($observanceRule, "ADD_2DAYS_IF_SATURDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 6) {
-				$this->dateUtils->addDays($date, 2);
-			}
-		} else if(strcmp($observanceRule, "ADD_1DAY_IF_SUNDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 7) {
-				$this->dateUtils->addDays($date, 1);
-			}
-		} else if(strcmp($observanceRule, "ADD_2DAYS_IF_SUNDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 7) {
-				$this->dateUtils->addDays($date, 2);
-			}
-		} else if(strcmp($observanceRule, "ADD_1DAY_IF_MONDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 1) {
-				$this->dateUtils->addDays($date, 1);
-			}
-		} else if(strcmp($observanceRule, "ADD_1DAY_IF_TUESDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 2) {
-				$this->dateUtils->addDays($date, 1);
-			}
-		} else if(strcmp($observanceRule, "ADDITIONAL_HOLIDAY_2DAYS_AFTER_IF_SATURDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 6) {
-				$additionalHolidayDaysPlus = 2;
-			}
-		} else if(strcmp($observanceRule, "ADDITIONAL_HOLIDAY_1DAY_AFTER_IF_SUNDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 7) {
-				$additionalHolidayDaysPlus = 1;
-			}
-		} else if(strcmp($observanceRule, "ADDITIONAL_HOLIDAY_2DAYS_AFTER_IF_SUNDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 7) {
-				$additionalHolidayDaysPlus = 2;
-			}
-		} else if(strcmp($observanceRule, "ADDITIONAL_HOLIDAY_1DAY_AFTER_IF_MONDAY") == 0) {
-			if($this->dateUtils->getDayOfWeek($date) == 1) {
-				$additionalHolidayDaysPlus = 1;
-			}
+		$dayOfWeek = intval($observanceRule->getAttribute("dayOfWeek"));
+		if($this->dateUtils->getDayOfWeek($date) != $dayOfWeek) {
+			return array();
 		}
-		if($additionalHolidayDaysPlus != NULL) {
-			$additionalDate = EnricoDate::createNew($date);
-			$additionalDate = $this->dateUtils->addDays($additionalDate, $additionalHolidayDaysPlus);
-			$additionalHoliday = new Holiday($additionalDate);
-			$additionalHoliday->name = $holiday->name;
-			$additionalHoliday->holidayType = $holiday->holidayType;
-			array_push($additionalHoliday->flags, "ADDITIONAL_HOLIDAY");
-			return array($additionalHoliday);
+		$additionalHoliday = $observanceRule->getAttribute("additionalHoliday") === 'true';
+		$addDays = intval($observanceRule->getAttribute("addDays"));
+		if(!$additionalHoliday) {
+			$this->dateUtils->addDays($date, $addDays);
+			return array();
 		}
-		return array();
+		$additionalDate = EnricoDate::createNew($date);
+		$additionalDate = $this->dateUtils->addDays($additionalDate, $addDays);
+		$additionalHoliday = new Holiday($additionalDate);
+		$additionalHoliday->name = $holiday->name;
+		$additionalHoliday->note = $holiday->note;
+		$additionalHoliday->holidayType = $holiday->holidayType;
+		$additionalHoliday->flags = $holiday->flags;
+		array_push($additionalHoliday->flags, "ADDITIONAL_HOLIDAY");
+		return array($additionalHoliday);
 	}
 	
 	private function loadHolidayDefs($xmlFileName) {
