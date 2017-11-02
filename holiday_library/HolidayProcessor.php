@@ -251,6 +251,10 @@ class HolidayProcessor {
 		}
 		$xml= new DOMDocument();
 		$xml->load($xmlFileName, LIBXML_NOBLANKS);
+		if (!$xml->schemaValidate(HolidayProcessor::$HOLIDAY_DEFS_DIR . "enrico.xsd"))
+		{
+		   throw new Exception("Xml file " . $xmlFileName . " is not valid against xsd!");
+		}
 		return iterator_to_array($xml->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "holiday"));
 	}
 	

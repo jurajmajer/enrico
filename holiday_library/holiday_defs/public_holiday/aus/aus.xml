@@ -9,9 +9,9 @@
 		<date>
 			<fixedDate day="26" month="1" />
 		</date>
+		<name lang="en">Australia Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
-		<name lang="en">Australia Day</name>
 	</holiday>
 
 </holidays>

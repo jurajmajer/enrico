@@ -36,9 +36,9 @@
 		<date>
 			<fixedDate day="1" month="7" />
 		</date>
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 		<name lang="en">Canada Day</name>
 		<name lang="fr">Fête du Canada</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">

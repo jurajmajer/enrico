@@ -22,8 +22,8 @@
 	<sequence>
 		<element name="date" type="tns:dateType" />
 		<element name="dateTo" type="tns:dateType" minOccurs="0" />
-		<element name="observanceRule" type="tns:observanceRuleType" minOccurs="0" maxOccurs="unbounded" />
 		<element name="name" type="tns:localizedStringType" maxOccurs="unbounded" />
+		<element name="observanceRule" type="tns:observanceRuleType" minOccurs="0" maxOccurs="unbounded" />
 		<element name="flag" type="tns:holidayFlagType" minOccurs="0" maxOccurs="unbounded" />
 		<element name="note" type="tns:localizedStringType" minOccurs="0" maxOccurs="unbounded" />
 	</sequence>
@@ -161,10 +161,10 @@
 
 <simpleType name="nthType">
 	<restriction base="string">
-		<enumeration value="first"/>
-		<enumeration value="second"/>
-		<enumeration value="third"/>
-		<enumeration value="fourth"/>
+		<enumeration value="1"/>
+		<enumeration value="2"/>
+		<enumeration value="3"/>
+		<enumeration value="4"/>
 		<enumeration value="last"/>
 	</restriction>
 </simpleType> 

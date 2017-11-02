@@ -9,27 +9,27 @@
 		<date>
 			<fixedDate day="1" month="1" />
 		</date>
+		<name lang="en">New Year's Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
-		<name lang="en">New Year's Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="2" month="1" />
 		</date>
+		<name lang="en">Day after New Year's Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
-		<name lang="en">Day after New Year's Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="6" month="2" />
 		</date>
+		<name lang="en">Waitangi Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
-		<name lang="en">Waitangi Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -60,9 +60,9 @@
 		<date>
 			<fixedDate day="25" month="4" />
 		</date>
+		<name lang="en">ANZAC Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
-		<name lang="en">ANZAC Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -83,18 +83,18 @@
 		<date>
 			<fixedDate day="25" month="12" />
 		</date>
+		<name lang="en">Christmas Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
-		<name lang="en">Christmas Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="26" month="12" />
 		</date>
+		<name lang="en">Boxing Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
-		<name lang="en">Boxing Day</name>
 	</holiday>
 
 </holidays>

@@ -9,9 +9,9 @@
 		<date>
 			<fixedDate day="1" month="1" />
 		</date>
+		<name lang="en">New Year's Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
-		<name lang="en">New Year's Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
