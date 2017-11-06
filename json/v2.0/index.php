@@ -1,6 +1,7 @@
 <?php 
 	
 	require_once('../../holiday_library/HolidayCalendar.php');
+	require_once('../../holiday_library/EnricoDate.php');
 	
 	function getJson($result)
 	{
@@ -15,7 +16,7 @@
 		$parts = explode("-", $string);
 		if(count($parts) != 3)
 			throw new Exception("Invalid date '" . $string . "'! Date string must be in format dd-mm-YYYY, e.g. 15-01-2035");
-		return new Date($parts[0], $parts[1], $parts[2]);
+		return new EnricoDate($parts[0], $parts[1], $parts[2]);
 	}
 	
 	function validateMandatoryQueryParam($queryParam)
