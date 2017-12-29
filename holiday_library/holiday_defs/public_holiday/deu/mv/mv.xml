@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="deu">
+	<metadata>
+		<reference>http://en.wikipedia.org/wiki/Public_holidays_in_Germany</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="31" month="10" />
+		</date>
+		<name lang="de">Reformationstag</name>
+		<name lang="en">Reformation Day</name>
+	</holiday>
+
+</holidays>

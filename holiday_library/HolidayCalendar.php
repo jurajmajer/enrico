@@ -129,6 +129,7 @@ class HolidayCalendar {
 		$retVal["can"]->regions = array("ab", "bc", "mb", "nb", "nl", "nt", "ns", "nu", "on", "pe", "qc", "sk", "yt");
 		$retVal["nzl"]->regions = array("auk", "bop", "can", "gis", "hkb", "mbh", "mwt", "nsn", "ntl", "ota", "stl", "tas", "tki", "wko", "wgn", "wtc", "cit");
 		$retVal["usa"]->regions = array("al", "ak", "az", "ar","ca", "co", "ct", "de","dc", "fl", "ga", "hi","id", "il", "in", "ia","ks", "ky", "la", "me", "md","ma", "mi", "mn", "ms", "mo", "mt","ne", "nv", "nh", "nj", "nm", "ny","nc", "nd", "oh", "ok", "or","pa", "ri", "sc", "sd", "tn","tx", "ut", "vt", "va", "wa","wv", "wi", "wy");
+		$retVal["deu"]->regions = array("bw", "by", "be", "bb", "hb", "hh", "he", "ni", "mv", "nw", "rp", "sl", "sn", "st", "sh", "th");
 		
 		/* $retVal["ago"] = new SupportedCountry("Angola", "ago", new EnricoDate(1, 1, 2014), new EnricoDate(31, 12, 32767));
 		$retVal["aus"] = new SupportedCountry("Australia", "aus", new EnricoDate(1, 1, 2011), new EnricoDate(31, 12, 32767));

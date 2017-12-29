@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="deu">
+	<metadata>
+		<reference>http://en.wikipedia.org/wiki/Public_holidays_in_Germany</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="6" month="1" />
+		</date>
+		<name lang="de">Heilige Drei Könige</name>
+		<name lang="en">Epiphany</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>60</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Fronleichnam</name>
+		<name lang="en">Corpus Christi</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="11" />
+		</date>
+		<name lang="de">Allerheiligen</name>
+		<name lang="en">All Saints' Day</name>
+	</holiday>
+
+</holidays>
