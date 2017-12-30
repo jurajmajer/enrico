@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="mex">
+	<metadata>
+		<reference>http://www.cuandoenelmundo.com/calendario/mexico/2018</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="es">Año Nuevo</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="1" />
+		</date>
+		<name lang="es">Día de la Constitución Mexicana</name>
+		<name lang="en">Constitution Day</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="3" nth="3" />
+		</date>
+		<name lang="es">Natalicio de Benito Juárez</name>
+		<name lang="en">Benito Juárez's Birthday</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="es">Día del Trabajo</name>
+		<name lang="en">Labor Day</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="16" month="9" />
+		</date>
+		<name lang="es">Día de la Independencia</name>
+		<name lang="en">Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="11" nth="3" />
+		</date>
+		<name lang="es">Revolución Mexicana</name>
+		<name lang="en">Revolution Day</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01" frequency="6%2">
+		<date>
+			<fixedDate day="1" month="12" />
+		</date>
+		<name lang="es">Transmisión del Poder Ejecutivo Federal</name>
+		<name lang="en">Change of Federal Government</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="es">Día de Navidad</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+</holidays>

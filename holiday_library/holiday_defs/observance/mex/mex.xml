@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="mex">
+	<metadata>
+		<reference>http://www.cuandoenelmundo.com/calendario/mexico/2018</reference>
+	</metadata>
+	
+	<holiday validFrom="2014-01-01" holidayType="OBSERVANCE">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-3</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Jueves Santo</name>
+		<name lang="en">Maundy Thursday</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01" holidayType="OBSERVANCE">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Viernes Santo</name>
+		<name lang="en">Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01" holidayType="OBSERVANCE">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="es">Domingo de Resurrección</name>
+		<name lang="en">Easter Sunday</name>
+	</holiday>
+	
+</holidays>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="hkg">
+	<metadata>
+		<reference>https://www.gov.hk/en/about/abouthk/holiday/</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2013-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="zh">元旦新年</name>
+		<name lang="en">New Year's Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<specialDate>CHINESE_MONTH_1ST_START</specialDate>
+		</date>
+		<name lang="zh">農曆年初一</name>
+		<name lang="en">Chinese New Year</name>
+		<observanceRule dayOfWeek="7" addDays="3" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>CHINESE_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="zh">農曆年初二</name>
+		<name lang="en">The second day of Chinese New Year</name>
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>CHINESE_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="zh">農曆年初三</name>
+		<name lang="en">The third day of Chinese New Year</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="zh">耶穌受難節</name>
+		<name lang="en">Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="zh">耶穌受難節翌日</name>
+		<name lang="en">Easter Saturday</name>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="zh">復活節星期一</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>MARCH_EQUINOX</specialDate>
+				</baseDate>
+				<addSeconds>1339200</addSeconds>	<!-- 15 days + Beijing time offset + 4 hours? -->
+			</dateTransformation>
+		</date>
+		<name lang="zh">清明節</name>
+		<name lang="en">Ching Ming Festival</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="zh">勞動節</name>
+		<name lang="en">Labour Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>CHINESE_MONTH_4TH_START</specialDate>
+				</baseDate>
+				<addDays>7</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="zh">佛誕</name>
+		<name lang="en">Buddha's Birthday</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>CHINESE_MONTH_5TH_START</specialDate>
+				</baseDate>
+				<addDays>4</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="zh">端午節</name>
+		<name lang="en">Dragon Boat Festival (Tuen Ng Festival)</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<fixedDate day="1" month="7" />
+		</date>
+		<name lang="zh">香港特別行政區成立紀念日</name>
+		<name lang="en">Hong Kong Special Administrative Region Establishment Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>CHINESE_MONTH_8TH_START</specialDate>
+				</baseDate>
+				<addDays>15</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="zh">中秋節翌日</name>
+		<name lang="en">Day following the Mid-Autumn Festival</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<fixedDate day="1" month="10" />
+		</date>
+		<name lang="zh">中華人民共和國國慶日</name>
+		<name lang="en">National Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>CHINESE_MONTH_9TH_START</specialDate>
+				</baseDate>
+				<addDays>8</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="zh">重陽節</name>
+		<name lang="en">Chung Yeung Festival</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="zh">聖誕節</name>
+		<name lang="en">Christmas Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="zh">聖誕節翌日</name>
+		<name lang="en">Boxing Day</name>
+		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+</holidays>

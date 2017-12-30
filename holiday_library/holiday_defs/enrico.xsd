@@ -52,8 +52,10 @@
 		<enumeration value="EASTER_SUNDAY"/>
 		<enumeration value="ORTHODOX_EASTER_SUNDAY"/>
 		<enumeration value="CHINESE_MONTH_1ST_START"/>
+		<enumeration value="CHINESE_MONTH_4TH_START"/>
 		<enumeration value="CHINESE_MONTH_5TH_START"/>
 		<enumeration value="CHINESE_MONTH_8TH_START"/>
+		<enumeration value="CHINESE_MONTH_9TH_START"/>
 		<enumeration value="MARCH_EQUINOX"/>
 		<enumeration value="SEPTEMBER_EQUINOX"/>
     </restriction>

@@ -4,7 +4,7 @@
 		<reference>http://en.wikipedia.org/wiki/Public_holidays_in_Germany</reference>
 	</metadata>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2017-01-01" validTo="2017-12-31">
 		<date>
 			<fixedDate day="31" month="10" />
 		</date>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="col">
+	<metadata>
+		<reference>https://colombia-sa.com/varios/varios-fiestas-in.html</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="es">Año Nuevo</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="5" month="1" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="es">Día de los Reyes Magos</name>
+		<name lang="en">Epiphany</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="18" month="3" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="es">Día de San José</name>
+		<name lang="en">Saint Joseph's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-7</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Domingo de Ramos</name>
+		<name lang="en">Palm Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-3</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Jueves Santo</name>
+		<name lang="en">Maundy Thursday</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Viernes Santo</name>
+		<name lang="en">Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="es">Domingo de Pascuas o Resurrección</name>
+		<name lang="en">Easter Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="es">Día del Trabajo</name>
+		<name lang="en">Labor Day</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>43</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Día de la Ascensión</name>
+		<name lang="en">Ascension of Jesus</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>64</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Corpus Christi</name>
+		<name lang="en">Corpus Christi</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>71</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Sagrado Corazón de Jesús</name>
+		<name lang="en">The Sacred Heart of Jesus</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="28" month="6" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="es">San Pedro y San Pablo</name>
+		<name lang="en">Saint Peter and Saint Paul</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="20" month="7" />
+		</date>
+		<name lang="es">Declaracion de la Independencia de Colombia</name>
+		<name lang="en">Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="7" month="8" />
+		</date>
+		<name lang="es">Batalla de Boyacá</name>
+		<name lang="en">Battle of Boyacá</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="14" month="8" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="es">Asunción de la Virgen</name>
+		<name lang="en">The Assumption of Mary</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="11" month="10" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="es">Día de la Raza</name>
+		<name lang="en">Columbus Day</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="31" month="10" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="es">Día de todos los Santos</name>
+		<name lang="en">All Saints’ Day</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="10" month="11" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="es">Independencia de Cartagena</name>
+		<name lang="en">Cartagena Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="8" month="12" />
+		</date>
+		<name lang="es">Día de la Inmaculada Concepción</name>
+		<name lang="en">The Immaculate Conception</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="es">Navidad</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+</holidays>

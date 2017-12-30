@@ -174,11 +174,17 @@ class HolidayProcessor {
 		if(strcmp($specialDateValue, "CHINESE_MONTH_1ST_START") == 0) {
 			return $this->chineseCalUtils->calculateChineseCalendar($year)[0];
 		}
+		if(strcmp($specialDateValue, "CHINESE_MONTH_4TH_START") == 0) {
+			return $this->chineseCalUtils->calculateChineseCalendar($year)[3];
+		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_5TH_START") == 0) {
 			return $this->chineseCalUtils->calculateChineseCalendar($year)[4];
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_8TH_START") == 0) {
 			return $this->chineseCalUtils->calculateChineseCalendar($year)[7];
+		}
+		if(strcmp($specialDateValue, "CHINESE_MONTH_9TH_START") == 0) {
+			return $this->chineseCalUtils->calculateChineseCalendar($year)[8];
 		}
 		if(strcmp($specialDateValue, "MARCH_EQUINOX") == 0) {
 			return $this->equinoxUtils->getMarchEquinox($year);

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="ago">
+	<metadata>
+		<reference>https://ao.usembassy.gov/holiday-calendar/</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="pt">Ano Novo</name>
+		<name lang="en">New Year's Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="25" month="1" />
+		</date>
+		<name lang="pt">Dia da Cidade de Luanda</name>
+		<name lang="en">Luanda's Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+		<flag>REGIONAL_HOLIDAY</flag>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="4" month="2" />
+		</date>
+		<name lang="pt">Dia Nacional do Esforço Armado</name>
+		<name lang="en">Day of the Armed Struggle</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-47</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="pt">Carnaval</name>
+		<name lang="en">Carnival (Shrove Tuesday)</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="8" month="3" />
+		</date>
+		<name lang="pt">Dia Internacional da Mulher</name>
+		<name lang="en">International Women’s Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="4" month="4" />
+		</date>
+		<name lang="pt">Dia da Paz</name>
+		<name lang="en">Day of Peace and Reconciliation</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="pt">Sexta-feira Santa</name>
+		<name lang="en">Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="pt">Dia do Trabalhador</name>
+		<name lang="en">Labour Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="17" month="9" />
+		</date>
+		<name lang="pt">Fundador da Nação e Dia dos Heróis Nacionais</name>
+		<name lang="en">Agostinho Neto's Day and National Heroes Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="2" month="11" />
+		</date>
+		<name lang="pt">Dia de finados</name>
+		<name lang="en">All Souls Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="pt">Dia da Independência</name>
+		<name lang="en">Independence Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="pt">Natal</name>
+		<name lang="en">Christmas Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+</holidays>
