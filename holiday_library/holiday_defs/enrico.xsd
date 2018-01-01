@@ -22,6 +22,8 @@
 	<sequence>
 		<element name="date" type="tns:dateType" />
 		<element name="dateTo" type="tns:dateType" minOccurs="0" />
+		<element name="if" type="tns:ifType" minOccurs="0" maxOccurs="unbounded" />
+		<element name="ifNot" type="tns:ifType" minOccurs="0" maxOccurs="unbounded" />
 		<element name="name" type="tns:localizedStringType" maxOccurs="unbounded" />
 		<element name="observanceRule" type="tns:observanceRuleType" minOccurs="0" maxOccurs="unbounded" />
 		<element name="flag" type="tns:holidayFlagType" minOccurs="0" maxOccurs="unbounded" />
@@ -80,6 +82,10 @@
 </complexType>
 
 <complexType name="nearestWeekdayType">
+	<attribute name="dayOfWeek" type="tns:dayOfWeekType" use="required" />
+</complexType>
+
+<complexType name="ifType">
 	<attribute name="dayOfWeek" type="tns:dayOfWeekType" use="required" />
 </complexType>
 

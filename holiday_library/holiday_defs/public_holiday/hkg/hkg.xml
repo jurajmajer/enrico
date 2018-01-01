@@ -18,9 +18,9 @@
 		<date>
 			<specialDate>CHINESE_MONTH_1ST_START</specialDate>
 		</date>
+		<ifNot dayOfWeek="7" />
 		<name lang="zh">農曆年初一</name>
 		<name lang="en">Chinese New Year</name>
-		<observanceRule dayOfWeek="7" addDays="3" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2013-01-01">
@@ -32,9 +32,9 @@
 				<addDays>1</addDays>
 			</dateTransformation>
 		</date>
+		<ifNot dayOfWeek="7" />
 		<name lang="zh">農曆年初二</name>
 		<name lang="en">The second day of Chinese New Year</name>
-		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2013-01-01">
@@ -46,9 +46,25 @@
 				<addDays>2</addDays>
 			</dateTransformation>
 		</date>
+		<ifNot dayOfWeek="7" />
 		<name lang="zh">農曆年初三</name>
 		<name lang="en">The third day of Chinese New Year</name>
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>CHINESE_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>3</addDays>
+			</dateTransformation>
+		</date>
+		<if dayOfWeek="1" />
+		<if dayOfWeek="2" />
+		<if dayOfWeek="3" />
+		<name lang="zh">農曆年初四</name>
+		<name lang="en">The fourth day of Chinese New Year</name>
 	</holiday>
 	
 	<holiday validFrom="2013-01-01">
@@ -90,7 +106,7 @@
 		<name lang="en">Easter Monday</name>
 	</holiday>
 	
-	<holiday validFrom="2013-01-01">
+	<holiday validFrom="2016-01-01">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -203,6 +219,21 @@
 		<name lang="zh">聖誕節翌日</name>
 		<name lang="en">Boxing Day</name>
 		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<!-- Old dates -->
+	<holiday validFrom="2013-01-01" validTo="2014-12-31">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>MARCH_EQUINOX</specialDate>
+				</baseDate>
+				<addSeconds>1339200</addSeconds>	<!-- 15 days + Beijing time offset + 4 hours? -->
+			</dateTransformation>
+		</date>
+		<name lang="zh">清明節</name>
+		<name lang="en">Ching Ming Festival</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	

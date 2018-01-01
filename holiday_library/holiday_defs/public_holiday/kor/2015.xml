@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="kor">
+	<metadata>
+		<reference>https://english.visitkorea.or.kr/enu/TRV/TV_ENG_1_1.jsp</reference>
+	</metadata>
+	
+	<holiday validFrom="2015-01-01" validTo="2015-12-31">
+		<date>
+			<fixedDate day="14" month="8" />
+		</date>
+		<name lang="ko">광복절 Gwangbokjeol</name>
+		<name lang="en">Liberation Day</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2015-12-31">
+		<date>
+			<fixedDate day="29" month="9" />
+		</date>
+		<name lang="ko">추석 Chuseok</name>
+		<name lang="en">Midautumn Festival Holiday</name>
+		<note lang="en">Holiday under the substitute holiday system</note>
+	</holiday>
+	
+</holidays>

@@ -85,10 +85,10 @@ class HolidayProcessor {
 			}
 			$holidays = $this->calculateHoliday($holidayDef, $year);
 			foreach($holidays as $holiday) {
-				if($holiday != NULL && $holiday->date->compare($validFrom) >= 0) {
-					if($validTo == NULL || $holiday->date->compare($validTo) <= 0) {
-						array_push($retVal, $holiday);
-					}
+				if($holiday != NULL && $holiday->date->compare($validFrom) >= 0 && 
+					($validTo == NULL || $holiday->date->compare($validTo) <= 0) &&
+					$this->isConditionSatisfied($holidayDef, $holiday)) {
+					array_push($retVal, $holiday);
 				}
 			}
 		}
@@ -276,6 +276,37 @@ class HolidayProcessor {
 			return true;
 		}
 		return false;
+	}
+	
+	private function isConditionSatisfied($holidayDef, $holiday) {
+		
+		$if = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "if");
+		$ifNot = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "ifNot");
+		
+		if($if->length != 0) {
+			$match = false;
+			for($i=0; $i<$if->length; $i++) {
+				$dayOfWeek = intval($if[$i]->getAttribute("dayOfWeek"));
+				if($this->dateUtils->getDayOfWeek($holiday->date) == $dayOfWeek) {
+					$match = true;
+					break;
+				}
+			}
+			if($match == false) {
+				return false;
+			}
+		}
+		
+		if($ifNot->length != 0) {
+			for($i=0; $i<$ifNot->length; $i++) {
+				$dayOfWeek = intval($ifNot[$i]->getAttribute("dayOfWeek"));
+				if($this->dateUtils->getDayOfWeek($holiday->date) == $dayOfWeek) {
+					return false;
+				}
+			}
+		}
+		
+		return true;
 	}
 }
 
