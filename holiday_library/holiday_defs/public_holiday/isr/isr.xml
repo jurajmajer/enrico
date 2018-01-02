@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="isr">
+	<metadata>
+		<reference>http://www.boi.org.il/en/Markets/ForeignCurrencyMarket/Pages/nfenewh.aspx</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>-16</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="he">פורים (Purim)</name>
+		<name lang="en">Feast of Purim</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Jerusalem and all ancient walled cities do not observe Feast of Purim this day but following day.</note>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>-15</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="he">פורים (Purim)</name>
+		<name lang="en">Feast of Purim</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed in Jerusalem and all ancient walled cities.</note>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>14</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="he">פסח (Pesach)</name>
+		<name lang="en">Passover</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>20</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="he">שביעי של פסח (Shvi'i shel Pesach)</name>
+		<name lang="en">Seventh day of Passover</name>
+	</holiday>
+	
+	<!-- If the 5th of Iyar falls on a Friday or Saturday, the celebrations are moved up to the preceding Thursday. This rule has been effective since 1951. If the 5th of Iyar is on a Monday, the festival is postponed to Tuesday. This rule has been effective since 2004, in order to avoid potential violation of Sabbath laws by preparing for Yom Hazikaron or Yom Ha'atzmaut on a Shabbat.-->
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>34</addDays>
+			</dateTransformation>
+		</date>
+		<if dayOfWeek="2" />
+		<if dayOfWeek="3" />
+		<if dayOfWeek="4" />
+		<if dayOfWeek="7" />
+		<name lang="he">יום העצמאות (Yom Ha-Atzmaut)</name>
+		<name lang="en">Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>33</addDays>
+			</dateTransformation>
+		</date>
+		<if dayOfWeek="4" />
+		<name lang="he">יום העצמאות (Yom Ha-Atzmaut)</name>
+		<name lang="en">Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>32</addDays>
+			</dateTransformation>
+		</date>
+		<if dayOfWeek="4" />
+		<name lang="he">יום העצמאות (Yom Ha-Atzmaut)</name>
+		<name lang="en">Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>35</addDays>
+			</dateTransformation>
+		</date>
+		<if dayOfWeek="2" />
+		<name lang="he">יום העצמאות (Yom Ha-Atzmaut)</name>
+		<name lang="en">Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>64</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="he">שבועות (Shavuot)</name>
+		<name lang="en">Feast of Shavuot (Pentecost)</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>126</addDays>
+			</dateTransformation>
+		</date>
+		<if dayOfWeek="1" />
+		<if dayOfWeek="2" />
+		<if dayOfWeek="3" />
+		<if dayOfWeek="4" />
+		<if dayOfWeek="5" />
+		<if dayOfWeek="7" />
+		<name lang="he">תשעה באב (Tisha B'Av)</name>
+		<name lang="en">Fast of Ninth of Av</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>127</addDays>
+			</dateTransformation>
+		</date>
+		<if dayOfWeek="7" />
+		<name lang="he">תשעה באב (Tisha B'Av)</name>
+		<name lang="en">Fast of Ninth of Av</name>
+		<flag>OPTIONAL_HOLIDAY</flag>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>177</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="he">ראש השנה (Rosh Hashanah)</name>
+		<name lang="en">Rosh Hashanah (New Year)</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>178</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="he">ראש השנה (Rosh Hashanah)</name>
+		<name lang="en">Rosh Hashanah (New Year)</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>186</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="he">יום כיפור (Yom Kippur)</name>
+		<name lang="en">Day of Atonement (Yom Kippur)</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>191</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="he">סוכות (Sukkot)</name>
+		<name lang="en">First Day of Sucot (Tabernacles)</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HEBREW_MONTH_1ST_START</specialDate>
+				</baseDate>
+				<addDays>198</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="he">שמחת תורה/שמיני עצרת (Simchat Torah/Shemini Atzeret)</name>
+		<name lang="en">Last Day of Sucot (Tabernacles)</name>
+	</holiday>
+	
+</holidays>

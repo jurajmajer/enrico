@@ -145,6 +145,24 @@ class DateUtils {
 		}
 		return $this->addDays($baseDate, (7 - $delta) * $sig);
 	}
+	
+	public function dateDistance($date1, $date2) {
+		$compare = $date1->compare($date2);
+		if($compare == 0) return 0;
+		$earlierDate = EnricoDate::createNew($date1);
+		$laterDate = EnricoDate::createNew($date2);
+		if($compare > 0) {
+			$earlierDate = EnricoDate::createNew($date2);
+			$laterDate = EnricoDate::createNew($date1);
+		}
+		$retVal = 0;
+		while($earlierDate->compare($laterDate) != 0) {
+			$retVal++;
+			$earlierDate = $this->addDays($earlierDate, 1);
+		}
+		
+		return $retVal;
+	}
 }
 
 ?>

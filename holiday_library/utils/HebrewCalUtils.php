@@ -2,7 +2,7 @@
 //Jewish calendar calculations from Judaism 101, http://www.jewfaq.org
 //Designed to illustrate the principles of calendar calculation discussed at http://www.jewfaq.org/calendr2.htm
 
-include_once("../EnricoDate.php");
+//include_once("../EnricoDate.php");
 include_once("DateUtils.php");
 
 class HebrewMonth {
@@ -50,7 +50,7 @@ class HebrewCalUtils {
 		
 		$dateUtils = new DateUtils();
 		$retVal = array();
-		array_push($retVal, new HebrewMonth($dateUtils->addDays(Date::createNew($rh0), $kislevOffset0 + 1), "Kislev", false));
+		array_push($retVal, new HebrewMonth($dateUtils->addDays(EnricoDate::createNew($rh0), $kislevOffset0 + 1), "Kislev", false));
 		array_push($retVal, $this->calculateMonth(10, $hebYear - 1, $rh1, $retVal));
 		array_push($retVal, $this->calculateMonth(11, $hebYear - 1, $rh1, $retVal));
 		array_push($retVal, $this->calculateMonth(12, $hebYear - 1, $rh1, $retVal));
@@ -62,9 +62,9 @@ class HebrewCalUtils {
 		array_push($retVal, $this->calculateMonth(4, $hebYear - 1, $rh1, $retVal));
 		array_push($retVal, $this->calculateMonth(5, $hebYear - 1, $rh1, $retVal));
 		array_push($retVal, $this->calculateMonth(6, $hebYear - 1, $rh1, $retVal));
-		array_push($retVal, new HebrewMonth(Date::createNew($rh1), "Tishri", false));
-		array_push($retVal, new HebrewMonth($dateUtils->addDays(Date::createNew($rh1), 30), "Cheshvan", false));
-		array_push($retVal, new HebrewMonth($dateUtils->addDays(Date::createNew($rh1), $kislevOffset1 + 1), "Kislev", false));
+		array_push($retVal, new HebrewMonth(EnricoDate::createNew($rh1), "Tishri", false));
+		array_push($retVal, new HebrewMonth($dateUtils->addDays(EnricoDate::createNew($rh1), 30), "Cheshvan", false));
+		array_push($retVal, new HebrewMonth($dateUtils->addDays(EnricoDate::createNew($rh1), $kislevOffset1 + 1), "Kislev", false));
 		array_push($retVal, $this->calculateMonth(10, $hebYear, $rh2, $retVal));
 		array_push($retVal, $this->calculateMonth(11, $hebYear, $rh2, $retVal));
 		
@@ -84,7 +84,7 @@ class HebrewCalUtils {
 		$baseMolad->hour = 7;
 		$baseMolad->part = 743;
 		$baseMolad->year = 5732;
-		$baseMolad->gregorianEquivalent = new Date(20, 9, 1971);
+		$baseMolad->gregorianEquivalent = new EnricoDate(20, 9, 1971);
 		$hebYear = $this->getHebrewYear($year);
 		
 		//Step 2: Determine the Number of Months to Tishri of Your Year
@@ -115,7 +115,7 @@ class HebrewCalUtils {
 		$extraDays += $this->dechiyah3($finalMolad, $hebYear);
 		$extraDays += $this->dechiyah4($finalMolad, $hebYear);
 		
-		$retVal = Date::createNew($baseMolad->gregorianEquivalent);
+		$retVal = EnricoDate::createNew($baseMolad->gregorianEquivalent);
 		$dateUtils = new DateUtils();
 		$retVal = $dateUtils->addDays($retVal, $extraDays + $elapsedDays);
 		return $retVal;
@@ -217,7 +217,7 @@ class HebrewCalUtils {
 	// you can't calculate backwards from the end of the year, because Kislev also varies
 	public function kislevOffset($rh1, $rh2) {
 		$dateUtils = new DateUtils();
-		$temp = $dateUtils->diffDates($rh1, $rh2);
+		$temp = $dateUtils->dateDistance($rh1, $rh2);
 		if($temp == 355 || $temp == 385) return 59;
 		
 		return 58;
@@ -231,54 +231,54 @@ class HebrewCalUtils {
 			case 10:	// Tevet
 				$offset = -266;
 				if($this->isLeapYear($hebYear)) $offset -= 30;
-				$date = $dateUtils->addDays(Date::createNew($rh), $offset + 1);
+				$date = $dateUtils->addDays(EnricoDate::createNew($rh), $offset + 1);
 				return new HebrewMonth($date, "Tevet", false);
 				
 			case 11:	// Shevat
 				$offset = -237;
 				if($this->isLeapYear($hebYear)) $offset -= 30;
-				$date = $dateUtils->addDays(Date::createNew($rh), $offset + 1);
+				$date = $dateUtils->addDays(EnricoDate::createNew($rh), $offset + 1);
 				return new HebrewMonth($date, "Shevat", false);
 				
 			case 12:	// Adar or Adar I
 				$offset = -207;
 				if($this->isLeapYear($hebYear)) $offset -= 30;
-				$date = $dateUtils->addDays(Date::createNew($rh), $offset + 1);
+				$date = $dateUtils->addDays(EnricoDate::createNew($rh), $offset + 1);
 				return new HebrewMonth($date, "Adar", false);
 				
 			case 13:	// Adar II
 				$offset = -207;
-				$date = $dateUtils->addDays(Date::createNew($rh), $offset + 1);
+				$date = $dateUtils->addDays(EnricoDate::createNew($rh), $offset + 1);
 				return new HebrewMonth($date, "Adar II", true);
 				
 			case 1:	// Nissan
 				$offset = -178;
-				$date = $dateUtils->addDays(Date::createNew($rh), $offset + 1);
+				$date = $dateUtils->addDays(EnricoDate::createNew($rh), $offset + 1);
 				return new HebrewMonth($date, "Nissan", false);
 				
 			case 2:	// Iyar
 				$offset = -148;
-				$date = $dateUtils->addDays(Date::createNew($rh), $offset + 1);
+				$date = $dateUtils->addDays(EnricoDate::createNew($rh), $offset + 1);
 				return new HebrewMonth($date, "Iyar", false);
 				
 			case 3:	// Sivan
 				$offset = -119;
-				$date = $dateUtils->addDays(Date::createNew($rh), $offset + 1);
+				$date = $dateUtils->addDays(EnricoDate::createNew($rh), $offset + 1);
 				return new HebrewMonth($date, "Sivan", false);
 				
 			case 4:	// Tammuz
 				$offset = -89;
-				$date = $dateUtils->addDays(Date::createNew($rh), $offset + 1);
+				$date = $dateUtils->addDays(EnricoDate::createNew($rh), $offset + 1);
 				return new HebrewMonth($date, "Tammuz", false);
 				
 			case 5:	// Av
 				$offset = -60;
-				$date = $dateUtils->addDays(Date::createNew($rh), $offset + 1);
+				$date = $dateUtils->addDays(EnricoDate::createNew($rh), $offset + 1);
 				return new HebrewMonth($date, "Av", false);
 				
 			case 6:	// Elul
 				$offset = -30;
-				$date = $dateUtils->addDays(Date::createNew($rh), $offset + 1);
+				$date = $dateUtils->addDays(EnricoDate::createNew($rh), $offset + 1);
 				return new HebrewMonth($date, "Elul", false);
 		}
 	}

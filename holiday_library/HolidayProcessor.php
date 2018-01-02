@@ -6,12 +6,14 @@ include_once("utils/DateUtils.php");
 include_once("utils/OrthodoxCalUtils.php");
 include_once("utils/ChineseCalUtils.php");
 include_once("utils/EquinoxUtils.php");
+include_once("utils/HebrewCalUtils.php");
 
 class HolidayProcessor {
 	
 	private $dateUtils;
 	private $orthodoxCalUtils;
 	private $chineseCalUtils;
+	private $hebrewCalUtils;
 	private $equinoxUtils;
 	private $countryCode;
 	private $region;
@@ -25,6 +27,7 @@ class HolidayProcessor {
 		$this->dateUtils = new DateUtils();
 		$this->orthodoxCalUtils = new OrthodoxCalUtils();
 		$this->chineseCalUtils = new ChineseCalUtils();
+		$this->hebrewCalUtils = new HebrewCalUtils();
 		$this->equinoxUtils = new EquinoxUtils();
 	}
 	
@@ -185,6 +188,14 @@ class HolidayProcessor {
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_9TH_START") == 0) {
 			return $this->chineseCalUtils->calculateChineseCalendar($year)[8];
+		}
+		if(strcmp($specialDateValue, "HEBREW_MONTH_1ST_START") == 0) {
+			$hebrewCalendar = $this->hebrewCalUtils->calculateHebrewCalendar($year);
+			$nissanIndex = 4;
+			if(count($hebrewCalendar) == 16) {
+				$nissanIndex = 5;
+			}
+			return $hebrewCalendar[$nissanIndex]->startDate;
 		}
 		if(strcmp($specialDateValue, "MARCH_EQUINOX") == 0) {
 			return $this->equinoxUtils->getMarchEquinox($year);

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="aut">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Austria</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="1946-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="de">Neujahr</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="1950-01-01">
+		<date>
+			<fixedDate day="6" month="1" />
+		</date>
+		<name lang="de">Heilige Drei Könige</name>
+		<name lang="en">Epiphany</name>
+	</holiday>
+	
+	<holiday validFrom="1946-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Ostermontag</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="1946-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>39</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Christi Himmelfahrt</name>
+		<name lang="en">Ascension Day</name>
+	</holiday>
+
+	<holiday validFrom="1946-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>50</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Pfingstmontag</name>
+		<name lang="en">Whit Monday</name>
+	</holiday>
+	
+	<holiday validFrom="1946-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>60</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Fronleichnam</name>
+		<name lang="en">Corpus Christi</name>
+	</holiday>
+	
+	<holiday validFrom="1946-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="de">Staatsfeiertag</name>
+		<name lang="en">Labour Day</name>
+	</holiday>
+	
+	<holiday validFrom="1946-01-01">
+		<date>
+			<fixedDate day="15" month="8" />
+		</date>
+		<name lang="de">Mariä Himmelfahrt</name>
+		<name lang="en">Assumption of Mary</name>
+	</holiday>
+	
+	<holiday validFrom="1966-01-01">
+		<date>
+			<fixedDate day="26" month="10" />
+		</date>
+		<name lang="de">Nationalfeiertag</name>
+		<name lang="en">Austrian National Day (Day of the Declaration of Neutrality)</name>
+	</holiday>
+	
+	<holiday validFrom="1946-01-01">
+		<date>
+			<fixedDate day="1" month="11" />
+		</date>
+		<name lang="de">Allerheiligen</name>
+		<name lang="en">All Saints' Day</name>
+	</holiday>
+	
+	<holiday validFrom="1955-01-01">
+		<date>
+			<fixedDate day="8" month="12" />
+		</date>
+		<name lang="de">Mariä Empfängnis</name>
+		<name lang="en">Feast of the Immaculate Conception</name>
+	</holiday>
+	
+	<holiday validFrom="1946-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="de">Weihnachten</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="1946-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="de">Stephanstag</name>
+		<name lang="en">Boxing Day</name>
+	</holiday>
+
+</holidays>
