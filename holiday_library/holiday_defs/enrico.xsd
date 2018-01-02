@@ -137,6 +137,7 @@
 		<enumeration value="OBSERVANCE"/>
 		<enumeration value="SCHOOL_HOLIDAY"/>
 		<enumeration value="OTHER_DAY"/>
+		<enumeration value="EXTRA_WORKING_DAY"/>
 	</restriction>
 </simpleType>
 

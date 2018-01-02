@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="srb">
+	<metadata>
+		<reference>https://www.nbs.rs/internet/english/15/neradni_dani.html</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="sr">Nova Godina</name>
+		<name lang="en">New Year's Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="true" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="2" month="1" />
+		</date>
+		<name lang="sr">Nova Godina</name>
+		<name lang="en">New Year's Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="7" month="1" />
+		</date>
+		<name lang="sr">Božić</name>
+		<name lang="en">Orthodox Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="2012-01-01">
+		<date>
+			<fixedDate day="15" month="2" />
+		</date>
+		<name lang="sr">Dan državnosti Srbije</name>
+		<name lang="en">Serbia National Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="true" />
+	</holiday>
+	
+	<holiday validFrom="2012-01-01">
+		<date>
+			<fixedDate day="16" month="2" />
+		</date>
+		<name lang="sr">Dan državnosti Srbije</name>
+		<name lang="en">Serbia National Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="sr">Veliki petak</name>
+		<name lang="en">Orthodox Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="sr">Vaskrs</name>
+		<name lang="en">Orthodox Easter</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="sr">Vaskrsni ponedeljak</name>
+		<name lang="en">Orthodox Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="sr">Praznik rada</name>
+		<name lang="en">Labour Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="true" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="2" month="5" />
+		</date>
+		<name lang="sr">Praznik rada</name>
+		<name lang="en">Labour Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2012-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="sr">Dan primirja</name>
+		<name lang="en">Armistice Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
+	</holiday>
+
+</holidays>
