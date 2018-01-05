@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="rus">
+	<metadata>
+		<reference>http://www.cbr.ru/statichtml/file/8322/holidays_2018_e.htm</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="ru">Новый год</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="2" month="1" />
+		</date>
+		<name lang="ru">Новогодние каникулы</name>
+		<name lang="en">New Year’s Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="3" month="1" />
+		</date>
+		<name lang="ru">Новогодние каникулы</name>
+		<name lang="en">New Year’s Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="4" month="1" />
+		</date>
+		<name lang="ru">Новогодние каникулы</name>
+		<name lang="en">New Year’s Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="5" month="1" />
+		</date>
+		<name lang="ru">Новогодние каникулы</name>
+		<name lang="en">New Year’s Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="6" month="1" />
+		</date>
+		<name lang="ru">Новогодние каникулы</name>
+		<name lang="en">New Year’s Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="7" month="1" />
+		</date>
+		<name lang="ru">Рождество Христово</name>
+		<name lang="en">Orthodox Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="23" month="2" />
+		</date>
+		<name lang="ru">День защитника Отечества</name>
+		<name lang="en">Defender of the Fatherland Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="8" month="3" />
+		</date>
+		<name lang="ru">Восьмое марта</name>
+		<name lang="en">International Women's Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="ru">Праздник Весны и Труда</name>
+		<name lang="en">The Day of Spring and Labor</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="9" month="5" />
+		</date>
+		<name lang="ru">День Победы</name>
+		<name lang="en">Victory Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="12" month="6" />
+		</date>
+		<name lang="ru">День России</name>
+		<name lang="en">Russia Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="4" month="11" />
+		</date>
+		<name lang="ru">День народного единства</name>
+		<name lang="en">Unity Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
+	</holiday>
+	
+</holidays>

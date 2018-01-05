@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="bel">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Belgium</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="nl">Nieuwjaar</name>
+		<name lang="fr">Nouvel An</name>
+		<name lang="de">Neujahr</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="nl">Pasen</name>
+		<name lang="fr">Pâques</name>
+		<name lang="de">Ostern</name>
+		<name lang="en">Easter Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="nl">Paasmaandag</name>
+		<name lang="fr">Lundi de Pâques</name>
+		<name lang="de">Ostermontag</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>39</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="nl">Onze Lieve Heer hemelvaart</name>
+		<name lang="fr">Ascension</name>
+		<name lang="de">Christi Himmelfahrt</name>
+		<name lang="en">Ascension Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>49</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="nl">Pinksteren</name>
+		<name lang="fr">Pentecôte</name>
+		<name lang="de">Pfingsten</name>
+		<name lang="en">Whit Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>50</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="nl">Pinkstermaandag</name>
+		<name lang="fr">Lundi de Pentecôte</name>
+		<name lang="de">Pfingstmontag</name>
+		<name lang="en">Whit Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="nl">Dag van de arbeid</name>
+		<name lang="fr">Fête du Travail</name>
+		<name lang="de">Tag der Arbeit</name>
+		<name lang="en">Labour Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="21" month="7" />
+		</date>
+		<name lang="nl">Nationale feestdag</name>
+		<name lang="fr">Fête nationale</name>
+		<name lang="de">Nationalfeiertag</name>
+		<name lang="en">National holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="15" month="8" />
+		</date>
+		<name lang="nl">Onze Lieve Vrouw hemelvaart</name>
+		<name lang="fr">Assomption</name>
+		<name lang="de">Mariä Himmelfahrt</name>
+		<name lang="en">Assumption of Mary</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="11" />
+		</date>
+		<name lang="nl">Allerheiligen</name>
+		<name lang="fr">Toussaint</name>
+		<name lang="de">Allerheiligen</name>
+		<name lang="en">All Saints' Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="nl">Wapenstilstand (Belgische feestdag)</name>
+		<name lang="fr">Jour de l'armistice</name>
+		<name lang="de">Waffenstillstand</name>
+		<name lang="en">Armistice Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="nl">Kerstmis</name>
+		<name lang="fr">Noël</name>
+		<name lang="de">Weihnachten</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+</holidays>
