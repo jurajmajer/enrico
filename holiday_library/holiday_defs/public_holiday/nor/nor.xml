@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="nor">
+	<metadata>
+		<reference>http://en.wikipedia.org/wiki/Public_holidays_in_Norway</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="no">Første nyttårsdag</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-3</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="no">Skjærtorsdag</name>
+		<name lang="en">Maundy Thursday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="no">Langfredag</name>
+		<name lang="en">Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="no">Første påskedag</name>
+		<name lang="en">Easter Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="no">Andre påskedag</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>39</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="no">Kristi himmelfartsdag</name>
+		<name lang="en">Ascension Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>49</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="no">Første pinsedag</name>
+		<name lang="en">Whit Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>50</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="no">Andre pinsedag</name>
+		<name lang="en">Whit Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="no">Første mai</name>
+		<name lang="en">Labour Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="17" month="5" />
+		</date>
+		<name lang="no">Syttende mai (Grunnlovsdagen)</name>
+		<name lang="en">Constitution Day</name>
+	</holiday>
+
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="no">Første juledag</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="no">Andre juledag</name>
+		<name lang="en">Boxing Day</name>
+	</holiday>
+
+</holidays>

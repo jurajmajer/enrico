@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="fin">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Finland</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<dateTransformation>
+						<baseDate>
+							<fixedDate day="19" month="6" />
+						</baseDate>
+						<nearestWeekdayAfter dayOfWeek="6" />
+					</dateTransformation>
+				</baseDate>
+				<addDays>-1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="fi">Juhannusaatto</name>
+		<name lang="en">Midsummer Eve</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="24" month="12" />
+		</date>
+		<name lang="fi">Jouluaatto</name>
+		<name lang="en">Christmas Eve</name>
+	</holiday>
+
+</holidays>

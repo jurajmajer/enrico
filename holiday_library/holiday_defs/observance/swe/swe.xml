@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="swe">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Sweden</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<dateTransformation>
+						<baseDate>
+							<fixedDate day="19" month="6" />
+						</baseDate>
+						<nearestWeekdayAfter dayOfWeek="6" />
+					</dateTransformation>
+				</baseDate>
+				<addDays>-1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="sv">Midsommarafton</name>
+		<name lang="en">Midsummer Eve</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="24" month="12" />
+		</date>
+		<name lang="sv">Julafton</name>
+		<name lang="en">Christmas Eve</name>
+	</holiday>
+
+	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="31" month="12" />
+		</date>
+		<name lang="sv">Nyårsafton</name>
+		<name lang="en">New Year's Eve</name>
+	</holiday>
+
+</holidays>

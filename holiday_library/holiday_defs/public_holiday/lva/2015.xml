@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="lva">
+	<metadata>
+		<reference>https://www.bank.lv/en/about-us/public-holidays-in-latvia</reference>
+	</metadata>
+	
+	<holiday validFrom="2015-01-01" validTo="2015-12-31">
+		<date>
+			<fixedDate day="2" month="1" />
+		</date>
+		<name lang="lv">Jaungada dienu</name>
+		<name lang="en">New Year's Day Bridge Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="10" month="1" />
+		</date>
+		<name lang="lv">Darba diena</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2015-12-31">
+		<date>
+			<fixedDate day="22" month="6" />
+		</date>
+		<name lang="lv">Līgo dienu</name>
+		<name lang="en">Midsummer Bridge Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="27" month="6" />
+		</date>
+		<name lang="lv">Darba diena</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+
+</holidays>

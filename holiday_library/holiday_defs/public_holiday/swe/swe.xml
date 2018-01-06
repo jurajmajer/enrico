@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="swe">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Sweden</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="sv">Nyårsdagen</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="6" month="1" />
+		</date>
+		<name lang="sv">Trettondagen</name>
+		<name lang="en">Epiphany</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="sv">Långfredagen</name>
+		<name lang="en">Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="sv">Påskdagen</name>
+		<name lang="en">Easter Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="sv">Annandag påsk</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="sv">Första maj</name>
+		<name lang="en">Labour Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>39</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="sv">Kristi himmelfärds dag</name>
+		<name lang="en">Ascension Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>49</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="sv">Pingstdagen</name>
+		<name lang="en">Whit Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="6" month="6" />
+		</date>
+		<name lang="sv">Sveriges nationaldag</name>
+		<name lang="en">National Day of Sweden</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="19" month="6" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="6" />
+			</dateTransformation>
+		</date>
+		<name lang="sv">Midsommardagen</name>
+		<name lang="en">Midsummer Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="30" month="10" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="6" />
+			</dateTransformation>
+		</date>
+		<name lang="sv">Alla helgons dag</name>
+		<name lang="en">All Saints' Day</name>
+	</holiday>
+
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="sv">Juldagen</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="sv">Annandag jul</name>
+		<name lang="en">Boxing Day</name>
+	</holiday>
+
+</holidays>

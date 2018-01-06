@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="ltu">
+	<metadata>
+		<reference>http://fi.urm.lt/fi/en/about-us/the-embassy/working-hours</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="lt">Naujieji metai</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="16" month="2" />
+		</date>
+		<name lang="lt">Lietuvos valstybės atkūrimo diena</name>
+		<name lang="en">Day of Re-establishment of the State of Lithuania (1918)</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="11" month="3" />
+		</date>
+		<name lang="lt">Lietuvos nepriklausomybės atkūrimo diena</name>
+		<name lang="en">Day of Restitution of Independence of Lithuania (from the Soviet Union, 1990)</name>
+	</holiday>
+
+	<holiday validFrom="2011-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="lt">Velykos</name>
+		<name lang="en">Easter Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="lt">Velykos</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="lt">Tarptautinė darbo diena</name>
+		<name lang="en">Labour Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="7" month="5" nth="1" />
+		</date>
+		<name lang="lt">Motinos diena</name>
+		<name lang="en">Mother's day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="7" month="6" nth="1" />
+		</date>
+		<name lang="lt">Tėvo diena</name>
+		<name lang="en">Father's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="24" month="6" />
+		</date>
+		<name lang="lt">Rasos (Joninės)</name>
+		<name lang="en">St. John's Day (Day of Dew)</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="6" month="7" />
+		</date>
+		<name lang="lt">Valstybės (Lietuvos karaliaus Mindaugo karūnavimo) diena</name>
+		<name lang="en">Statehood Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="15" month="8" />
+		</date>
+		<name lang="lt">Žolinė (Švč. Mergelės Marijos ėmimo į dangų diena)</name>
+		<name lang="en">Assumption Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="11" />
+		</date>
+		<name lang="lt">Visų šventųjų diena</name>
+		<name lang="en">All Saints' Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="24" month="12" />
+		</date>
+		<name lang="lt">Šv. Kalėdos</name>
+		<name lang="en">Christmas Eve</name>
+	</holiday>
+
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="lt">Šv. Kalėdos</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="lt">Šv. Kalėdos</name>
+		<name lang="en">Boxing Day</name>
+	</holiday>
+
+</holidays>
