@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="fra">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_France</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="fr">Premier de l'an / Jour de l' an</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="fr">Vendredi Saint</name>
+		<name lang="en">Good Friday</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Alsace and Moselle</note>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="fr">Lundi de Pâques</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>39</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="fr">Ascension</name>
+		<name lang="en">Ascension Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>50</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="fr">Lundi de Pentecôte</name>
+		<name lang="en">Whit Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="fr">Fête du Travail</name>
+		<name lang="en">Labour Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="8" month="5" />
+		</date>
+		<name lang="fr">Victoire 1945</name>
+		<name lang="en">Victory in Europe Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="14" month="7" />
+		</date>
+		<name lang="fr">14 Juillet – Fête Nationale</name>
+		<name lang="en">Bastille Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="15" month="8" />
+		</date>
+		<name lang="fr">Assomption</name>
+		<name lang="en">Assumption of Mary</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="11" />
+		</date>
+		<name lang="fr">Toussaint</name>
+		<name lang="en">All Saints' Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="fr">Armistice</name>
+		<name lang="en">Veterans Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="fr">Noël</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="fr">Saint Etienne</name>
+		<name lang="en">Boxing Day</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Alsace and Moselle</note>
+	</holiday>
+
+</holidays>

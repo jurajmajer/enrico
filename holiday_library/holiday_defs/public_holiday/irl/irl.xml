@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="irl">
+	<metadata>
+		<reference>http://www.citizensinformation.ie/en/employment/employment_rights_and_conditions/leave_and_holidays/public_holidays_in_ireland.html</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="ga">Lá Caille or Lá Bliana Nua</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="17" month="3" />
+		</date>
+		<name lang="ga">Lá Fhéile Pádraig</name>
+		<name lang="en">Saint Patrick's Day</name>
+	</holiday>
+
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="ga">Luan Cásca</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="1" />
+		</date>
+		<name lang="ga">Lá an Lucht Oibre</name>
+		<name lang="en">Labour Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="6" nth="1" />
+		</date>
+		<name lang="ga">Lá Saoire i mí Mheitheamh</name>
+		<name lang="en">June Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="8" nth="1" />
+		</date>
+		<name lang="ga">Lá Saoire i mí Lúnasa</name>
+		<name lang="en">August Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="last" />
+		</date>
+		<name lang="ga">Lá Saoire i mí Dheireadh Fómhair</name>
+		<name lang="en">October Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="ga">Lá Nollag</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="ga">Lá Fhéile Stiofáin or Lá an Dreoilín</name>
+		<name lang="en">Boxing Day</name>
+	</holiday>
+
+</holidays>
