@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="rou">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Romania</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2015-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="ro">Anul nou</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<fixedDate day="2" month="1" />
+		</date>
+		<name lang="ro">Anul nou</name>
+		<name lang="en">Day after New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<fixedDate day="24" month="1" />
+		</date>
+		<name lang="ro">Unirea Principatelor Române/Mica Unire</name>
+		<name lang="en">Unification of the Romanian Principalities/Small Union</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="ro">Paştele</name>
+		<name lang="en">Orthodox Easter Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="ro">Doua zi de Pasti</name>
+		<name lang="en">Orthodox Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="ro">Ziua muncii</name>
+		<name lang="en">Labour Day</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>49</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="ro">Rusaliile</name>
+		<name lang="en">Orthodox Whit Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>50</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="ro">Doua zi de Rusaliile</name>
+		<name lang="en">Orthodox Whit Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<fixedDate day="1" month="6" />
+		</date>
+		<name lang="ro">Ziua Copilului</name>
+		<name lang="en">Children's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<fixedDate day="15" month="8" />
+		</date>
+		<name lang="ro">Adormirea Maicii Domnului/Sfânta Maria Mare</name>
+		<name lang="en">Dormition of the Theotokos</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<fixedDate day="30" month="11" />
+		</date>
+		<name lang="ro">Sfântul Andrei</name>
+		<name lang="en">St. Andrew's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<fixedDate day="1" month="12" />
+		</date>
+		<name lang="ro">Ziua Națională/Marea Unire</name>
+		<name lang="en">National Day/Great Union</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="ro">Crăciunul</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="ro">Crăciunul</name>
+		<name lang="en">Boxing Day</name>
+	</holiday>
+
+</holidays>

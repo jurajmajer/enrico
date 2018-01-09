@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="pol">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Poland</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="1952-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="pl">Nowy Rok</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="6" month="1" />
+		</date>
+		<name lang="pl">Święto Trzech Króli</name>
+		<name lang="en">Epiphany</name>
+	</holiday>
+	
+	<holiday validFrom="1952-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="pl">Wielkanoc</name>
+		<name lang="en">Easter Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="1952-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="pl">Poniedziałek Wielkanocny</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="1952-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>49</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="pl">Zielone Świątki</name>
+		<name lang="en">Whit Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="1952-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>60</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="pl">Boże Ciało</name>
+		<name lang="en">Corpus Christi</name>
+	</holiday>
+	
+	<holiday validFrom="1952-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="pl">Święto Pracy</name>
+		<name lang="en">Labour Day</name>
+	</holiday>
+	
+	<holiday validFrom="1990-01-01">
+		<date>
+			<fixedDate day="3" month="5" />
+		</date>
+		<name lang="pl">Święto Konstytucji 3 Maja</name>
+		<name lang="en">Constitution Day</name>
+	</holiday>
+	
+	<holiday validFrom="1989-01-01">
+		<date>
+			<fixedDate day="15" month="8" />
+		</date>
+		<name lang="pl">Wniebowzięcie Najświętszej Maryi Panny</name>
+		<name lang="en">Assumption of Mary</name>
+	</holiday>
+	
+	<holiday validFrom="1952-01-01">
+		<date>
+			<fixedDate day="1" month="11" />
+		</date>
+		<name lang="pl">Wszystkich Świętych</name>
+		<name lang="en">All Saints' Day</name>
+	</holiday>
+	
+	<holiday validFrom="1989-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="pl">Narodowe Święto Niepodległości</name>
+		<name lang="en">Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="1952-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="pl">Boże Narodzenie</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="1952-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="pl">Drugi dzień Bożego Narodzenia</name>
+		<name lang="en">Boxing Day</name>
+	</holiday>
+	
+	<!-- Old dates -->
+	<holiday validFrom="1952-01-01" validTo="1960-12-31">
+		<date>
+			<fixedDate day="6" month="1" />
+		</date>
+		<name lang="pl">Trzech Króli</name>
+		<name lang="en">Epiphany</name>
+	</holiday>
+	
+	<holiday validFrom="1952-01-01" validTo="1989-12-31">
+		<date>
+			<fixedDate day="22" month="7" />
+		</date>
+		<name lang="pl">Święto Odrodzenia Polski</name>
+		<name lang="en">National Day of Rebirth of Poland</name>
+	</holiday>
+	
+	<holiday validFrom="1952-01-01" validTo="1960-12-31">
+		<date>
+			<fixedDate day="15" month="8" />
+		</date>
+		<name lang="pl">Wniebowzięcie</name>
+		<name lang="en">Assumption of Mary</name>
+	</holiday>
+	
+</holidays>
