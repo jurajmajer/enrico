@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="bih">
+	<metadata>
+		<reference>http://www.neradni-dani.com/kalendari-praznici-bosna-hercegovina.html</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2017-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="bs">Nova godina</name>
+		<name lang="en">New Year's Day</name>
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<fixedDate day="2" month="1" />
+		</date>
+		<name lang="bs">Nova godina</name>
+		<name lang="en">New Year's Holiday</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<fixedDate day="7" month="1" />
+		</date>
+		<name lang="bs">Božić (Pravoslavni)</name>
+		<name lang="en">Orthodox Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<fixedDate day="1" month="3" />
+		</date>
+		<name lang="bs">Dan nezavisnosti</name>
+		<name lang="en">Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="bs">Uskrs</name>
+		<name lang="en">Easter Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="bs">Vaskrs</name>
+		<name lang="en">Orthodox Easter Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="bs">Praznik rada</name>
+		<name lang="en">Labour Day</name>
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<fixedDate day="2" month="5" />
+		</date>
+		<name lang="bs">Praznik rada</name>
+		<name lang="en">Labour Day Holiday</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<specialDate>HIJRI_MONTH_10TH_START</specialDate>
+		</date>
+		<name lang="bs">Ramazanski Bajram</name>
+		<name lang="en">Eid al-Fitr</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HIJRI_MONTH_12TH_START</specialDate>
+				</baseDate>
+				<addDays>9</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="bs">Kurban Bajram</name>
+		<name lang="en">Eid al-Adha</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<fixedDate day="25" month="11" />
+		</date>
+		<name lang="bs">Dan državnosti</name>
+		<name lang="en">Statehood Day</name>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="bs">Božić (Katolički)</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+</holidays>

@@ -59,6 +59,8 @@
 		<enumeration value="CHINESE_MONTH_8TH_START"/>
 		<enumeration value="CHINESE_MONTH_9TH_START"/>
 		<enumeration value="HEBREW_MONTH_1ST_START"/>
+		<enumeration value="HIJRI_MONTH_10TH_START"/>
+		<enumeration value="HIJRI_MONTH_12TH_START"/>
 		<enumeration value="MARCH_EQUINOX"/>
 		<enumeration value="SEPTEMBER_EQUINOX"/>
     </restriction>

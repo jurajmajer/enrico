@@ -7,6 +7,7 @@ include_once("utils/OrthodoxCalUtils.php");
 include_once("utils/ChineseCalUtils.php");
 include_once("utils/EquinoxUtils.php");
 include_once("utils/HebrewCalUtils.php");
+include_once("utils/HijriCalUtils.php");
 
 class HolidayProcessor {
 	
@@ -14,6 +15,7 @@ class HolidayProcessor {
 	private $orthodoxCalUtils;
 	private $chineseCalUtils;
 	private $hebrewCalUtils;
+	private $hijriCalUtils;
 	private $equinoxUtils;
 	private $countryCode;
 	private $region;
@@ -28,6 +30,7 @@ class HolidayProcessor {
 		$this->orthodoxCalUtils = new OrthodoxCalUtils();
 		$this->chineseCalUtils = new ChineseCalUtils();
 		$this->hebrewCalUtils = new HebrewCalUtils();
+		$this->hijriCalUtils = new HijriCalendar();
 		$this->equinoxUtils = new EquinoxUtils();
 	}
 	
@@ -99,29 +102,33 @@ class HolidayProcessor {
 	}
 	
 	private function calculateHoliday($holidayDef, $year) {
-		$retVal = new Holiday($this->calculateDate($holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "date")[0], $year));
-		$names = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "name");
-		for($i=0; $i<$names->length; $i++) {
-			array_push($retVal->name, new LocalizedString($names[$i]->getAttribute("lang"), $names[$i]->nodeValue));
-		}
-		$notes = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "note");
-		for($i=0; $i<$notes->length; $i++) {
-			array_push($retVal->note, new LocalizedString($notes[$i]->getAttribute("lang"), $notes[$i]->nodeValue));
-		}
-		$flags = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "flag");
-		for($i=0; $i<$flags->length; $i++) {
-			array_push($retVal->flags, $flags[$i]->nodeValue);
-		}
-		$holidayType = $holidayDef->getAttribute("holidayType");
-		if($holidayType != NULL) {
-			$retVal->holidayType = $holidayType;
-		} else {
-			$retVal->holidayType = "PUBLIC_HOLIDAY";
-		}
-		$additionalHolidays = $this->resolveObservance($holidayDef, $retVal);
-		$retVal = array($retVal);
-		foreach($additionalHolidays as $additionalHoliday) {
-			array_push($retVal, $additionalHoliday);
+		$retVal = array();
+		$dates = $this->calculateDate($holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "date")[0], $year);
+		foreach($dates as $date) {
+			$holiday = new Holiday($date);
+			$names = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "name");
+			for($i=0; $i<$names->length; $i++) {
+				array_push($holiday->name, new LocalizedString($names[$i]->getAttribute("lang"), $names[$i]->nodeValue));
+			}
+			$notes = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "note");
+			for($i=0; $i<$notes->length; $i++) {
+				array_push($holiday->note, new LocalizedString($notes[$i]->getAttribute("lang"), $notes[$i]->nodeValue));
+			}
+			$flags = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "flag");
+			for($i=0; $i<$flags->length; $i++) {
+				array_push($holiday->flags, $flags[$i]->nodeValue);
+			}
+			$holidayType = $holidayDef->getAttribute("holidayType");
+			if($holidayType != NULL) {
+				$holiday->holidayType = $holidayType;
+			} else {
+				$holiday->holidayType = "PUBLIC_HOLIDAY";
+			}
+			$additionalHolidays = $this->resolveObservance($holidayDef, $holiday);
+			array_push($retVal, $holiday);
+			foreach($additionalHolidays as $additionalHoliday) {
+				array_push($retVal, $additionalHoliday);
+			}
 		}
 		return $retVal;
 	}
@@ -129,17 +136,21 @@ class HolidayProcessor {
 	private function calculateDate($dateElement, $year) {
 		$firstChild = $this->getFirstNonCommentChild($dateElement);
 		if(strcmp($firstChild->nodeName, "fixedDate") == 0) {
-			return new EnricoDate($firstChild->getAttribute("day"), $firstChild->getAttribute("month"), $year);
+			return array(new EnricoDate($firstChild->getAttribute("day"), $firstChild->getAttribute("month"), $year));
 		}
 		if(strcmp($firstChild->nodeName, "specialDate") == 0) {
 			return $this->resolveSpecialDateValue($firstChild->nodeValue, $year);
 		}
 		if(strcmp($firstChild->nodeName, "nthWeekdayRuleDate") == 0) {
-			return $this->dateUtils->getNthWeekday($firstChild->getAttribute("dayOfWeek"), $firstChild->getAttribute("month"), $firstChild->getAttribute("nth"), $year);
+			return array($this->dateUtils->getNthWeekday($firstChild->getAttribute("dayOfWeek"), $firstChild->getAttribute("month"), $firstChild->getAttribute("nth"), $year));
 		}
 		if(strcmp($firstChild->nodeName, "dateTransformation") == 0) {
-			$baseDate = $this->calculateDate($this->getFirstNonCommentChild($firstChild), $year);
-			return $this->resolveDateTransformation($baseDate, $this->getLastNonCommentChild($firstChild));
+			$baseDates = $this->calculateDate($this->getFirstNonCommentChild($firstChild), $year);
+			$retVal = array();
+			foreach($baseDates as $baseDate) {
+				array_push($retVal, $this->resolveDateTransformation($baseDate, $this->getLastNonCommentChild($firstChild)));
+			}
+			return $retVal;
 		}
 		
 		throw new Exception('Unknown date calculation method \'' . $firstChild->nodeName . '\'');
@@ -169,25 +180,25 @@ class HolidayProcessor {
 	
 	private function resolveSpecialDateValue($specialDateValue, $year) {
 		if(strcmp($specialDateValue, "EASTER_SUNDAY") == 0) {
-			return $this->dateUtils->addDays(new EnricoDate(21 , 3, $year), easter_days($year));
+			return array($this->dateUtils->addDays(new EnricoDate(21 , 3, $year), easter_days($year)));
 		}
 		if(strcmp($specialDateValue, "ORTHODOX_EASTER_SUNDAY") == 0) {
-			return $this->orthodoxCalUtils->getOrthodoxEasterSunday($year);
+			return array($this->orthodoxCalUtils->getOrthodoxEasterSunday($year));
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_1ST_START") == 0) {
-			return $this->chineseCalUtils->calculateChineseCalendar($year)[0];
+			return array($this->chineseCalUtils->calculateChineseCalendar($year)[0]);
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_4TH_START") == 0) {
-			return $this->chineseCalUtils->calculateChineseCalendar($year)[3];
+			return array($this->chineseCalUtils->calculateChineseCalendar($year)[3]);
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_5TH_START") == 0) {
-			return $this->chineseCalUtils->calculateChineseCalendar($year)[4];
+			return array($this->chineseCalUtils->calculateChineseCalendar($year)[4]);
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_8TH_START") == 0) {
-			return $this->chineseCalUtils->calculateChineseCalendar($year)[7];
+			return array($this->chineseCalUtils->calculateChineseCalendar($year)[7]);
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_9TH_START") == 0) {
-			return $this->chineseCalUtils->calculateChineseCalendar($year)[8];
+			return array($this->chineseCalUtils->calculateChineseCalendar($year)[8]);
 		}
 		if(strcmp($specialDateValue, "HEBREW_MONTH_1ST_START") == 0) {
 			$hebrewCalendar = $this->hebrewCalUtils->calculateHebrewCalendar($year);
@@ -195,13 +206,19 @@ class HolidayProcessor {
 			if(count($hebrewCalendar) == 16) {
 				$nissanIndex = 5;
 			}
-			return $hebrewCalendar[$nissanIndex]->startDate;
+			return array($hebrewCalendar[$nissanIndex]->startDate);
+		}
+		if(strcmp($specialDateValue, "HIJRI_MONTH_10TH_START") == 0) {
+			return $this->hijriCalUtils->getFirstDayOfHijriMonth(10, $year);
+		}
+		if(strcmp($specialDateValue, "HIJRI_MONTH_12TH_START") == 0) {
+			return $this->hijriCalUtils->getFirstDayOfHijriMonth(12, $year);
 		}
 		if(strcmp($specialDateValue, "MARCH_EQUINOX") == 0) {
-			return $this->equinoxUtils->getMarchEquinox($year);
+			return array($this->equinoxUtils->getMarchEquinox($year));
 		}
 		if(strcmp($specialDateValue, "SEPTEMBER_EQUINOX") == 0) {
-			return $this->equinoxUtils->getSeptemberEquinox($year);
+			return array($this->equinoxUtils->getSeptemberEquinox($year));
 		}
 		
 		throw new Exception('Unknown special date value \'' . $specialDateValue . '\'');
