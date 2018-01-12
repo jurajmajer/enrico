@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="mkd">
+	<metadata>
+		<reference>http://www.mtsp.gov.mk/programa-za-nerabotni-denovi.nspx</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="mk">Нова Година, Nova Godina</name>
+		<name lang="en">New Year's Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="7" month="1" />
+		</date>
+		<name lang="mk">Прв ден Божик, Prv den Božik</name>
+		<name lang="en">Orthodox Christmas Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="mk">Втор ден Велигден, Vtor den Veligden</name>
+		<name lang="en">Orthodox Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="mk">Ден на трудот, Den na trudot</name>
+		<name lang="en">Labour Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="24" month="5" />
+		</date>
+		<name lang="mk">Св. Кирил и Методиј, Ден на сèсловенските просветители; Sv. Kiril i Metodij, Den na sèslovenskite prosvetiteli</name>
+		<name lang="en">Saints Cyril and Methodius Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<specialDate>HIJRI_MONTH_10TH_START</specialDate>
+		</date>
+		<name lang="mk">Рамазан Бајрам, Ramazan Bajram</name>
+		<name lang="en">Eid al-Fitr</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="2" month="8" />
+		</date>
+		<name lang="mk">Ден на Републиката, Den na Republikata</name>
+		<name lang="en">Day of the Republic</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="8" month="9" />
+		</date>
+		<name lang="mk">Ден на независноста, Den na nezavisnosta</name>
+		<name lang="en">Independence Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="11" month="10" />
+		</date>
+		<name lang="mk">Ден на востанието, Den na vostanieto</name>
+		<name lang="en">Revolution Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="23" month="10" />
+		</date>
+		<name lang="mk">Ден на македонската револуционерна борба, Den na makedonskata revolucionarna borba</name>
+		<name lang="en">Day of the Macedonian Revolutionary Struggle</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="8" month="12" />
+		</date>
+		<name lang="mk">Св. Климент Охридски, Sv. Kliment Ohridski</name>
+		<name lang="en">Saint Clement of Ohrid Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+</holidays>
