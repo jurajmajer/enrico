@@ -79,13 +79,22 @@
 		<name lang="en">Picnic Day</name>
 	</holiday>
 	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="24" month="12" />
+		</date>
+		<name lang="en">Christmas Eve</name>
+		<flag>PART_DAY_HOLIDAY</flag>
+		<note lang="en">Part-day public holiday from 7 pm to 12 midnight</note>
+	</holiday>
+	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="en">Christmas Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule>ADD_1DAYS_IF_SUNDAY</observanceRule>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -96,6 +105,15 @@
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2016-01-01">
+		<date>
+			<fixedDate day="31" month="12" />
+		</date>
+		<name lang="en">New Year's Eve</name>
+		<flag>PART_DAY_HOLIDAY</flag>
+		<note lang="en">Part-day public holiday from 7 pm to 12 midnight</note>
 	</holiday>
 	
 	<!-- Regional -->

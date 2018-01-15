@@ -125,7 +125,7 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 		
-	<holiday validFrom="2011-01-01" validTo="2014-12-31">
+	<holiday validFrom="2013-01-01" validTo="2014-12-31">
 		<date>
 			<dateTransformation>
 				<baseDate>
