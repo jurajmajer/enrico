@@ -70,6 +70,7 @@
 		</date>
 		<name lang="en">Remembrance Day</name>
 		<name lang="fr">Jour du Souvenir</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 
 </holidays>

@@ -15,6 +15,14 @@
 	</holiday>
 	
 	<!-- Spring Festival -->
+	<holiday validFrom="2017-01-01" validTo="2017-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="22" month="1" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<holiday validFrom="2017-01-01" validTo="2017-12-31">
 		<date>
 			<fixedDate day="27" month="1" />
@@ -53,7 +61,6 @@
 		</date>
 		<name lang="zh">春节</name>
 		<name lang="en">Spring Festival</name>
-		<note lang="en">Sunday 22 Jan 2017 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2017-01-01" validTo="2017-12-31">
@@ -62,10 +69,25 @@
 		</date>
 		<name lang="zh">春节</name>
 		<name lang="en">Spring Festival</name>
-		<note lang="en">Saturday 4 Feb 2017 is an official working day</note>
+	</holiday>
+	
+	<holiday validFrom="2017-01-01" validTo="2017-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="4" month="2" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
 	</holiday>
 	
 	<!-- Tomb Sweeping Day -->
+	<holiday validFrom="2017-01-01" validTo="2017-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="1" month="4" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<holiday validFrom="2017-01-01" validTo="2017-12-31">
 		<date>
 			<fixedDate day="2" month="4" />
@@ -80,7 +102,6 @@
 		</date>
 		<name lang="zh">清明节</name>
 		<name lang="en">Tomb Sweeping Day Holiday</name>
-		<note lang="en">Saturday 1 Apr 2017 is an official working day</note>
 	</holiday>
 	
 	<!-- Labor Day -->
@@ -101,6 +122,14 @@
 	</holiday>
 	
 	<!-- Dragon Boat Festival -->
+	<holiday validFrom="2017-01-01" validTo="2017-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="27" month="5" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<holiday validFrom="2017-01-01" validTo="2017-12-31">
 		<date>
 			<fixedDate day="28" month="5" />
@@ -115,10 +144,17 @@
 		</date>
 		<name lang="zh">端午节</name>
 		<name lang="en">Dragon Boat Festival Holiday</name>
-		<note lang="en">Saturday 27 May 2017 is an official working day</note>
 	</holiday>
 	
 	<!-- National Day Holiday -->
+	<holiday validFrom="2017-01-01" validTo="2017-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="30" month="9" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<holiday validFrom="2017-01-01" validTo="2017-12-31">
 		<date>
 			<fixedDate day="2" month="10" />
@@ -157,7 +193,6 @@
 		</date>
 		<name lang="zh">国庆节</name>
 		<name lang="en">National Day Holiday</name>
-		<note lang="en">Saturday 30 Sep 2017 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2017-01-01" validTo="2017-12-31">

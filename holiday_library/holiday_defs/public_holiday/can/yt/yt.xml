@@ -34,6 +34,15 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
+			<fixedDate day="21" month="6" />
+		</date>
+		<name lang="en">National Aboriginal Day</name>
+		<name lang="fr">Journée nationale des Autochtones</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
 			<fixedDate day="1" month="7" />
 		</date>
 		<name lang="en">Canada Day</name>

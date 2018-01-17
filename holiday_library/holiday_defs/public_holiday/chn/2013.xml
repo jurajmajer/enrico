@@ -12,7 +12,6 @@
 		</date>
 		<name lang="zh">元旦</name>
 		<name lang="en">New Year Holiday</name>
-		<note lang="en">Saturday 5 Jan 2013 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2013-01-01" validTo="2013-12-31">
@@ -21,7 +20,22 @@
 		</date>
 		<name lang="zh">元旦</name>
 		<name lang="en">New Year Holiday</name>
-		<note lang="en">Sunday 6 Jan 2013 is an official working day</note>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="5" month="1" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="6" month="1" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
 	</holiday>
 	
 	<!-- Spring Festival -->
@@ -63,7 +77,6 @@
 		</date>
 		<name lang="zh">春节</name>
 		<name lang="en">Spring Festival</name>
-		<note lang="en">Saturday 16 Feb 2013 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2013-01-01" validTo="2013-12-31">
@@ -72,7 +85,22 @@
 		</date>
 		<name lang="zh">春节</name>
 		<name lang="en">Spring Festival</name>
-		<note lang="en">Sunday 17 Feb 2013 is an official working day</note>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="16" month="2" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="17" month="2" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
 	</holiday>
 	
 	<!-- Tomb Sweeping Day -->
@@ -82,7 +110,6 @@
 		</date>
 		<name lang="zh">清明节</name>
 		<name lang="en">Tomb Sweeping Day Holiday</name>
-		<note lang="en">Sunday 7 Apr 2013 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2013-01-01" validTo="2013-12-31">
@@ -93,14 +120,38 @@
 		<name lang="en">Tomb Sweeping Day Holiday</name>
 	</holiday>
 	
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="7" month="4" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<!-- Labor Day -->
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="27" month="4" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="28" month="4" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
+	
 	<holiday validFrom="2013-01-01" validTo="2013-12-31">
 		<date>
 			<fixedDate day="29" month="4" />
 		</date>
 		<name lang="zh">劳动节</name>
 		<name lang="en">Labor Day Holiday</name>
-		<note lang="en">Saturday 27 Apr 2013 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2013-01-01" validTo="2013-12-31">
@@ -109,17 +160,31 @@
 		</date>
 		<name lang="zh">劳动节</name>
 		<name lang="en">Labor Day Holiday</name>
-		<note lang="en">Sunday 28 Apr 2013 is an official working day</note>
 	</holiday>
 	
 	<!-- Dragon Boat Festival -->
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="8" month="6" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="9" month="6" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<holiday validFrom="2013-01-01" validTo="2013-12-31">
 		<date>
 			<fixedDate day="10" month="6" />
 		</date>
 		<name lang="zh">端午节</name>
 		<name lang="en">Dragon Boat Festival Holiday</name>
-		<note lang="en">Saturday 8 Jun 2013 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2013-01-01" validTo="2013-12-31">
@@ -128,7 +193,6 @@
 		</date>
 		<name lang="zh">端午节</name>
 		<name lang="en">Dragon Boat Festival Holiday</name>
-		<note lang="en">Sunday 9 Jun 2013 is an official working day</note>
 	</holiday>
 	
 	<!-- Mid-Autumn Festival -->
@@ -138,7 +202,6 @@
 		</date>
 		<name lang="zh">中秋节</name>
 		<name lang="en">Mid-Autumn Festival Holiday</name>
-		<note lang="en">Sunday 22 Sep 2013 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2013-01-01" validTo="2013-12-31">
@@ -148,8 +211,24 @@
 		<name lang="zh">中秋节</name>
 		<name lang="en">Mid-Autumn Festival Holiday</name>
 	</holiday>
+	
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="22" month="9" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
 
 	<!-- National Day Holiday -->
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="29" month="9" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<holiday validFrom="2013-01-01" validTo="2013-12-31">
 		<date>
 			<fixedDate day="2" month="10" />
@@ -172,7 +251,6 @@
 		</date>
 		<name lang="zh">国庆节</name>
 		<name lang="en">National Day Holiday</name>
-		<note lang="en">Sunday 29 Sep 2013 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2013-01-01" validTo="2013-12-31">
@@ -197,7 +275,14 @@
 		</date>
 		<name lang="zh">国庆节</name>
 		<name lang="en">National Day Holiday</name>
-		<note lang="en">Saturday 12 Oct 2013 is an official working day</note>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="12" month="10" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
 	</holiday>
 
 </holidays>

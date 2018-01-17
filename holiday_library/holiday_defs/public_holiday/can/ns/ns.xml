@@ -29,51 +29,11 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
-			<specialDate>EASTER_SUNDAY</specialDate>
-		</date>
-		<name lang="en">Easter Sunday</name>
-		<name lang="fr">Le dimanche de Pâques</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-		<note lang="en">Designated retail closing day</note>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
 			<fixedDate day="1" month="7" />
 		</date>
 		<name lang="en">Canada Day</name>
 		<name lang="fr">Fête du Canada</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
-			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
-		</date>
-		<name lang="en">Thanksgiving Day</name>
-		<name lang="fr">Action de grâce</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-		<note lang="en">Designated retail closing day</note>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
-			<fixedDate day="11" month="11" />
-		</date>
-		<name lang="en">Remembrance Day</name>
-		<name lang="fr">Jour du Souvenir</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-		<note lang="en">Remembrance Day Act includes rules prohibiting many businesses from operating</note>
-	</holiday>
-	
-	<holiday validFrom="2016-01-01">
-		<date>
-			<fixedDate day="26" month="12" />
-		</date>
-		<name lang="en">Boxing Day</name>
-		<name lang="fr">Lendemain de Noël</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-		<note lang="en">Designated retail closing day</note>
 	</holiday>
 
 </holidays>

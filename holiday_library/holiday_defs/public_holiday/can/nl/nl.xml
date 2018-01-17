@@ -112,6 +112,8 @@
 		</date>
 		<name lang="en">Armistice Day (Remembrance Day)</name>
 		<name lang="fr">Jour du Souvenir</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2016-01-01">

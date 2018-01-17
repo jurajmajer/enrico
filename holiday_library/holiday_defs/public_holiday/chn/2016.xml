@@ -31,6 +31,14 @@
 	</holiday>
 	
 	<!-- Spring Festival -->
+	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="6" month="2" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<holiday validFrom="2016-01-01" validTo="2016-12-31">
 		<date>
 			<fixedDate day="7" month="2" />
@@ -61,7 +69,6 @@
 		</date>
 		<name lang="zh">春节</name>
 		<name lang="en">Spring Festival</name>
-		<note lang="en">Saturday 6 Feb 2016 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2016-01-01" validTo="2016-12-31">
@@ -70,7 +77,6 @@
 		</date>
 		<name lang="zh">春节</name>
 		<name lang="en">Spring Festival</name>
-		<note lang="en">Sunday 14 Feb 2016 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2016-01-01" validTo="2016-12-31">
@@ -79,6 +85,14 @@
 		</date>
 		<name lang="zh">春节</name>
 		<name lang="en">Spring Festival</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="14" month="2" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
 	</holiday>
 	
 	<!-- Tomb Sweeping Day -->
@@ -122,7 +136,6 @@
 		</date>
 		<name lang="zh">端午节</name>
 		<name lang="en">Dragon Boat Festival Holiday</name>
-		<note lang="en">Sunday 12 Jun 2016 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2016-01-01" validTo="2016-12-31">
@@ -133,6 +146,14 @@
 		<name lang="en">Dragon Boat Festival Holiday</name>
 	</holiday>
 	
+	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="12" month="6" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<!-- Mid-Autumn Festival -->
 	<holiday validFrom="2016-01-01" validTo="2016-12-31">
 		<date>
@@ -140,7 +161,6 @@
 		</date>
 		<name lang="zh">中秋节</name>
 		<name lang="en">Mid-Autumn Festival Holiday</name>
-		<note lang="en">Sunday 18 Sep 2016 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2016-01-01" validTo="2016-12-31">
@@ -149,6 +169,14 @@
 		</date>
 		<name lang="zh">中秋节</name>
 		<name lang="en">Mid-Autumn Festival Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="18" month="9" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
 	</holiday>
 	
 	<!-- National Day Holiday -->
@@ -190,7 +218,6 @@
 		</date>
 		<name lang="zh">国庆节</name>
 		<name lang="en">National Day Holiday</name>
-		<note lang="en">Saturday 8 Oct 2016 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2016-01-01" validTo="2016-12-31">
@@ -199,7 +226,22 @@
 		</date>
 		<name lang="zh">国庆节</name>
 		<name lang="en">National Day Holiday</name>
-		<note lang="en">Sunday 9 Oct 2016 is an official working day</note>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="8" month="10" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="9" month="10" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
 	</holiday>
 
 </holidays>

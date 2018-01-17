@@ -5,6 +5,14 @@
 		<reference>http://www2.gnb.ca/content/gnb/en/departments/human_resources/about_us/policies_and_guidelines/leave_policies/statutory_public_holidays.html</reference>
 	</metadata>
 	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
+		</date>
+		<name lang="en">Family Day</name>
+		<name lang="fr">Fête de la famille</name>
+	</holiday>
+	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<dateTransformation>

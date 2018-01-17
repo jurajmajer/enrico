@@ -12,7 +12,6 @@
 		</date>
 		<name lang="zh">元旦</name>
 		<name lang="en">New Year Holiday</name>
-		<note lang="en">Sunday 04 Jan 2015 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2015-01-01" validTo="2015-12-31">
@@ -23,7 +22,23 @@
 		<name lang="en">New Year Holiday</name>
 	</holiday>
 	
+	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="4" month="1" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<!-- Spring Festival -->
+	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="15" month="2" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<holiday validFrom="2015-01-01" validTo="2015-12-31">
 		<date>
 			<fixedDate day="18" month="2" />
@@ -62,7 +77,6 @@
 		</date>
 		<name lang="zh">春节</name>
 		<name lang="en">Spring Festival</name>
-		<note lang="en">Sunday 15 Feb 2015 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2015-01-01" validTo="2015-12-31">
@@ -71,7 +85,14 @@
 		</date>
 		<name lang="zh">春节</name>
 		<name lang="en">Spring Festival</name>
-		<note lang="en">Saturday 28 Feb 2015 is an official working day</note>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="28" month="2" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
 	</holiday>
 	
 	<!-- Tomb Sweeping Day -->
@@ -118,13 +139,20 @@
 	</holiday>
 	
 	<!-- 70 Year Anniversary -->
+	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="6" month="9" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
 	<holiday validFrom="2015-01-01" validTo="2015-12-31">
 		<date>
 			<fixedDate day="3" month="9" />
 		</date>
 		<name lang="zh">抗战胜利70周年纪念活动</name>
 		<name lang="en">70 Year Anniversary of the Chinese people’s Resistance against Japan and the Global Victory over Fascism</name>
-		<note lang="en">Sunday 06 Sep 2015 is an official working day</note>
 	</holiday>
 	
 	<holiday validFrom="2015-01-01" validTo="2015-12-31">
@@ -190,7 +218,14 @@
 		</date>
 		<name lang="zh">国庆节</name>
 		<name lang="en">National Day Holiday</name>
-		<note lang="en">Saturday 10 Oct 2015 is an official working day</note>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="EXTRA_WORKING_DAY">
+		<date>
+			<fixedDate day="10" month="10" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
 	</holiday>
 
 </holidays>
