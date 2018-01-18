@@ -69,7 +69,7 @@
 		</date>
 		<name lang="ja">みどりの日 Midori no Hi</name>
 		<name lang="en">Greenery Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">

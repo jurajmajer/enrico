@@ -10,6 +10,7 @@ class Utils {
 	public static $usaRegions = array('alabama'=>'al', 'alaska'=>'ak', 'arizona'=>'az', 'arkansas'=>'ar', 'california'=>'ca', 'colorado'=>'co', 'connecticut'=>'ct', 'delaware'=>'de', 'districtofcolumbia'=>'dc', 'florida'=>'fl', 'georgia'=>'ga', 
 	'alabama'=>'al', 'hawaii'=>'hi', 'idaho'=>'id', 'Illinois'=>'il', 'indiana'=>'in', 'iowa'=>'ia', 'kansas'=>'ks', 'kentucky'=>'ky', 'louisiana'=>'la', 'maine'=>'me', 'maryland'=>'md', 'massachusetts'=>'ma', 'michigan'=>'mi', 'minnesota'=>'mn', 'mississippi'=>'ms', 'missouri'=>'mo', 'montana'=>'mt', 'nebraska'=>'ne', 'nevada'=>'nv', 'newhampshire'=>'nh', 'newjersey'=>'nj', 'newmexico'=>'nm', 'newyork'=>'ny', 'northcarolina'=>'nc', 'northdakota'=>'nd', 'ohio'=>'oh', 'oklahoma'=>'ok', 'oregon'=>'or', 'pennsylvania'=>'pa', 'rhodeisland'=>'ri', 'southcarolina'=>'sc', 'southdakota'=>'sd', 'tennessee'=>'tn', 'texas'=>'tx', 'utah'=>'ut', 'vermont'=>'vt', 'virginia'=>'va', 'washington'=>'wa', 'westvirginia'=>'wv', 'wisconsin'=>'wi', 'wyoming'=>'wy'
 	);
+	public static $deuRegions = array('baden-wuerttemberg'=>'bw','baden-württemberg'=>'bw', 'bavaria'=>'by', 'berlin'=>'be', 'brandenburg'=>'bb', 'bremen'=>'hb', 'hamburg'=>'hh', 'hesse'=>'he', 'mecklenburg-vorpommern'=>'mv', 'lowersaxony'=>'ni', 'northrhine-westphalia'=>'nw', 'rhineland-palatinate'=>'rp', 'saarland'=>'sl', 'saxony'=>'sn', 'saxony-anhalt'=>'st', 'schleswig-holstein'=>'sh', 'thuringia'=>'th');
 	
 	public static function canonicalizeCountryCode($countryCode) {
 		$countryCode = strtolower($countryCode);
@@ -41,6 +42,9 @@ class Utils {
 		}
 		if(strcmp("usa", $countryCode) == 0) {
 			return Utils::$usaRegions;
+		}
+		if(strcmp("deu", $countryCode) == 0) {
+			return Utils::$deuRegions;
 		}
 		
 		return array();

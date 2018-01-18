@@ -89,8 +89,9 @@
 			<fixedDate day="26" month="12" />
 		</date>
 		<name lang="en">Boxing Day</name>
+		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 	</holiday>
 
 </holidays>
