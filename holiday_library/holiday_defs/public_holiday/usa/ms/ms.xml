@@ -10,7 +10,7 @@
 			<fixedDate day="1" month="1" />
 		</date>
 		<name lang="en">New Year's Day</name>
-		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -47,7 +47,7 @@
 			<fixedDate day="4" month="7" />
 		</date>
 		<name lang="en">Independence Day</name>
-		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -63,7 +63,7 @@
 			<fixedDate day="11" month="11" />
 		</date>
 		<name lang="en">Armistice Day (Veteran's Day)</name>
-		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -79,7 +79,7 @@
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="en">Christmas Day</name>
-		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 

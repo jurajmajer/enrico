@@ -92,7 +92,7 @@
 		<name lang="en">Day after Thanksgiving</name>
 	</holiday>
 	
-	<holiday validFrom="2015-01-01">
+	<holiday validFrom="2018-01-01">
 		<date>
 			<fixedDate day="24" month="12" />
 		</date>
@@ -112,7 +112,28 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="31" month="12" />
+		</date>
+		<name lang="en">New Year's Eve</name>
+		<observanceRule dayOfWeek="5" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<!-- Old dates -->
+	<holiday validFrom="2011-01-01" validTo="2016-12-31">
+		<date>
+			<fixedDate day="24" month="12" />
+		</date>
+		<name lang="en">Christmas Eve</name>
+		<observanceRule dayOfWeek="5" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01" validTo="2016-12-31">
 		<date>
 			<fixedDate day="31" month="12" />
 		</date>

@@ -21,7 +21,7 @@
 		<name lang="en">Martin Luther King, Jr.'s Birthday</name>
 	</holiday>
 	
-	<holiday validFrom="2018-01-01">
+	<holiday validFrom="2019-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
 		</date>

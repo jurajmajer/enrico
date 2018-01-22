@@ -25,7 +25,7 @@
 		<date>
 			<fixedDate day="12" month="2" />
 		</date>
-		<name lang="en">Lincoln’s Birthday</name>
+		<name lang="en">Lincoln's Birthday</name>
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
