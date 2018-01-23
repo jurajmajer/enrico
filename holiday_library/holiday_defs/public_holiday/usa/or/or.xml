@@ -69,6 +69,18 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
+			<dateTransformation>
+				<baseDate>
+					<nthWeekdayRuleDate dayOfWeek="4" month="11" nth="4" />
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="en">The Day after Thanksgiving</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="en">Christmas Day</name>

@@ -53,7 +53,7 @@
 		<date>
 			<fixedDate day="24" month="12" />
 		</date>
-		<name lang="en">Christmas Eve Day</name>
+		<name lang="en">Christmas Eve</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
@@ -72,7 +72,7 @@
 		<date>
 			<fixedDate day="31" month="12" />
 		</date>
-		<name lang="en">New Year's Eve Day</name>
+		<name lang="en">New Year's Eve</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 

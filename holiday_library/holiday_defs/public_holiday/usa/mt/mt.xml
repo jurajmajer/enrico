@@ -58,7 +58,7 @@
 		<name lang="en">Columbus Day</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" frequency="4%0">
+	<holiday validFrom="2011-01-01" frequency="2%0">
 		<date>
 			<dateTransformation>
 				<baseDate>

@@ -10,6 +10,7 @@
 			<fixedDate day="1" month="1" />
 		</date>
 		<name lang="en">New Year's Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -18,6 +19,13 @@
 			<nthWeekdayRuleDate dayOfWeek="1" month="1" nth="3" />
 		</date>
 		<name lang="en">Dr. Martin Luther King, Jr. Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
+		</date>
+		<name lang="en">Presidents' Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -32,6 +40,7 @@
 			<fixedDate day="4" month="7" />
 		</date>
 		<name lang="en">Independence Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -44,6 +53,22 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
+		</date>
+		<name lang="en">Columbus Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="en">Veterans Day</name>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
 			<nthWeekdayRuleDate dayOfWeek="4" month="11" nth="4" />
 		</date>
 		<name lang="en">Thanksgiving Day</name>
@@ -51,9 +76,22 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
+			<dateTransformation>
+				<baseDate>
+					<nthWeekdayRuleDate dayOfWeek="4" month="11" nth="4" />
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="en">The Day after Thanksgiving</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="en">Christmas Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 
