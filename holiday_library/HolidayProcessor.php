@@ -103,20 +103,21 @@ class HolidayProcessor {
 	
 	private function calculateHoliday($holidayDef, $year) {
 		$retVal = array();
-		$dates = $this->calculateDate($holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "date")[0], $year);
+		$dateElements = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "date");
+		$dates = $this->calculateDate($dateElements->item(0), $year);
 		foreach($dates as $date) {
 			$holiday = new Holiday($date);
 			$names = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "name");
 			for($i=0; $i<$names->length; $i++) {
-				array_push($holiday->name, new LocalizedString($names[$i]->getAttribute("lang"), $names[$i]->nodeValue));
+				array_push($holiday->name, new LocalizedString($names->item($i)->getAttribute("lang"), $names->item($i)->nodeValue));
 			}
 			$notes = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "note");
 			for($i=0; $i<$notes->length; $i++) {
-				array_push($holiday->note, new LocalizedString($notes[$i]->getAttribute("lang"), $notes[$i]->nodeValue));
+				array_push($holiday->note, new LocalizedString($notes->item($i)->getAttribute("lang"), $notes->item($i)->nodeValue));
 			}
 			$flags = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "flag");
 			for($i=0; $i<$flags->length; $i++) {
-				array_push($holiday->flags, $flags[$i]->nodeValue);
+				array_push($holiday->flags, $flags->item($i)->nodeValue);
 			}
 			$holidayType = $holidayDef->getAttribute("holidayType");
 			if($holidayType != NULL) {
@@ -158,10 +159,10 @@ class HolidayProcessor {
 	
 	private function getFirstNonCommentChild($element) {
 		$child = $element->firstChild;
-		while($child != NULL && strcmp($child->nodeName, "#comment") == 0) {
+		while($child != NULL && (strcmp($child->nodeName, "#comment") == 0 || strcmp($child->nodeName, "#text") == 0)) {
 			$child = $child->nextSibling;
 		}
-		if($child != NULL && strcmp($child->nodeName, "#comment") != 0) {
+		if($child != NULL && strcmp($child->nodeName, "#comment") != 0 && strcmp($child->nodeName, "#text") != 0) {
 			return $child;
 		}
 		return NULL;
@@ -169,10 +170,10 @@ class HolidayProcessor {
 	
 	private function getLastNonCommentChild($element) {
 		$child = $element->lastChild;
-		while($child != NULL && strcmp($child->nodeName, "#comment") == 0) {
+		while($child != NULL && (strcmp($child->nodeName, "#comment") == 0 || strcmp($child->nodeName, "#text") == 0)) {
 			$child = $child->previousSibling;
 		}
-		if($child != NULL && strcmp($child->nodeName, "#comment") != 0) {
+		if($child != NULL && strcmp($child->nodeName, "#comment") != 0 && strcmp($child->nodeName, "#text") != 0) {
 			return $child;
 		}
 		return NULL;
@@ -186,19 +187,24 @@ class HolidayProcessor {
 			return array($this->orthodoxCalUtils->getOrthodoxEasterSunday($year));
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_1ST_START") == 0) {
-			return array($this->chineseCalUtils->calculateChineseCalendar($year)[0]);
+			$temp = $this->chineseCalUtils->calculateChineseCalendar($year);
+			return array($temp[0]);
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_4TH_START") == 0) {
-			return array($this->chineseCalUtils->calculateChineseCalendar($year)[3]);
+			$temp = $this->chineseCalUtils->calculateChineseCalendar($year);
+			return array($temp[3]);
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_5TH_START") == 0) {
-			return array($this->chineseCalUtils->calculateChineseCalendar($year)[4]);
+			$temp = $this->chineseCalUtils->calculateChineseCalendar($year);
+			return array($temp[4]);
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_8TH_START") == 0) {
-			return array($this->chineseCalUtils->calculateChineseCalendar($year)[7]);
+			$temp = $this->chineseCalUtils->calculateChineseCalendar($year);
+			return array($temp[7]);
 		}
 		if(strcmp($specialDateValue, "CHINESE_MONTH_9TH_START") == 0) {
-			return array($this->chineseCalUtils->calculateChineseCalendar($year)[8]);
+			$temp = $this->chineseCalUtils->calculateChineseCalendar($year);
+			return array($temp[8]);
 		}
 		if(strcmp($specialDateValue, "HEBREW_MONTH_1ST_START") == 0) {
 			$hebrewCalendar = $this->hebrewCalUtils->calculateHebrewCalendar($year);
@@ -245,7 +251,7 @@ class HolidayProcessor {
 		$observanceRules = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "observanceRule");
 		$observedOn = EnricoDate::createNew($holiday->date);
 		for($i=0; $i<$observanceRules->length; $i++) {
-			$retVal = $this->resolveObservanceRule($observanceRules[$i], $observedOn, $holiday);
+			$retVal = $this->resolveObservanceRule($observanceRules->item($i), $observedOn, $holiday);
 			if (!empty($retVal)) {
 				return $retVal;
 			}
@@ -283,13 +289,18 @@ class HolidayProcessor {
 		if(!file_exists($xmlFileName)) {
 			return array();
 		}
-		$xml= new DOMDocument();
+		$xml = new DOMDocument();
 		$xml->load($xmlFileName, LIBXML_NOBLANKS);
 		if (!$xml->schemaValidate(HolidayProcessor::$HOLIDAY_DEFS_DIR . "enrico.xsd"))
 		{
 		   throw new Exception("Xml file " . $xmlFileName . " is not valid against xsd!");
 		}
-		return iterator_to_array($xml->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "holiday"));
+		$holidayDefs = $xml->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "holiday");
+		$retVal = array();
+		foreach ($holidayDefs as $holidayDef) {
+			array_push($retVal, $holidayDef);
+		}
+		return $retVal;
 	}
 	
 	private function isPeriodValid($holidayDef, $year) {
@@ -314,7 +325,7 @@ class HolidayProcessor {
 		if($if->length != 0) {
 			$match = false;
 			for($i=0; $i<$if->length; $i++) {
-				$dayOfWeek = intval($if[$i]->getAttribute("dayOfWeek"));
+				$dayOfWeek = intval($if->item($i)->getAttribute("dayOfWeek"));
 				if($this->dateUtils->getDayOfWeek($holiday->date) == $dayOfWeek) {
 					$match = true;
 					break;
@@ -327,7 +338,7 @@ class HolidayProcessor {
 		
 		if($ifNot->length != 0) {
 			for($i=0; $i<$ifNot->length; $i++) {
-				$dayOfWeek = intval($ifNot[$i]->getAttribute("dayOfWeek"));
+				$dayOfWeek = intval($ifNot->item($i)->getAttribute("dayOfWeek"));
 				if($this->dateUtils->getDayOfWeek($holiday->date) == $dayOfWeek) {
 					return false;
 				}
