@@ -42,11 +42,11 @@ $server->wsdl->addComplexType(
     array(
         'date' => array('name' => 'date', 'type' => 'tns:DateType'),
         'dateTo' => array('name' => 'dateTo', 'type' => 'tns:DateType', 'minOccurs' => '0', 'maxOccurs' => '1'),
+		'observedOn' => array('name' => 'observedOn', 'type' => 'tns:DateType', 'minOccurs' => '0', 'maxOccurs' => '1'),
         'name' => array('name' => 'name', 'type' => 'tns:LocalizedStringType', 'minOccurs' => '1', 'maxOccurs' => 'unbounded'),
-        'flag' => array('name' => 'flag', 'type' => 'xsd:string', 'minOccurs' => '0', 'maxOccurs' => 'unbounded'),
+        'flags' => array('name' => 'flags', 'type' => 'xsd:string', 'minOccurs' => '0', 'maxOccurs' => 'unbounded'),
         'note' => array('name' => 'note', 'type' => 'tns:LocalizedStringType', 'minOccurs' => '0', 'maxOccurs' => 'unbounded'),
 		'holidayType' => array('name' => 'holidayType', 'type' => 'xsd:string'),
-		'observedOn' => array('name' => 'observedOn', 'type' => 'tns:DateType', 'minOccurs' => '0', 'maxOccurs' => '1'),
     )
 );
 $server->wsdl->addComplexType(
@@ -78,8 +78,11 @@ $server->wsdl->addComplexType(
     'sequence',
     '',
     array(
+	'fullName' => array('name' => 'fullName', 'type' => 'xsd:string'),
 	'countryCode' => array('name' => 'countryCode', 'type' => 'xsd:string'),
     'region' => array('name' => 'region', 'type' => 'xsd:string', 'minOccurs' => '0', 'maxOccurs' => 'unbounded'),
+	'fromDate' => array('name' => 'fromDate', 'type' => 'tns:DateType'),
+	'toDate' => array('name' => 'toDate', 'type' => 'tns:DateType'),
     'holidayType' => array('name' => 'holidayType', 'type' => 'xsd:string', 'minOccurs' => '0', 'maxOccurs' => 'unbounded'),
      )
 );
@@ -99,7 +102,7 @@ $server->wsdl->addComplexType(
 $server->register('getHolidaysForMonth',                				// method name
     array('month' => 'xsd:integer', 'year' => 'xsd:integer', 'country' => 'xsd:string', 
         'region' => 'xsd:string', 'holidayType' => 'xsd:string'),           // input parameters
-    array('return' => 'tns:HolidayCollectionType'),      					// output parameters
+    array('holidays' => 'tns:HolidayCollectionType'),      					// output parameters
     'http://www.kayaposoft.com/enrico/ws/v2.0/',                      					// namespace
     'http://www.kayaposoft.com/enrico/ws/v2.0/#getPublicHolidaysForMonth',               			// soapaction
     'rpc',                                						// style
@@ -110,7 +113,7 @@ $server->register('getHolidaysForMonth',                				// method name
 $server->register('getHolidaysForYear',                				// method name
     array('year' => 'xsd:integer', 'country' => 'xsd:string', 
         'region' => 'xsd:string', 'holidayType' => 'xsd:string'),           // input parameters
-    array('return' => 'tns:HolidayCollectionType'),      					// output parameters
+    array('holidays' => 'tns:HolidayCollectionType'),      					// output parameters
     'http://www.kayaposoft.com/enrico/ws/v2.0/',                      					// namespace
     'http://www.kayaposoft.com/enrico/ws/v2.0/#getPublicHolidaysForYear',               			// soapaction
     'rpc',                                						// style
@@ -121,7 +124,7 @@ $server->register('getHolidaysForYear',                				// method name
 $server->register('getHolidaysForDateRange',                				// method name
     array('fromDate' => 'tns:DateType', 'toDate' => 'tns:DateType', 'country' => 'xsd:string', 
         'region' => 'xsd:string', 'holidayType' => 'xsd:string'),                                                      // input parameters
-    array('return' => 'tns:HolidayCollectionType'),      					// output parameters
+    array('holidays' => 'tns:HolidayCollectionType'),      					// output parameters
     'http://www.kayaposoft.com/enrico/ws/v2.0/',                      					// namespace
     'http://www.kayaposoft.com/enrico/ws/v2.0/#getPublicHolidaysForDateRange',               			// soapaction
     'rpc',                                						// style
@@ -131,7 +134,7 @@ $server->register('getHolidaysForDateRange',                				// method name
 
 $server->register('isPublicHoliday',                				// method name
     array('date' => 'tns:DateType', 'country' => 'xsd:string', 'region' => 'xsd:string'),     // input parameters
-    array('return' => 'tns:IsHolidayType'),      					// output parameters
+    array('isPublicHoliday' => 'tns:IsHolidayType'),      					// output parameters
     'http://www.kayaposoft.com/enrico/ws/v2.0/',                      					// namespace
     'http://www.kayaposoft.com/enrico/ws/v2.0/#isPublicHoliday',               			// soapaction
     'rpc',                                						// style
@@ -139,19 +142,19 @@ $server->register('isPublicHoliday',                				// method name
     'Checks if the specified date is public holiday'        // documentation
 );
 
-$server->register('isSchoolHoliday',                				// method name
-    array('date' => 'tns:DateType', 'country' => 'xsd:string', 'region' => 'xsd:string'),     // input parameters
-    array('return' => 'tns:IsHolidayType'),      					// output parameters
-    'http://www.kayaposoft.com/enrico/ws/v2.0/',                      					// namespace
-    'http://www.kayaposoft.com/enrico/ws/v2.0/#isSchoolHoliday',               			// soapaction
-    'rpc',                                						// style
-    'literal',                            						// use
-    'Checks if the specified date is school holiday'        // documentation
-);
+// $server->register('isSchoolHoliday',                				// method name
+    // array('date' => 'tns:DateType', 'country' => 'xsd:string', 'region' => 'xsd:string'),     // input parameters
+    // array('return' => 'tns:IsHolidayType'),      					// output parameters
+    // 'http://www.kayaposoft.com/enrico/ws/v2.0/',                      					// namespace
+    // 'http://www.kayaposoft.com/enrico/ws/v2.0/#isSchoolHoliday',               			// soapaction
+    // 'rpc',                                						// style
+    // 'literal',                            						// use
+    // 'Checks if the specified date is school holiday'        // documentation
+// );
 
 $server->register('getSupportedCountries',                				// method name
     array(),                                                      // input parameters
-    array('return' => 'tns:SupportedCountriesType'),      					// output parameters
+    array('supportedCountries' => 'tns:SupportedCountriesType'),      					// output parameters
     'http://www.kayaposoft.com/enrico/ws/v2.0/',                      					// namespace
     'http://www.kayaposoft.com/enrico/ws/v2.0/#getSupportedCountries',               			// soapaction
     'rpc',                                						// style

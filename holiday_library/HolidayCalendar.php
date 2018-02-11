@@ -12,7 +12,7 @@ class HolidayCalendar {
 	
 	public function __construct($countryCode, $region) {
 		$this->countryCode = Utils::canonicalizeCountryCode($countryCode);
-		$this->region = Utils::canonicalizeRegion($countryCode, $region);
+		$this->region = Utils::canonicalizeRegion($this->countryCode, $region);
 		
 		$supportedCountries = HolidayCalendar::getSupportedCountries();
 		if(!isset($supportedCountries[$this->countryCode]))
