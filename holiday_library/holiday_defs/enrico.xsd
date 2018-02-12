@@ -2,6 +2,9 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="https://kayaposoft.com/enrico/xsd/1.0" xmlns:tns="https://kayaposoft.com/enrico/xsd/1.0" elementFormDefault="qualified">
 
 <element name="holidays">
+	<annotation><documentation>
+		Root element with list of holiday definitions.
+	</documentation></annotation>
 	<complexType>
 		<sequence>
 			<element name="metadata" type="tns:metadataType" minOccurs="0" />
@@ -13,26 +16,80 @@
 
 <!-- element types -->
 <complexType name="metadataType">
+	<annotation><documentation>
+		Metadata web page(s) with relevant holiday info.
+	</documentation></annotation>
 	<sequence>
 		<element name="reference" type="anyURI" maxOccurs="unbounded" />
 	</sequence>
 </complexType>
 
 <complexType name="holidayType">
+	<annotation><documentation>
+		Definition of one holiday.
+	</documentation></annotation>
 	<sequence>
-		<element name="date" type="tns:dateType" />
-		<element name="dateTo" type="tns:dateType" minOccurs="0" />
-		<element name="if" type="tns:ifType" minOccurs="0" maxOccurs="unbounded" />
-		<element name="ifNot" type="tns:ifType" minOccurs="0" maxOccurs="unbounded" />
-		<element name="name" type="tns:localizedStringType" maxOccurs="unbounded" />
-		<element name="observanceRule" type="tns:observanceRuleType" minOccurs="0" maxOccurs="unbounded" />
-		<element name="flag" type="tns:holidayFlagType" minOccurs="0" maxOccurs="unbounded" />
-		<element name="note" type="tns:localizedStringType" minOccurs="0" maxOccurs="unbounded" />
+		<element name="date" type="tns:dateType">
+			<annotation><documentation>
+				Date on which holiday takes place.
+			</documentation></annotation>
+		</element>
+		<element name="dateTo" type="tns:dateType" minOccurs="0">
+			<annotation><documentation>
+				In case holiday takes place on more than 1 day, this is the last day of holiday duration. Previous element 'date' is the first day of holiday duration.
+			</documentation></annotation>
+		</element>
+		<element name="if" type="tns:ifType" minOccurs="0" maxOccurs="unbounded">
+			<annotation><documentation>
+				Only if this condition is satisfied the holiday definition is valid.
+			</documentation></annotation>
+		</element>
+		<element name="ifNot" type="tns:ifType" minOccurs="0" maxOccurs="unbounded">
+			<annotation><documentation>
+				Only if this condition is not satisfied the holiday definition is valid.
+			</documentation></annotation>
+		</element>
+		<element name="name" type="tns:localizedStringType" maxOccurs="unbounded">
+			<annotation><documentation>
+				Name of the holiday. Names in all official languages in the country and English should be present here.
+			</documentation></annotation>
+		</element>
+		<element name="observanceRule" type="tns:observanceRuleType" minOccurs="0" maxOccurs="unbounded">
+			<annotation><documentation>
+				Rules under which holiday can be observed on other day. E.g. If holiday falls on Sunday it is observed on the following Monday.
+			</documentation></annotation>
+		</element>
+		<element name="flag" type="tns:holidayFlagType" minOccurs="0" maxOccurs="unbounded">
+			<annotation><documentation>
+				Additional flags which describes the holiday.
+			</documentation></annotation>
+		</element>
+		<element name="note" type="tns:localizedStringType" minOccurs="0" maxOccurs="unbounded">
+			<annotation><documentation>
+				Additional notes which describes the holiday. Each note should be at least in English.
+			</documentation></annotation>
+		</element>
 	</sequence>
-	<attribute name="validFrom" type="date" use="required" />
-	<attribute name="validTo" type="date" />
-	<attribute name="holidayType" type="tns:holidayTypeType" default="PUBLIC_HOLIDAY" />
-	<attribute name="frequency" type="string" />	<!-- E.g.: '4%0' means holiday occurs only in year when remainder after division of year by 4 is 0  -->
+	<attribute name="validFrom" type="date" use="required">
+		<annotation><documentation>
+			Date from which this holiday definition is valid. This does not have to be necessary the same as the start of holiday observation. In case we do not know when the holiday has started to be observed we set validFrom to date which we know for sure holiday was observed.
+		</documentation></annotation>
+	</attribute>
+	<attribute name="validTo" type="date">
+		<annotation><documentation>
+			Date to which this holiday definition is valid. If omitted it means no end date.
+		</documentation></annotation>
+	</attribute>
+	<attribute name="holidayType" type="tns:holidayTypeType" default="PUBLIC_HOLIDAY">
+		<annotation><documentation>
+			Holiday type.
+		</documentation></annotation>
+	</attribute>
+	<attribute name="frequency" type="string">
+		<annotation><documentation>
+			Holiday frequency. Must be in form e.g. '4%0' which means holiday occurs only in year when remainder after division of year by 4 is 0. Default value is '1%0' which means every year.
+		</documentation></annotation>
+	</attribute>
 </complexType>
 
 <complexType name="dateType">
@@ -45,11 +102,17 @@
 </complexType>
 
 <complexType name="fixedDateType">
+	<annotation><documentation>
+		Simplest date type. Example: holiday takes place on July 4.
+	</documentation></annotation>
 	<attribute name="day" type="tns:dayOfMonthType" use="required" />
 	<attribute name="month" type="tns:monthType" use="required" />
 </complexType>
 
 <simpleType name="specialDateType">
+	<annotation><documentation>
+		Special date. Example: holiday takes place on Easter Sunday.
+	</documentation></annotation>
     <restriction base="string">
 		<enumeration value="EASTER_SUNDAY"/>
 		<enumeration value="ORTHODOX_EASTER_SUNDAY"/>
@@ -67,19 +130,33 @@
 </simpleType>
 
 <complexType name="nthWeekdayRuleDateType">
+	<annotation><documentation>
+		For holiday dates in form: holiday takes place on second Monday in October.
+	</documentation></annotation>
 	<attribute name="dayOfWeek" type="tns:dayOfWeekType" use="required" />
 	<attribute name="month" type="tns:monthType" use="required" />
 	<attribute name="nth" type="tns:nthType" use="required" />
 </complexType>
 
 <complexType name="dateTransformationType">
+	<annotation><documentation>
+		Can be used to transform date to another date. Allows nesting of date transformations.
+	</documentation></annotation>
 	<sequence>
 		<element name="baseDate" type="tns:dateType" />
 		<choice>
 			<element name="addDays" type="integer" />
 			<element name="addSeconds" type="integer" />
-			<element name="nearestWeekday" type="tns:nearestWeekdayType" />
-			<element name="nearestWeekdayAfter" type="tns:nearestWeekdayType" />
+			<element name="nearestWeekday" type="tns:nearestWeekdayType">
+				<annotation><documentation>
+					Get nearest e.g. Monday of baseDate. Nearest weekday can be before, on or after baseDate.
+				</documentation></annotation>
+			</element>
+			<element name="nearestWeekdayAfter" type="tns:nearestWeekdayType">
+				<annotation><documentation>
+					Get nearest e.g. Monday after baseDate. Nearest weekday must be after baseDate, it cannot be equal to baseDate.
+				</documentation></annotation>
+			</element>
 		</choice>
 	</sequence>
 </complexType>
@@ -93,6 +170,9 @@
 </complexType>
 
 <complexType name="observanceRuleType">
+	<annotation><documentation>
+		Rule under which holiday can be observed on other day. E.g. If holiday falls on Sunday (attribute dayOfWeek=7) it is observed on the following Monday (attribute addDays=1). Attribute addDays can contain also negative value. If parameter additionalHoliday is true additional holiday is created, otherwise observedOn date is added to the original holiday.
+	</documentation></annotation>
 	<attribute name="dayOfWeek" type="tns:dayOfWeekType" use="required" />
 	<attribute name="addDays" type="integer" use="required" />
 	<attribute name="additionalHoliday" type="boolean" use="required" />
@@ -101,12 +181,22 @@
 <complexType name="localizedStringType">
 	<simpleContent>
       <extension base="string">
-        <attribute name="lang" type="language" />
+        <attribute name="lang" type="language">
+			<annotation><documentation>
+				ISO 639-1 language code.
+			</documentation></annotation>
+		</attribute>
       </extension>
     </simpleContent>
 </complexType>
 
 <simpleType name="holidayFlagValueType">
+	<annotation><documentation>
+		SHOP_CLOSING_DAY - shops are closed on this day.
+		REGIONAL_HOLIDAY - holiday does not take place in the whole country or region but only in some parts of it.
+		ADDITIONAL_HOLIDAY - holiday is an additional holiday given probably because main holiday takes place on Saturday or Sunday.
+		PART_DAY_HOLIDAY - holiday does not take place during the whole day.
+	</documentation></annotation>
 	<restriction base="string">
 		<enumeration value="SHOP_CLOSING_DAY"/>
 		<enumeration value="REGIONAL_HOLIDAY"/>
@@ -134,6 +224,13 @@
 </simpleType>
 
 <simpleType name="holidayTypeType">
+	<annotation><documentation>
+		PUBLIC_HOLIDAY - public holiday.
+		OBSERVANCE - observance, not a public holiday.
+		SCHOOL_HOLIDAY - school holiday.
+		OTHER_DAY - other important day. E.g. Mother's day, Father's day etc.
+		EXTRA_WORKING_DAY - extra working day. This day takes place mostly on Saturday or Sunday and is substituted for extra public holiday so called bridge holiday.
+	</documentation></annotation>
 	<restriction base="string">
 		<enumeration value="PUBLIC_HOLIDAY"/>
 		<enumeration value="OBSERVANCE"/>
@@ -151,6 +248,9 @@
 </simpleType>
 
 <simpleType name="monthType">
+	<annotation><documentation>
+		January=1, February=2, ..., November=11, December=12
+	</documentation></annotation>
 	<restriction base="integer">
 	  <minInclusive value="1"/>
 	  <maxInclusive value="12"/>
@@ -158,6 +258,9 @@
 </simpleType>
 
 <simpleType name="dayOfWeekType">
+	<annotation><documentation>
+		Monday=1, Tuesday=2, ..., Saturday=6, Sunday=7
+	</documentation></annotation>
 	<restriction base="integer">
 	  <minInclusive value="1"/>
 	  <maxInclusive value="7"/>
