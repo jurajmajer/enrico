@@ -12,22 +12,7 @@
 		<name lang="pt">Ano Novo</name>
 		<name lang="en">New Year's Day</name>
 	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>EASTER_SUNDAY</specialDate>
-				</baseDate>
-				<addDays>-47</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="pt">Carnaval</name>
-		<name lang="en">Carnival (Shrove Tuesday)</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-		<note lang="en">This is an optional holiday, although it is usually observed.</note>
-	</holiday>
-	
+
 	<holiday validFrom="2011-01-01">
 		<date>
 			<dateTransformation>

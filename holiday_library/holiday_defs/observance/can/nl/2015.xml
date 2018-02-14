@@ -5,13 +5,12 @@
 		<reference>http://australia.gov.au/topics/australian-facts-and-figures/public-holidays</reference>
 	</metadata>
 	
-	<holiday validFrom="2015-01-01" validTo="2015-12-31">
+	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="OBSERVANCE">
 		<date>
 			<fixedDate day="28" month="12" />
 		</date>
 		<name lang="en">Boxing Day</name>
 		<name lang="fr">Lendemain de Noël</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
 	</holiday>
 	
 </holidays>

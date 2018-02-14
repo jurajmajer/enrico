@@ -28,20 +28,6 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
-			<dateTransformation>
-				<baseDate>
-					<fixedDate day="17" month="5" />
-				</baseDate>
-				<nearestWeekdayAfter dayOfWeek="1" />
-			</dateTransformation>
-		</date>
-		<name lang="en">Victoria Day</name>
-		<name lang="fr">Fête de la Reine ou Journée nationale des Patriotes</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
 			<fixedDate day="1" month="7" />
 		</date>
 		<name lang="en">Canada Day</name>
@@ -59,28 +45,10 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
-			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
-		</date>
-		<name lang="en">Thanksgiving Day</name>
-		<name lang="fr">Action de grâce</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
 			<fixedDate day="11" month="11" />
 		</date>
 		<name lang="en">Remembrance Day</name>
 		<name lang="fr">Jour du Souvenir</name>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
-			<fixedDate day="26" month="12" />
-		</date>
-		<name lang="en">Boxing Day</name>
-		<name lang="fr">Lendemain de Noël</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
 	</holiday>
 
 </holidays>

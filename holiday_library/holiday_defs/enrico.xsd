@@ -203,7 +203,6 @@
 		<enumeration value="ADDITIONAL_HOLIDAY"/>
 		<enumeration value="BANK_HOLIDAY"/>
 		<enumeration value="PART_DAY_HOLIDAY"/>
-		<enumeration value="OPTIONAL_HOLIDAY"/>
 	</restriction>
 </simpleType>
 

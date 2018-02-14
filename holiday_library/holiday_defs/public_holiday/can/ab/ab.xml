@@ -30,20 +30,6 @@
 		<date>
 			<dateTransformation>
 				<baseDate>
-					<specialDate>EASTER_SUNDAY</specialDate>
-				</baseDate>
-				<addDays>1</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="en">Easter Monday</name>
-		<name lang="fr">Lundi de Pâques</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
-			<dateTransformation>
-				<baseDate>
 					<fixedDate day="17" month="5" />
 				</baseDate>
 				<nearestWeekdayAfter dayOfWeek="1" />
@@ -64,15 +50,6 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
-			<nthWeekdayRuleDate dayOfWeek="1" month="8" nth="1" />
-		</date>
-		<name lang="en">Heritage Day</name>
-		<name lang="fr">Jour D'Héritage</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
 		</date>
 		<name lang="en">Thanksgiving Day</name>
@@ -85,15 +62,6 @@
 		</date>
 		<name lang="en">Remembrance Day</name>
 		<name lang="fr">Jour du Souvenir</name>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
-			<fixedDate day="26" month="12" />
-		</date>
-		<name lang="en">Boxing Day</name>
-		<name lang="fr">Lendemain de Noël</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
 	</holiday>
 
 </holidays>

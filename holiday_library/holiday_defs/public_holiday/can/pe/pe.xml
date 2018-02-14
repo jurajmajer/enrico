@@ -55,16 +55,7 @@
 		<name lang="fr">Fête du Canada</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
-			<nthWeekdayRuleDate dayOfWeek="5" month="8" nth="3" />
-		</date>
-		<name lang="en">Gold Cup Parade Day</name>
-		<name lang="fr">Parade de la Gold Cup</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-	</holiday>
-	
+
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />

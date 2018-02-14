@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
+
+	<metadata>
+		<reference>http://www.payworks.ca/Payroll-Legislation/StatHolidays.asp?stats=nunavut</reference>
+		<reference>http://www.statutoryholidays.ca/nunavut-statutory-holidays.html</reference>
+		<reference>http://www.workrights.ca/content.php?doc=15</reference>
+	</metadata>
+
+	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="9" month="7" />
+		</date>
+		<name lang="en">Nunavut Day</name>
+		<name lang="fr">Jour De Nunavut</name>
+	</holiday>
+
+</holidays>

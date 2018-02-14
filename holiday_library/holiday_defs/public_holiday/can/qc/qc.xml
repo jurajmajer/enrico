@@ -4,17 +4,7 @@
 	<metadata>
 		<reference>http://www.cnt.gouv.qc.ca/en/leaves-and-absences/statutory-holidays/index.html</reference>
 	</metadata>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
-			<fixedDate day="2" month="1" />
-		</date>
-		<name lang="en">New Year’s Holiday</name>
-		<name lang="fr">Vacances nouvel an</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-		<note lang="en">Only employees of the clothing industry</note>
-	</holiday>
-	
+
 	<holiday validFrom="2011-01-01">
 		<date>
 			<dateTransformation>

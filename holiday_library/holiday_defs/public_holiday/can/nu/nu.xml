@@ -44,16 +44,6 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
-			<fixedDate day="9" month="7" />
-		</date>
-		<name lang="en">Nunavut Day</name>
-		<name lang="fr">Jour De Nunavut</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-	</holiday>
-	
-	
-	<holiday validFrom="2011-01-01">
-		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="8" nth="1" />
 		</date>
 		<name lang="en">Civic Holiday</name>

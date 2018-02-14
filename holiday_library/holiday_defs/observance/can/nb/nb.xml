@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
+
+	<metadata>
+		<reference>http://www2.gnb.ca/content/gnb/en/departments/human_resources/about_us/policies_and_guidelines/leave_policies/statutory_public_holidays.html</reference>
+	</metadata>
+	
+	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="17" month="5" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="en">Victoria Day</name>
+		<name lang="fr">Fête de la Reine ou Journée nationale des Patriotes</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
+		</date>
+		<name lang="en">Thanksgiving Day</name>
+		<name lang="fr">Action de grâce</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="en">Boxing Day</name>
+		<name lang="fr">Lendemain de Noël</name>
+	</holiday>
+
+</holidays>

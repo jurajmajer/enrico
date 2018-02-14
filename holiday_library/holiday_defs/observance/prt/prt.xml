@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="prt">
+	<metadata>
+		<reference>http://www.algarvebus.info/hols.htm</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-47</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="pt">Carnaval</name>
+		<name lang="en">Carnival (Shrove Tuesday)</name>
+		<note lang="en">This is an optional holiday, although it is usually observed.</note>
+	</holiday>
+	
+</holidays>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="bra">
+	<metadata>
+		<reference>http://www.brazil.org.za/brazil-public-hoildays.html</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2016-01-01" holidayType="OBSERVANCE">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-48</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="pt">Carnaval</name>
+		<name lang="en">Carnival</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01" holidayType="OBSERVANCE">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-47</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="pt">Carnaval</name>
+		<name lang="en">Carnival</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01" holidayType="OBSERVANCE">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-46</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="pt">Quarta-feira de Cinzas</name>
+		<name lang="en">Ash Wednesday</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01" holidayType="OBSERVANCE">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="pt">Paixao de Cristo</name>
+		<name lang="en">Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01" holidayType="OBSERVANCE">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>60</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="pt">Corpo de Deus</name>
+		<name lang="en">Corpus Christi</name>
+	</holiday>
+
+	<holiday validFrom="2016-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="20" month="11" />
+		</date>
+		<name lang="pt">Dia da Consciencia Negra</name>
+		<name lang="en">Black Consciousness Day</name>
+	</holiday>
+	
+</holidays>

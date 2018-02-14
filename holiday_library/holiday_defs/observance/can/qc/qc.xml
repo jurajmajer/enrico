@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
+
+	<metadata>
+		<reference>http://www.cnt.gouv.qc.ca/en/leaves-and-absences/statutory-holidays/index.html</reference>
+	</metadata>
+	
+	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+		<date>
+			<fixedDate day="2" month="1" />
+		</date>
+		<name lang="en">New Year’s Holiday</name>
+		<name lang="fr">Vacances nouvel an</name>
+		<note lang="en">Only employees of the clothing industry</note>
+	</holiday>
+
+</holidays>

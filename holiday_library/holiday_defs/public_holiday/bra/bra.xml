@@ -23,76 +23,6 @@
 	
 	<holiday validFrom="2016-01-01">
 		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>EASTER_SUNDAY</specialDate>
-				</baseDate>
-				<addDays>-48</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="pt">Carnaval</name>
-		<name lang="en">Carnival</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-	</holiday>
-	
-	<holiday validFrom="2016-01-01">
-		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>EASTER_SUNDAY</specialDate>
-				</baseDate>
-				<addDays>-47</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="pt">Carnaval</name>
-		<name lang="en">Carnival</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-	</holiday>
-	
-	<holiday validFrom="2016-01-01">
-		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>EASTER_SUNDAY</specialDate>
-				</baseDate>
-				<addDays>-46</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="pt">Quarta-feira de Cinzas</name>
-		<name lang="en">Ash Wednesday</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-	</holiday>
-	
-	<holiday validFrom="2016-01-01">
-		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>EASTER_SUNDAY</specialDate>
-				</baseDate>
-				<addDays>-2</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="pt">Paixao de Cristo</name>
-		<name lang="en">Good Friday</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-	</holiday>
-	
-	<holiday validFrom="2016-01-01">
-		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>EASTER_SUNDAY</specialDate>
-				</baseDate>
-				<addDays>60</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="pt">Corpo de Deus</name>
-		<name lang="en">Corpus Christi</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
-	</holiday>
-	
-	<holiday validFrom="2016-01-01">
-		<date>
 			<fixedDate day="1" month="5" />
 		</date>
 		<name lang="pt">Dia do Trabalhador (Dia do Trabalho)</name>
@@ -141,15 +71,6 @@
 		</date>
 		<name lang="pt">Proclamaçao da República</name>
 		<name lang="en">Republic Day</name>
-	</holiday>
-	
-	<holiday validFrom="2016-01-01">
-		<date>
-			<fixedDate day="20" month="11" />
-		</date>
-		<name lang="pt">Dia da Consciencia Negra</name>
-		<name lang="en">Black Consciousness Day</name>
-		<flag>OPTIONAL_HOLIDAY</flag>
 	</holiday>
 	
 	<holiday validFrom="2016-01-01">
