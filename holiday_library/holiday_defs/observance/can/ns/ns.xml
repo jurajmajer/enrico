@@ -6,7 +6,7 @@
 		<reference>http://www.workrights.ca/content.php?doc=14</reference>
 	</metadata>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<specialDate>EASTER_SUNDAY</specialDate>
 		</date>
@@ -29,7 +29,7 @@
 		<note lang="en">Optional holiday (not a statutory holiday)</note>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -43,7 +43,7 @@
 		<note lang="en">Optional holiday (not a statutory holiday)</note>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="8" nth="1" />
 		</date>
@@ -52,7 +52,7 @@
 		<note lang="en">Optional holiday (not a statutory holiday)</note>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
 		</date>
@@ -61,7 +61,7 @@
 		<note lang="en">Designated retail closing day</note>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="11" month="11" />
 		</date>
@@ -70,7 +70,7 @@
 		<note lang="en">Remembrance Day Act includes rules prohibiting many businesses from operating</note>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="26" month="12" />
 		</date>

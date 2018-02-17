@@ -11,15 +11,7 @@
 		<name lang="hu">Pihenőnap</name>
 		<name lang="en">Rest Day</name>
 	</holiday>
-	
-	<holiday validFrom="2012-01-01" validTo="2012-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="24" month="3" />
-		</date>
-		<name lang="hu">Rendkívüli munkanapok</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2012-01-01" validTo="2012-12-31">
 		<date>
 			<fixedDate day="30" month="4" />
@@ -27,15 +19,7 @@
 		<name lang="hu">Pihenőnap</name>
 		<name lang="en">Rest Day</name>
 	</holiday>
-	
-	<holiday validFrom="2012-01-01" validTo="2012-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="5" month="5" />
-		</date>
-		<name lang="hu">Rendkívüli munkanapok</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2012-01-01" validTo="2012-12-31">
 		<date>
 			<fixedDate day="22" month="10" />
@@ -43,15 +27,7 @@
 		<name lang="hu">Pihenőnap</name>
 		<name lang="en">Rest Day</name>
 	</holiday>
-	
-	<holiday validFrom="2012-01-01" validTo="2012-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="27" month="10" />
-		</date>
-		<name lang="hu">Rendkívüli munkanapok</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2012-01-01" validTo="2012-12-31">
 		<date>
 			<fixedDate day="2" month="11" />
@@ -59,15 +35,7 @@
 		<name lang="hu">Pihenőnap</name>
 		<name lang="en">Rest Day</name>
 	</holiday>
-	
-	<holiday validFrom="2012-01-01" validTo="2012-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="10" month="11" />
-		</date>
-		<name lang="hu">Rendkívüli munkanapok</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2012-01-01" validTo="2012-12-31">
 		<date>
 			<fixedDate day="24" month="12" />
@@ -75,29 +43,13 @@
 		<name lang="hu">Pihenőnap</name>
 		<name lang="en">Rest Day</name>
 	</holiday>
-	
-	<holiday validFrom="2012-01-01" validTo="2012-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="15" month="12" />
-		</date>
-		<name lang="hu">Rendkívüli munkanapok</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2012-01-01" validTo="2012-12-31">
 		<date>
 			<fixedDate day="31" month="12" />
 		</date>
 		<name lang="hu">Pihenőnap</name>
 		<name lang="en">Rest Day</name>
-	</holiday>
-	
-	<holiday validFrom="2012-01-01" validTo="2012-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="29" month="12" />
-		</date>
-		<name lang="hu">Rendkívüli munkanapok</name>
-		<name lang="en">Extra Working Day</name>
 	</holiday>
 
 </holidays>

@@ -5,7 +5,7 @@
 		<reference>http://www.calhr.ca.gov/employees/Pages/state-holidays.aspx</reference>
 	</metadata>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
 		</date>

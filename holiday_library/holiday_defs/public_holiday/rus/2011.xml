@@ -35,13 +35,5 @@
 		<name lang="ru">Праздник</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2011-01-01" validTo="2011-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="5" month="3" />
-		</date>
-		<name lang="ru">Рабочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 </holidays>

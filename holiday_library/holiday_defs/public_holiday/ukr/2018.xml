@@ -11,15 +11,7 @@
 		<name lang="uk">Свято</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2018-01-01" validTo="2018-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="17" month="3" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2018-01-01" validTo="2018-12-31">
 		<date>
 			<fixedDate day="30" month="4" />
@@ -27,29 +19,13 @@
 		<name lang="uk">Свято</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2018-01-01" validTo="2018-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="5" month="5" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2018-01-01" validTo="2018-12-31">
 		<date>
 			<fixedDate day="29" month="6" />
 		</date>
 		<name lang="uk">Свято</name>
 		<name lang="en">Holiday</name>
-	</holiday>
-	
-	<holiday validFrom="2018-01-01" validTo="2018-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="23" month="6" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
 	</holiday>
 	
 	<holiday validFrom="2018-01-01" validTo="2018-12-31">
@@ -59,15 +35,7 @@
 		<name lang="uk">Свято</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2018-01-01" validTo="2018-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="22" month="12" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2018-01-01" validTo="2018-12-31">
 		<date>
 			<fixedDate day="31" month="12" />
@@ -75,13 +43,5 @@
 		<name lang="uk">Свято</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2018-01-01" validTo="2018-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="29" month="12" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 </holidays>

@@ -6,7 +6,7 @@
 		<reference>http://www.gov.mb.ca/labour/standards/doc,gen-holidays-after-april-30-07,factsheet.html#q13</reference>
 	</metadata>
 
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<specialDate>EASTER_SUNDAY</specialDate>
 		</date>
@@ -14,7 +14,7 @@
 		<name lang="fr">Le dimanche de Pâques</name>
 	</holiday>
 	
-	<holiday validFrom="2016-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2016-01-01" holidayType="observance">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="8" nth="1" />
 		</date>
@@ -22,7 +22,7 @@
 		<name lang="fr">La Journée Terry Fox</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="11" month="11" />
 		</date>
@@ -31,7 +31,7 @@
 		<note lang="en">Most non-essential businesses are required to close</note>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="26" month="12" />
 		</date>
@@ -40,7 +40,7 @@
 	</holiday>
 	
 	<!-- old holidays -->
-	<holiday validFrom="2011-01-01" validTo="2015-12-31" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" validTo="2015-12-31" holidayType="observance">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="8" nth="1" />
 		</date>

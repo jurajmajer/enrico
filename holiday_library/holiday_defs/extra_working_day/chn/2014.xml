@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="chn">
+
+	<metadata>
+		<reference>http://www.china-briefing.com/news/2013/12/12/china-announces-official-2014-national-holiday-schedule.html</reference>
+	</metadata>
+	
+	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="extra_working_day">
+		<date>
+			<fixedDate day="26" month="1" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="extra_working_day">
+		<date>
+			<fixedDate day="8" month="2" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+
+	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="extra_working_day">
+		<date>
+			<fixedDate day="4" month="5" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+
+	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="extra_working_day">
+		<date>
+			<fixedDate day="28" month="9" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+	
+	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="extra_working_day">
+		<date>
+			<fixedDate day="11" month="10" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+
+</holidays>

@@ -7,7 +7,7 @@
 		<reference>http://www.workrights.ca/content.php?doc=15</reference>
 	</metadata>
 
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="9" month="7" />
 		</date>

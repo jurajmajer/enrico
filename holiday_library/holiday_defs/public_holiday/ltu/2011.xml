@@ -11,13 +11,5 @@
 		<name lang="lv">Visų šventųjų atostogų</name>
 		<name lang="en">All Saints' Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2011-01-01" validTo="2011-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="5" month="11" />
-		</date>
-		<name lang="lv">Darbo diena</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
 
 </holidays>

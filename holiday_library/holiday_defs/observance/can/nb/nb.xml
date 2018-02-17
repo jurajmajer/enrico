@@ -5,7 +5,7 @@
 		<reference>http://www2.gnb.ca/content/gnb/en/departments/human_resources/about_us/policies_and_guidelines/leave_policies/statutory_public_holidays.html</reference>
 	</metadata>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -18,7 +18,7 @@
 		<name lang="fr">Fête de la Reine ou Journée nationale des Patriotes</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
 		</date>
@@ -26,7 +26,7 @@
 		<name lang="fr">Action de grâce</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="26" month="12" />
 		</date>

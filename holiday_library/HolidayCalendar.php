@@ -23,7 +23,7 @@ class HolidayCalendar {
 		}
 	}
 	
-	public function getHolidaysForMonth($month, $year, $holidayType="ALL") {
+	public function getHolidaysForMonth($month, $year, $holidayType="all") {
 		$fromDate = new EnricoDate(1, $month, $year);
 		$lastDay = 31;
 		while(checkdate($month, $lastDay, $year) == FALSE)
@@ -32,13 +32,13 @@ class HolidayCalendar {
 		return $this->getHolidaysForDateRange($fromDate, $toDate, $holidayType);
 	}
 
-	public function getHolidaysForYear($year, $holidayType="ALL") {
+	public function getHolidaysForYear($year, $holidayType="all") {
 		$fromDate = new EnricoDate(1, 1, $year);
 		$toDate = new EnricoDate(31, 12, $year);
 		return $this->getHolidaysForDateRange($fromDate, $toDate, $holidayType);
 	}
 	
-	public function getHolidaysForDateRange($fromDate, $toDate, $holidayType="ALL") {
+	public function getHolidaysForDateRange($fromDate, $toDate, $holidayType="all") {
 		
 		if(checkdate($fromDate->month, $fromDate->day, $fromDate->year) == FALSE)
 			throw new Exception($fromDate->toString() . " is not a valid date");
@@ -58,16 +58,16 @@ class HolidayCalendar {
 	}
 	
 	public function isPublicHoliday($date) {
-		return $this->isHoliday($this->getHolidaysForDateRange($date, $date, "PUBLIC_HOLIDAY"));
+		return $this->isHoliday($this->getHolidaysForDateRange($date, $date, "public_holiday"));
 	}
 	
 	public function isSchoolHoliday($date) {
-		return $this->isHoliday($this->getHolidaysForDateRange($date, $date, "SCHOOL_HOLIDAY"));
+		return $this->isHoliday($this->getHolidaysForDateRange($date, $date, "school_holiday"));
 	}
 	
 	private function isHoliday($holidays) {
 		for($i=0; $i<sizeof($holidays); $i++) {
-			if(!in_array("REGIONAL_HOLIDAY", $holidays[$i]->flags) && !in_array("OPTIONAL_HOLIDAY", $holidays[$i]->flags)) {
+			if(!in_array("REGIONAL_HOLIDAY", $holidays[$i]->flags)) {
 				return TRUE;
 			}
 		}

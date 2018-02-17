@@ -80,7 +80,7 @@
 			Date to which this holiday definition is valid. If omitted it means no end date.
 		</documentation></annotation>
 	</attribute>
-	<attribute name="holidayType" type="tns:holidayTypeType" default="PUBLIC_HOLIDAY">
+	<attribute name="holidayType" type="tns:holidayTypeType" default="public_holiday">
 		<annotation><documentation>
 			Holiday type.
 		</documentation></annotation>
@@ -224,18 +224,18 @@
 
 <simpleType name="holidayTypeType">
 	<annotation><documentation>
-		PUBLIC_HOLIDAY - public holiday.
-		OBSERVANCE - observance, not a public holiday.
-		SCHOOL_HOLIDAY - school holiday.
-		OTHER_DAY - other important day. E.g. Mother's day, Father's day etc.
-		EXTRA_WORKING_DAY - extra working day. This day takes place mostly on Saturday or Sunday and is substituted for extra public holiday so called bridge holiday.
+		public_holiday - public holiday.
+		observance - observance, not a public holiday.
+		school_holiday - school holiday.
+		other_day - other important day. E.g. Mother's day, Father's day etc.
+		extra_working_day - extra working day. This day takes place mostly on Saturday or Sunday and is substituted for extra public holiday so called bridge holiday.
 	</documentation></annotation>
 	<restriction base="string">
-		<enumeration value="PUBLIC_HOLIDAY"/>
-		<enumeration value="OBSERVANCE"/>
-		<enumeration value="SCHOOL_HOLIDAY"/>
-		<enumeration value="OTHER_DAY"/>
-		<enumeration value="EXTRA_WORKING_DAY"/>
+		<enumeration value="public_holiday"/>
+		<enumeration value="observance"/>
+		<enumeration value="school_holiday"/>
+		<enumeration value="other_day"/>
+		<enumeration value="extra_working_day"/>
 	</restriction>
 </simpleType>
 

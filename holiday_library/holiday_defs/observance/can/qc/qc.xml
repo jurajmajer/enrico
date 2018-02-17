@@ -5,7 +5,7 @@
 		<reference>http://www.cnt.gouv.qc.ca/en/leaves-and-absences/statutory-holidays/index.html</reference>
 	</metadata>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="2" month="1" />
 		</date>

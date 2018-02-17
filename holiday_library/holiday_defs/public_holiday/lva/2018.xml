@@ -11,13 +11,5 @@
 		<name lang="lv">Darba svētkus</name>
 		<name lang="en">Labour Day</name>
 	</holiday>
-	
-	<holiday validFrom="2018-01-01" validTo="2018-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="21" month="4" />
-		</date>
-		<name lang="lv">Darba diena</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 </holidays>

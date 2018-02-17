@@ -6,14 +6,6 @@
 	</metadata>
 	
 	<!-- Spring Festival -->
-	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="26" month="1" />
-		</date>
-		<name lang="zh">工作日</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
 	<holiday validFrom="2014-01-01" validTo="2014-12-31">
 		<date>
 			<fixedDate day="1" month="2" />
@@ -61,15 +53,7 @@
 		<name lang="zh">春节</name>
 		<name lang="en">Spring Festival</name>
 	</holiday>
-	
-	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="8" month="2" />
-		</date>
-		<name lang="zh">工作日</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<!-- Tomb Sweeping Day -->
 	<holiday validFrom="2014-01-01" validTo="2014-12-31">
 		<date>
@@ -103,15 +87,7 @@
 		<name lang="zh">劳动节</name>
 		<name lang="en">Labor Day Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="4" month="5" />
-		</date>
-		<name lang="zh">工作日</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<!-- Dragon Boat Festival -->
 	<holiday validFrom="2014-01-01" validTo="2014-12-31">
 		<date>
@@ -147,14 +123,6 @@
 	</holiday>
 
 	<!-- National Day Holiday -->
-	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="28" month="9" />
-		</date>
-		<name lang="zh">工作日</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
 	<holiday validFrom="2014-01-01" validTo="2014-12-31">
 		<date>
 			<fixedDate day="2" month="10" />
@@ -201,14 +169,6 @@
 		</date>
 		<name lang="zh">国庆节</name>
 		<name lang="en">National Day Holiday</name>
-	</holiday>
-	
-	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="11" month="10" />
-		</date>
-		<name lang="zh">工作日</name>
-		<name lang="en">Extra Working Day</name>
 	</holiday>
 
 </holidays>

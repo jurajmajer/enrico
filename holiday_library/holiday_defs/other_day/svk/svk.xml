@@ -7,7 +7,7 @@
 	</metadata>
 	
 	<!-- current dates -->
-	<holiday validFrom="2017-01-01" holidayType="OTHER_DAY">
+	<holiday validFrom="2017-01-01" holidayType="other_day">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="7" month="3" nth="last" />
 		</date>
@@ -17,7 +17,7 @@
 		<note lang="en">A one-hour shift occurs at 02:00 local time, the clock jumps forward to 03:00</note>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OTHER_DAY">
+	<holiday validFrom="2017-01-01" holidayType="other_day">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="7" month="5" nth="2" />
 		</date>
@@ -25,7 +25,7 @@
 		<name lang="en">Mother's_Day</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OTHER_DAY">
+	<holiday validFrom="2017-01-01" holidayType="other_day">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="7" month="6" nth="3" />
 		</date>
@@ -33,7 +33,7 @@
 		<name lang="en">Father's_Day</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OTHER_DAY">
+	<holiday validFrom="2017-01-01" holidayType="other_day">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="7" month="10" nth="last" />
 		</date>

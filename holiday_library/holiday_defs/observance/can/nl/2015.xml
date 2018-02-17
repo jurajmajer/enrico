@@ -5,7 +5,7 @@
 		<reference>http://australia.gov.au/topics/australian-facts-and-figures/public-holidays</reference>
 	</metadata>
 	
-	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="OBSERVANCE">
+	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="observance">
 		<date>
 			<fixedDate day="28" month="12" />
 		</date>

@@ -5,7 +5,7 @@
 	</metadata>
 	
 	<!-- current dates -->
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>

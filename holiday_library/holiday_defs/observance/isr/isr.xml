@@ -5,7 +5,7 @@
 	</metadata>
 	
 	<!-- current dates -->
-	<holiday validFrom="2014-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2014-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -20,7 +20,7 @@
 		<note lang="en">Jerusalem and all ancient walled cities do not observe Feast of Purim this day but following day.</note>
 	</holiday>
 	
-	<holiday validFrom="2014-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2014-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -35,7 +35,7 @@
 		<note lang="en">Observed in Jerusalem and all ancient walled cities.</note>
 	</holiday>
 	
-	<holiday validFrom="2014-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2014-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -54,7 +54,7 @@
 		<name lang="en">Fast of Ninth of Av</name>
 	</holiday>
 	
-	<holiday validFrom="2014-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2014-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>

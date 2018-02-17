@@ -7,7 +7,7 @@
 	</metadata>
 	
 	<!-- current dates -->
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="25" month="3" />
 		</date>
@@ -16,7 +16,7 @@
 		<note lang="en">Commemorates Candle demonstration in Bratislava</note>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="13" month="4" />
 		</date>
@@ -24,7 +24,7 @@
 		<name lang="en">Unfairly Prosecuted Persons Day</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="1" month="5" />
 		</date>
@@ -32,7 +32,7 @@
 		<name lang="en">The Date of Accession of the Slovak Republic to the European Union</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="4" month="5" />
 		</date>
@@ -40,7 +40,7 @@
 		<name lang="en">Anniversary of the Decease of Milan Rastislav Štefánik</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="7" month="6" />
 		</date>
@@ -48,7 +48,7 @@
 		<name lang="en">Anniversary of the Memorandum of the Slovak Nation</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="5" month="7" />
 		</date>
@@ -56,7 +56,7 @@
 		<name lang="en">Foreign Slovaks Day</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="17" month="7" />
 		</date>
@@ -64,7 +64,7 @@
 		<name lang="en">Independence Day</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="4" month="8" />
 		</date>
@@ -72,7 +72,7 @@
 		<name lang="en">Matica Slovenská Day</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="9" month="9" />
 		</date>
@@ -80,7 +80,7 @@
 		<name lang="en">Day of the Victims of Holocaust and of racial violence</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="19" month="9" />
 		</date>
@@ -88,7 +88,7 @@
 		<name lang="en">Day of the First Public Appearance of the Slovak National Council</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="6" month="10" />
 		</date>
@@ -96,7 +96,7 @@
 		<name lang="en">Dukla Pass Victims Day</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="27" month="10" />
 		</date>
@@ -104,7 +104,7 @@
 		<name lang="en">Černová Tragedy Day</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="28" month="10" />
 		</date>
@@ -112,7 +112,7 @@
 		<name lang="en">Day of the Establishment of an Independent Czecho-Slovak State</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="29" month="10" />
 		</date>
@@ -120,7 +120,7 @@
 		<name lang="en">Birth of Ľudovít Štúr Day</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="30" month="10" />
 		</date>
@@ -128,7 +128,7 @@
 		<name lang="en">Anniversary of the Declaration of the Slovak Nation</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="31" month="10" />
 		</date>
@@ -136,7 +136,7 @@
 		<name lang="en">Reformation Day</name>
 	</holiday>
 	
-	<holiday validFrom="2017-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="30" month="12" />
 		</date>

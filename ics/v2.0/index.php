@@ -153,13 +153,13 @@
 	}
 	
 	function getHolidayTypeString($holidayType) {
-		if(strcmp($holidayType, "PUBLIC_HOLIDAY") == 0) {
+		if(strcmp($holidayType, "public_holiday") == 0) {
 			return "Public Holidays";
 		}
-		if(strcmp($holidayType, "OBSERVANCE") == 0) {
+		if(strcmp($holidayType, "observance") == 0) {
 			return "Observances";
 		}
-		if(strcmp($holidayType, "SCHOOL_HOLIDAY") == 0) {
+		if(strcmp($holidayType, "school_holiday") == 0) {
 			return "School Holidays";
 		}
 		return "Important Dates";
@@ -183,7 +183,7 @@
 		if(isset($_REQUEST["region"])) {
 			$region = $_REQUEST["region"];
 		}
-		$holidayType = "ALL";
+		$holidayType = "all";
 		if(isset($_REQUEST["holidayType"])) {
 			$holidayType = strtoupper($_REQUEST["holidayType"]);
 		}

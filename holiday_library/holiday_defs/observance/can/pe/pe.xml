@@ -5,7 +5,7 @@
 		<reference>http://www.gov.pe.ca/psc/holidays</reference>
 	</metadata>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="5" month="8" nth="3" />
 		</date>

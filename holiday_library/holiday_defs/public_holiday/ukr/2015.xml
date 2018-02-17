@@ -11,15 +11,7 @@
 		<name lang="uk">Свято</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="17" month="1" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2015-01-01" validTo="2015-12-31">
 		<date>
 			<fixedDate day="8" month="1" />
@@ -27,15 +19,7 @@
 		<name lang="uk">Свято</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="31" month="1" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2015-01-01" validTo="2015-12-31">
 		<date>
 			<fixedDate day="9" month="1" />
@@ -43,13 +27,5 @@
 		<name lang="uk">Свято</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="14" month="2" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 </holidays>

@@ -104,7 +104,7 @@
 		}
 		$holidayCalendar = new HolidayCalendar($_REQUEST["country"], $region);
 		
-		$holidayType = "ALL";
+		$holidayType = "all";
 		if(isset($_REQUEST["holidayType"])) {
 			$holidayType = $_REQUEST["holidayType"];
 		}

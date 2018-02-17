@@ -20,8 +20,8 @@ class HolidayProcessor {
 	private $countryCode;
 	private $region;
 	public static $ENRICO_NAMESPACE = "https://kayaposoft.com/enrico/xsd/1.0";
-	public static $HOLIDAY_DEFS_DIR = __DIR__."/holiday_defs/";
-	public static $HOLIDAY_TYPES = array("PUBLIC_HOLIDAY", "OBSERVANCE", "SCHOOL_HOLIDAY", "OTHER_DAY");
+	public static $HOLIDAY_DEFS_DIR = "/nfsmnt/hosting2_1/e/b/eb10d60b-d905-44df-a47d-d71d172d115c/kayaposoft.com/web/enrico/holiday_library/holiday_defs/";
+	public static $HOLIDAY_TYPES = array("public_holiday", "observance", "school_holiday", "other_day", "extra_working_day");
 	
 	public function __construct($countryCode, $region) {
 		$this->countryCode = $countryCode;
@@ -46,13 +46,14 @@ class HolidayProcessor {
 	
 	private function constructHolidayDefsPaths($year, $holidayType) {
 		$retVal = array();
-		$holidayType = strtolower($holidayType);
-		if(file_exists(HolidayProcessor::$HOLIDAY_DEFS_DIR.$holidayType."/")) {
+		if(in_array($holidayType, HolidayProcessor::$HOLIDAY_TYPES)) {
 			$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, HolidayProcessor::$HOLIDAY_DEFS_DIR.$holidayType."/"));
-		} else {
+		} else if($holidayType == "all") {
 			for($i=0; $i<sizeof(HolidayProcessor::$HOLIDAY_TYPES); $i++) {
 				$retVal = array_merge($retVal, $this->constructHolidayDefsFileNames($year, HolidayProcessor::$HOLIDAY_DEFS_DIR.strtolower(HolidayProcessor::$HOLIDAY_TYPES[$i])."/"));
 			}
+		} else {
+			throw new Exception('Unknown holiday type \'' . $holidayType . '\'');
 		}
 		return $retVal;
 	}
@@ -123,7 +124,7 @@ class HolidayProcessor {
 			if($holidayType != NULL) {
 				$holiday->holidayType = $holidayType;
 			} else {
-				$holiday->holidayType = "PUBLIC_HOLIDAY";
+				$holiday->holidayType = "public_holiday";
 			}
 			$additionalHolidays = $this->resolveObservance($holidayDef, $holiday);
 			array_push($retVal, $holiday);

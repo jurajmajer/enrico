@@ -28,15 +28,7 @@
 		<name lang="ru">Праздник</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2018-01-01" validTo="2018-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="28" month="4" />
-		</date>
-		<name lang="ru">Рабочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2018-01-01" validTo="2018-12-31">
 		<date>
 			<fixedDate day="2" month="5" />
@@ -53,15 +45,7 @@
 		<name lang="ru">Праздник</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2018-01-01" validTo="2018-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="9" month="6" />
-		</date>
-		<name lang="ru">Рабочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2018-01-01" validTo="2018-12-31">
 		<date>
 			<fixedDate day="31" month="12" />
@@ -69,13 +53,5 @@
 		<name lang="ru">Праздник</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2018-01-01" validTo="2018-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="29" month="12" />
-		</date>
-		<name lang="ru">Рабочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 </holidays>

@@ -4,7 +4,7 @@
 		<reference>http://www.cuandoenelmundo.com/calendario/mexico/2018</reference>
 	</metadata>
 	
-	<holiday validFrom="2014-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2014-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -17,7 +17,7 @@
 		<name lang="en">Maundy Thursday</name>
 	</holiday>
 	
-	<holiday validFrom="2014-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2014-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -30,7 +30,7 @@
 		<name lang="en">Good Friday</name>
 	</holiday>
 	
-	<holiday validFrom="2014-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2014-01-01" holidayType="observance">
 		<date>
 			<specialDate>EASTER_SUNDAY</specialDate>
 		</date>

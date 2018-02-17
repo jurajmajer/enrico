@@ -11,13 +11,5 @@
 		<name lang="lv">Latvijas Republikas Neatkarības atjaunošanas dienu</name>
 		<name lang="en">Restoration of Independence Day Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2017-01-01" validTo="2017-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="13" month="5" />
-		</date>
-		<name lang="lv">Darba diena</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 </holidays>

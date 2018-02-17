@@ -11,29 +11,13 @@
 		<name lang="lv">Ziemassvētku vakars</name>
 		<name lang="en">Christmas Bridge Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="14" month="12" />
-		</date>
-		<name lang="lv">Darba diena</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2013-01-01" validTo="2013-12-31">
 		<date>
 			<fixedDate day="30" month="12" />
 		</date>
 		<name lang="lv">Vecgada vakars</name>
 		<name lang="en">New Year's Bridge Holiday</name>
-	</holiday>
-	
-	<holiday validFrom="2013-01-01" validTo="2013-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="28" month="12" />
-		</date>
-		<name lang="lv">Darba diena</name>
-		<name lang="en">Extra Working Day</name>
 	</holiday>
 
 </holidays>

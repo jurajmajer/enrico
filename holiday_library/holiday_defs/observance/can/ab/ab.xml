@@ -5,7 +5,7 @@
 		<reference>http://humanservices.alberta.ca/working-in-alberta/1472.html</reference>
 	</metadata>
 
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -18,7 +18,7 @@
 		<name lang="fr">Lundi de Pâques</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="8" nth="1" />
 		</date>
@@ -26,7 +26,7 @@
 		<name lang="fr">Jour D'Héritage</name>
 	</holiday>
 
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="26" month="12" />
 		</date>

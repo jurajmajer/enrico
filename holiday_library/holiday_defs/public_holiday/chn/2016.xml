@@ -31,14 +31,6 @@
 	</holiday>
 	
 	<!-- Spring Festival -->
-	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="6" month="2" />
-		</date>
-		<name lang="zh">工作日</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
 	<holiday validFrom="2016-01-01" validTo="2016-12-31">
 		<date>
 			<fixedDate day="7" month="2" />
@@ -86,15 +78,7 @@
 		<name lang="zh">春节</name>
 		<name lang="en">Spring Festival</name>
 	</holiday>
-	
-	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="14" month="2" />
-		</date>
-		<name lang="zh">工作日</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<!-- Tomb Sweeping Day -->
 	<holiday validFrom="2016-01-01" validTo="2016-12-31">
 		<date>
@@ -145,15 +129,7 @@
 		<name lang="zh">端午节</name>
 		<name lang="en">Dragon Boat Festival Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="12" month="6" />
-		</date>
-		<name lang="zh">工作日</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<!-- Mid-Autumn Festival -->
 	<holiday validFrom="2016-01-01" validTo="2016-12-31">
 		<date>
@@ -170,15 +146,7 @@
 		<name lang="zh">中秋节</name>
 		<name lang="en">Mid-Autumn Festival Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="18" month="9" />
-		</date>
-		<name lang="zh">工作日</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<!-- National Day Holiday -->
 	<holiday validFrom="2016-01-01" validTo="2016-12-31">
 		<date>
@@ -226,22 +194,6 @@
 		</date>
 		<name lang="zh">国庆节</name>
 		<name lang="en">National Day Holiday</name>
-	</holiday>
-	
-	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="8" month="10" />
-		</date>
-		<name lang="zh">工作日</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
-	<holiday validFrom="2016-01-01" validTo="2016-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="9" month="10" />
-		</date>
-		<name lang="zh">工作日</name>
-		<name lang="en">Extra Working Day</name>
 	</holiday>
 
 </holidays>

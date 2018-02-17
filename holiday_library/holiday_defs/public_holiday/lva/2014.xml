@@ -11,29 +11,13 @@
 		<name lang="lv">Darba svētkus</name>
 		<name lang="en">Labour Day Bridge Holiday</name>
 	</holiday>
-	
-	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="10" month="5" />
-		</date>
-		<name lang="lv">Darba diena</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2014-01-01" validTo="2014-12-31">
 		<date>
 			<fixedDate day="17" month="11" />
 		</date>
 		<name lang="lv">Latvijas Republikas proklamēšanas diena</name>
 		<name lang="en">Proclamation of the Republic of Latvia Bridge Holiday</name>
-	</holiday>
-	
-	<holiday validFrom="2014-01-01" validTo="2014-12-31" holidayType="EXTRA_WORKING_DAY">
-		<date>
-			<fixedDate day="22" month="11" />
-		</date>
-		<name lang="lv">Darba diena</name>
-		<name lang="en">Extra Working Day</name>
 	</holiday>
 
 </holidays>

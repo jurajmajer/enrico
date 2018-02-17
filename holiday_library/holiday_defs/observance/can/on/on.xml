@@ -5,7 +5,7 @@
 		<reference>https://www.labour.gov.on.ca/english/es/pubs/guide/publicholidays.php</reference>
 	</metadata>
 
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -19,7 +19,7 @@
 		<note lang="en">Only federal employers are required to give the day off</note>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="8" nth="1" />
 		</date>
@@ -28,7 +28,7 @@
 		<note lang="en">Only federal employers are required to give the day off</note>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="OBSERVANCE">
+	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="11" month="11" />
 		</date>
