@@ -22,7 +22,7 @@
 			<nthWeekdayRuleDate dayOfWeek="7" month="5" nth="2" />
 		</date>
 		<name lang="sk">Deň matiek</name>
-		<name lang="en">Mother's_Day</name>
+		<name lang="en">Mother's Day</name>
 	</holiday>
 	
 	<holiday validFrom="2017-01-01" holidayType="other_day">
@@ -30,7 +30,7 @@
 			<nthWeekdayRuleDate dayOfWeek="7" month="6" nth="3" />
 		</date>
 		<name lang="sk">Deň otcov</name>
-		<name lang="en">Father's_Day</name>
+		<name lang="en">Father's Day</name>
 	</holiday>
 	
 	<holiday validFrom="2017-01-01" holidayType="other_day">
