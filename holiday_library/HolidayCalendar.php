@@ -9,6 +9,7 @@ class HolidayCalendar {
 	
 	protected $countryCode;
 	protected $region;
+	protected $contryConfig;
 	
 	public function __construct($countryCode, $region) {
 		$this->countryCode = Utils::canonicalizeCountryCode($countryCode);
@@ -17,8 +18,8 @@ class HolidayCalendar {
 		$supportedCountries = HolidayCalendar::getSupportedCountries();
 		if(!isset($supportedCountries[$this->countryCode]))
 			throw new Exception('Country \'' . $this->countryCode . '\' is not supported');
-		$c = $supportedCountries[$this->countryCode];
-		if(isset($this->region) && strlen($this->region) > 0 && count($c->regions) > 0 && $c->isRegionSupported($this->region) == FALSE) {
+		$this->contryConfig = $supportedCountries[$this->countryCode];
+		if(isset($this->region) && strlen($this->region) > 0 && count($this->contryConfig->regions) > 0 && $this->contryConfig->isRegionSupported($this->region) == FALSE) {
 			throw new Exception('Region \'' . $this->region . '\' in country \'' . $this->countryCode . '\' is not supported');
 		}
 	}
@@ -46,6 +47,10 @@ class HolidayCalendar {
 			throw new Exception($toDate->toString() . " is not a valid date");
 		if($fromDate->compare($toDate) > 0)
 			throw new Exception($fromDate->toString() . " is later than " . $toDate->toString());
+		if($fromDate->compare($this->contryConfig->fromDate) < 0)
+			throw new Exception("Dates before " . $this->contryConfig->fromDate->toString() . " are not supported");
+		if($toDate->compare($this->contryConfig->toDate) > 0)
+			throw new Exception("Dates after " . $this->contryConfig->toDate->toString() . " are not supported");
 		$retVal = array();
 		$holidayProcessor = new HolidayProcessor($this->countryCode, $this->region);
 		$year = $fromDate->year;
