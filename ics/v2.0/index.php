@@ -62,7 +62,11 @@
 		$lang = getLang($publicHoliday->name);
 		for($i=0; $i<count($publicHoliday->name); $i++) {
 			if(strcmp($lang, $publicHoliday->name[$i]->lang) == 0) {
-				return $publicHoliday->name[$i]->text;
+				$retVal = $publicHoliday->name[$i]->text;
+				if($lang == "en" && isset($publicHoliday->observedOn)) {
+					$retVal .= " (Observance)";
+				}
+				return $retVal;
 			}
 		}
 		throw new Exception("Unknown language '".$lang."'");
@@ -109,7 +113,7 @@
 		$retVal .= "SUMMARY:" . escape($summary) . "\r\n";
 		$note = getEventDescription($publicHoliday);
 		if($note != NULL) {
-			$retVal .= "DESCRIPTION:" . escape($publicHoliday->note) . "\r\n";
+			$retVal .= "DESCRIPTION:" . escape($note) . "\r\n";
 		}
 		$retVal .= "TRANSP:TRANSPARENT\r\nCATEGORIES:HOLIDAY\r\nCLASS:PUBLIC\r\nEND:VEVENT\r\n";
 		return $retVal;
