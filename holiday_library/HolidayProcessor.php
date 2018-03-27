@@ -108,6 +108,11 @@ class HolidayProcessor {
 		$dates = $this->calculateDate($dateElements->item(0), $year);
 		foreach($dates as $date) {
 			$holiday = new Holiday($date);
+			$dateTo = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "dateTo");
+			if($dateTo->length > 0) {
+				$holiday->dateTo = $this->calculateDate($dateTo->item(0), $year);
+				$holiday->dateTo = $holiday->dateTo[0];
+			}
 			$names = $holidayDef->getElementsByTagNameNS(HolidayProcessor::$ENRICO_NAMESPACE, "name");
 			for($i=0; $i<$names->length; $i++) {
 				array_push($holiday->name, new LocalizedString($names->item($i)->getAttribute("lang"), $names->item($i)->nodeValue));
