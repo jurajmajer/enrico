@@ -51,10 +51,10 @@
 	}
 	
 	function getEventDateTo($publicHoliday) {
-		if(isset($publicHoliday->dateTo)) {
-			return $publicHoliday->dateTo;
-		}
 		$dateUtils = new DateUtils();
+		if(isset($publicHoliday->dateTo)) {
+			return $dateUtils->addDays($publicHoliday->dateTo, 1);
+		}
 		return $dateUtils->addDays(getEventDateFrom($publicHoliday), 1);
 	}
 	
