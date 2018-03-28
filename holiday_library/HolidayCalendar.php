@@ -136,6 +136,7 @@ class HolidayCalendar {
 		$retVal["usa"]->regions = array("al", "ak", "az", "ar","ca", "co", "ct", "de","dc", "fl", "ga", "hi","id", "il", "in", "ia","ks", "ky", "la", "me", "md","ma", "mi", "mn", "ms", "mo", "mt","ne", "nv", "nh", "nj", "nm", "ny","nc", "nd", "oh", "ok", "or","pa", "ri", "sc", "sd", "tn","tx", "ut", "vt", "va", "wa","wv", "wi", "wy");
 		$retVal["deu"]->regions = array("bw", "by", "be", "bb", "hb", "hh", "he", "ni", "mv", "nw", "rp", "sl", "sn", "st", "sh", "th");
 		$retVal["gbr"]->regions = array("eng", "nir", "sct", "wls");
+		$retVal["svk"]->regions = array("bc", "bl", "ki", "ni", "pv", "ta", "tc", "zi");
 		
 		return $retVal;
 	}
