@@ -83,6 +83,20 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
+			<dateTransformation>
+				<baseDate>
+					<nthWeekdayRuleDate dayOfWeek="6" month="10" nth="3" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="4" />
+			</dateTransformation>
+		</date>
+		<name lang="en">Royal Hobart Show</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">All of Tasmania south of and including Oatlands and Swansea also Bronte Park, Strathgordon, Tarreleah and Wayatinah - excludes West Coast</note>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="11" nth="1" />
 		</date>
 		<name lang="en">Recreation Day</name>

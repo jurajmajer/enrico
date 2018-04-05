@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="aus">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Daylight_saving_time_in_Australia</reference>
+	</metadata>
+	
+	<holiday validFrom="2018-01-01" holidayType="other_day">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="7" month="4" nth="1" />
+		</date>
+		<name lang="en">Daylight Saving Time Ends</name>
+		<note lang="en">A one-hour shift occurs at 03:00 local time, the clock jumps backward to 02:00</note>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01" holidayType="other_day">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="7" month="10" nth="1" />
+		</date>
+		<name lang="en">Daylight Saving Time Starts</name>
+		<note lang="en">A one-hour shift occurs at 02:00 local time, the clock jumps forward to 03:00</note>
+	</holiday>
+	
+</holidays>

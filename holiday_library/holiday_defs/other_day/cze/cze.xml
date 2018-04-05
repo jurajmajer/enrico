@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="svk">
 	<metadata>
-		<reference>https://sk.wikipedia.org/wiki/Letn%C3%BD_%C4%8Das</reference>
+		<reference>https://cs.wikipedia.org/wiki/Letn%C3%AD_%C4%8Das</reference>
 		<reference>https://en.wikipedia.org/wiki/Mother's_Day</reference>
 		<reference>https://en.wikipedia.org/wiki/Father%27s_Day</reference>
 	</metadata>
@@ -11,9 +11,9 @@
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="7" month="3" nth="last" />
 		</date>
-		<name lang="sk">Zmena času - začiatok letného času</name>
+		<name lang="cs">Změna času - začátek letního času</name>
 		<name lang="en">Daylight Saving Time Starts</name>
-		<note lang="sk">Letný čas sa začína o 2:00, keď sa ručičky posunú na 3:00</note>
+		<note lang="cs">Letní čas se začína o 2:00, když se čas posune na 3:00</note>
 		<note lang="en">A one-hour shift occurs at 02:00 local time, the clock jumps forward to 03:00</note>
 	</holiday>
 	
@@ -21,7 +21,7 @@
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="7" month="5" nth="2" />
 		</date>
-		<name lang="sk">Deň matiek</name>
+		<name lang="cs">Den matek</name>
 		<name lang="en">Mother's Day</name>
 	</holiday>
 	
@@ -29,7 +29,7 @@
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="7" month="6" nth="3" />
 		</date>
-		<name lang="sk">Deň otcov</name>
+		<name lang="cs">Den otců</name>
 		<name lang="en">Father's Day</name>
 	</holiday>
 	
@@ -37,9 +37,9 @@
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="7" month="10" nth="last" />
 		</date>
-		<name lang="sk">Zmena času - koniec letného času</name>
+		<name lang="cs">Změna času - konec letního času</name>
 		<name lang="en">Daylight Saving Time Ends</name>
-		<note lang="sk">Letný čas sa končí o 3:00, keď sa ručičky posunú na 2:00</note>
+		<note lang="cs">Letní čas se končí o 3:00, když se čas posune na 2:00</note>
 		<note lang="en">A one-hour shift occurs at 03:00 local time, the clock jumps backward to 02:00</note>
 	</holiday>
 	
