@@ -24,7 +24,8 @@ class LunarPhasesUtils {
 		if(!array_key_exists($countryCode, DateUtils::$diffToUTC)) {
 			throw new Exception('CountryCode not supported: ' . $countryCode);
 		}
-		$moonPhaseCalculator = new \Solaris\MoonPhase(mktime($date->hour, $date->minute, $date->second, $date->month, $date->day, $date->year));
+		date_default_timezone_set("UTC"); 
+		$moonPhaseCalculator = new MoonPhase(gmmktime($date->hour, $date->minute, $date->second, $date->month, $date->day, $date->year));
 		$nextMoonPhase = "";
 		if($moonPhase == 4) {
 			$nextMoonPhase = $moonPhaseCalculator->next_new_moon();
