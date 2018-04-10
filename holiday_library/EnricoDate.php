@@ -7,6 +7,7 @@ class EnricoDate {
     public $month;
     public $year;
 	public $hour;
+	public $minute;
 	public $second;
 	public $dayOfWeek;
 

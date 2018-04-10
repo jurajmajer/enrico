@@ -519,3 +519,38 @@ class HijriCalendar {
 		return $retVal;
 	}
 }
+
+class HijriCalUtils {
+	
+	private $hijriCalendar;
+	private $lunarPhasesUtils;
+	private $dateUtils;
+	
+	public function __construct() {
+		$this->hijriCalendar = new HijriCalendar();
+		$this->lunarPhasesUtils = new LunarPhasesUtils();
+		$this->dateUtils = new DateUtils();
+	}
+	
+	public function getFirstDayOfHijriMonth($hijriMonth, $year) {
+		return $this->hijriCalendar->getFirstDayOfHijriMonth($hijriMonth, $year);
+	}
+	
+	public function getAdjustedFirstDayOfHijriMonth($hijriMonth, $year, $countryCode) {
+		$notAdjustedDates = $this->getFirstDayOfHijriMonth($hijriMonth, $year);
+		$retVal = array();
+		for($i=0; $i<count($notAdjustedDates); $i++) {
+			$tmp = $this->dateUtils->addDays($notAdjustedDates[$i], -5);
+			$tmp = $this->lunarPhasesUtils->getNextNewMoon($tmp, $countryCode);
+			if($tmp->hour >= 12) {
+				$tmp = $this->dateUtils->addDays($tmp, 2);
+			} else {
+				$tmp = $this->dateUtils->addDays($tmp, 1);
+			}
+			if($tmp->year == $year) {
+				array_push($retVal, $tmp);
+			}
+		}
+		return $retVal;
+	}
+}

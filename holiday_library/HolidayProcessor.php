@@ -8,6 +8,7 @@ include_once("utils/ChineseCalUtils.php");
 include_once("utils/EquinoxUtils.php");
 include_once("utils/HebrewCalUtils.php");
 include_once("utils/HijriCalUtils.php");
+include_once("utils/LunarPhasesUtils.php");
 
 class HolidayProcessor {
 	
@@ -17,6 +18,7 @@ class HolidayProcessor {
 	private $hebrewCalUtils;
 	private $hijriCalUtils;
 	private $equinoxUtils;
+	private $lunarPhasesUtils;
 	private $countryCode;
 	private $region;
 	public static $ENRICO_NAMESPACE = "https://kayaposoft.com/enrico/xsd/1.0";
@@ -30,8 +32,9 @@ class HolidayProcessor {
 		$this->orthodoxCalUtils = new OrthodoxCalUtils();
 		$this->chineseCalUtils = new ChineseCalUtils();
 		$this->hebrewCalUtils = new HebrewCalUtils();
-		$this->hijriCalUtils = new HijriCalendar();
+		$this->hijriCalUtils = new HijriCalUtils();
 		$this->equinoxUtils = new EquinoxUtils();
+		$this->lunarPhasesUtils = new LunarPhasesUtils();
 	}
 	
 	public function getHolidays($year, $holidayType) {
@@ -231,6 +234,18 @@ class HolidayProcessor {
 		}
 		if(strcmp($specialDateValue, "SEPTEMBER_EQUINOX") == 0) {
 			return array($this->equinoxUtils->getSeptemberEquinox($year));
+		}
+		if(strcmp($specialDateValue, "FIRST_FULL_MOON_IN_MAY") == 0) {
+			return array($this->lunarPhasesUtils->getNextFullMoon(new EnricoDate(1,5,$year), $this->countryCode));
+		}
+		if(strcmp($specialDateValue, "DEEPAVALI") == 0) {
+			return array($this->lunarPhasesUtils->calculateDeepavali($year, $this->countryCode));
+		}
+		if(strcmp($specialDateValue, "ADJUSTED_HIJRI_MONTH_10TH_START") == 0) {
+			return $this->hijriCalUtils->getAdjustedFirstDayOfHijriMonth(10, $year, $this->countryCode);
+		}
+		if(strcmp($specialDateValue, "ADJUSTED_HIJRI_MONTH_12TH_START") == 0) {
+			return $this->hijriCalUtils->getAdjustedFirstDayOfHijriMonth(12, $year, $this->countryCode);
 		}
 		
 		throw new Exception('Unknown special date value \'' . $specialDateValue . '\'');

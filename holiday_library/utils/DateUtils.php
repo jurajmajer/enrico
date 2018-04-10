@@ -1,6 +1,8 @@
 <?php 
 
 class DateUtils {
+	
+	public static $diffToUTC = array('sgp'=>8,);
 
 	// http://mathforum.org/library/drmath/view/55837.html
 	/*

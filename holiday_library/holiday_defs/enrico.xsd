@@ -126,6 +126,10 @@
 		<enumeration value="HIJRI_MONTH_12TH_START"/>
 		<enumeration value="MARCH_EQUINOX"/>
 		<enumeration value="SEPTEMBER_EQUINOX"/>
+		<enumeration value="FIRST_FULL_MOON_IN_MAY"/>
+		<enumeration value="DEEPAVALI"/>
+		<enumeration value="ADJUSTED_HIJRI_MONTH_10TH_START"/>
+		<enumeration value="ADJUSTED_HIJRI_MONTH_12TH_START"/>
     </restriction>
 </simpleType>
 
