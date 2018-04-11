@@ -9,6 +9,9 @@
 			<fixedDate day="1" month="1" />
 		</date>
 		<name lang="en">New Year's Day</name>
+		<name lang="zh">元旦</name>
+		<name lang="ms">Tahun Baru</name>
+		<name lang="ta">புத்தாண்டு</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -17,6 +20,9 @@
 			<specialDate>CHINESE_MONTH_1ST_START</specialDate>
 		</date>
 		<name lang="en">Chinese New Year</name>
+		<name lang="zh">華人农历新年</name>
+		<name lang="ms">Tahun Baru Cina-Hari Raya Cina</name>
+		<name lang="ta">சீனப் புத்தாண்டு</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -30,6 +36,9 @@
 			</dateTransformation>
 		</date>
 		<name lang="en">Chinese New Year</name>
+		<name lang="zh">華人农历新年</name>
+		<name lang="ms">Tahun Baru Cina-Hari Raya Cina</name>
+		<name lang="ta">சீனப் புத்தாண்டு</name>
 		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
@@ -44,6 +53,9 @@
 			</dateTransformation>
 		</date>
 		<name lang="en">Good Friday</name>
+		<name lang="zh">耶稣受难日</name>
+		<name lang="ms">Hari Jumaat Agung</name>
+		<name lang="ta">புனித வெள்ளி</name>
 	</holiday>
 	
 	<holiday validFrom="2018-01-01">
@@ -51,6 +63,9 @@
 			<fixedDate day="1" month="5" />
 		</date>
 		<name lang="en">Labour Day</name>
+		<name lang="zh">劳动节</name>
+		<name lang="ms">Hari Buruh</name>
+		<name lang="ta">தொழிலாளர் தினம்</name>
 	</holiday>
 	
 	<holiday validFrom="2018-01-01">
@@ -58,6 +73,9 @@
 			<specialDate>FIRST_FULL_MOON_IN_MAY</specialDate>
 		</date>
 		<name lang="en">Vesak Day</name>
+		<name lang="zh">卫塞节</name>
+		<name lang="ms">Hari Wesak</name>
+		<name lang="ta">விசாக தினம்</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -66,6 +84,9 @@
 			<specialDate>ADJUSTED_HIJRI_MONTH_10TH_START</specialDate>
 		</date>
 		<name lang="en">Hari Raya Puasa</name>
+		<name lang="zh">开斋节</name>
+		<name lang="ms">Hari Raya Puasa</name>
+		<name lang="ta">நோன்புப் பெருநாள்</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -74,6 +95,9 @@
 			<fixedDate day="9" month="8" />
 		</date>
 		<name lang="en">National Day</name>
+		<name lang="zh">国庆日</name>
+		<name lang="ms">Hari Kebangsaan</name>
+		<name lang="ta">தேசிய தினம்</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -87,6 +111,9 @@
 			</dateTransformation>
 		</date>
 		<name lang="en">Hari Raya Haji</name>
+		<name lang="zh">哈芝节</name>
+		<name lang="ms">Hari Raya Haji</name>
+		<name lang="ta">ஹஜ்ஜிப் பெருநாள்</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -95,6 +122,9 @@
 			<specialDate>DEEPAVALI</specialDate>
 		</date>
 		<name lang="en">Deepavali</name>
+		<name lang="zh">屠妖节</name>
+		<name lang="ms">Hari Deepavali</name>
+		<name lang="ta">தீபாவளித் திருநாள்</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -103,6 +133,9 @@
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="en">Christmas Day</name>
+		<name lang="zh">圣诞节</name>
+		<name lang="ms">Hari Krismas-Hari Natal</name>
+		<name lang="ta">கிறிஸ்துமஸ் பண்டிகை</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
