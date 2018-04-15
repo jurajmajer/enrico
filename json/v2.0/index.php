@@ -80,6 +80,14 @@
 		return resolveJsonp(json_encode(array('isSchoolHoliday' => $result)));
 	}
 	
+	function isWorkDay($holidayCalendar)
+	{
+		validateMandatoryQueryParam('date');
+		$date = createDate($_REQUEST["date"]);
+		$result = $holidayCalendar->isWorkDay($date);
+		return resolveJsonp(json_encode(array('isWorkDay' => $result)));
+	}
+	
 	function getSupportedCountries()
 	{
 		$supportedCountries = HolidayCalendar::getSupportedCountries();
@@ -119,6 +127,8 @@
 			echo isPublicHoliday($holidayCalendar);
 		else if(strcmp($_REQUEST['action'], "isSchoolHoliday") == 0)
 			echo isSchoolHoliday($holidayCalendar);
+		else if(strcmp($_REQUEST['action'], "isWorkDay") == 0)
+			echo isWorkDay($holidayCalendar);
 		else
 			throw new Exception("Unknown action!");
 	}

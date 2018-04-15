@@ -72,6 +72,17 @@ $server->wsdl->addComplexType(
      )
 );
 $server->wsdl->addComplexType(
+    'IsWorkDayType',
+    'complexType',
+    'struct',
+    'sequence',
+    '',
+    array(
+    'error' => array('name' => 'error', 'type' => 'xsd:string', 'minOccurs' => '0', 'maxOccurs' => '1'),
+    'isWorkDay' => array('name' => 'isWorkDay', 'type' => 'xsd:boolean', 'minOccurs' => '0', 'maxOccurs' => '1'),
+     )
+);
+$server->wsdl->addComplexType(
     'SupportedCountryType',
     'complexType',
     'struct',
@@ -151,6 +162,16 @@ $server->register('isPublicHoliday',                				// method name
     // 'literal',                            						// use
     // 'Checks if the specified date is school holiday'        // documentation
 // );
+
+$server->register('isWorkDay',                				// method name
+    array('date' => 'tns:DateType', 'country' => 'xsd:string', 'region' => 'xsd:string'),     // input parameters
+    array('isWorkDay' => 'tns:IsWorkDayType'),      					// output parameters
+    'http://www.kayaposoft.com/enrico/ws/v2.0/',                      					// namespace
+    'http://www.kayaposoft.com/enrico/ws/v2.0/#isWorkDay',               			// soapaction
+    'rpc',                                						// style
+    'literal',                            						// use
+    'Checks if the specified date is a work holiday'        // documentation
+);
 
 $server->register('getSupportedCountries',                				// method name
     array(),                                                      // input parameters
@@ -237,6 +258,20 @@ function isSchoolHoliday($date, $country, $region) {
 		$d = new EnricoDate($date["day"], $date["month"], $date["year"]);
 		$retVal = $holidayCalendar->isSchoolHoliday($d);
 		return array('isHoliday' => $retVal);
+	}
+	catch(Exception $e) 
+	{
+		return array('error' => $e->getMessage());
+    }
+}
+
+function isWorkDay($date, $country, $region) {
+	try
+	{
+		$holidayCalendar = new HolidayCalendar($country, $region);
+		$d = new EnricoDate($date["day"], $date["month"], $date["year"]);
+		$retVal = $holidayCalendar->isWorkDay($d);
+		return array('isWorkDay' => $retVal);
 	}
 	catch(Exception $e) 
 	{

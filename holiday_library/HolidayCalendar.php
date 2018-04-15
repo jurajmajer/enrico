@@ -4,6 +4,7 @@ include_once("EnricoDate.php");
 include_once("utils/Utils.php");
 include_once("HolidayProcessor.php");
 include_once("SupportedCountry.php");
+include_once("utils/DateUtils.php");
 
 class HolidayCalendar {
 	
@@ -68,6 +69,21 @@ class HolidayCalendar {
 	
 	public function isSchoolHoliday($date) {
 		return $this->isHoliday($this->getHolidaysForDateRange($date, $date, "school_holiday"));
+	}
+	
+	public function isWorkDay($date) {
+		if($this->isHoliday($this->getHolidaysForDateRange($date, $date, "extra_working_day"))) {
+			return TRUE;
+		}
+		$dateUtils = new DateUtils();
+		$dayOfWeek = $dateUtils->getDayOfWeek($date);
+		if($dayOfWeek == 6 || $dayOfWeek == 7) {
+			return FALSE;
+		}
+		if($this->isPublicHoliday($date)) {
+			return FALSE;
+		}
+		return TRUE;
 	}
 	
 	private function isHoliday($holidays) {
