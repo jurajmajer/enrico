@@ -146,7 +146,7 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2011-01-01" validTo="2018-12-31">
 		<date>
 			<fixedDate day="23" month="12" />
 		</date>
