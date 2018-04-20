@@ -5,9 +5,9 @@
 		<reference>http://www.labour.gov.bc.ca/esb/facshts/stats.htm</reference>
 	</metadata>
 	
-	<holiday validFrom="2013-01-01">
+	<holiday validFrom="2019-01-01">
 		<date>
-			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="2" />
+			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
 		</date>
 		<name lang="en">Family Day</name>
 		<name lang="fr">Fête de la famille</name>
@@ -70,6 +70,14 @@
 		</date>
 		<name lang="en">Remembrance Day</name>
 		<name lang="fr">Jour du Souvenir</name>
+	</holiday>
+	
+	<holiday validFrom="2013-01-01" validTo="2018-12-31">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="2" />
+		</date>
+		<name lang="en">Family Day</name>
+		<name lang="fr">Fête de la famille</name>
 	</holiday>
 
 </holidays>
