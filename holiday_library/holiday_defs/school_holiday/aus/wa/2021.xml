@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="aus">
+	<metadata>
+		<reference>https://www.education.wa.edu.au/future-term-dates</reference>
+	</metadata>
+	
+	<holiday validFrom="2021-01-01" validTo="2021-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<dateTo>
+			<fixedDate day="31" month="1" />
+		</dateTo>
+		<name lang="en">Summer School Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01" validTo="2021-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="2" month="4" />
+		</date>
+		<dateTo>
+			<fixedDate day="18" month="4" />
+		</dateTo>
+		<name lang="en">Autumn School Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01" validTo="2021-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="3" month="7" />
+		</date>
+		<dateTo>
+			<fixedDate day="18" month="7" />
+		</dateTo>
+		<name lang="en">Winter School Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01" validTo="2021-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="25" month="9" />
+		</date>
+		<dateTo>
+			<fixedDate day="10" month="10" />
+		</dateTo>
+		<name lang="en">Spring School Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01" validTo="2021-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="17" month="12" />
+		</date>
+		<dateTo>
+			<fixedDate day="31" month="12" />
+		</dateTo>
+		<name lang="en">Summer School Holiday</name>
+	</holiday>
+	
+</holidays>
