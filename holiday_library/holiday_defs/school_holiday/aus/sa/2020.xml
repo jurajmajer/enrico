@@ -11,7 +11,7 @@
 		<dateTo>
 			<fixedDate day="27" month="1" />
 		</dateTo>
-		<name lang="en">Summer School Holiday</name>
+		<name lang="en">Summer School Holidays</name>
 	</holiday>
 	
 	<holiday validFrom="2020-01-01" validTo="2020-12-31" holidayType="school_holiday">
@@ -21,7 +21,7 @@
 		<dateTo>
 			<fixedDate day="26" month="4" />
 		</dateTo>
-		<name lang="en">Autumn School Holiday</name>
+		<name lang="en">Autumn School Holidays</name>
 	</holiday>
 	
 	<holiday validFrom="2020-01-01" validTo="2020-12-31" holidayType="school_holiday">
@@ -31,7 +31,7 @@
 		<dateTo>
 			<fixedDate day="19" month="7" />
 		</dateTo>
-		<name lang="en">Winter School Holiday</name>
+		<name lang="en">Winter School Holidays</name>
 	</holiday>
 	
 	<holiday validFrom="2020-01-01" validTo="2020-12-31" holidayType="school_holiday">
@@ -41,7 +41,7 @@
 		<dateTo>
 			<fixedDate day="11" month="10" />
 		</dateTo>
-		<name lang="en">Spring School Holiday</name>
+		<name lang="en">Spring School Holidays</name>
 	</holiday>
 	
 	<holiday validFrom="2020-01-01" validTo="2020-12-31" holidayType="school_holiday">
@@ -51,7 +51,7 @@
 		<dateTo>
 			<fixedDate day="31" month="12" />
 		</dateTo>
-		<name lang="en">Summer School Holiday</name>
+		<name lang="en">Summer School Holidays</name>
 	</holiday>
 	
 </holidays>
