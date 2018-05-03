@@ -27,7 +27,15 @@
 		<name lang="fr">Vendredi saint</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="1" month="7" />
+		</date>
+		<name lang="en">Canada Day</name>
+		<name lang="fr">Fête du Canada</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01" validTo="2017-12-31">
 		<date>
 			<fixedDate day="1" month="7" />
 		</date>
