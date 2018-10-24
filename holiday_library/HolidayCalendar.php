@@ -72,16 +72,29 @@ class HolidayCalendar {
 	}
 	
 	public function isWorkDay($date) {
+		// is it extra working day?
 		if($this->isHoliday($this->getHolidaysForDateRange($date, $date, "extra_working_day"))) {
 			return TRUE;
 		}
+		// is it Saturday or Sunday?
 		$dateUtils = new DateUtils();
 		$dayOfWeek = $dateUtils->getDayOfWeek($date);
 		if($dayOfWeek == 6 || $dayOfWeek == 7) {
 			return FALSE;
 		}
+		// is it public holiday?
 		if($this->isPublicHoliday($date)) {
 			return FALSE;
+		}
+		// is some public holiday observed on this day?
+		$holidays = $this->getHolidaysForYear($date->year-1, "public_holiday");
+		$holidays = array_merge($holidays, $this->getHolidaysForYear($date->year, "public_holiday"));
+		$holidays = array_merge($holidays, $this->getHolidaysForYear($date->year+1, "public_holiday"));
+		for($i=0; $i<sizeof($holidays); $i++) {
+			if(!in_array("REGIONAL_HOLIDAY", $holidays[$i]->flags) && isset($holidays[$i]->observedOn) &&
+				$holidays[$i]->observedOn != NULL && $holidays[$i]->observedOn->compare($date) == 0) {
+				return FALSE;
+			}
 		}
 		return TRUE;
 	}
