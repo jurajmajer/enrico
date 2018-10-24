@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="phl">
+	<metadata>
+		<reference>https://www.gov.ph/events-and-holidays</reference>
+		<reference>https://kittelsoncarpo.com/labor-employment/national-official-nonworking-holidays/</reference>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_the_Philippines</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="fil">Araw ng Bagong Taon</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<specialDate>CHINESE_MONTH_1ST_START</specialDate>
+		</date>
+		<name lang="fil">Bagong Taon ng mga Tsino</name>
+		<name lang="en">Chinese New Year</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="25" month="2" />
+		</date>
+		<name lang="fil">Anibersaryo ng Rebolusyon sa EDSA</name>
+		<name lang="en">EDSA Revolution Anniversary</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-3</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="fil">Huwebes Santo</name>
+		<name lang="en">Maundy Thursday</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="fil">Biyernes Santo</name>
+		<name lang="en">Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="fil">Sabado de Gloria</name>
+		<name lang="en">Black Saturday</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="9" month="4" />
+		</date>
+		<name lang="fil">Araw ng Kagitingan</name>
+		<name lang="en">Day of Valor</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="fil">Araw ng mga Manggagawa</name>
+		<name lang="en">Labor Day</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="12" month="6" />
+		</date>
+		<name lang="fil">Araw ng Kalayaan</name>
+		<name lang="en">Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<specialDate>HIJRI_MONTH_10TH_START</specialDate>
+		</date>
+		<name lang="fil">Pagwawakas ng Ramadan / Lebaran / Araw ng raya</name>
+		<name lang="en">Eid al-Fitr</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HIJRI_MONTH_12TH_START</specialDate>
+				</baseDate>
+				<addDays>9</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="fil">Eidul Adha / Araw ng kurban</name>
+		<name lang="en">Eid al-Adha</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="21" month="8" />
+		</date>
+		<name lang="fil">Araw ng Kabayanihan ni Ninoy Aquino</name>
+		<name lang="en">Ninoy Aquino Day</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="27" month="8" />
+		</date>
+		<name lang="fil">Araw ng mga Bayani</name>
+		<name lang="en">National Heroes' Day</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="1" month="11" />
+		</date>
+		<name lang="fil">Undás; Todos los Santos; Araw ng mga Santo</name>
+		<name lang="en">All Saints' Day</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="30" month="11" />
+		</date>
+		<name lang="fil">Araw ng Kapanganakan ni Bonifacio</name>
+		<name lang="en">Bonifacio Day</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="8" month="12" />
+		</date>
+		<name lang="fil">Pagdiriwang ng kalinislinisang paglilihi kay Santissima Maria Inmaculada</name>
+		<name lang="en">Feast of the Immaculate Conception of the Blessed Virgin Mary</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="fil">Araw ng Pasko</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="30" month="12" />
+		</date>
+		<name lang="fil">Paggunita sa Kamatayan ni Dr. Jose Rizal</name>
+		<name lang="en">Rizal Day</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<fixedDate day="31" month="12" />
+		</date>
+		<name lang="fil">Bisperas ng Bagong Taon</name>
+		<name lang="en">New Year's Eve</name>
+	</holiday>
+	
+</holidays>
