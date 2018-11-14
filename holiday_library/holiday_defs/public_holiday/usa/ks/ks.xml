@@ -69,7 +69,7 @@
 				<addDays>1</addDays>
 			</dateTransformation>
 		</date>
-		<name lang="en">Thanksgiving Day</name>
+		<name lang="en">Day after Thanksgiving</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
