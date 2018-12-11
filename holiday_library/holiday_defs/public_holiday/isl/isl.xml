@@ -142,6 +142,8 @@
 		</date>
 		<name lang="is">Jól</name>
 		<name lang="en">Christmas Eve</name>
+		<flag>PART_DAY_HOLIDAY</flag>
+		<note lang="en">Observed from 13:00</note>
 	</holiday>
 
 	<holiday validFrom="2011-01-01">
@@ -167,7 +169,7 @@
 		<name lang="is">Gamlárskvöld</name>
 		<name lang="en">New Year's Eve</name>
 		<flag>PART_DAY_HOLIDAY</flag>
-		<note lang="en">Observed from noon</note>
+		<note lang="en">Observed from 13:00</note>
 	</holiday>
 
 </holidays>

@@ -52,5 +52,13 @@
 		<name lang="zh">工作日</name>
 		<name lang="en">Extra Working Day</name>
 	</holiday>
+	
+	<holiday validFrom="2018-01-01" validTo="2018-12-31" holidayType="extra_working_day">
+		<date>
+			<fixedDate day="29" month="12" />
+		</date>
+		<name lang="zh">工作日</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
 
 </holidays>

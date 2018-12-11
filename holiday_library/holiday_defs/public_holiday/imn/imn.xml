@@ -52,7 +52,7 @@
 		<name lang="en">Late May Bank Holiday</name>
 	</holiday>
 	
-	<holiday validFrom="2013-01-01">
+	<holiday validFrom="2020-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="5" month="6" nth="2" />
 		</date>
@@ -92,6 +92,13 @@
 		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2013-01-01" validTo="2018-12-31">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="5" month="6" nth="2" />
+		</date>
+		<name lang="en">Senior Race Day</name>
 	</holiday>
 
 </holidays>
