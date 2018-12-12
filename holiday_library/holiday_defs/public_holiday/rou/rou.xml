@@ -29,6 +29,19 @@
 		<name lang="en">Unification of the Romanian Principalities/Small Union</name>
 	</holiday>
 	
+	<holiday validFrom="2018-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="ro">Vinerea Mare</name>
+		<name lang="en">Orthodox Good Friday</name>
+	</holiday>
+	
 	<holiday validFrom="2015-01-01">
 		<date>
 			<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>

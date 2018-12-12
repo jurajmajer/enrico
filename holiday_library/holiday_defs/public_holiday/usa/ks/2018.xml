@@ -7,6 +7,13 @@
 	
 	<holiday validFrom="2018-01-01" validTo="2018-12-31">
 		<date>
+			<fixedDate day="5" month="12" />
+		</date>
+		<name lang="en">National Day of Mourning</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01" validTo="2018-12-31">
+		<date>
 			<fixedDate day="24" month="12" />
 		</date>
 		<name lang="en">Christmas Eve</name>
