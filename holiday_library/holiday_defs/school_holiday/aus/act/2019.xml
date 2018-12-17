@@ -46,7 +46,7 @@
 	
 	<holiday validFrom="2019-01-01" validTo="2019-12-31" holidayType="school_holiday">
 		<date>
-			<fixedDate day="19" month="12" />
+			<fixedDate day="20" month="12" />
 		</date>
 		<dateTo>
 			<fixedDate day="31" month="12" />

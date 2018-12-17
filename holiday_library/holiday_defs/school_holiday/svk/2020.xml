@@ -45,4 +45,26 @@
 		<name lang="en">Summer Holidays</name>
 	</holiday>
 	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="29" month="10" />
+		</date>
+		<dateTo>
+			<fixedDate day="30" month="10" />
+		</dateTo>
+		<name lang="sk">Jesenné prázdniny</name>
+		<name lang="en">Autumn Holidays</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="23" month="12" />
+		</date>
+		<dateTo>
+			<fixedDate day="31" month="12" />
+		</dateTo>
+		<name lang="sk">Vianočné prázdniny</name>
+		<name lang="en">Christmas Holidays</name>
+	</holiday>
+	
 </holidays>
