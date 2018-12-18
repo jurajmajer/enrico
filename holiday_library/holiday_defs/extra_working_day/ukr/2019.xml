@@ -3,29 +3,29 @@
 	<metadata>
 		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine</reference>
 	</metadata>
-
-	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="extra_working_day">
-		<date>
-			<fixedDate day="17" month="1" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-
-	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="extra_working_day">
-		<date>
-			<fixedDate day="31" month="1" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-
-	<holiday validFrom="2015-01-01" validTo="2015-12-31" holidayType="extra_working_day">
-		<date>
-			<fixedDate day="14" month="2" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
 	
+	<holiday validFrom="2019-01-01" validTo="2019-12-31" holidayType="extra_working_day">
+		<date>
+			<fixedDate day="11" month="5" />
+		</date>
+		<name lang="uk">Робочий день</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+
+	<holiday validFrom="2019-01-01" validTo="2019-12-31" holidayType="extra_working_day">
+		<date>
+			<fixedDate day="21" month="12" />
+		</date>
+		<name lang="uk">Робочий день</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+
+	<holiday validFrom="2019-01-01" validTo="2019-12-31" holidayType="extra_working_day">
+		<date>
+			<fixedDate day="28" month="12" />
+		</date>
+		<name lang="uk">Робочий день</name>
+		<name lang="en">Extra Working Day</name>
+	</holiday>
+
 </holidays>

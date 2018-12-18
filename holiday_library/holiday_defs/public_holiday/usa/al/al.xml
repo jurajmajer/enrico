@@ -102,6 +102,13 @@
 		<name lang="en">Thanksgiving</name>
 	</holiday>
 	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="1" month="12" />
+		</date>
+		<name lang="en">Mrs. Rosa L. Parks Day</name>
+	</holiday>
+	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="25" month="12" />

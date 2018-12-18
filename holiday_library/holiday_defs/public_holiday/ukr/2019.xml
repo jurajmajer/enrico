@@ -4,39 +4,23 @@
 		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine</reference>
 	</metadata>
 	
-	<holiday validFrom="2018-01-01" validTo="2018-12-31">
-		<date>
-			<fixedDate day="9" month="3" />
-		</date>
-		<name lang="uk">Свято</name>
-		<name lang="en">Holiday</name>
-	</holiday>
-
-	<holiday validFrom="2018-01-01" validTo="2018-12-31">
+	<holiday validFrom="2019-01-01" validTo="2019-12-31">
 		<date>
 			<fixedDate day="30" month="4" />
 		</date>
 		<name lang="uk">Свято</name>
 		<name lang="en">Holiday</name>
 	</holiday>
-
-	<holiday validFrom="2018-01-01" validTo="2018-12-31">
+	
+	<holiday validFrom="2019-01-01" validTo="2019-12-31">
 		<date>
-			<fixedDate day="29" month="6" />
+			<fixedDate day="30" month="12" />
 		</date>
 		<name lang="uk">Свято</name>
 		<name lang="en">Holiday</name>
 	</holiday>
 	
-	<holiday validFrom="2018-01-01" validTo="2018-12-31">
-		<date>
-			<fixedDate day="24" month="12" />
-		</date>
-		<name lang="uk">Свято</name>
-		<name lang="en">Holiday</name>
-	</holiday>
-
-	<holiday validFrom="2018-01-01" validTo="2018-12-31">
+	<holiday validFrom="2019-01-01" validTo="2019-12-31">
 		<date>
 			<fixedDate day="31" month="12" />
 		</date>
