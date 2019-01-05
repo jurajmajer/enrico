@@ -83,7 +83,6 @@
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="en">Christmas Day</name>
-		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 
