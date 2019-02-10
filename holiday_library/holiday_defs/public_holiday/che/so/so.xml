@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="che">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Switzerland</reference>
+	</metadata>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="2" month="1" />
+		</date>
+		<name lang="de">Berchtoldstag</name>
+		<name lang="fr">Saint-Berchtold</name>
+		<name lang="it">Berchtoldstag</name>
+		<name lang="en">Berchtold's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="20" month="1" />
+		</date>
+		<name lang="de">Fest des heiligen Sebastian</name>
+		<name lang="fr">Sébastien</name>
+		<name lang="it">San Sebastiano</name>
+		<name lang="en">Saint Sebastian</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Deitingen, Hochwald, Kienberg, Neuendorf and Rodersdorf</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="5" month="2" />
+		</date>
+		<name lang="de">Sankt Agatha</name>
+		<name lang="fr">Sainte Agathe</name>
+		<name lang="it">Sant'Agata</name>
+		<name lang="en">Saint Agatha</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Hauenstein-Ifenthal and Neuendorf</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="6" month="3" />
+		</date>
+		<name lang="de">Fridolinstag</name>
+		<name lang="fr">Saint Fridolin</name>
+		<name lang="it">San Fridolin</name>
+		<name lang="en">Saint Fridolin</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Breitenbach</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="19" month="3" />
+		</date>
+		<name lang="de">Sankt Josef</name>
+		<name lang="fr">Saint-Joseph</name>
+		<name lang="it">San Giuseppe</name>
+		<name lang="en">St Joseph's Day</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Bärschwil, Büsserach, Fulenbach, Meltingen, Metzerlen, Nuglar-St. Pantaleon, Rodersdorf, Walterswil and Wisen</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="21" month="3" />
+		</date>
+		<name lang="de">Sankt Benedikt</name>
+		<name lang="fr">Saint Benoît</name>
+		<name lang="it">San Benedetto</name>
+		<name lang="en">Saint Benedict</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Beinwil</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Karfreitag</name>
+		<name lang="fr">Vendredi saint</name>
+		<name lang="it">Venerdì Santo</name>
+		<name lang="en">Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Ostermontag</name>
+		<name lang="fr">Lundi de Pâques</name>
+		<name lang="it">Lunedì dell'Angelo</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="de">Tag der Arbeit</name>
+		<name lang="fr">Fête du Travail</name>
+		<name lang="it">Festa del lavoro</name>
+		<name lang="en">Labour Day</name>
+		<flag>PART_DAY_HOLIDAY</flag>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>50</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Pfingstmontag</name>
+		<name lang="fr">Lundi de Pentecôte</name>
+		<name lang="it">Lunedì di Pentecoste</name>
+		<name lang="en">Whit Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>60</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Fronleichnam</name>
+		<name lang="fr">Fête-Dieu</name>
+		<name lang="it">Corpus Domini</name>
+		<name lang="en">Corpus Christi</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Bucheggberg and Luzern</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="15" month="8" />
+		</date>
+		<name lang="de">Mariä Himmelfahrt</name>
+		<name lang="fr">Assomption</name>
+		<name lang="it">Assunzione di Maria</name>
+		<name lang="en">Assumption of Mary</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Bucheggberg and Luzern</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="8" month="9" />
+		</date>
+		<name lang="de">Mariä Geburt</name>
+		<name lang="fr">Nativité de Marie</name>
+		<name lang="it">Natività della Beata Vergine Maria</name>
+		<name lang="en">Nativity of Mary</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Matzendorf</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="7" month="9" nth="3" />
+		</date>
+		<name lang="de">Eidgenössischer Dank-, Buss- und Bettag</name>
+		<name lang="fr">Jeûne fédéral</name>
+		<name lang="it">Festa federale di ringraziamento</name>
+		<name lang="en">Federal Day of Thanksgiving, Repentance and Prayer</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="22" month="9" />
+		</date>
+		<name lang="de">Sankt Mauritius</name>
+		<name lang="fr">Saint Mauritius</name>
+		<name lang="it">Saint Mauritius</name>
+		<name lang="en">Mauritius Day</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Dornach and Kleinlützel</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="16" month="10" />
+		</date>
+		<name lang="de">Gallustag</name>
+		<name lang="fr">Gall de Suisse</name>
+		<name lang="it">San Gallo</name>
+		<name lang="en">Saint Gall</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Hochwald</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="1" month="11" />
+		</date>
+		<name lang="de">Allerheiligen</name>
+		<name lang="fr">Toussaint</name>
+		<name lang="it">Ognissanti</name>
+		<name lang="en">All Saints' Day</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Bucheggberg and Luzern</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="de">Sankt Martin</name>
+		<name lang="fr">Saint-Martin</name>
+		<name lang="it">Festa di san Martino</name>
+		<name lang="en">Saint Martin</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Büren and Mümliswil-Ramiswil</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="4" month="12" />
+		</date>
+		<name lang="de">Sankt Barbara</name>
+		<name lang="fr">Barbe la grande martyre</name>
+		<name lang="it">Santa Barbara</name>
+		<name lang="en">Saint Barbara</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Kappel</note>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="8" month="12" />
+		</date>
+		<name lang="de">Mariä Empfängnis</name>
+		<name lang="fr">Immaculée Conception</name>
+		<name lang="it">Immacolata Concezione</name>
+		<name lang="en">Immaculate Conception</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Kappel and Wolfwil</note>
+	</holiday>
+
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="de">Stephanstag</name>
+		<name lang="fr">Saint-Étienne</name>
+		<name lang="it">Giorno di Santo Stefano</name>
+		<name lang="en">Boxing Day</name>
+	</holiday>
+	
+</holidays>

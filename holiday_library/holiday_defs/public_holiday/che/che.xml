@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="che">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Switzerland</reference>
+		<reference>http://www.datumsrechner.de/FeiertageSchweiz.pdf</reference>
+	</metadata>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="de">Neujahrstag</name>
+		<name lang="fr">Nouvel An</name>
+		<name lang="it">Capodanno</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="de">Ostern</name>
+		<name lang="fr">Pâques</name>
+		<name lang="it">Pasqua</name>
+		<name lang="en">Easter Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>39</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Auffahrt</name>
+		<name lang="fr">Ascension</name>
+		<name lang="it">Ascensione di Gesù</name>
+		<name lang="en">Ascension Day</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>49</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Pfingsten</name>
+		<name lang="fr">Pentecôte</name>
+		<name lang="it">Pentecoste</name>
+		<name lang="en">Whit Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="1" month="8" />
+		</date>
+		<name lang="de">Bundesfeier</name>
+		<name lang="fr">Fête nationale suisse</name>
+		<name lang="it">Festa nazionale svizzera</name>
+		<name lang="en">Swiss National Day</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="de">Weihnachtstag</name>
+		<name lang="fr">Noël</name>
+		<name lang="it">Natale</name>
+		<name lang="en">Christmas Day</name>
+	</holiday>
+	
+	
+</holidays>
