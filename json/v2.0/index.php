@@ -91,7 +91,9 @@
 	function getSupportedCountries()
 	{
 		$supportedCountries = HolidayCalendar::getSupportedCountries();
-		return getJson(array_values($supportedCountries));
+		$retVal = array_values($supportedCountries);
+		usort($retVal, array('SupportedCountry','compare'));
+		return getJson($retVal);
 	}
 	
 	// script starts here

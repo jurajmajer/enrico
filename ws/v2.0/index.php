@@ -284,6 +284,7 @@ function getSupportedCountries() {
 	try
 	{
 		$supportedCountries = array_values(HolidayCalendar::getSupportedCountries());
+		usort($supportedCountries, array('SupportedCountry','compare'));
 		for($i=0; $i<count($supportedCountries); $i++) {
 			$item = $supportedCountries[$i]->getArray();
 			$item['region'] = $item['regions'];
