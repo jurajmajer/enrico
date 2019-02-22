@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="deu">
+	<metadata>
+		<reference>http://en.wikipedia.org/wiki/Public_holidays_in_Germany</reference>
+	</metadata>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="8" month="3" />
+		</date>
+		<name lang="de">Frauentag</name>
+		<name lang="en">International Women's Day</name>
+	</holiday>
+	
+</holidays>
