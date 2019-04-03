@@ -300,6 +300,5 @@ function getSupportedCountries() {
 }
 
 // Use the request to (try to) invoke the service
-$HTTP_RAW_POST_DATA = isset($HTTP_RAW_POST_DATA) ? $HTTP_RAW_POST_DATA : '';
-$server->service(utf8_encode($HTTP_RAW_POST_DATA));
+$server->service(utf8_encode(file_get_contents("php://input")));
 ?>
