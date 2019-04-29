@@ -24,6 +24,9 @@ class LunarPhasesUtils {
 		if(!array_key_exists($countryCode, DateUtils::$diffToUTC)) {
 			throw new Exception('CountryCode not supported: ' . $countryCode);
 		}
+
+		$system_timezone = date_default_timezone_get();
+
 		date_default_timezone_set("UTC"); 
 		$moonPhaseCalculator = new MoonPhase(gmmktime($date->hour, $date->minute, $date->second, $date->month, $date->day, $date->year));
 		$nextMoonPhase = "";
@@ -37,6 +40,9 @@ class LunarPhasesUtils {
 		$retVal->minute = date("i", $nextMoonPhase);
 		$retVal->second = date("s", $nextMoonPhase);
 		$retVal = $this->dateUtils->addSeconds($retVal, DateUtils::$diffToUTC[$countryCode] * 60 * 60);
+
+        date_default_timezone_set($system_timezone);
+
 		return $retVal;
 	}
 	
