@@ -96,6 +96,14 @@
 		return getJson($retVal);
 	}
 	
+	function whereIsPublicHoliday()
+	{
+		validateMandatoryQueryParam('date');
+		$date = createDate($_REQUEST["date"]);
+		$retVal = HolidayCalendar::whereIsPublicHoliday($date);
+		return resolveJsonp(json_encode($retVal));
+	}
+	
 	// script starts here
 	try
 	{
@@ -104,6 +112,11 @@
 		if(strcmp($_REQUEST['action'], "getSupportedCountries") == 0)
 		{
 			echo getSupportedCountries();
+			exit(0);
+		}
+		if(strcmp($_REQUEST['action'], "whereIsPublicHoliday") == 0)
+		{
+			echo whereIsPublicHoliday();
 			exit(0);
 		}
 		

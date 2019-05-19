@@ -46,7 +46,7 @@ class Holiday {
 		return $retVal;
 	}
 	
-	private function getLocalizedStringArray($ar) {
+	public function getLocalizedStringArray($ar) {
 		$count = count($ar);
 		if($count > 0) {
 			$retVal = array();

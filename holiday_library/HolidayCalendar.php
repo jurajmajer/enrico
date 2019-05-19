@@ -99,6 +99,27 @@ class HolidayCalendar {
 		return TRUE;
 	}
 	
+	public static function whereIsPublicHoliday($date) {
+		
+		$retVal = array();
+		$supportedCountries = HolidayCalendar::getSupportedCountries();
+		foreach ($supportedCountries as $key => $value) {
+			$country = $key;
+			$region = "";
+			if(count($value->regions) > 0) {
+				$region = $value->regions[0];
+			}
+			$holidayCalendar = new HolidayCalendar($country, $region);
+			$hol = $holidayCalendar->getHolidaysForDateRange($date, $date, "public_holiday");
+			if($holidayCalendar->isHoliday($hol)) {
+				array_push($retVal, array("countryCode" => $value->countryCode,
+						"countryFullName" => $value->fullName,
+						"holidayName" => $hol[0]->getLocalizedStringArray($hol[0]->name)));
+			}
+		}
+		return $retVal;
+	}
+	
 	private function isHoliday($holidays) {
 		for($i=0; $i<sizeof($holidays); $i++) {
 			if(!in_array("REGIONAL_HOLIDAY", $holidays[$i]->flags)) {

@@ -108,6 +108,29 @@ $server->wsdl->addComplexType(
     'supportedCountry' => array('name' => 'supportedCountry', 'type' => 'tns:SupportedCountryType', 'minOccurs' => '0', 'maxOccurs' => 'unbounded'),
      )
 );
+$server->wsdl->addComplexType(
+    'WhereIsPublicHolidayType',
+    'complexType',
+    'struct',
+    'sequence',
+    '',
+    array(
+	'countryCode' => array('name' => 'countryCode', 'type' => 'xsd:string'),
+	'countryFullName' => array('name' => 'countryFullName', 'type' => 'xsd:string'),
+    'holidayName' => array('name' => 'holidayName', 'type' => 'tns:LocalizedStringType', 'minOccurs' => '1', 'maxOccurs' => 'unbounded'),
+     )
+);
+$server->wsdl->addComplexType(
+    'WhereIsPublicHolidayCountryListType',
+    'complexType',
+    'struct',
+    'sequence',
+    '',
+    array(
+    'error' => array('name' => 'error', 'type' => 'xsd:string', 'minOccurs' => '0', 'maxOccurs' => '1'),
+    'country' => array('name' => 'country', 'type' => 'tns:WhereIsPublicHolidayType', 'minOccurs' => '0', 'maxOccurs' => 'unbounded'),
+     )
+);
 
 // Register methods to expose
 $server->register('getHolidaysForMonth',                				// method name
@@ -181,6 +204,16 @@ $server->register('getSupportedCountries',                				// method name
     'rpc',                                						// style
     'literal',                            						// use
     'Gets the list of supported countries'            						// documentation
+);
+
+$server->register('whereIsPublicHoliday',                				// method name
+    array('date' => 'tns:DateType'),                                                      // input parameters
+    array('countryList' => 'tns:WhereIsPublicHolidayCountryListType'),      					// output parameters
+    'http://www.kayaposoft.com/enrico/ws/v2.0/',                      					// namespace
+    'http://www.kayaposoft.com/enrico/ws/v2.0/#whereIsPublicHoliday',               			// soapaction
+    'rpc',                                						// style
+    'literal',                            						// use
+    'Gets the list of countries where given date is public holiday'            						// documentation
 );
 
 // Define exposed methods as a PHP function
@@ -292,6 +325,19 @@ function getSupportedCountries() {
 			$retVal[] = $item;
 		}
 		return array('supportedCountry' => $retVal);
+	}
+	catch(Exception $e) 
+	{
+		return array('error' => $e->getMessage());
+    }
+}
+
+function whereIsPublicHoliday($date) {
+	try
+	{
+		$d = new EnricoDate($date["day"], $date["month"], $date["year"]);
+		$retVal = HolidayCalendar::whereIsPublicHoliday($d);
+		return array('country' => $retVal);
 	}
 	catch(Exception $e) 
 	{
