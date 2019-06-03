@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="per">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Peru</reference>
+	</metadata>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="en">New Year's Day</name>
+		<name lang="es">Año Nuevo</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-3</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="en">Maundy Thursday</name>
+		<name lang="es">Jueves Santo</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="en">Good Friday</name>
+		<name lang="es">Viernes Santo</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="en">Easter Sunday</name>
+		<name lang="es">Domingo Santo (Pascua) </name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="en">Labour Day</name>
+		<name lang="es">Día del Trabajo</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="29" month="6" />
+		</date>
+		<name lang="en">Feast of Saints Peter and Paul</name>
+		<name lang="es">Día de San Pedro y San Pablo</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="28" month="7" />
+		</date>
+		<name lang="en">Independence Day</name>
+		<name lang="es">Día de la Independencia</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="29" month="7" />
+		</date>
+		<name lang="en">Independence Day</name>
+		<name lang="es">Día de la Independencia</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="30" month="8" />
+		</date>
+		<name lang="en">Santa Rosa de Lima</name>
+		<name lang="es">Día de Santa Rosa de Lima</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="8" month="10" />
+		</date>
+		<name lang="en">Battle of Angamos</name>
+		<name lang="es">Combate de Angamos</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="1" month="11" />
+		</date>
+		<name lang="en">All Saints’ Day</name>
+		<name lang="es">Día de Todos los Santos</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="8" month="12" />
+		</date>
+		<name lang="en">Immaculate Conception</name>
+		<name lang="es">Inmaculada Concepción</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="en">Christmas Day</name>
+		<name lang="es">Día de Navidad</name>
+	</holiday>
+	
+</holidays>
