@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="chl">
+	<metadata>
+		<reference>http://www.feriadoschilenos.cl/</reference>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Chile</reference>
+	</metadata>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="en">New Year's Day</name>
+		<name lang="es">Año Nuevo</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="2" month="1" />
+		</date>
+		<if dayOfWeek="1" />
+		<name lang="en">New Year's Holiday</name>
+		<name lang="es">San Lunes</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="en">Good Friday</name>
+		<name lang="es">Viernes Santo</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="en">Easter Saturday</name>
+		<name lang="es">Sábado Santo</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="en">Labour Day</name>
+		<name lang="es">Día Nacional del Trabajo</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="21" month="5" />
+		</date>
+		<name lang="en">Navy Day</name>
+		<name lang="es">Día de las Glorias Navales</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="7" month="6" />
+		</date>
+		<name lang="en">Battle of Arica</name>
+		<name lang="es">Aniversario del Asalto y Toma del Morro de Arica</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="29" month="6" />
+		</date>
+		<name lang="en">Saint Peter and Saint Paul</name>
+		<name lang="es">San Pedro y San Pablo</name>
+		<observanceRule dayOfWeek="2" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="3" addDays="-2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="4" addDays="-3" additionalHoliday="false" />
+		<observanceRule dayOfWeek="5" addDays="3" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="16" month="7" />
+		</date>
+		<name lang="en">Our Lady of Mount Carmel</name>
+		<name lang="es">Virgen del Carmen</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="15" month="8" />
+		</date>
+		<name lang="en">Assumption of Mary</name>
+		<name lang="es">Asunción de la Virgen</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="20" month="8" />
+		</date>
+		<name lang="en">Nativity of Liberator Bernardo O'Higgins</name>
+		<name lang="es">Nacimiento del Prócer de la Independencia</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="17" month="9" />
+		</date>
+		<if dayOfWeek="1" />
+		<name lang="en">Day of the National Liberation</name>
+		<name lang="es">Día de la Libación Nacional</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="17" month="9" />
+		</date>
+		<if dayOfWeek="5" />
+		<name lang="en">Saint Friday</name>
+		<name lang="es">San Viernes</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="18" month="9" />
+		</date>
+		<name lang="en">National holiday</name>
+		<name lang="es">Día de la Independencia Nacional</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="19" month="9" />
+		</date>
+		<name lang="en">Army Day</name>
+		<name lang="es">Día de las Glorias del Ejército</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="20" month="9" />
+		</date>
+		<if dayOfWeek="5" />
+		<name lang="en">Day of the National Liberation</name>
+		<name lang="es">Día de la Libación Nacional</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="12" month="10" />
+		</date>
+		<name lang="en">Columbus Day</name>
+		<name lang="es">Encuentro de Dos Mundos</name>
+		<observanceRule dayOfWeek="2" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="3" addDays="-2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="4" addDays="-3" additionalHoliday="false" />
+		<observanceRule dayOfWeek="5" addDays="3" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="31" month="10" />
+		</date>
+		<name lang="en">Reformation Day</name>
+		<name lang="es">Día Nacional de las Iglesias Evangélicas y Protestantes</name>
+		<observanceRule dayOfWeek="2" addDays="-4" additionalHoliday="false" />
+		<observanceRule dayOfWeek="3" addDays="2" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="1" month="11" />
+		</date>
+		<name lang="en">All Saints’ Day</name>
+		<name lang="es">Día de Todos los Santos</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="8" month="12" />
+		</date>
+		<name lang="en">Immaculate Conception</name>
+		<name lang="es">Inmaculada Concepción de la Virgen</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="en">Christmas Day</name>
+		<name lang="es">Natividad del Señor</name>
+	</holiday>
+	
+</holidays>
