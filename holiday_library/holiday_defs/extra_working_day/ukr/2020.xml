@@ -4,12 +4,12 @@
 		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine</reference>
 	</metadata>
 	
-	<holiday validFrom="2019-01-01" validTo="2019-12-31">
+	<holiday validFrom="2020-01-01" validTo="2020-12-31" holidayType="extra_working_day">
 		<date>
-			<fixedDate day="30" month="4" />
+			<fixedDate day="11" month="1" />
 		</date>
-		<name lang="uk">Свято</name>
-		<name lang="en">Holiday</name>
+		<name lang="uk">Робочий день</name>
+		<name lang="en">Extra Working Day</name>
 	</holiday>
 
 </holidays>

@@ -4,9 +4,9 @@
 		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine</reference>
 	</metadata>
 	
-	<holiday validFrom="2019-01-01" validTo="2019-12-31">
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
 		<date>
-			<fixedDate day="30" month="4" />
+			<fixedDate day="6" month="1" />
 		</date>
 		<name lang="uk">Свято</name>
 		<name lang="en">Holiday</name>

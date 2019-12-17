@@ -12,20 +12,4 @@
 		<name lang="en">Extra Working Day</name>
 	</holiday>
 
-	<holiday validFrom="2019-01-01" validTo="2019-12-31" holidayType="extra_working_day">
-		<date>
-			<fixedDate day="21" month="12" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-
-	<holiday validFrom="2019-01-01" validTo="2019-12-31" holidayType="extra_working_day">
-		<date>
-			<fixedDate day="28" month="12" />
-		</date>
-		<name lang="uk">Робочий день</name>
-		<name lang="en">Extra Working Day</name>
-	</holiday>
-
 </holidays>
