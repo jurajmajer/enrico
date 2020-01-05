@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="chn">
+
+	<metadata>
+		<reference>https://www.china-briefing.com/news/chinas-2020-holiday-schedule-released/?hilite=%27China%E2%80%99s%27%2C%272020%27%2C%27Holiday%27%2C%27Schedul%27</reference>
+	</metadata>
+	
+	<!-- Spring Festival -->
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="24" month="1" />
+		</date>
+		<name lang="zh">春节</name>
+		<name lang="en">Spring Festival (Chinese New Year's Eve)</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="26" month="1" />
+		</date>
+		<name lang="zh">春节</name>
+		<name lang="en">Spring Festival</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="27" month="1" />
+		</date>
+		<name lang="zh">春节</name>
+		<name lang="en">Spring Festival</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="28" month="1" />
+		</date>
+		<name lang="zh">春节</name>
+		<name lang="en">Spring Festival</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="29" month="1" />
+		</date>
+		<name lang="zh">春节</name>
+		<name lang="en">Spring Festival</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="30" month="1" />
+		</date>
+		<name lang="zh">春节</name>
+		<name lang="en">Spring Festival</name>
+	</holiday>
+
+	<!-- Tomb Sweeping Day -->
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="5" month="4" />
+		</date>
+		<name lang="zh">清明节</name>
+		<name lang="en">Tomb Sweeping Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="6" month="4" />
+		</date>
+		<name lang="zh">清明节</name>
+		<name lang="en">Tomb Sweeping Day Holiday</name>
+	</holiday>
+	
+	<!-- Labor Day -->
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="2" month="5" />
+		</date>
+		<name lang="zh">劳动节</name>
+		<name lang="en">Labor Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="3" month="5" />
+		</date>
+		<name lang="zh">劳动节</name>
+		<name lang="en">Labor Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="4" month="5" />
+		</date>
+		<name lang="zh">劳动节</name>
+		<name lang="en">Labor Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="5" month="5" />
+		</date>
+		<name lang="zh">劳动节</name>
+		<name lang="en">Labor Day Holiday</name>
+	</holiday>
+	
+	<!-- Dragon Boat Festival -->
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="26" month="6" />
+		</date>
+		<name lang="zh">端午节</name>
+		<name lang="en">Dragon Boat Festival Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="27" month="6" />
+		</date>
+		<name lang="zh">端午节</name>
+		<name lang="en">Dragon Boat Festival Holiday</name>
+	</holiday>
+	
+	<!-- National Day Holiday -->
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="2" month="10" />
+		</date>
+		<name lang="zh">国庆节</name>
+		<name lang="en">National Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="3" month="10" />
+		</date>
+		<name lang="zh">国庆节</name>
+		<name lang="en">National Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="4" month="10" />
+		</date>
+		<name lang="zh">国庆节</name>
+		<name lang="en">National Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="5" month="10" />
+		</date>
+		<name lang="zh">国庆节</name>
+		<name lang="en">National Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="6" month="10" />
+		</date>
+		<name lang="zh">国庆节</name>
+		<name lang="en">National Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="7" month="10" />
+		</date>
+		<name lang="zh">国庆节</name>
+		<name lang="en">National Day Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="8" month="10" />
+		</date>
+		<name lang="zh">国庆节</name>
+		<name lang="en">National Day Holiday</name>
+	</holiday>
+
+</holidays>
