@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="deu">
+	<metadata>
+		<reference>http://en.wikipedia.org/wiki/Public_holidays_in_Germany</reference>
+	</metadata>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="8" month="5" />
+		</date>
+		<name lang="de">Tag der Befreiung</name>
+		<name lang="en">Liberation Day</name>
+		<note lang="en">Extra holiday to commemorate 75th anniversary of the World War II</note>
+	</holiday>
+
+</holidays>
