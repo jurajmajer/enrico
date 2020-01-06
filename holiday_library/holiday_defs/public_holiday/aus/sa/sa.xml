@@ -104,7 +104,7 @@
 		<name lang="en">Boxing Day / Proclamation Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="true" />
-		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="true" />
 	</holiday>
 	
 	<holiday validFrom="2012-01-01">

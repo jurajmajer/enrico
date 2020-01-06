@@ -5,12 +5,12 @@
 		<reference>http://australia.gov.au/topics/australian-facts-and-figures/public-holidays</reference>
 	</metadata>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2020-01-01">
 		<date>
 			<fixedDate day="1" month="1" />
 		</date>
 		<name lang="en">New Year's Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
 	</holiday>
 	
@@ -64,11 +64,13 @@
 		<name lang="en">Easter Monday</name>
 	</holiday>
 	
-	<holiday validFrom="2015-01-01">
+	<holiday validFrom="2020-01-01">
 		<date>
 			<fixedDate day="25" month="4" />
 		</date>
 		<name lang="en">Anzac Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -97,25 +99,34 @@
 		<name lang="en">Reconciliation Day</name>
 	</holiday>
 	
-	<holiday validFrom="2015-01-01">
+	<holiday validFrom="2020-01-01">
 		<date>
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="en">Christmas Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="true" />
 	</holiday>
 	
-	<holiday validFrom="2015-01-01">
+	<holiday validFrom="2020-01-01">
 		<date>
 			<fixedDate day="26" month="12" />
 		</date>
 		<name lang="en">Boxing Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="true" />
 	</holiday>
 	
 	<!-- old holidays -->
+	<holiday validFrom="2011-01-01" validTo="2019-12-31">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="en">New Year's Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
+	</holiday>
+	
 	<holiday validFrom="2011-01-01" validTo="2014-12-31">
 		<date>
 			<fixedDate day="25" month="4" />
@@ -123,6 +134,13 @@
 		<name lang="en">Anzac Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2019-12-31">
+		<date>
+			<fixedDate day="25" month="4" />
+		</date>
+		<name lang="en">Anzac Day</name>
 	</holiday>
 		
 	<holiday validFrom="2013-01-01" validTo="2014-12-31">
@@ -161,6 +179,24 @@
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="true" />
 		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2019-12-31">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="en">Christmas Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2019-12-31">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="en">Boxing Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 	</holiday>
 
 </holidays>

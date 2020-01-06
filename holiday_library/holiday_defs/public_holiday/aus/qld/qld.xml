@@ -57,11 +57,12 @@
 		<name lang="en">Easter Monday</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2020-01-01">
 		<date>
 			<fixedDate day="25" month="4" />
 		</date>
 		<name lang="en">Anzac Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2016-01-01">
@@ -97,6 +98,15 @@
 		<note lang="en">Brisbane Area Only</note>
 	</holiday>
 	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="24" month="12" />
+		</date>
+		<name lang="en">Christmas Eve</name>
+		<flag>PART_DAY_HOLIDAY</flag>
+		<note lang="en">Part-day public holiday from 6 pm to 12 midnight</note>
+	</holiday>
+	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="25" month="12" />
@@ -116,6 +126,13 @@
 	</holiday>
 	
 	<!-- old holidays -->
+	<holiday validFrom="2011-01-01" validTo="2019-12-31">
+		<date>
+			<fixedDate day="25" month="4" />
+		</date>
+		<name lang="en">Anzac Day</name>
+	</holiday>
+	
 	<holiday validFrom="2011-01-01" validTo="2012-12-31">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="1" />
