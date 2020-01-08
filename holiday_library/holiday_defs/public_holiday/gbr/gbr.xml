@@ -17,18 +17,25 @@
 		<name lang="en">Good Friday</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="8" month="5" />
+		</date>
+		<name lang="en"> 	Early May bank holiday (VE day)</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="1" />
 		</date>
-		<name lang="en">May Day Bank Holiday</name>
+		<name lang="en">Early May bank holiday</name>
 	</holiday>
 	
 	<holiday validFrom="2013-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="last" />
 		</date>
-		<name lang="en">Spring Bank Holiday</name>
+		<name lang="en">Spring bank holiday</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -36,7 +43,7 @@
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="en">Christmas Day</name>
-		<observanceRule dayOfWeek="6" addDays="3" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 	</holiday>
 	
@@ -46,7 +53,7 @@
 		</date>
 		<name lang="en">Boxing Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
 	</holiday>
 	
 	<!-- Old dates -->
@@ -55,6 +62,13 @@
 			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="last" />
 		</date>
 		<name lang="en">Spring Bank Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01" validTo="2019-12-31">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="1" />
+		</date>
+		<name lang="en">Early May bank holiday</name>
 	</holiday>
 
 </holidays>

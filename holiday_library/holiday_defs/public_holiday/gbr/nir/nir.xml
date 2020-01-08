@@ -48,7 +48,7 @@
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="8" nth="last" />
 		</date>
-		<name lang="en">Late Summer Bank Holiday</name>
+		<name lang="en">Summer bank holiday</name>
 	</holiday>
 	
 </holidays>
