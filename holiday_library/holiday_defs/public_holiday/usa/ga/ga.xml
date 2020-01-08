@@ -23,24 +23,17 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
-			<nthWeekdayRuleDate dayOfWeek="1" month="4" nth="4" />
-		</date>
-		<name lang="en">Confederate Memorial Day</name>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="last" />
 		</date>
 		<name lang="en">Memorial Day</name>
 	</holiday>
 	
-	<holiday validFrom="2016-01-01">
+	<holiday validFrom="2020-01-01">
 		<date>
 			<fixedDate day="4" month="7" />
 		</date>
 		<name lang="en">Independence Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -96,7 +89,23 @@
 	</holiday>
 	
 	<!-- old holidays -->
+	<holiday validFrom="2011-01-01" validTo="2019-12-31">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="4" nth="4" />
+		</date>
+		<name lang="en">Confederate Memorial Day</name>
+	</holiday>
+	
 	<holiday validFrom="2011-01-01" validTo="2014-12-31">
+		<date>
+			<fixedDate day="4" month="7" />
+		</date>
+		<name lang="en">Independence Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2016-01-01" validTo="2019-12-31">
 		<date>
 			<fixedDate day="4" month="7" />
 		</date>
