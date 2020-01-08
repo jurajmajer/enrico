@@ -16,6 +16,15 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
+			<fixedDate day="26" month="1" />
+		</date>
+		<name lang="en">Australia Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="3" nth="2" />
 		</date>
 		<name lang="en">Canberra Day</name>
