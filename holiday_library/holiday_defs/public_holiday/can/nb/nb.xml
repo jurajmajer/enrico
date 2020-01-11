@@ -2,7 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
 
 	<metadata>
-		<reference>http://www2.gnb.ca/content/gnb/en/departments/human_resources/about_us/policies_and_guidelines/leave_policies/statutory_public_holidays.html</reference>
+		<reference>https://www2.gnb.ca/content/gnb/en/departments/elg/local_government/content/governance/content/days_of_rest_act.html</reference>
 	</metadata>
 	
 	<holiday validFrom="2018-01-01">

@@ -2,7 +2,6 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
 
 	<metadata>
-		<reference>http://www.gov.mb.ca/ctt/invest/busfacts/workforce/stat_hols.html</reference>
 		<reference>http://www.gov.mb.ca/labour/standards/doc,gen-holidays-after-april-30-07,factsheet.html#q13</reference>
 	</metadata>
 	
@@ -44,7 +43,7 @@
 		<date>
 			<fixedDate day="1" month="7" />
 		</date>
-		<name lang="en">Canada Day</name>
+		<name lang="en">July 1</name>
 		<name lang="fr">Fête du Canada</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>

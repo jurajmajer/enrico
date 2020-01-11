@@ -2,7 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
 
 	<metadata>
-		<reference>http://humanservices.alberta.ca/working-in-alberta/1472.html</reference>
+		<reference>https://www.alberta.ca/alberta-general-holidays.aspx</reference>
 	</metadata>
 	
 	<holiday validFrom="2011-01-01">

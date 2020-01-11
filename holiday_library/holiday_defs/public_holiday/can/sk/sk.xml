@@ -2,7 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
 
 	<metadata>
-		<reference>http://www.lrws.gov.sk.ca/public-holidays</reference>
+		<reference>https://www.saskatchewan.ca/business/employment-standards/vacations-holidays-leaves-and-absences/public-statutory-holidays/list-of-saskatchewan-public-holidays</reference>
 	</metadata>
 	
 	<holiday validFrom="2011-01-01">

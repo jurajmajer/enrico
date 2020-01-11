@@ -2,7 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
 
 	<metadata>
-		<reference>http://www.labour.gov.bc.ca/esb/facshts/stats.htm</reference>
+		<reference>https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/statutory-holidays</reference>
 	</metadata>
 	
 	<holiday validFrom="2019-01-01">

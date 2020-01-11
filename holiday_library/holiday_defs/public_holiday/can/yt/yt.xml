@@ -2,8 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
 
 	<metadata>
-		<reference>http://www.community.gov.yk.ca/es/hol.html</reference>
-		<reference>http://www.community.gov.yk.ca/pdf/statholiday2012.pdf</reference>
+		<reference>https://yukon.ca/en/find-yukon-statutory-holiday</reference>
 	</metadata>
 	
 	<holiday validFrom="2011-01-01">
