@@ -27,13 +27,17 @@ class LunarPhasesUtils {
 
 		$system_timezone = date_default_timezone_get();
 
-		date_default_timezone_set("UTC"); 
-		$moonPhaseCalculator = new MoonPhase(gmmktime($date->hour, $date->minute, $date->second, $date->month, $date->day, $date->year));
+		date_default_timezone_set("UTC");
+		$startTimestamp = gmmktime($date->hour, $date->minute, $date->second, $date->month, $date->day, $date->year);
+		$moonPhaseCalculator = new MoonPhase($startTimestamp);
 		$nextMoonPhase = "";
 		if($moonPhase == 4) {
 			$nextMoonPhase = $moonPhaseCalculator->next_new_moon();
 		} else if($moonPhase == 6) {
-			$nextMoonPhase = $moonPhaseCalculator->next_full_moon();
+			$nextMoonPhase = $moonPhaseCalculator->full_moon();
+			if($startTimestamp > $nextMoonPhase) {
+				$nextMoonPhase = $moonPhaseCalculator->next_full_moon();
+			}
 		}
 		$retVal = new EnricoDate(date("j", $nextMoonPhase), date("n", $nextMoonPhase), date("Y", $nextMoonPhase));
 		$retVal->hour = date("G", $nextMoonPhase);
