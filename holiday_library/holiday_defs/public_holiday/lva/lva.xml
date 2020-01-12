@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="lva">
 	<metadata>
-		<reference>https://www.bank.lv/en/about-us/public-holidays-in-latvia</reference>
+		<reference>https://www.bank.lv/en/about-us/useful/public-holidays-in-latvia</reference>
 	</metadata>
 	
 	<!-- current dates -->
