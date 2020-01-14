@@ -55,6 +55,14 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="23" month="3" />
+		</date>
+		<name lang="pt">Dia de Libertação da África Austral</name>
+		<name lang="en">Southern Africa Liberation Day</name>
+	</holiday>
+	
 	<holiday validFrom="2014-01-01">
 		<date>
 			<fixedDate day="4" month="4" />
