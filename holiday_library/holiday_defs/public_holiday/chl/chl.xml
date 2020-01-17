@@ -70,6 +70,8 @@
 		</date>
 		<name lang="en">Battle of Arica</name>
 		<name lang="es">Aniversario del Asalto y Toma del Morro de Arica</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Arica and Parinacota Region</note>
 	</holiday>
 	
 	<holiday validFrom="2019-01-01">
@@ -106,6 +108,8 @@
 		</date>
 		<name lang="en">Nativity of Liberator Bernardo O'Higgins</name>
 		<name lang="es">Nacimiento del Prócer de la Independencia</name>
+		<flag>REGIONAL_HOLIDAY</flag>
+		<note lang="en">Observed only in Chillán and Chillán Viejo</note>
 	</holiday>
 	
 	<holiday validFrom="2019-01-01">
