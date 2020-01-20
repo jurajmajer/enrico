@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="dnk">
 	<metadata>
-		<reference>http://helligdage-dk.dk/</reference>
+		<reference>http://helligdage-dk.dk/helligdage-2020/</reference>
 	</metadata>
 	
 	<!-- current dates -->
@@ -123,6 +123,14 @@
 		</date>
 		<name lang="da">2. Pinsedag</name>
 		<name lang="en">Whit Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="5" month="6" />
+		</date>
+		<name lang="da">Grundlovsdag</name>
+		<name lang="en">Constitution Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
