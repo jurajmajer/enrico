@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="ltu">
 	<metadata>
-		<reference>http://fi.urm.lt/fi/en/about-us/the-embassy/working-hours</reference>
+		<reference>https://www.kalendorius.today/nedarbo-dienos/2020</reference>
 	</metadata>
 	
 	<!-- current dates -->
@@ -104,6 +104,14 @@
 		</date>
 		<name lang="lt">Visų šventųjų diena</name>
 		<name lang="en">All Saints' Day</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01">
+		<date>
+			<fixedDate day="2" month="11" />
+		</date>
+		<name lang="lt">Vėlinės</name>
+		<name lang="en">All Souls' Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
