@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="jpn">
 	<metadata>
-		<reference>http://www.fukamipat.gr.jp/english/ip/holidays.html</reference>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Japan</reference>
 	</metadata>
 	
 	<!-- current dates -->
@@ -28,6 +28,15 @@
 		</date>
 		<name lang="ja">建国記念の日 Kenkoku Kinen no Hi</name>
 		<name lang="en">Foundation Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2020-01-01">
+		<date>
+			<fixedDate day="23" month="2" />
+		</date>
+		<name lang="ja">天皇誕生日 Tennō Tanjōbi</name>
+		<name lang="en">The Emperor's Birthday</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
@@ -81,7 +90,7 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="7" nth="3" />
 		</date>
@@ -89,7 +98,7 @@
 		<name lang="en">Marine Day</name>
 	</holiday>
 	
-	<holiday validFrom="2016-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="11" month="8" />
 		</date>
@@ -120,7 +129,7 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
 		</date>
@@ -146,6 +155,7 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
+	<!-- Old dates -->
 	<holiday validFrom="2011-01-01" validTo="2018-12-31">
 		<date>
 			<fixedDate day="23" month="12" />
@@ -153,6 +163,31 @@
 		<name lang="ja">天皇誕生日 Tennō Tanjōbi</name>
 		<name lang="en">The Emperor's Birthday</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01" validTo="2019-12-31">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="7" nth="3" />
+		</date>
+		<name lang="ja">海の日 Umi no Hi</name>
+		<name lang="en">Marine Day</name>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01" validTo="2019-12-31">
+		<date>
+			<fixedDate day="11" month="8" />
+		</date>
+		<name lang="ja">山の日 Yama no Hi</name>
+		<name lang="en">Mountain Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2011-01-01" validTo="2019-12-31">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
+		</date>
+		<name lang="ja">体育の日 Taiiku no Hi</name>
+		<name lang="en">Health and Sports Day</name>
 	</holiday>
 	
 </holidays>
