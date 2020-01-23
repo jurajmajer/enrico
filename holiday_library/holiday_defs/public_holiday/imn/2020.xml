@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="imn">
+	<metadata>
+		<reference>https://www.gov.im/categories/home-and-neighbourhood/bank-holidays/</reference>
+	</metadata>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="8" month="5" />
+		</date>
+		<name lang="en">Early May bank holiday</name>
+	</holiday>
+	
+</holidays>
