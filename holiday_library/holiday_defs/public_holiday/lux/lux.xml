@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="lux">
 	<metadata>
-		<reference>http://www.luxembourg.public.lu/en/travailler/jours-feries-legaux/index.html</reference>
+		<reference>https://luxembourg.public.lu/en/living/quality-of-life/jours-feries-legaux.html</reference>
 	</metadata>
 	
 	<!-- current dates -->
@@ -68,6 +68,16 @@
 		<name lang="fr">Lundi de Pentecôte</name>
 		<name lang="de">Pfingstmontag</name>
 		<name lang="en">Whit Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="9" month="5" />
+		</date>
+		<name lang="lb">Europadag</name>
+		<name lang="fr">Journée de l'Europe</name>
+		<name lang="de">Europatag</name>
+		<name lang="en">Europe Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
