@@ -125,7 +125,7 @@
 	
 	<holiday validFrom="2018-01-01">
 		<date>
-			<fixedDate day="27" month="8" />
+			<nthWeekdayRuleDate dayOfWeek="1" month="8" nth="last" />
 		</date>
 		<name lang="fil">Araw ng mga Bayani</name>
 		<name lang="en">National Heroes' Day</name>
@@ -137,6 +137,14 @@
 		</date>
 		<name lang="fil">Undás; Todos los Santos; Araw ng mga Santo</name>
 		<name lang="en">All Saints' Day</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01">
+		<date>
+			<fixedDate day="2" month="11" />
+		</date>
+		<name lang="fil">Araw ng mga Kaluluwa</name>
+		<name lang="en">All Soul's Day</name>
 	</holiday>
 	
 	<holiday validFrom="2018-01-01">
@@ -153,6 +161,14 @@
 		</date>
 		<name lang="fil">Pagdiriwang ng kalinislinisang paglilihi kay Santissima Maria Inmaculada</name>
 		<name lang="en">Feast of the Immaculate Conception of the Blessed Virgin Mary</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01">
+		<date>
+			<fixedDate day="24" month="12" />
+		</date>
+		<name lang="fil">Bisperas ng Pasko</name>
+		<name lang="en">Christmas Eve</name>
 	</holiday>
 	
 	<holiday validFrom="2018-01-01">
