@@ -26,7 +26,7 @@
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
 		</date>
-		<name lang="en">Presidents' Day</name>
+		<name lang="en">President's Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
