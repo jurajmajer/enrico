@@ -2,7 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="usa">
 
 	<metadata>
-		<reference>http://www.scstatehouse.gov/man11/36_LegalHolidays.pdf</reference>
+		<reference>https://www.scdhec.gov/about-dhec/state-holidays</reference>
 	</metadata>
 	
 	<holiday validFrom="2011-01-01">
@@ -25,7 +25,7 @@
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
 		</date>
-		<name lang="en">Washington's Birthday/Presidents' Day</name>
+		<name lang="en">George Washington's Birthday/President's Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">

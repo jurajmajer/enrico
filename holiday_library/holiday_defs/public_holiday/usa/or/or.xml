@@ -2,7 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="usa">
 
 	<metadata>
-		<reference>http://www.leg.state.or.us/ors/187.html</reference>
+		<reference>https://www.oregon.gov/das/Pages/Calendar.aspx</reference>
 	</metadata>
 	
 	<holiday validFrom="2011-01-01">
@@ -25,7 +25,7 @@
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
 		</date>
-		<name lang="en">Presidents Day</name>
+		<name lang="en">President's Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
