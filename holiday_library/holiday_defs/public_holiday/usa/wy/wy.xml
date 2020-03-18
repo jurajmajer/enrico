@@ -55,7 +55,7 @@
 		<date>
 			<fixedDate day="11" month="11" />
 		</date>
-		<name lang="en">Veteran's Day</name>
+		<name lang="en">Veterans Day</name>
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>

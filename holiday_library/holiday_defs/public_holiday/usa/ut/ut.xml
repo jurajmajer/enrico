@@ -25,7 +25,7 @@
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
 		</date>
-		<name lang="en">Washington and Lincoln Day</name>
+		<name lang="en">President's Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -87,7 +87,7 @@
 		<date>
 			<fixedDate day="25" month="12" />
 		</date>
-		<name lang="en">Christmas</name>
+		<name lang="en">Christmas Day</name>
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
