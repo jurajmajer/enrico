@@ -11,4 +11,11 @@
 		<name lang="en">Early May bank holiday</name>
 	</holiday>
 	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31">
+		<date>
+			<fixedDate day="28" month="8" />
+		</date>
+		<name lang="en">Senior Race Day</name>
+	</holiday>
+	
 </holidays>

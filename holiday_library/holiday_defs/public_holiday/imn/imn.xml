@@ -52,7 +52,7 @@
 		<name lang="en">Late May Bank Holiday</name>
 	</holiday>
 	
-	<holiday validFrom="2020-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="5" month="6" nth="2" />
 		</date>
