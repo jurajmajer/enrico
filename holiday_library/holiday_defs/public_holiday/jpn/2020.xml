@@ -6,7 +6,7 @@
 	
 	<holiday validFrom="2020-01-01" validTo="2020-12-31">
 		<date>
-			<fixedDate day="23" month="6" />
+			<fixedDate day="23" month="7" />
 		</date>
 		<name lang="ja">海の日 Umi no Hi</name>
 		<name lang="en">Marine Day</name>
@@ -15,7 +15,7 @@
 	
 	<holiday validFrom="2020-01-01" validTo="2020-12-31">
 		<date>
-			<fixedDate day="24" month="6" />
+			<fixedDate day="24" month="7" />
 		</date>
 		<name lang="ja">体育の日 Taiiku no Hi</name>
 		<name lang="en">Health and Sports Day</name>
