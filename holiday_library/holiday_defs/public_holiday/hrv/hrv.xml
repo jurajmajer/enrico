@@ -2,6 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="hrv">
 	<metadata>
 		<reference>https://www.dubrovnik-online.net/english/public_holidays_in_croatia_and_dubrovnik_holidays.php</reference>
+		<reference>https://narodne-novine.nn.hr/clanci/sluzbeni/2019_11_110_2212.html</reference>
 	</metadata>
 	
 	<!-- current dates -->
@@ -17,7 +18,7 @@
 		<date>
 			<fixedDate day="6" month="1" />
 		</date>
-		<name lang="hr">Bogojavljanje ili Sveta tri kralja</name>
+		<name lang="hr">Bogojavljenje ili Sveta tri kralja</name>
 		<name lang="en">Epiphany</name>
 	</holiday>
 	
@@ -62,6 +63,14 @@
 		<name lang="hr">Tijelovo</name>
 		<name lang="en">Corpus Christi</name>
 	</holiday>
+
+	<holiday validFrom="2020-01-01">
+		<date>
+			<fixedDate day="30" month="5" />
+		</date>
+		<name lang="hr">Dan državnosti</name>
+		<name lang="en">Statehood Day</name>
+	</holiday>
 	
 	<holiday validFrom="2011-01-01">
 		<date>
@@ -70,15 +79,7 @@
 		<name lang="hr">Dan antifašističke borbe</name>
 		<name lang="en">Anti-Fascist Struggle Day</name>
 	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
-			<fixedDate day="25" month="6" />
-		</date>
-		<name lang="hr">Dan državnosti</name>
-		<name lang="en">Statehood Day</name>
-	</holiday>
-	
+
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="5" month="8" />
@@ -97,18 +98,18 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
-			<fixedDate day="8" month="10" />
-		</date>
-		<name lang="hr">Dan neovisnosti</name>
-		<name lang="en">Independence Day</name>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
 			<fixedDate day="1" month="11" />
 		</date>
 		<name lang="hr">Svi sveti</name>
 		<name lang="en">All Saints' Day</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01">
+		<date>
+			<fixedDate day="18" month="11" />
+		</date>
+		<name lang="hr">Dan sjećanja na žrtve Domovinskog rata i Dan sjećanja na žrtvu Vukovara i Škabrnje</name>
+		<name lang="en">Remembrance Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -124,7 +125,7 @@
 			<fixedDate day="26" month="12" />
 		</date>
 		<name lang="hr">Prvi dan po Božiću, Sveti Stjepan</name>
-		<name lang="en">Boxing Day</name>
+		<name lang="en">Saint Stephen's Day</name>
 	</holiday>
 
 </holidays>
