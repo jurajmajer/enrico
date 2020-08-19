@@ -23,7 +23,7 @@ class HolidayProcessor {
 	private $region;
 	public static $ENRICO_NAMESPACE = "https://kayaposoft.com/enrico/xsd/1.0";
 	public static $HOLIDAY_DEFS_DIR = __DIR__."/holiday_defs/";
-	public static $HOLIDAY_TYPES = array("public_holiday", "observance", "school_holiday", "other_day", "extra_working_day");
+	public static $HOLIDAY_TYPES = array("public_holiday", "observance", "school_holiday", "other_day", "extra_working_day", "postal_holiday");
 	
 	public function __construct($countryCode, $region) {
 		$this->countryCode = $countryCode;

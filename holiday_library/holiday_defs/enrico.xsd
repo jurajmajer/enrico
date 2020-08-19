@@ -233,6 +233,7 @@
 		school_holiday - school holiday.
 		other_day - other important day. E.g. Mother's day, Father's day etc.
 		extra_working_day - extra working day. This day takes place mostly on Saturday or Sunday and is substituted for extra public holiday so called bridge holiday.
+		postal_holiday - holiday, during which no regular mail is delivered.
 	</documentation></annotation>
 	<restriction base="string">
 		<enumeration value="public_holiday"/>
@@ -240,6 +241,7 @@
 		<enumeration value="school_holiday"/>
 		<enumeration value="other_day"/>
 		<enumeration value="extra_working_day"/>
+		<enumeration value="postal_holiday"/>
 	</restriction>
 </simpleType>
 
