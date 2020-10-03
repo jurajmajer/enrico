@@ -4,49 +4,49 @@
 		<reference>https://www.education.sa.gov.au/teaching/south-australian-state-schools-term-dates</reference>
 	</metadata>
 	
-	<holiday validFrom="2021-01-01" validTo="2021-12-31" holidayType="school_holiday">
+	<holiday validFrom="2022-01-01" validTo="2022-12-31" holidayType="school_holiday">
 		<date>
 			<fixedDate day="1" month="1" />
 		</date>
 		<dateTo>
-			<fixedDate day="26" month="1" />
+			<fixedDate day="30" month="1" />
 		</dateTo>
 		<name lang="en">Summer School Holidays</name>
 	</holiday>
 	
-	<holiday validFrom="2021-01-01" validTo="2021-12-31" holidayType="school_holiday">
+	<holiday validFrom="2022-01-01" validTo="2022-12-31" holidayType="school_holiday">
 		<date>
-			<fixedDate day="10" month="4" />
+			<fixedDate day="15" month="4" />
 		</date>
 		<dateTo>
-			<fixedDate day="26" month="4" />
+			<fixedDate day="1" month="5" />
 		</dateTo>
 		<name lang="en">Autumn School Holidays</name>
 	</holiday>
 	
-	<holiday validFrom="2021-01-01" validTo="2021-12-31" holidayType="school_holiday">
+	<holiday validFrom="2022-01-01" validTo="2022-12-31" holidayType="school_holiday">
 		<date>
-			<fixedDate day="3" month="7" />
+			<fixedDate day="9" month="7" />
 		</date>
 		<dateTo>
-			<fixedDate day="18" month="7" />
+			<fixedDate day="24" month="7" />
 		</dateTo>
 		<name lang="en">Winter School Holidays</name>
 	</holiday>
 	
-	<holiday validFrom="2021-01-01" validTo="2021-12-31" holidayType="school_holiday">
+	<holiday validFrom="2022-01-01" validTo="2022-12-31" holidayType="school_holiday">
 		<date>
-			<fixedDate day="25" month="9" />
+			<fixedDate day="1" month="10" />
 		</date>
 		<dateTo>
-			<fixedDate day="10" month="10" />
+			<fixedDate day="16" month="10" />
 		</dateTo>
 		<name lang="en">Spring School Holidays</name>
 	</holiday>
 	
-	<holiday validFrom="2021-01-01" validTo="2021-12-31" holidayType="school_holiday">
+	<holiday validFrom="2022-01-01" validTo="2022-12-31" holidayType="school_holiday">
 		<date>
-			<fixedDate day="11" month="12" />
+			<fixedDate day="17" month="12" />
 		</date>
 		<dateTo>
 			<fixedDate day="31" month="12" />
