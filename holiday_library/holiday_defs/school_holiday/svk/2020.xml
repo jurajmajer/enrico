@@ -47,13 +47,26 @@
 	
 	<holiday validFrom="2020-01-01" validTo="2020-12-31" holidayType="school_holiday">
 		<date>
-			<fixedDate day="29" month="10" />
+			<fixedDate day="30" month="10" />
 		</date>
 		<dateTo>
-			<fixedDate day="30" month="10" />
+			<fixedDate day="2" month="11" />
 		</dateTo>
 		<name lang="sk">Jesenné prázdniny</name>
 		<name lang="en">Autumn Holidays</name>
+	</holiday>
+	
+	<holiday validFrom="2020-01-01" validTo="2020-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="6" month="11" />
+		</date>
+		<dateTo>
+			<fixedDate day="9" month="11" />
+		</dateTo>
+		<name lang="sk">Jesenné prázdniny</name>
+		<name lang="en">Autumn Holidays</name>
+		<note lang="sk">Extra prázdniny kvôli celoplošnému testovaniu na covid</note>
+		<note lang="en">Extra holidays due to country-wide corona testing</note>
 	</holiday>
 	
 	<holiday validFrom="2020-01-01" validTo="2020-12-31" holidayType="school_holiday">
