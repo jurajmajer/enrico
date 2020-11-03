@@ -2,7 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
 
 	<metadata>
-		<reference>http://www.exec.gov.nl.ca/exec/hrs/working_with_us/holidays2012.html</reference>
+		<reference>https://www.gov.nl.ca/exec/hrs/government-holidays-for-2021/</reference>
 	</metadata>
 	
 	<holiday validFrom="2011-01-01" holidayType="observance">
@@ -44,7 +44,7 @@
 		<name lang="fr">Fête de la Reine ou Journée nationale des Patriotes</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01" holidayType="observance">
+	<holiday validFrom="2021-01-01" holidayType="observance">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -53,8 +53,8 @@
 				<nearestWeekday dayOfWeek="1" />
 			</dateTransformation>
 		</date>
-		<name lang="en">Discovery Day</name>
-		<name lang="fr">John Cabot</name>
+		<name lang="en">June Holiday</name>
+		<name lang="fr">Vacances de juin</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01" holidayType="observance">
@@ -93,6 +93,19 @@
 		</date>
 		<name lang="en">Boxing Day</name>
 		<name lang="fr">Lendemain de Noël</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01" validTo="2020-12-31" holidayType="observance">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="24" month="6" />
+				</baseDate>
+				<nearestWeekday dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="en">Discovery Day</name>
+		<name lang="fr">John Cabot</name>
 	</holiday>
 
 </holidays>
