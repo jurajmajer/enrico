@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="rus">
 	<metadata>
-		<reference>http://www.cbr.ru/statichtml/file/8322/holidays_2018_e.htm</reference>
+		<reference>http://www.cbr.ru/eng/other/holidays/#t1</reference>
 	</metadata>
 	
 	<!-- current dates -->
