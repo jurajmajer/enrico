@@ -91,7 +91,7 @@
 				</baseDate>
 				<addDays>11</addDays>
 			</dateTransformation>
-		</date>
+		</dateTo>
 		<name lang="tr">Ramazan Bayramı</name>
 		<name lang="en">Eid al-Fitr</name>
 	</holiday>
@@ -107,7 +107,7 @@
 				</baseDate>
 				<addDays>3</addDays>
 			</dateTransformation>
-		</date>
+		</dateTo>
 		<name lang="tr">Kurban Bayramı</name>
 		<name lang="en">Eid al-Adha</name>
 	</holiday>
