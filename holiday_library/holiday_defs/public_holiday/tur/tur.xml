@@ -77,19 +77,14 @@
 
 	<holiday validFrom="1909-01-01">
 		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>HIJRI_MONTH_10TH_START</specialDate>
-				</baseDate>
-				<addDays>9</addDays>
-			</dateTransformation>
+			<specialDate>HIJRI_MONTH_10TH_START</specialDate>
 		</date>
 		<dateTo>
 			<dateTransformation>
 				<baseDate>
 					<specialDate>HIJRI_MONTH_10TH_START</specialDate>
 				</baseDate>
-				<addDays>11</addDays>
+				<addDays>2</addDays>
 			</dateTransformation>
 		</dateTo>
 		<name lang="tr">Ramazan Bayramı</name>
@@ -98,14 +93,19 @@
 
 	<holiday validFrom="1909-01-01">
 		<date>
-			<specialDate>HIJRI_MONTH_12TH_START</specialDate>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HIJRI_MONTH_12TH_START</specialDate>
+				</baseDate>
+				<addDays>9</addDays>
+			</dateTransformation>
 		</date>
 		<dateTo>
 			<dateTransformation>
 				<baseDate>
 					<specialDate>HIJRI_MONTH_12TH_START</specialDate>
 				</baseDate>
-				<addDays>3</addDays>
+				<addDays>12</addDays>
 			</dateTransformation>
 		</dateTo>
 		<name lang="tr">Kurban Bayramı</name>
