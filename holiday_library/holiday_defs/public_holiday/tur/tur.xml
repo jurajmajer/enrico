@@ -11,8 +11,6 @@
 		</date>
 		<name lang="tr">Yılbaşı</name>
 		<name lang="en">New Year's Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="1921-01-01">
@@ -21,8 +19,6 @@
 		</date>
 		<name lang="tr">Ulusal Egemenlik ve Çocuk Bayramı</name>
 		<name lang="en">National Sovereignty and Children's Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2009-01-01">
@@ -31,8 +27,6 @@
 		</date>
 		<name lang="tr">Emek ve Dayanışma Günü</name>
 		<name lang="en">Labour and Solidarity Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="1935-01-01">
@@ -41,8 +35,6 @@
 		</date>
 		<name lang="tr">Atatürk'ü Anma Gençlik ve Spor Bayramı</name>
 		<name lang="en">Commemoration of Atatürk, Youth and Sports Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2017-01-01">
@@ -51,8 +43,6 @@
 		</date>
 		<name lang="tr">Demokrasi ve Millî Birlik Günü</name>
 		<name lang="en">Democracy and National Unity Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="1935-01-01">
@@ -61,8 +51,16 @@
 		</date>
 		<name lang="tr">Zafer Bayramı</name>
 		<name lang="en">Victory Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="1925-01-01">
+		<date>
+			<fixedDate day="28" month="10" />
+		</date>
+		<name lang="tr">Cumhuriyet Bayramı</name>
+		<name lang="en">Republic Day</name>
+		<flag>PART_DAY_HOLIDAY</flag>
+		<note lang="en">From 13:00</note>
 	</holiday>
 	
 	<holiday validFrom="1925-01-01">
@@ -71,8 +69,21 @@
 		</date>
 		<name lang="tr">Cumhuriyet Bayramı</name>
 		<name lang="en">Republic Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="1909-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HIJRI_MONTH_10TH_START</specialDate>
+				</baseDate>
+				<addDays>-1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="tr">Ramazan Bayramı</name>
+		<name lang="en">Eid al-Fitr</name>
+		<flag>PART_DAY_HOLIDAY</flag>
+		<note lang="en">From 13:00</note>
 	</holiday>
 
 	<holiday validFrom="1909-01-01">
@@ -89,6 +100,21 @@
 		</dateTo>
 		<name lang="tr">Ramazan Bayramı</name>
 		<name lang="en">Eid al-Fitr</name>
+	</holiday>
+	
+	<holiday validFrom="1909-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HIJRI_MONTH_12TH_START</specialDate>
+				</baseDate>
+				<addDays>8</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="tr">Kurban Bayramı</name>
+		<name lang="en">Eid al-Adha</name>
+		<flag>PART_DAY_HOLIDAY</flag>
+		<note lang="en">From 13:00</note>
 	</holiday>
 
 	<holiday validFrom="1909-01-01">
@@ -115,7 +141,7 @@
 	<!-- demoted dates -->
 	<holiday validFrom="1963-01-01" validTo="1981-12-31">
 		<date>
-			<fixedDate day="25" month="6" />
+			<fixedDate day="27" month="5" />
 		</date>
 		<name lang="tr">Anayasa Bayramı</name>
 		<name lang="en">Constitution Day</name>
@@ -123,9 +149,17 @@
 
 	<holiday validFrom="1909-01-01" validTo="1934-12-31">
 		<date>
-			<fixedDate day="8" month="10" />
+			<fixedDate day="24" month="7" />
 		</date>
 		<name lang="tr">İyd-i Millî</name>
 		<name lang="en">National Day</name>
-	</holiday>		
+	</holiday>
+
+	<holiday validFrom="1999-01-01" validTo="1999-12-31">
+		<date>
+			<fixedDate day="31" month="12" />
+		</date>
+		<name lang="tr">Yeni Yıl arifesi</name>
+		<name lang="en">New Year's Eve</name>
+	</holiday>	
 </holidays>
