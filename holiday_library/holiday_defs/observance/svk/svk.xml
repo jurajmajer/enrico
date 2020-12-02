@@ -48,11 +48,27 @@
 		<name lang="en">Anniversary of the Memorandum of the Slovak Nation</name>
 	</holiday>
 	
+	<holiday validFrom="2021-01-01" holidayType="observance">
+		<date>
+			<fixedDate day="21" month="6" />
+		</date>
+		<name lang="sk">Deň odchodu okupačných vojsk sovietskej armády z Česko-Slovenska v roku 1991</name>
+		<name lang="en">Departure day of occupation forces of the Soviet army from Czechoslovakia in 1991</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01" holidayType="observance">
+		<date>
+			<fixedDate day="24" month="6" />
+		</date>
+		<name lang="sk">Deň pamiatky obetí komunistického režimu</name>
+		<name lang="en">Remembrance Day for the Victims of the Communist Regime</name>
+	</holiday>
+	
 	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="5" month="7" />
 		</date>
-		<name lang="sk">Deň zahraničných Slovákov</name>
+		<name lang="sk">Deň Slovákov žijúcich v zahraničí</name>
 		<name lang="en">Foreign Slovaks Day</name>
 	</holiday>
 	
@@ -70,6 +86,14 @@
 		</date>
 		<name lang="sk">Deň Matice Slovenskej</name>
 		<name lang="en">Matica Slovenská Day</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01" holidayType="observance">
+		<date>
+			<fixedDate day="21" month="8" />
+		</date>
+		<name lang="sk">Deň obetí okupácie Česko-Slovenska v roku 1968</name>
+		<name lang="en">Day of the victims of the Czech-Slovak occupation in 1968</name>
 	</holiday>
 	
 	<holiday validFrom="2017-01-01" holidayType="observance">
@@ -96,6 +120,14 @@
 		<name lang="en">Dukla Pass Victims Day</name>
 	</holiday>
 	
+	<holiday validFrom="2021-01-01" holidayType="observance">
+		<date>
+			<fixedDate day="12" month="10" />
+		</date>
+		<name lang="sk">Deň samizdatu</name>
+		<name lang="en">Samizdat Day</name>
+	</holiday>
+	
 	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="27" month="10" />
@@ -110,6 +142,7 @@
 		</date>
 		<name lang="sk">Deň vzniku samostatného Česko-slovenského štátu</name>
 		<name lang="en">Day of the Establishment of an Independent Czecho-Slovak State</name>
+		<note lang="en">Starting from 2021 this day is national holiday in Slovakia. However it is a working day.</note>
 	</holiday>
 	
 	<holiday validFrom="2017-01-01" holidayType="observance">
@@ -142,6 +175,15 @@
 		</date>
 		<name lang="sk">Deň vyhlásenia Slovenska za samostatnú cirkevnú provinciu</name>
 		<name lang="en">Day of the Declaration of Slovakia as an Independent Ecclesiastic Province</name>
+	</holiday>
+	
+	<!-- old dates -->
+	<holiday validFrom="2017-01-01" validTo="2020-12-31" holidayType="observance">
+		<date>
+			<fixedDate day="5" month="7" />
+		</date>
+		<name lang="sk">Deň zahraničných Slovákov</name>
+		<name lang="en">Foreign Slovaks Day</name>
 	</holiday>
 
 </holidays>
