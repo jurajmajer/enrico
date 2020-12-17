@@ -7,7 +7,7 @@
 	
 	<holiday validFrom="2020-01-01" validTo="2020-12-31">
 		<date>
-			<fixedDate day="25" month="9" />
+			<fixedDate day="23" month="10" />
 		</date>
 		<name lang="en">Friday before the AFL Grand Final</name>
 	</holiday>

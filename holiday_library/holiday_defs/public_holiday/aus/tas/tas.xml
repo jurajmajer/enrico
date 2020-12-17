@@ -2,7 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="aus">
 
 	<metadata>
-		<reference>http://australia.gov.au/topics/australian-facts-and-figures/public-holidays</reference>
+		<reference>https://worksafe.tas.gov.au/topics/laws-and-compliance/public-holidays</reference>
 	</metadata>
 	
 	<holiday validFrom="2011-01-01">
