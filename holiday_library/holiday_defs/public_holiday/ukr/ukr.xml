@@ -98,8 +98,8 @@
 		</date>
 		<name lang="uk">День перемоги над нацизмом у Другій світовій війні</name>
 		<name lang="en">Victory Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
 	</holiday>
 	
 	<holiday validFrom="2015-01-01">
@@ -138,8 +138,8 @@
 		</date>
 		<name lang="uk">Різдво</name>
 		<name lang="en">Gregorian Christmas</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
 	</holiday>
 	
 	<!-- Old dates -->
