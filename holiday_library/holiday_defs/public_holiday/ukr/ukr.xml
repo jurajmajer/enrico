@@ -2,6 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="ukr">
 	<metadata>
 		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine</reference>
+		<reference>https://www.unian.ua/lite/holidays/kalendar-2021-vihidni-ta-svyata-2021-roku-11222240.html</reference>
 	</metadata>
 	
 	<!-- current dates -->
