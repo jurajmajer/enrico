@@ -55,39 +55,12 @@
 	
 	<holiday validFrom="1925-01-01">
 		<date>
-			<fixedDate day="28" month="10" />
-		</date>
-		<name lang="tr">Cumhuriyet Bayramı</name>
-		<name lang="en">Republic Day</name>
-		<flag>PART_DAY_HOLIDAY</flag>
-		<note lang="tr">13:00 itibarıyla</note>
-		<note lang="en">From 13:00</note>
-	</holiday>
-	
-	<holiday validFrom="1925-01-01">
-		<date>
 			<fixedDate day="29" month="10" />
 		</date>
 		<name lang="tr">Cumhuriyet Bayramı</name>
 		<name lang="en">Republic Day</name>
 	</holiday>
 	
-	<holiday validFrom="1909-01-01">
-		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>HIJRI_MONTH_10TH_START</specialDate>
-				</baseDate>
-				<addDays>-1</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="tr">Ramazan Bayramı</name>
-		<name lang="en">Eid al-Fitr</name>
-		<flag>PART_DAY_HOLIDAY</flag>
-		<note lang="tr">13:00 itibarıyla</note>
-		<note lang="en">From 13:00</note>
-	</holiday>
-
 	<holiday validFrom="1909-01-01">
 		<date>
 			<specialDate>HIJRI_MONTH_10TH_START</specialDate>
@@ -104,22 +77,6 @@
 		<name lang="en">Eid al-Fitr</name>
 	</holiday>
 	
-	<holiday validFrom="1909-01-01">
-		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>HIJRI_MONTH_12TH_START</specialDate>
-				</baseDate>
-				<addDays>8</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="tr">Kurban Bayramı</name>
-		<name lang="en">Eid al-Adha</name>
-		<flag>PART_DAY_HOLIDAY</flag>
-		<note lang="tr">13:00 itibarıyla</note>
-		<note lang="en">From 13:00</note>
-	</holiday>
-
 	<holiday validFrom="1909-01-01">
 		<date>
 			<dateTransformation>
