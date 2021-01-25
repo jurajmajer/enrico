@@ -60,6 +60,7 @@
 		<name lang="tr">Cumhuriyet Bayramı</name>
 		<name lang="en">Republic Day</name>
 		<flag>PART_DAY_HOLIDAY</flag>
+		<note lang="tr">13:00 itibarıyla</note>
 		<note lang="en">From 13:00</note>
 	</holiday>
 	
@@ -83,6 +84,7 @@
 		<name lang="tr">Ramazan Bayramı</name>
 		<name lang="en">Eid al-Fitr</name>
 		<flag>PART_DAY_HOLIDAY</flag>
+		<note lang="tr">13:00 itibarıyla</note>
 		<note lang="en">From 13:00</note>
 	</holiday>
 
@@ -114,6 +116,7 @@
 		<name lang="tr">Kurban Bayramı</name>
 		<name lang="en">Eid al-Adha</name>
 		<flag>PART_DAY_HOLIDAY</flag>
+		<note lang="tr">13:00 itibarıyla</note>
 		<note lang="en">From 13:00</note>
 	</holiday>
 
@@ -159,7 +162,9 @@
 		<date>
 			<fixedDate day="31" month="12" />
 		</date>
-		<name lang="tr">Yeni Yıl arifesi</name>
-		<name lang="en">New Year's Eve</name>
+		<name lang="tr">Tam Gün Genel Tatil</name>
+		<name lang="en">Full Day General Holiday</name>
+		<note lang="tr">Bu gün, Y2K probleminin yol açabileceği sorunlara karşı tedbirler alınabilmesi için, 4500 sayılı Kanun ile tatil olarak ilan edilmiştir.</note>
+		<note lang="en">This day has been declared as a holiday with the Code No. 4500 in order to take measures against the problems that may be caused by the Y2K problem.</note>
 	</holiday>	
 </holidays>
