@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="blr">
+	<metadata>
+		<reference>https://president.gov.by/en/gosudarstvo/prazdniki/calendar-2021</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="be">Новы год (Novy Hod)</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="2" month="1" />
+		</date>
+		<name lang="be">Новы год (Novy Hod)</name>
+		<name lang="en">New Year's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="7" month="1" />
+		</date>
+		<name lang="be">Каляды праваслаўныя (Kalady pravasłaŭnyja)</name>
+		<name lang="en">Orthodox Christmas</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="8" month="3" />
+		</date>
+		<name lang="be">Мiжнародны жаночы дзень (Mižnarodny žanočy dzień)</name>
+		<name lang="en">International Women's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>9</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="be">Радунiца (Radunica)</name>
+		<name lang="en">Radonitsa</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="be">Дзень працы (Dzień Pracy)</name>
+		<name lang="en">Labour Day</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="9" month="5" />
+		</date>
+		<name lang="be">Дзень Перамогi (Dzień Pieramohi)</name>
+		<name lang="en">Victory Day</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="3" month="7" />
+		</date>
+		<name lang="be">Дзень Незалежнасцi (Dzień Niezaležnasci)</name>
+		<name lang="en">Independence Day</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="7" month="11" />
+		</date>
+		<name lang="be">Дзень Кастрычніцкай рэвалюцыі (Dzień Kastryčnickaj revalucyi)</name>
+		<name lang="en">October Revolution Day</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="be">Каляды каталiцкiя (Kalady katalickija)</name>
+		<name lang="en">Catholic Christmas</name>
+	</holiday>
+	
+</holidays>
