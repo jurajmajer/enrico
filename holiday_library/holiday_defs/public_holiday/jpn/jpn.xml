@@ -90,7 +90,7 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
-	<holiday validFrom="2021-01-01">
+	<holiday validFrom="2022-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="7" nth="3" />
 		</date>
@@ -98,7 +98,7 @@
 		<name lang="en">Marine Day</name>
 	</holiday>
 	
-	<holiday validFrom="2021-01-01">
+	<holiday validFrom="2022-01-01">
 		<date>
 			<fixedDate day="11" month="8" />
 		</date>
@@ -129,7 +129,7 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
-	<holiday validFrom="2021-01-01">
+	<holiday validFrom="2022-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
 		</date>
