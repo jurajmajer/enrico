@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="nzl">
+
+	<metadata>
+		<reference>https://www.employment.govt.nz/leave-and-holidays/public-holidays/public-holidays-and-anniversary-dates/</reference>
+	</metadata>
+	
+	<holiday validFrom="2025-01-01" validTo="2025-12-31">
+		<date>
+			<fixedDate day="20" month="6" />
+		</date>
+		<name lang="en">Matariki Day</name>
+	</holiday>
+	
+</holidays>
