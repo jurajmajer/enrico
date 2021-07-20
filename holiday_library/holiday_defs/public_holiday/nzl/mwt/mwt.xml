@@ -7,30 +7,30 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
-			<nthWeekdayRuleDate dayOfWeek="1" month="9" nth="4" />
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="29" month="1" />
+				</baseDate>
+				<nearestWeekday dayOfWeek="1" />
+			</dateTransformation>
 		</date>
-		<name lang="en">South Canterbury Anniversary Day</name>
+		<name lang="en">Auckland Anniversary Day</name>
 		<flag>REGIONAL_HOLIDAY</flag>
-		<note lang="en">Observed in South Canterbury</note>
+		<note lang="en">Observed in some parts of the region</note>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<dateTransformation>
 				<baseDate>
-					<dateTransformation>
-						<baseDate>
-							<nthWeekdayRuleDate dayOfWeek="2" month="11" nth="1" />
-						</baseDate>
-						<addDays>4</addDays>
-					</dateTransformation>
+					<fixedDate day="22" month="1" />
 				</baseDate>
-				<nearestWeekdayAfter dayOfWeek="5" />
+				<nearestWeekday dayOfWeek="1" />
 			</dateTransformation>
 		</date>
-		<name lang="en">Canterbury Anniversary Day</name>
+		<name lang="en">Wellington Anniversary Day</name>
 		<flag>REGIONAL_HOLIDAY</flag>
-		<note lang="en">Observed in Northern &amp; Central Canterbury</note>
+		<note lang="en">Observed in most parts of the region</note>
 	</holiday>
 
 </holidays>

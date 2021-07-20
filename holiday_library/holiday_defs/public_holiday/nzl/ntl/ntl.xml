@@ -9,12 +9,12 @@
 		<date>
 			<dateTransformation>
 				<baseDate>
-					<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="3" />
+					<fixedDate day="29" month="1" />
 				</baseDate>
-				<nearestWeekdayAfter dayOfWeek="5" />
+				<nearestWeekday dayOfWeek="1" />
 			</dateTransformation>
 		</date>
-		<name lang="en">Hawke's Bay Anniversary Day</name>
+		<name lang="en">Northland Anniversary Day</name>
 	</holiday>
 
 </holidays>
