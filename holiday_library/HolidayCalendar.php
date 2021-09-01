@@ -76,10 +76,9 @@ class HolidayCalendar {
 		if($this->isHoliday($this->getHolidaysForDateRange($date, $date, "extra_working_day"))) {
 			return TRUE;
 		}
-		// is it Saturday or Sunday?
+		// is it weekend?
 		$dateUtils = new DateUtils();
-		$dayOfWeek = $dateUtils->getDayOfWeek($date);
-		if($dayOfWeek == 6 || $dayOfWeek == 7) {
+		if($this->isWeekend($dateUtils->getDayOfWeek($date))) {
 			return FALSE;
 		}
 		// is it public holiday?
@@ -87,9 +86,14 @@ class HolidayCalendar {
 			return FALSE;
 		}
 		// is some public holiday observed on this day?
-		$holidays = $this->getHolidaysForYear($date->year-1, "public_holiday");
+		$holidays = array();
+		if($this->contryConfig->fromDate->compare(new EnricoDate(1, 1, $date->year-1)) < 0) {
+			$holidays = array_merge($holidays, $this->getHolidaysForYear($date->year-1, "public_holiday"));
+		}
 		$holidays = array_merge($holidays, $this->getHolidaysForYear($date->year, "public_holiday"));
-		$holidays = array_merge($holidays, $this->getHolidaysForYear($date->year+1, "public_holiday"));
+		if($this->contryConfig->toDate->compare(new EnricoDate(31, 12, $date->year+1)) > 0) {
+			$holidays = array_merge($holidays, $this->getHolidaysForYear($date->year+1, "public_holiday"));
+		}
 		for($i=0; $i<sizeof($holidays); $i++) {
 			if(!in_array("REGIONAL_HOLIDAY", $holidays[$i]->flags) && isset($holidays[$i]->observedOn) &&
 				$holidays[$i]->observedOn != NULL && $holidays[$i]->observedOn->compare($date) == 0) {
@@ -159,6 +163,19 @@ class HolidayCalendar {
 
 		usort($retVal, array('HolidayCalendar', 'sortByDate'));
 		return $retVal;
+	}
+	
+	private function isWeekend($dayOfWeek) {
+		$firstWeekendDay = 6;
+		$secondWeekendDay = 7;
+		if(strcmp($this->countryCode, "isr") == 0) {
+			$firstWeekendDay = 5;
+			$secondWeekendDay = 6;
+		}
+		if($dayOfWeek == $firstWeekendDay || $dayOfWeek == $secondWeekendDay) {
+			return TRUE;
+		}
+		return FALSE;
 	}
 	
 	private static function sortByDate($holiday1, $holiday2) {
