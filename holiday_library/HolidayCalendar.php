@@ -102,9 +102,9 @@ class HolidayCalendar {
 		}
 		return TRUE;
 	}
-	
+
 	public static function whereIsPublicHoliday($date) {
-		
+
 		$retVal = array();
 		$supportedCountries = HolidayCalendar::getSupportedCountries();
 		foreach ($supportedCountries as $key => $value) {
@@ -123,7 +123,7 @@ class HolidayCalendar {
 		}
 		return $retVal;
 	}
-	
+
 	private function isHoliday($holidays) {
 		for($i=0; $i<sizeof($holidays); $i++) {
 			if(!in_array("REGIONAL_HOLIDAY", $holidays[$i]->flags)) {
@@ -132,17 +132,17 @@ class HolidayCalendar {
 		}
 		return FALSE;
 	}
-	
+
 	private function pickHolidaysBetweeenDates($fromDate, $toDate, $holidays) {
 		$retVal = array();
 
 		for($i=0; $i<count($holidays); $i++) {
 			$date = $holidays[$i]->date;
-			
+
 			if($date->year < $fromDate->year || $date->year > $toDate->year) {
 				continue;
 			}
-			
+
 			if($date->year == $fromDate->year) {
 				if($fromDate->month > $date->month)
 					continue;
@@ -150,7 +150,7 @@ class HolidayCalendar {
 				   $fromDate->day > $date->day)
 					continue;
 			}
-			
+
 			if($date->year == $toDate->year) {
 				if($date->month > $toDate->month)
 					continue;
@@ -164,7 +164,7 @@ class HolidayCalendar {
 		usort($retVal, array('HolidayCalendar', 'sortByDate'));
 		return $retVal;
 	}
-	
+
 	private function isWeekend($dayOfWeek) {
 		$firstWeekendDay = 6;
 		$secondWeekendDay = 7;
@@ -205,7 +205,8 @@ class HolidayCalendar {
 		$retVal["gbr"]->regions = array("eng", "nir", "sct", "wls");
 		$retVal["svk"]->regions = array("bc", "bl", "ki", "ni", "pv", "ta", "tc", "zi");
 		$retVal["che"]->regions = array("ag", "ai", "ar", "bl", "bs", "be", "fr", "ge", "gl", "gr", "ju", "lu", "ne", "nw", "ow", "sg", "sh", "sz", "so", "tg", "ti", "ur", "vs", "vd", "zg", "zh");
-		
+		$retVal["esp"]->regions = array("bcn", "mad");
+
 		return $retVal;
 	}
 }
