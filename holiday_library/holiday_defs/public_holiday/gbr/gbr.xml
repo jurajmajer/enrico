@@ -31,7 +31,7 @@
 		<name lang="en">Early May bank holiday</name>
 	</holiday>
 	
-	<holiday validFrom="2013-01-01">
+	<holiday validFrom="2023-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="last" />
 		</date>
@@ -57,6 +57,13 @@
 	</holiday>
 	
 	<!-- Old dates -->
+	<holiday validFrom="2013-01-01" validTo="2021-12-31">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="last" />
+		</date>
+		<name lang="en">Spring bank holiday</name>
+	</holiday>
+	
 	<holiday validFrom="2011-01-01" validTo="2011-12-31">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="last" />
