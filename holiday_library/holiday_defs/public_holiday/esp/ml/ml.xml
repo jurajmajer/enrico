@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
+
+	<metadata>
+		<reference>https://www.melilla.es/melillaPortal/contenedor.jsp?seccion=s_fact_d4_v1.jsp&amp;contenido=30529&amp;nivel=1400&amp;tipo=2&amp;codResi=1&amp;language=es&amp;codMenu=614&amp;codMenuPN=600&amp;evento=1</reference>
+	</metadata>
+	
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="13" month="3" />
+		</date>
+		<name lang="es">Estatuto de Autonomía de la Ciudad de Melilla</name>
+		<name lang="en">Statute of Autonomy of the City of Melilla</name>
+	</holiday>
+
+	<holiday validFrom="2021-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-3</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Jueves Santo</name>
+		<name lang="en">Maundy Thursday</name>
+	</holiday>
+
+	<holiday validFrom="2021-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>HIJRI_MONTH_12TH_START</specialDate>
+				</baseDate>
+				<addDays>10</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Fiesta del Sacrificio</name>
+		<name lang="en">Aid Al Adha</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="8" month="9" />
+		</date>
+		<name lang="es">Día de Ntra. Sra. Virgen de la Victoria (excelsa Patrona de la Ciudad)</name>
+		<name lang="en">Day of Our Lady of the Victory (exalted Patron of the City)</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="17" month="9" />
+		</date>
+		<name lang="es">Día de Melilla</name>
+		<name lang="en">Melilla Day</name>
+	</holiday>
+
+</holidays>

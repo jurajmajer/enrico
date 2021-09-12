@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
+
+	<metadata>
+		<reference>https://www.castillalamancha.es/sites/default/files/documentos/pdf/20200728/memoria_al_borrador_decreto_calendario_laboral_2021.pdf</reference>
+	</metadata>
+
+	<holiday validFrom="2021-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-3</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Jueves Santo</name>
+		<name lang="en">Maundy Thursday</name>
+	</holiday>
+
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="31" month="5" />
+		</date>
+		<name lang="es">Día de la Región Castilla-La Mancha</name>
+		<name lang="en">Castilla-La Mancha Region Day</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>60</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="de">Celebración de las Fiestas del Corpus Christi</name>
+		<name lang="en">Corpus Christi</name>
+	</holiday>
+
+</holidays>

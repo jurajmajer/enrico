@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
+
+	<metadata>
+		<reference>https://dgte.cantabria.es/-/calendario-de-fiestas-laborales-para-el-ano-2021-en-la-comunidad-autonoma-de-cantabria</reference>
+	</metadata>
+
+	<holiday validFrom="2021-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-3</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Jueves Santo</name>
+		<name lang="en">Maundy Thursday</name>
+	</holiday>
+
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="28" month="6" />
+		</date>
+		<name lang="es">Día de las Instituciones de Cantabria</name>
+		<name lang="en">Cantabria Institutions Day</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="15" month="9" />
+		</date>
+		<name lang="es">La Bien Aparecida</name>
+		<name lang="en">Our Lady of the Well Appeared</name>
+	</holiday>
+
+</holidays>

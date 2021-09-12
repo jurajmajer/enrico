@@ -2,10 +2,10 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
 
 	<metadata>
-		<reference>https://www.madrid.es/portales/munimadrid/es/Inicio/Actividad-economica-y-hacienda/Empresa-y-comercio/Actividades-y-eventos/Calendario-oficial-laboral-y-de-dias-inhabiles-y-festivos-2021-para-Madrid/?vgnextfmt=default&vgnextoid=096aa1247bdd4710VgnVCM2000001f4a900aRCRD&vgnextchannel=a89b6d5ef88fe410VgnVCM1000000b205a0aRCRD</reference>
+		<reference>https://www.madrid.es/portales/munimadrid/es/Inicio/Actividad-economica-y-hacienda/Empresa-y-comercio/Actividades-y-eventos/Calendario-oficial-laboral-y-de-dias-inhabiles-y-festivos-2021-para-Madrid/?vgnextfmt=default&amp;vgnextoid=096aa1247bdd4710VgnVCM2000001f4a900aRCRD&amp;vgnextchannel=a89b6d5ef88fe410VgnVCM1000000b205a0aRCRD</reference>
 	</metadata>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -15,19 +15,19 @@
 			</dateTransformation>
 		</date>
 		<name lang="es">Jueves Santo</name>
-		<name lang="en">Good Thursday</name>
+		<name lang="en">Maundy Thursday</name>
 	</holiday>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
-			<fixedDate day="2" month="5" />
+			<fixedDate day="3" month="5" />
 		</date>
 		<name lang="es">Fiesta de la Comunidad de Madrid</name>
 		<name lang="en">Madrid’s Day</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="15" month="5" />
 		</date>
@@ -36,7 +36,7 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="9" month="11" />
 		</date>

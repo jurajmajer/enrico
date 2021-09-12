@@ -5,7 +5,7 @@
 	</metadata>
 	
 	<!-- current dates -->
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="1" month="1" />
 		</date>
@@ -13,7 +13,7 @@
 		<name lang="en">New Year's Day</name>
 	</holiday>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="6" month="1" />
 		</date>
@@ -21,7 +21,7 @@
 		<name lang="en">Epiphany</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -34,15 +34,16 @@
 		<name lang="en">Good Friday</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="1" month="5" />
 		</date>
 		<name lang="es">Día del Trabajo</name>
 		<name lang="en">Labour Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 
-	<holiday validFrom="2019-01-01">
+	<holiday validFrom="2022-01-01">
 		<date>
 			<fixedDate day="15" month="8" />
 		</date>
@@ -50,7 +51,7 @@
 		<name lang="en">Assumption of Mary</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="12" month="10" />
 		</date>
@@ -58,7 +59,7 @@
 		<name lang="en">National Day of Spain</name>
 	</holiday>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="1" month="11" />
 		</date>
@@ -66,7 +67,7 @@
 		<name lang="en">All Saints' Day</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="6" month="12" />
 		</date>
@@ -74,7 +75,7 @@
 		<name lang="en">Constitution Day</name>
 	</holiday>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="8" month="12" />
 		</date>
@@ -82,12 +83,13 @@
 		<name lang="en">Immaculate Conception</name>
 	</holiday>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="es">Navidad</name>
 		<name lang="en">Christmas Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 
 </holidays>

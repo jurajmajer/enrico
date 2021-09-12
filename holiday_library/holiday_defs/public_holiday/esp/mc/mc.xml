@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
+
+	<metadata>
+		<reference>https://www.murciaoposiciones.com/calendario-laboral-de-murcia-del-2021/</reference>
+		<reference>https://sede.murcia.es/calendario-dias-inhabiles</reference>
+	</metadata>
+
+	<holiday validFrom="2021-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-3</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Jueves Santo</name>
+		<name lang="en">Maundy Thursday</name>
+	</holiday>
+
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="19" month="3" />
+		</date>
+		<name lang="es">San José</name>
+		<name lang="en">St. Joseph's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="9" month="6" />
+		</date>
+		<name lang="es">Día de la Región de Murcia</name>
+		<name lang="en">Murcia Day</name>
+	</holiday>
+
+</holidays>

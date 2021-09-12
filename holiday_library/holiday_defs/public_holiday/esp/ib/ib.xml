@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
+
+	<metadata>
+		<reference>https://www.caib.es/sites/calendarilaboral/es/aao_2021/</reference>
+	</metadata>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<fixedDate day="1" month="3" />
+		</date>
+		<name lang="es">Dia de las Illes Balears</name>
+		<name lang="en">Balearic National Day</name>
+	</holiday>
+
+	<holiday validFrom="2021-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-3</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Jueves Santo</name>
+		<name lang="en">Maundy Thursday</name>
+	</holiday>
+	
+	<holiday validFrom="2021-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Lunes de Pascua Florida</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+
+</holidays>

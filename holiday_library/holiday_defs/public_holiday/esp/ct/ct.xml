@@ -5,7 +5,7 @@
 		<reference>https://ajuntament.barcelona.cat/calendarifestius/en/</reference>
 	</metadata>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -18,7 +18,7 @@
 		<name lang="en">Easter Monday</name>
 	</holiday>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="24" month="6" />
 		</date>
@@ -26,7 +26,7 @@
 		<name lang="en">Saint John’s Day</name>
 	</holiday>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="11" month="9" />
 		</date>
@@ -34,7 +34,7 @@
 		<name lang="en">Catalan National Day</name>
 	</holiday>
 
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2021-01-01">
 		<date>
 			<fixedDate day="24" month="9" />
 		</date>
