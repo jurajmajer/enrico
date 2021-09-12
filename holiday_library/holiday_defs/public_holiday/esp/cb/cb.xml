@@ -20,7 +20,7 @@
 
 	<holiday validFrom="2021-01-01">
 		<date>
-			<fixedDate day="28" month="6" />
+			<fixedDate day="28" month="7" />
 		</date>
 		<name lang="es">Día de las Instituciones de Cantabria</name>
 		<name lang="en">Cantabria Institutions Day</name>
