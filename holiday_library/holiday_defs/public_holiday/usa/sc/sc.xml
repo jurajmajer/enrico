@@ -73,7 +73,7 @@
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="4" month="11" nth="4" />
 		</date>
-		<name lang="en">National Thanksgiving Day</name>
+		<name lang="en">Thanksgiving Day</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
