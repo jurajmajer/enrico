@@ -2,7 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
 
 	<metadata>
-		<reference>http://www.cnt.gouv.qc.ca/en/leaves-and-absences/statutory-holidays/index.html</reference>
+		<reference>https://www.cnesst.gouv.qc.ca/en/working-conditions/leave/statutory-holidays/statutory-holidays</reference>
 	</metadata>
 
 	<holiday validFrom="2011-01-01">
