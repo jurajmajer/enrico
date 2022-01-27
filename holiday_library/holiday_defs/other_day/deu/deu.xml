@@ -2,7 +2,6 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="deu">
 	<metadata>
 		<reference>https://en.wikipedia.org/wiki/Daylight_saving_time_by_country</reference>
-		<reference>https://en.wikipedia.org/wiki/International_Women%27s_Day</reference>
 		<reference>https://en.wikipedia.org/wiki/Mother's_Day</reference>
 		<reference>https://en.wikipedia.org/wiki/Father%27s_Day</reference>
 	</metadata>
@@ -23,14 +22,6 @@
 		</date>
 		<name lang="de">Muttertag</name>
 		<name lang="en">Mother's Day</name>
-	</holiday>
-
-	<holiday validFrom="2018-01-01" holidayType="other_day">
-		<date>
-			<fixedDate day="8" month="3" />
-		</date>
-		<name lang="de">Internationaler Frauentag</name>
-		<name lang="en">International Women's Day</name>
 	</holiday>
 
 	<holiday validFrom="2018-01-01" holidayType="other_day">

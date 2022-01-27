@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="aus">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/International_Women%27s_Day</reference>
+	</metadata>
+
+	<holiday validFrom="2018-01-01" holidayType="other_day">
+		<date>
+			<fixedDate day="8" month="3" />
+		</date>
+		<name lang="de">Internationaler Frauentag</name>
+		<name lang="en">International Women's Day</name>
+	</holiday>
+
+</holidays>
