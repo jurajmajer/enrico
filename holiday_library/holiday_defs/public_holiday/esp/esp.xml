@@ -89,7 +89,6 @@
 		</date>
 		<name lang="es">Navidad</name>
 		<name lang="en">Christmas Day</name>
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 
 </holidays>
