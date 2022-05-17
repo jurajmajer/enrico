@@ -44,7 +44,7 @@
 		</date>
 		<name lang="zh">劳动节</name>
 		<name lang="en">Labor Day</name>
-		<note lang="en">1 weekday long, 3 days in total. Other weekdays are compensated with working Saturday, Sunday or both.</note>
+		<note lang="en">1 weekday long, 3 or 5 days in total. Other weekdays are compensated with working Saturday, Sunday or both.</note>
 	</holiday>
 	
 	<holiday validFrom="2013-01-01">
