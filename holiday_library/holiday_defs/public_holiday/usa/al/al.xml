@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="usa">
-
 	<metadata>
 		<reference>https://personnel.alabama.gov/Downloads/StateHolidays.pdf</reference>
 	</metadata>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="1" month="1" />
@@ -13,21 +10,18 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="1" nth="3" />
 		</date>
 		<name lang="en">Robert E. Lee, Martin Luther King, Jr.'s Birthday</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
 		</date>
 		<name lang="en">George Washington, Thomas Jefferson's Birthday</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<dateTransformation>
@@ -41,28 +35,32 @@
 		<flag>REGIONAL_HOLIDAY</flag>
 		<note lang="en">Observed only in Baldwin and Mobile Counties</note>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="4" nth="4" />
 		</date>
 		<name lang="en">Confederate Memorial Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="last" />
 		</date>
 		<name lang="en">National Memorial Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="6" nth="1" />
 		</date>
 		<name lang="en">Jefferson Davis' Birthday</name>
 	</holiday>
-	
+	<holiday validFrom="2021-06-17">
+		<date>
+			<fixedDate day="19" month="6" />
+		</date>
+		<name lang="en">Juneteenth National Independence Day</name>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="4" month="7" />
@@ -71,21 +69,18 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="9" nth="1" />
 		</date>
 		<name lang="en">Labor Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
 		</date>
 		<name lang="en">Columbus Day, Fraternal Day, American Indian Heritage Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="11" month="11" />
@@ -94,21 +89,18 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="4" month="11" nth="4" />
 		</date>
 		<name lang="en">Thanksgiving</name>
 	</holiday>
-	
 	<holiday validFrom="2019-01-01">
 		<date>
 			<fixedDate day="1" month="12" />
 		</date>
 		<name lang="en">Mrs. Rosa L. Parks Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="25" month="12" />
@@ -117,5 +109,4 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-
 </holidays>
