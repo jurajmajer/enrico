@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="usa">
-
 	<metadata>
 		<reference>http://www.wvdhhr.org/bph/hsc/Holidays.asp</reference>
 	</metadata>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="1" month="1" />
@@ -13,35 +11,38 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="1" nth="3" />
 		</date>
 		<name lang="en">Martin Luther King Jr. Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
 		</date>
 		<name lang="en">President's Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01" frequency="2%0">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="2" month="5" nth="2" />
 		</date>
 		<name lang="en">Primary Election Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="last" />
 		</date>
 		<name lang="en">Memorial Day</name>
 	</holiday>
-	
+	<holiday validFrom="2021-06-17">
+		<date>
+			<fixedDate day="19" month="6" />
+		</date>
+		<name lang="en">Juneteenth National Independence Day</name>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="20" month="6" />
@@ -50,7 +51,6 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="4" month="7" />
@@ -59,21 +59,18 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="9" nth="1" />
 		</date>
 		<name lang="en">Labor Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />
 		</date>
 		<name lang="en">Columbus Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01" frequency="2%0">
 		<date>
 			<dateTransformation>
@@ -85,7 +82,6 @@
 		</date>
 		<name lang="en">General Election Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="11" month="11" />
@@ -94,14 +90,12 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="4" month="11" nth="4" />
 		</date>
 		<name lang="en">Thanksgiving Day</name>
 	</holiday>
-	
 	<holiday validFrom="2016-01-01">
 		<date>
 			<dateTransformation>
@@ -113,7 +107,6 @@
 		</date>
 		<name lang="en">Day After Thanksgiving</name>
 	</holiday>
-	
 	<holiday validFrom="2013-01-01">
 		<date>
 			<fixedDate day="24" month="12" />
@@ -122,7 +115,6 @@
 		<flag>PART_DAY_HOLIDAY</flag>
 		<note lang="en">One-half day</note>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="25" month="12" />
@@ -131,7 +123,6 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
 	<holiday validFrom="2013-01-01">
 		<date>
 			<fixedDate day="31" month="12" />
@@ -140,8 +131,6 @@
 		<flag>PART_DAY_HOLIDAY</flag>
 		<note lang="en">One-half day</note>
 	</holiday>
-	
-	<!-- Old holidays -->
 	<holiday validFrom="2011-01-01" validTo="2015-12-31">
 		<date>
 			<dateTransformation>
@@ -153,5 +142,4 @@
 		</date>
 		<name lang="en">Lincoln's Day</name>
 	</holiday>
-
 </holidays>
