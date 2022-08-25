@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="usa">
-
 	<metadata>
 		<reference>https://sos.nd.gov/about-office/holiday-office-closings</reference>
 	</metadata>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="1" month="1" />
@@ -13,21 +10,18 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="1" nth="3" />
 		</date>
 		<name lang="en">Martin Luther King Jr. Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="2" nth="3" />
 		</date>
 		<name lang="en">President's Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<dateTransformation>
@@ -39,14 +33,20 @@
 		</date>
 		<name lang="en">Good Friday</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="5" nth="last" />
 		</date>
 		<name lang="en">Memorial Day</name>
 	</holiday>
-	
+	<holiday validFrom="2021-06-17">
+		<date>
+			<fixedDate day="19" month="6" />
+		</date>
+		<name lang="en">Juneteenth National Independence Day</name>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="4" month="7" />
@@ -55,14 +55,12 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="9" nth="1" />
 		</date>
 		<name lang="en">Labor Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="11" month="11" />
@@ -71,14 +69,12 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="4" month="11" nth="4" />
 		</date>
 		<name lang="en">Thanksgiving Day</name>
 	</holiday>
-	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<fixedDate day="25" month="12" />
@@ -87,5 +83,4 @@
 		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
-
 </holidays>
