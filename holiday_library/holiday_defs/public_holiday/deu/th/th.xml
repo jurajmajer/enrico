@@ -27,5 +27,13 @@
 		<name lang="de">Reformationstag</name>
 		<name lang="en">Reformation Day</name>
 	</holiday>
+	
+	<holiday validFrom="2019-01-01">
+		<date>
+			<fixedDate day="20" month="9" />
+		</date>
+		<name lang="de">Internationaler Kindertag</name>
+		<name lang="en">World Children's Day</name>
+	</holiday>
 
 </holidays>
