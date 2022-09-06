@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="usa">
+	<metadata>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_the_United_States</reference>
+	</metadata>
+	
+	<holiday validFrom="2021-06-17">
+		<date>
+			<fixedDate day="19" month="6" />
+		</date>
+		<name lang="en">Juneteenth National Independence Day</name>
+		<observanceRule dayOfWeek="6" addDays="-1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+
+</holidays>
