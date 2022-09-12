@@ -17,5 +17,12 @@
 		</date>
 		<name lang="en">Platinum Jubilee bank holiday</name>
 	</holiday>
+	
+	<holiday validFrom="2022-01-01" validTo="2022-12-31">
+		<date>
+			<fixedDate day="19" month="9" />
+		</date>
+		<name lang="en">Her Majesty Queen Elizabeth II’s State Funeral</name>
+	</holiday>
 
 </holidays>
