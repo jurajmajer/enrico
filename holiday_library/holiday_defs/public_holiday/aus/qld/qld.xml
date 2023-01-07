@@ -81,11 +81,11 @@
 		<name lang="en">Labour Day</name>
 	</holiday>
 	
-	<holiday validFrom="2016-01-01">
+	<holiday validFrom="2023-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="1" />
 		</date>
-		<name lang="en">Queen's Birthday</name>
+		<name lang="en">King's Birthday</name>
 	</holiday>
 	
 	<holiday validFrom="2017-01-01">
@@ -187,6 +187,13 @@
 		<name lang="en">Royal Queensland Show</name>
 		<flag>REGIONAL_HOLIDAY</flag>
 		<note lang="en">Brisbane Area Only</note>
+	</holiday>
+	
+	<holiday validFrom="2016-01-01" validTo="2022-12-31">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="1" />
+		</date>
+		<name lang="en">Queen's Birthday</name>
 	</holiday>
 
 </holidays>

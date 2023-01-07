@@ -74,11 +74,11 @@
 		<name lang="en">May Day</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2023-01-01">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="6" nth="2" />
 		</date>
-		<name lang="en">Queen's Birthday</name>
+		<name lang="en">June public holiday</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -164,6 +164,14 @@
 		</date>
 		<name lang="en">Darwin Show Day</name>
 		<flag>REGIONAL_HOLIDAY</flag>
+	</holiday>
+	
+	<!-- old holidays -->
+	<holiday validFrom="2011-01-01" validTo="2022-12-31">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="1" month="6" nth="2" />
+		</date>
+		<name lang="en">Queen's Birthday</name>
 	</holiday>
 
 </holidays>

@@ -2,7 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="aus">
 
 	<metadata>
-		<reference>https://www.fairwork.gov.au/leave/public-holidays/list-of-public-holidays</reference>
+		<reference>https://www.commerce.wa.gov.au/labour-relations/public-holidays-western-australia</reference>
 	</metadata>
 	
 	<holiday validFrom="2011-01-01">
@@ -42,6 +42,13 @@
 		<name lang="en">Good Friday</name>
 	</holiday>
 	
+	<holiday validFrom="2022-01-01">
+		<date>
+			<specialDate>EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="en">Easter Sunday</name>
+	</holiday>
+	
 	<holiday validFrom="2011-01-01">
 		<date>
 			<dateTransformation>
@@ -70,16 +77,16 @@
 		<name lang="en">Western Australia Day</name>
 	</holiday>
 	
-	<holiday validFrom="2019-01-01">
+	<holiday validFrom="2023-01-01">
 		<date>
 			<dateTransformation>
 				<baseDate>
-					<fixedDate day="25" month="9" />
+					<fixedDate day="22" month="9" />
 				</baseDate>
 				<nearestWeekdayAfter dayOfWeek="1" />
 			</dateTransformation>
 		</date>
-		<name lang="en">Queen's Birthday</name>
+		<name lang="en">King's Birthday</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
@@ -103,6 +110,18 @@
 	
 	<!-- old public holidays -->
 	<holiday validFrom="2012-01-01" validTo="2016-12-31">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<fixedDate day="25" month="9" />
+				</baseDate>
+				<nearestWeekdayAfter dayOfWeek="1" />
+			</dateTransformation>
+		</date>
+		<name lang="en">Queen's Birthday</name>
+	</holiday>
+	
+	<holiday validFrom="2019-01-01" validTo="2022-12-31">
 		<date>
 			<dateTransformation>
 				<baseDate>
