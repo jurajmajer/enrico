@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="chn">
+
+	<metadata>
+		<reference>http://english.www.gov.cn/policies/latestreleases/202212/09/content_WS63920eafc6d0a757729e422c.html</reference>
+	</metadata>
+	
+	<!-- New Year -->
+	<holiday validFrom="2022-01-01" validTo="2022-12-31">
+		<date>
+			<fixedDate day="31" month="12" />
+		</date>
+		<name lang="zh">元旦</name>
+		<name lang="en">New Year Holiday</name>
+	</holiday>
+	
+</holidays>
