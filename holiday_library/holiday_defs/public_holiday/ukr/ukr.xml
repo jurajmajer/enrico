@@ -113,6 +113,16 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
+	<holiday validFrom="2022-01-01">
+		<date>
+			<fixedDate day="28" month="7" />
+		</date>
+		<name lang="uk">День Української Державності</name>
+		<name lang="en">Statehood Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
 	<holiday validFrom="2015-01-01">
 		<date>
 			<fixedDate day="24" month="8" />
