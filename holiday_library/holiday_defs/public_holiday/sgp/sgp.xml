@@ -68,7 +68,7 @@
 		<name lang="ta">தொழிலாளர் தினம்</name>
 	</holiday>
 	
-	<holiday validFrom="2018-01-01">
+	<holiday validFrom="2024-01-01">
 		<date>
 			<specialDate>FIRST_FULL_MOON_IN_MAY</specialDate>
 		</date>
@@ -136,6 +136,18 @@
 		<name lang="zh">圣诞节</name>
 		<name lang="ms">Hari Krismas-Hari Natal</name>
 		<name lang="ta">கிறிஸ்துமஸ் பண்டிகை</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<!-- Old dates -->
+	<holiday validFrom="2018-01-01" validTo="2022-12-31">
+		<date>
+			<specialDate>FIRST_FULL_MOON_IN_MAY</specialDate>
+		</date>
+		<name lang="en">Vesak Day</name>
+		<name lang="zh">卫塞节</name>
+		<name lang="ms">Hari Wesak</name>
+		<name lang="ta">விசாக தினம்</name>
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
