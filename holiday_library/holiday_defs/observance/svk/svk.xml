@@ -7,6 +7,14 @@
 	</metadata>
 	
 	<!-- current dates -->
+	<holiday validFrom="2023-01-01" holidayType="observance">
+		<date>
+			<fixedDate day="6" month="3" />
+		</date>
+		<name lang="sk">Deň obetí pandémie COVID-19</name>
+		<name lang="en">Day of victims of the COVID-19 pandemic</name>
+	</holiday>
+	
 	<holiday validFrom="2017-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="25" month="3" />
@@ -88,6 +96,14 @@
 		<name lang="en">Matica Slovenská Day</name>
 	</holiday>
 	
+	<holiday validFrom="2017-01-01" holidayType="observance">
+		<date>
+			<fixedDate day="10" month="8" />
+		</date>
+		<name lang="sk">Deň obetí banských nešťastí</name>
+		<name lang="en">Day of victims of mining accidents</name>
+	</holiday>
+	
 	<holiday validFrom="2021-01-01" holidayType="observance">
 		<date>
 			<fixedDate day="21" month="8" />
@@ -110,6 +126,14 @@
 		</date>
 		<name lang="sk">Deň vzniku Slovenskej národnej rady</name>
 		<name lang="en">Day of the First Public Appearance of the Slovak National Council</name>
+	</holiday>
+	
+	<holiday validFrom="2023-01-01" holidayType="observance">
+		<date>
+			<fixedDate day="22" month="9" />
+		</date>
+		<name lang="sk">Deň boja proti nenávistným prejavom na deťoch</name>
+		<name lang="en">The day of the fight against hate speech against children</name>
 	</holiday>
 	
 	<holiday validFrom="2017-01-01" holidayType="observance">
