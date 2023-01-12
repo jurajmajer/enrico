@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="srb">
 	<metadata>
-		<reference>https://www.nbs.rs/internet/english/15/neradni_dani.html</reference>
+		<reference>https://nbs.rs/en/o_nbs/radno-vreme-i-neradni-dani/</reference>
 	</metadata>
 	
 	<!-- current dates -->
@@ -60,6 +60,19 @@
 		</date>
 		<name lang="sr">Veliki petak</name>
 		<name lang="en">Orthodox Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="sr">Velika subota</name>
+		<name lang="en">Orthodox Easter Saturday</name>
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">
