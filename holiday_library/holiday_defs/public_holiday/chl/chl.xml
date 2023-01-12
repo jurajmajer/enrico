@@ -74,6 +74,14 @@
 		<note lang="en">Observed only in Arica and Parinacota Region</note>
 	</holiday>
 	
+	<holiday validFrom="2021-06-19">
+		<date>
+			<fixedDate day="21" month="6" />
+		</date>
+		<name lang="en">National Day of Aboriginal Peoples</name>
+		<name lang="es">Día Nacional de los Pueblos Indígenas</name>
+	</holiday>
+	
 	<holiday validFrom="2019-01-01">
 		<date>
 			<fixedDate day="29" month="6" />
