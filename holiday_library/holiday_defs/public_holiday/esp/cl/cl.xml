@@ -17,14 +17,6 @@
 		<name lang="es">Jueves Santo</name>
 		<name lang="en">Maundy Thursday</name>
 	</holiday>
-
-	<holiday validFrom="2021-01-01">
-		<date>
-			<fixedDate day="23" month="4" />
-		</date>
-		<name lang="es">Día de Castilla y León</name>
-		<name lang="en">Castile and Leon Day</name>
-	</holiday>
 	
 	<holiday validFrom="2021-01-01" validTo="2021-12-31">
 		<date>

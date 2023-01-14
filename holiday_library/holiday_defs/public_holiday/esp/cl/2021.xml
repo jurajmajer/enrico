@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
+
+	<metadata>
+		<reference>https://www.tramitacastillayleon.jcyl.es/web/es/calendario-dias-inhabiles.html</reference>
+	</metadata>
+	
+	<holiday validFrom="2021-01-01" validTo="2021-12-31">
+		<date>
+			<fixedDate day="23" month="4" />
+		</date>
+		<name lang="es">Día de Castilla y León</name>
+		<name lang="en">Castile and Leon Day</name>
+	</holiday>
+
+</holidays>

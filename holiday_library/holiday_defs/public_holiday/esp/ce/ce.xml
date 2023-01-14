@@ -2,7 +2,7 @@
 <holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
 
 	<metadata>
-		<reference>https://elfarodeceuta.es/boe-calendario-laboral-ceuta-2021/</reference>
+		<reference>https://elfarodeceuta.es/bocce-publica-calendario-laboral-festivos-2023/</reference>
 	</metadata>
 
 	<holiday validFrom="2021-01-01">
@@ -16,27 +16,6 @@
 		</date>
 		<name lang="es">Jueves Santo</name>
 		<name lang="en">Maundy Thursday</name>
-	</holiday>
-
-	<holiday validFrom="2021-01-01">
-		<date>
-			<fixedDate day="14" month="6" />
-		</date>
-		<name lang="es">San Antonio</name>
-		<name lang="en">St. Anthony's Day</name>
-	</holiday>
-
-	<holiday validFrom="2021-01-01">
-		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>HIJRI_MONTH_12TH_START</specialDate>
-				</baseDate>
-				<addDays>9</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="es">Celebración del Sacrificio</name>
-		<name lang="en">Eid al-Adha</name>
 	</holiday>
 	
 	<holiday validFrom="2021-01-01">
