@@ -47,13 +47,5 @@
 		<name lang="es">Día de Ntra. Sra. Virgen de la Victoria (excelsa Patrona de la Ciudad)</name>
 		<name lang="en">Day of Our Lady of the Victory (exalted Patron of the City)</name>
 	</holiday>
-	
-	<holiday validFrom="2021-01-01">
-		<date>
-			<fixedDate day="17" month="9" />
-		</date>
-		<name lang="es">Día de Melilla</name>
-		<name lang="en">Melilla Day</name>
-	</holiday>
 
 </holidays>

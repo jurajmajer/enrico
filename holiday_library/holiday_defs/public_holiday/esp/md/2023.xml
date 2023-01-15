@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
+
+	<metadata>
+		<reference>https://www.madrid.es/portales/munimadrid/es/Inicio/Actividad-economica-y-hacienda/Empresa-y-comercio/Direcciones-y-telefonos/Calendario-oficial-laboral-y-de-dias-inhabiles-y-festivos-2023-para-Madrid/?vgnextfmt=default&amp;vgnextoid=393b3a702d4f3810VgnVCM2000001f4a900aRCRD&amp;vgnextchannel=ed0c6d5ef88fe410VgnVCM1000000b205a0aRCRD</reference>
+	</metadata>
+	
+	<holiday validFrom="2023-01-01" validTo="2023-12-31">
+		<date>
+			<fixedDate day="20" month="3" />
+		</date>
+		<name lang="es">San José</name>
+		<name lang="en">St. Joseph's Day</name>
+	</holiday>
+
+	<holiday validFrom="2023-01-01" validTo="2023-12-31">
+		<date>
+			<fixedDate day="2" month="5" />
+		</date>
+		<name lang="es">Fiesta de la Comunidad de Madrid</name>
+		<name lang="en">Madrid’s Day</name>
+	</holiday>
+
+</holidays>

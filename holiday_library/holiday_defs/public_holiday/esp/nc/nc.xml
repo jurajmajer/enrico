@@ -4,14 +4,6 @@
 	<metadata>
 		<reference>https://www.pamplona.es/ayuntamiento/varios/calendario-en-la-comunidad-foral-de-navarra-2021-fiestas-laborales-y-dias</reference>
 	</metadata>
-	
-	<holiday validFrom="2021-01-01">
-		<date>
-			<fixedDate day="19" month="3" />
-		</date>
-		<name lang="es">San José</name>
-		<name lang="en">St. Joseph's Day</name>
-	</holiday>
 
 	<holiday validFrom="2021-01-01">
 		<date>
@@ -45,6 +37,7 @@
 		</date>
 		<name lang="es">San Francisco Javier</name>
 		<name lang="en">Saint Francis Xavier</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 
 </holidays>

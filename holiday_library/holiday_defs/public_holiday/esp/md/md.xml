@@ -20,15 +20,6 @@
 
 	<holiday validFrom="2021-01-01">
 		<date>
-			<fixedDate day="3" month="5" />
-		</date>
-		<name lang="es">Fiesta de la Comunidad de Madrid</name>
-		<name lang="en">Madrid’s Day</name>
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
-	</holiday>
-
-	<holiday validFrom="2021-01-01">
-		<date>
 			<fixedDate day="15" month="5" />
 		</date>
 		<name lang="es">San Isidro Labrador</name>

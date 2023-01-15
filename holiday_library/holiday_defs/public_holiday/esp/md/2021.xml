@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
+
+	<metadata>
+		<reference>https://www.madrid.es/portales/munimadrid/es/Inicio/Actividad-economica-y-hacienda/Empresa-y-comercio/Actividades-y-eventos/Calendario-oficial-laboral-y-de-dias-inhabiles-y-festivos-2021-para-Madrid/?vgnextfmt=default&amp;vgnextoid=096aa1247bdd4710VgnVCM2000001f4a900aRCRD&amp;vgnextchannel=a89b6d5ef88fe410VgnVCM1000000b205a0aRCRD</reference>
+	</metadata>
+
+	<holiday validFrom="2021-01-01" validTo="2021-12-31">
+		<date>
+			<fixedDate day="3" month="5" />
+		</date>
+		<name lang="es">Fiesta de la Comunidad de Madrid</name>
+		<name lang="en">Madrid’s Day</name>
+	</holiday>
+
+</holidays>

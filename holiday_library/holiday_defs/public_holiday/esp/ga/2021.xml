@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
+
+	<metadata>
+		<reference>https://sede.xunta.gal/a-sede/calendario-e-hora-oficiais?langId=es_ES</reference>
+	</metadata>
+	
+	<holiday validFrom="2021-01-01" validTo="2021-12-31">
+		<date>
+			<fixedDate day="19" month="3" />
+		</date>
+		<name lang="es">San José</name>
+		<name lang="en">St. Joseph's Day</name>
+	</holiday>
+
+</holidays>

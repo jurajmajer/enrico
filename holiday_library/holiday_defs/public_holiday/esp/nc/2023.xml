@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
+
+	<metadata>
+		<reference>https://www.pamplona.es/ayuntamiento/varios/calendario-en-la-comunidad-foral-de-navarra-2023-fiestas-laborales-y-dias</reference>
+	</metadata>
+	
+	<holiday validFrom="2023-01-01" validTo="2023-12-31">
+		<date>
+			<fixedDate day="25" month="7" />
+		</date>
+		<name lang="es">Santiago Apóstol</name>
+		<name lang="en">Santiago Apostle's Day</name>
+	</holiday>
+
+</holidays>

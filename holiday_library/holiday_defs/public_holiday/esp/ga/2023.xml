@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="esp">
+
+	<metadata>
+		<reference>https://sede.xunta.gal/a-sede/calendario-e-hora-oficiais?langId=es_ES</reference>
+	</metadata>
+	
+	<holiday validFrom="2023-01-01" validTo="2023-12-31">
+		<date>
+			<fixedDate day="25" month="7" />
+		</date>
+		<name lang="es">Día Nacional de Galicia</name>
+		<name lang="en">National Day of Galicia</name>
+	</holiday>
+
+</holidays>

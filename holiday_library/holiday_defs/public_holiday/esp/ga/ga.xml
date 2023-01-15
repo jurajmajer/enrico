@@ -4,14 +4,6 @@
 	<metadata>
 		<reference>https://sede.xunta.gal/a-sede/calendario-e-hora-oficiais?langId=es_ES</reference>
 	</metadata>
-	
-	<holiday validFrom="2021-01-01">
-		<date>
-			<fixedDate day="19" month="3" />
-		</date>
-		<name lang="es">San José</name>
-		<name lang="en">St. Joseph's Day</name>
-	</holiday>
 
 	<holiday validFrom="2021-01-01">
 		<date>
