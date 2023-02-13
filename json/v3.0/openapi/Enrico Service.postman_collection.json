@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "6e2e4f6b-38f3-438a-886e-2457305a1b95",
+		"name": "Enrico Service",
+		"description": "Enrico Service is a free service providing public holidays for several countries. You can use Enrico Service to display public holidays on your website or in your desktop application written in any programming language. Enrico Service is an open-source software  so you can study, contribute, change or use it. See Enrico source code on [Github](https://github.com/jurajmajer/enrico).\n\nContact Support:\n Email: enrico@kayaposoft.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Supported Countries",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/getSupportedCountries/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"getSupportedCountries",
+						""
+					]
+				},
+				"description": "Returns the list of supported countries\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Holidays For Month",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/getHolidaysForMonth/?month={{currentMonth}}&year={{currentYear}}&country=usa&region=ny&holidayType=all",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"getHolidaysForMonth",
+						""
+					],
+					"query": [
+						{
+							"key": "month",
+							"value": "{{currentMonth}}",
+							"description": "(Required) Month to return holidays for (1 - January, 2 - February, ..., 12 - December)"
+						},
+						{
+							"key": "year",
+							"value": "{{currentYear}}",
+							"description": "(Required) Year to return holidays for"
+						},
+						{
+							"key": "country",
+							"value": "usa",
+							"description": "(Required) [ISO 3166-1 alpha-3 country code](https://github.com/jurajmajer/enrico) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n"
+						},
+						{
+							"key": "region",
+							"value": "ny",
+							"description": "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`"
+						},
+						{
+							"key": "holidayType",
+							"value": "all",
+							"description": "Type of holidays to be returned"
+						}
+					]
+				},
+				"description": "Returns holidays for given month in given country\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Holidays For Year",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/getHolidaysForYear/?year={{currentYear}}&country=est&holidayType=all",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"getHolidaysForYear",
+						""
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "{{currentYear}}",
+							"description": "(Required) Year to return holidays for"
+						},
+						{
+							"key": "country",
+							"value": "est",
+							"description": "(Required) [ISO 3166-1 alpha-3 country code](https://github.com/jurajmajer/enrico) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n"
+						},
+						{
+							"key": "region",
+							"value": "",
+							"description": "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`",
+							"disabled": true
+						},
+						{
+							"key": "holidayType",
+							"value": "all",
+							"description": "Type of holidays to be returned"
+						}
+					]
+				},
+				"description": "Returns holidays for given year in given country\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Holidays For Date Range",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/getHolidaysForDateRange/?fromDate={{yearAgo}}&toDate={{today}}&country=aus&region=act&holidayType=public_holiday",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"getHolidaysForDateRange",
+						""
+					],
+					"query": [
+						{
+							"key": "fromDate",
+							"value": "{{yearAgo}}",
+							"description": "(Required) Return holidays starting from this date (including)"
+						},
+						{
+							"key": "toDate",
+							"value": "{{today}}",
+							"description": "(Required) Return holidays ending this date (including)"
+						},
+						{
+							"key": "country",
+							"value": "aus",
+							"description": "(Required) [ISO 3166-1 alpha-3 country code](https://github.com/jurajmajer/enrico) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n"
+						},
+						{
+							"key": "region",
+							"value": "act",
+							"description": "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`"
+						},
+						{
+							"key": "holidayType",
+							"value": "public_holiday",
+							"description": "Type of holidays to be returned"
+						}
+					]
+				},
+				"description": "Returns holidays for given date range in given country\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Is Public Holiday",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/isPublicHoliday/?date={{today}}&country=svk",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"isPublicHoliday",
+						""
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "{{today}}",
+							"description": "(Required) Date to check"
+						},
+						{
+							"key": "country",
+							"value": "svk",
+							"description": "(Required) [ISO 3166-1 alpha-3 country code](https://github.com/jurajmajer/enrico) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n"
+						},
+						{
+							"key": "region",
+							"value": "",
+							"description": "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Returns if given day is public holiday in given country\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Is Work Day",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/isWorkDay/?date={{today}}&country=can&region=bc",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"isWorkDay",
+						""
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "{{today}}",
+							"description": "(Required) Date to check"
+						},
+						{
+							"key": "country",
+							"value": "can",
+							"description": "(Required) [ISO 3166-1 alpha-3 country code](https://github.com/jurajmajer/enrico) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n"
+						},
+						{
+							"key": "region",
+							"value": "bc",
+							"description": "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`"
+						}
+					]
+				},
+				"description": "Returns if given day is work day in given country\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Is School Holiday",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/isSchoolHoliday/?date={{today}}&country=aus&region=qld",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"isSchoolHoliday",
+						""
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "{{today}}",
+							"description": "(Required) Date to check"
+						},
+						{
+							"key": "country",
+							"value": "aus",
+							"description": "(Required) [ISO 3166-1 alpha-3 country code](https://github.com/jurajmajer/enrico) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n"
+						},
+						{
+							"key": "region",
+							"value": "qld",
+							"description": "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`"
+						}
+					]
+				},
+				"description": "Returns if given day is school holiday in given country\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Where Is Public Holiday",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/whereIsPublicHoliday/?date={{today}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"whereIsPublicHoliday",
+						""
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "{{today}}",
+							"description": "(Required) Date to check"
+						}
+					]
+				},
+				"description": "Returns the list of countries where given date is a public holiday\n"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"var date = new Date();",
+					"postman.setEnvironmentVariable(\"currentMonth\", date.getMonth()+1);",
+					"postman.setEnvironmentVariable(\"currentYear\", date.getFullYear());",
+					"postman.setEnvironmentVariable(\"today\", date.getFullYear()+\"-\"+(date.getMonth()+1)+\"-\"+date.getDate());",
+					"postman.setEnvironmentVariable(\"yearAgo\", (date.getFullYear()-1)+\"-\"+(date.getMonth()+1)+\"-\"+date.getDate());",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://kayaposoft.com/enrico/json/v3.0",
+			"type": "string"
+		}
+	]
+}

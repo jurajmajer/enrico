@@ -1,0 +1,731 @@
+{
+  "openapi" : "3.0.0",
+  "servers" : [ {
+    "url" : "https://kayaposoft.com/enrico/json/v3.0"
+  } ],
+  "info" : {
+    "description" : "Enrico Service is a free service providing public holidays for several countries. You can use Enrico Service to display public holidays on your website or in your desktop application written in any programming language. Enrico Service is an open-source software  so you can study, contribute, change or use it. See Enrico source code on [Github](https://github.com/jurajmajer/enrico).",
+    "version" : "3.0",
+    "title" : "Enrico Service",
+    "contact" : {
+      "email" : "enrico@kayaposoft.com"
+    },
+    "license" : {
+      "name" : "MIT License",
+      "url" : "https://github.com/jurajmajer/enrico/blob/master/LICENSE"
+    }
+  },
+  "tags" : [ {
+    "name" : "Holiday Operations"
+  } ],
+  "paths" : {
+    "/getSupportedCountries" : {
+      "get" : {
+        "summary" : "Returns the list of supported countries",
+        "operationId" : "getSupportedCountries",
+        "description" : "Returns the list of supported countries\n",
+        "tags" : [ "Holiday Operations" ],
+        "responses" : {
+          "200" : {
+            "description" : "The list of supported countries",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/SupportedCountry"
+                  }
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Internal server error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getHolidaysForMonth" : {
+      "get" : {
+        "summary" : "Returns holidays for given month in given country",
+        "operationId" : "getHolidaysForMonth",
+        "description" : "Returns holidays for given month in given country\n",
+        "tags" : [ "Holiday Operations" ],
+        "parameters" : [ {
+          "in" : "query",
+          "name" : "month",
+          "description" : "Month to return holidays for (1 - January, 2 - February, ..., 12 - December)",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "minimum" : 1,
+            "maximum" : 12
+          }
+        }, {
+          "in" : "query",
+          "name" : "year",
+          "description" : "Year to return holidays for",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "minimum" : 1,
+            "maximum" : 32767
+          }
+        }, {
+          "in" : "query",
+          "name" : "country",
+          "description" : "[ISO 3166-1 alpha-3 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        }, {
+          "in" : "query",
+          "name" : "region",
+          "description" : "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`",
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        }, {
+          "in" : "query",
+          "name" : "holidayType",
+          "description" : "Type of holidays to be returned",
+          "schema" : {
+            "$ref" : "#/components/schemas/HolidayType"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Holidays for given month in given country",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/HolidayItem"
+                  }
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid request parameters",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Internal server error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getHolidaysForYear" : {
+      "get" : {
+        "summary" : "Returns holidays for given year in given country",
+        "operationId" : "getHolidaysForYear",
+        "description" : "Returns holidays for given year in given country\n",
+        "tags" : [ "Holiday Operations" ],
+        "parameters" : [ {
+          "in" : "query",
+          "name" : "year",
+          "description" : "Year to return holidays for",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "minimum" : 1,
+            "maximum" : 32767
+          }
+        }, {
+          "in" : "query",
+          "name" : "country",
+          "description" : "[ISO 3166-1 alpha-3 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        }, {
+          "in" : "query",
+          "name" : "region",
+          "description" : "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`",
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        }, {
+          "in" : "query",
+          "name" : "holidayType",
+          "description" : "Type of holidays to be returned",
+          "schema" : {
+            "$ref" : "#/components/schemas/HolidayType"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Holidays for given year in given country",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/HolidayItem"
+                  }
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid request parameters",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Internal server error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getHolidaysForDateRange" : {
+      "get" : {
+        "summary" : "Returns holidays for given date range in given country",
+        "operationId" : "getHolidaysForDateRange",
+        "description" : "Returns holidays for given date range in given country\n",
+        "tags" : [ "Holiday Operations" ],
+        "parameters" : [ {
+          "in" : "query",
+          "name" : "fromDate",
+          "description" : "Return holidays starting from this date (including)",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "format" : "date"
+          }
+        }, {
+          "in" : "query",
+          "name" : "toDate",
+          "description" : "Return holidays ending this date (including)",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "format" : "date"
+          }
+        }, {
+          "in" : "query",
+          "name" : "country",
+          "description" : "[ISO 3166-1 alpha-3 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        }, {
+          "in" : "query",
+          "name" : "region",
+          "description" : "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`",
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        }, {
+          "in" : "query",
+          "name" : "holidayType",
+          "description" : "Type of holidays to be returned",
+          "schema" : {
+            "$ref" : "#/components/schemas/HolidayType"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Holidays for given date range in given country",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/HolidayItem"
+                  }
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid request parameters",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Internal server error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/isPublicHoliday" : {
+      "get" : {
+        "summary" : "Returns if given day is public holiday in given country",
+        "operationId" : "isPublicHoliday",
+        "description" : "Returns if given day is public holiday in given country\n",
+        "tags" : [ "Holiday Operations" ],
+        "parameters" : [ {
+          "in" : "query",
+          "name" : "date",
+          "description" : "Date to check",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "format" : "date"
+          }
+        }, {
+          "in" : "query",
+          "name" : "country",
+          "description" : "[ISO 3166-1 alpha-3 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        }, {
+          "in" : "query",
+          "name" : "region",
+          "description" : "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`",
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Flag if given day is public holiday in given country",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "required" : [ "isPublicHoliday" ],
+                  "properties" : {
+                    "isPublicHoliday" : {
+                      "type" : "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid request parameters",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Internal server error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/isWorkDay" : {
+      "get" : {
+        "summary" : "Returns if given day is work day in given country",
+        "operationId" : "isWorkDay",
+        "description" : "Returns if given day is work day in given country\n",
+        "tags" : [ "Holiday Operations" ],
+        "parameters" : [ {
+          "in" : "query",
+          "name" : "date",
+          "description" : "Date to check",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "format" : "date"
+          }
+        }, {
+          "in" : "query",
+          "name" : "country",
+          "description" : "[ISO 3166-1 alpha-3 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        }, {
+          "in" : "query",
+          "name" : "region",
+          "description" : "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`",
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Flag if given day is work day in given country",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "required" : [ "isWorkDay" ],
+                  "properties" : {
+                    "isWorkDay" : {
+                      "type" : "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid request parameters",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Internal server error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/isSchoolHoliday" : {
+      "get" : {
+        "summary" : "Returns if given day is school in given country",
+        "operationId" : "isSchoolHoliday",
+        "description" : "Returns if given day is school holiday in given country\n",
+        "tags" : [ "Holiday Operations" ],
+        "parameters" : [ {
+          "in" : "query",
+          "name" : "date",
+          "description" : "Date to check",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "format" : "date"
+          }
+        }, {
+          "in" : "query",
+          "name" : "country",
+          "description" : "[ISO 3166-1 alpha-3 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). To get supported countries, see operation `GET /getSupportedCountries`\n",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        }, {
+          "in" : "query",
+          "name" : "region",
+          "description" : "Region in the country to return holidays for. Not all countries have region defined. See operation `GET /getSupportedCountries`",
+          "schema" : {
+            "type" : "string",
+            "maxLength" : 3
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Flag if given day is school holiday in given country",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "required" : [ "isSchoolHoliday" ],
+                  "properties" : {
+                    "isSchoolHoliday" : {
+                      "type" : "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid request parameters",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Internal server error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/whereIsPublicHoliday" : {
+      "get" : {
+        "summary" : "Returns the list of countries where given date is a public holiday",
+        "operationId" : "whereIsPublicHoliday",
+        "description" : "Returns the list of countries where given date is a public holiday\n",
+        "tags" : [ "Holiday Operations" ],
+        "parameters" : [ {
+          "in" : "query",
+          "name" : "date",
+          "description" : "Date to check",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "format" : "date"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "The list of countries where given date is a public holiday",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/HolidayInCountryItem"
+                  }
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Invalid request parameters",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Internal server error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "HolidayType" : {
+        "type" : "string",
+        "enum" : [ "all", "public_holiday", "observance", "school_holiday", "other_day", "extra_working_day" ],
+        "default" : "all"
+      },
+      "DateType" : {
+        "type" : "object",
+        "required" : [ "day", "month", "year" ],
+        "properties" : {
+          "day" : {
+            "type" : "integer",
+            "minimum" : 1,
+            "maximum" : 31
+          },
+          "month" : {
+            "type" : "integer",
+            "minimum" : 1,
+            "maximum" : 12
+          },
+          "year" : {
+            "type" : "integer",
+            "minimum" : 1,
+            "maximum" : 32767
+          },
+          "dayOfWeek" : {
+            "type" : "integer",
+            "description" : "Day of week - 1 (Monday), 2 (Tuesday), ..., 7 (Sunday)",
+            "minimum" : 1,
+            "maximum" : 7
+          }
+        }
+      },
+      "LocalizedText" : {
+        "type" : "object",
+        "required" : [ "lang", "text" ],
+        "properties" : {
+          "lang" : {
+            "type" : "string",
+            "description" : "Language code according to [ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)",
+            "example" : "fr"
+          },
+          "text" : {
+            "type" : "string",
+            "maxLength" : 2
+          }
+        }
+      },
+      "HolidayItem" : {
+        "type" : "object",
+        "required" : [ "date", "name", "holidayType" ],
+        "properties" : {
+          "date" : {
+            "$ref" : "#/components/schemas/DateType"
+          },
+          "name" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/LocalizedText"
+            }
+          },
+          "note" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/LocalizedText"
+            }
+          },
+          "flags" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string",
+              "enum" : [ "SHOP_CLOSING_DAY", "REGIONAL_HOLIDAY", "ADDITIONAL_HOLIDAY", "PART_DAY_HOLIDAY", "BANK_HOLIDAY" ]
+            }
+          },
+          "holidayType" : {
+            "$ref" : "#/components/schemas/HolidayType"
+          }
+        }
+      },
+      "SupportedCountry" : {
+        "type" : "object",
+        "required" : [ "countryCode", "regions", "holidayTypes", "fullName", "fromDate", "toDate" ],
+        "properties" : {
+          "countryCode" : {
+            "type" : "string",
+            "maxLength" : 3,
+            "description" : "[ISO 3166-1 alpha-3 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)",
+            "example" : "can"
+          },
+          "regions" : {
+            "type" : "array",
+            "description" : "List of ISO 3166-2 codes",
+            "items" : {
+              "type" : "string",
+              "maxLength" : 3,
+              "example" : "ab,bc,mb,nb,nl,nt,ns,nu,on,pe,qc,sk,yt"
+            }
+          },
+          "holidayTypes" : {
+            "type" : "array",
+            "description" : "Holiday types available for the country",
+            "items" : {
+              "$ref" : "#/components/schemas/HolidayType"
+            }
+          },
+          "fullName" : {
+            "type" : "string",
+            "description" : "Full name of the country"
+          },
+          "fromDate" : {
+            "$ref" : "#/components/schemas/DateType"
+          },
+          "toDate" : {
+            "$ref" : "#/components/schemas/DateType"
+          }
+        }
+      },
+      "HolidayInCountryItem" : {
+        "type" : "object",
+        "required" : [ "countryCode", "countryFullName", "holidayName" ],
+        "properties" : {
+          "countryCode" : {
+            "type" : "string",
+            "maxLength" : 3,
+            "description" : "[ISO 3166-1 alpha-3 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)",
+            "example" : "can"
+          },
+          "countryFullName" : {
+            "type" : "string",
+            "description" : "Full name of the country"
+          },
+          "holidayName" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/LocalizedText"
+            }
+          }
+        }
+      },
+      "ErrorMessage" : {
+        "type" : "object",
+        "required" : [ "error" ],
+        "properties" : {
+          "error" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}
