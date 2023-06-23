@@ -24,12 +24,41 @@
 		<name lang="en">Mother's Day</name>
 	</holiday>
 	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>26</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="da">Store Bededag</name>
+		<name lang="en">General Prayer Day</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01" holidayType="other_day">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="da">Arbejdernes kampdag</name>
+		<name lang="en">Labour Day</name>
+	</holiday>
+	
 	<holiday validFrom="2018-01-01" holidayType="other_day">
 		<date>
 			<fixedDate day="5" month="6" />
 		</date>
 		<name lang="da">Fars dag</name>
 		<name lang="en">Father's Day</name>
+	</holiday>
+	
+	<holiday validFrom="2011-01-01">
+		<date>
+			<fixedDate day="5" month="6" />
+		</date>
+		<name lang="da">Grundlovsdag</name>
+		<name lang="en">Constitution Day</name>
 	</holiday>
 	
 	<holiday validFrom="2018-01-01" holidayType="other_day">

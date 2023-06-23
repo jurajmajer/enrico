@@ -79,19 +79,6 @@
 				<baseDate>
 					<specialDate>EASTER_SUNDAY</specialDate>
 				</baseDate>
-				<addDays>26</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="da">Store Bededag</name>
-		<name lang="en">General Prayer Day</name>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>EASTER_SUNDAY</specialDate>
-				</baseDate>
 				<addDays>39</addDays>
 			</dateTransformation>
 		</date>
@@ -127,14 +114,6 @@
 	
 	<holiday validFrom="2011-01-01">
 		<date>
-			<fixedDate day="5" month="6" />
-		</date>
-		<name lang="da">Grundlovsdag</name>
-		<name lang="en">Constitution Day</name>
-	</holiday>
-	
-	<holiday validFrom="2011-01-01">
-		<date>
 			<fixedDate day="25" month="12" />
 		</date>
 		<name lang="da">1. Juledag</name>
@@ -147,6 +126,20 @@
 		</date>
 		<name lang="da">2. Juledag</name>
 		<name lang="en">Boxing Day</name>
+	</holiday>
+	
+	<!-- Historical holidays -->
+	<holiday validFrom="2011-01-01" validTo="2023-12-31">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>26</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="da">Store Bededag</name>
+		<name lang="en">General Prayer Day</name>
 	</holiday>
 
 </holidays>
