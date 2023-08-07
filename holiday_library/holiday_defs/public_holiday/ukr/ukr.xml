@@ -16,22 +16,22 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
-	<holiday validFrom="2015-01-01">
-		<date>
-			<fixedDate day="7" month="1" />
-		</date>
-		<name lang="uk">Різдво</name>
-		<name lang="en">Orthodox Christmas</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
-	</holiday>
-	
-	<holiday validFrom="2015-01-01">
+	<holiday validFrom="2024-01-01">
 		<date>
 			<fixedDate day="8" month="3" />
 		</date>
 		<name lang="uk">Міжнародний жіночий день</name>
 		<name lang="en">International Women's Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="uk">День праці (День міжнародної солідарності трудящих)</name>
+		<name lang="en">Labour Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
@@ -50,29 +50,6 @@
 				<baseDate>
 					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
 				</baseDate>
-				<addDays>1</addDays>
-			</dateTransformation>
-		</date>
-		<name lang="uk">Пасха</name>
-		<name lang="en">Orthodox Easter Monday</name>
-	</holiday>
-	
-	<holiday validFrom="2015-01-01">
-		<date>
-			<fixedDate day="1" month="5" />
-		</date>
-		<name lang="uk">День праці (День міжнародної солідарності трудящих)</name>
-		<name lang="en">Labour Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
-	</holiday>
-	
-	<holiday validFrom="2015-01-01">
-		<date>
-			<dateTransformation>
-				<baseDate>
-					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
-				</baseDate>
 				<addDays>49</addDays>
 			</dateTransformation>
 		</date>
@@ -80,7 +57,40 @@
 		<name lang="en">Orthodox Whit Sunday</name>
 	</holiday>
 	
-	<holiday validFrom="2015-01-01">
+	<holiday validFrom="2024-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="uk">Пасха</name>
+		<name lang="en">Orthodox Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="8" month="5" />
+		</date>
+		<name lang="uk">День перемоги над нацизмом у Другій світовій війні</name>
+		<name lang="en">Victory Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="9" month="5" />
+		</date>
+		<name lang="uk">День Європи</name>
+		<name lang="en">Europe Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
 		<date>
 			<dateTransformation>
 				<baseDate>
@@ -93,17 +103,7 @@
 		<name lang="en">Orthodox Whit Monday</name>
 	</holiday>
 	
-	<holiday validFrom="2015-01-01">
-		<date>
-			<fixedDate day="9" month="5" />
-		</date>
-		<name lang="uk">День перемоги над нацизмом у Другій світовій війні</name>
-		<name lang="en">Victory Day</name>
-		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
-	</holiday>
-	
-	<holiday validFrom="2015-01-01">
+	<holiday validFrom="2024-01-01">
 		<date>
 			<fixedDate day="28" month="6" />
 		</date>
@@ -113,9 +113,9 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
-	<holiday validFrom="2022-01-01">
+	<holiday validFrom="2024-01-01">
 		<date>
-			<fixedDate day="28" month="7" />
+			<fixedDate day="15" month="7" />
 		</date>
 		<name lang="uk">День Української Державності</name>
 		<name lang="en">Statehood Day</name>
@@ -123,7 +123,7 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
-	<holiday validFrom="2015-01-01">
+	<holiday validFrom="2024-01-01">
 		<date>
 			<fixedDate day="24" month="8" />
 		</date>
@@ -133,9 +133,9 @@
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
-	<holiday validFrom="2015-01-01">
+	<holiday validFrom="2023-01-01">
 		<date>
-			<fixedDate day="14" month="10" />
+			<fixedDate day="1" month="10" />
 		</date>
 		<name lang="uk">День захисника України</name>
 		<name lang="en">Defender of Ukraine Day</name>
@@ -154,6 +154,112 @@
 	</holiday>
 	
 	<!-- Old dates -->
+	<holiday validFrom="2015-01-01" validTo="2023-12-31">
+		<date>
+			<fixedDate day="7" month="1" />
+		</date>
+		<name lang="uk">Різдво</name>
+		<name lang="en">Orthodox Christmas</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2022-12-31">
+		<date>
+			<fixedDate day="8" month="3" />
+		</date>
+		<name lang="uk">Міжнародний жіночий день</name>
+		<name lang="en">International Women's Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2022-12-31">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="uk">Пасха</name>
+		<name lang="en">Orthodox Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2022-12-31">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="uk">День праці (День міжнародної солідарності трудящих)</name>
+		<name lang="en">Labour Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2022-12-31">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>50</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="uk">Трійця</name>
+		<name lang="en">Orthodox Whit Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2022-12-31">
+		<date>
+			<fixedDate day="9" month="5" />
+		</date>
+		<name lang="uk">День перемоги над нацизмом у Другій світовій війні</name>
+		<name lang="en">Victory Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2022-12-31">
+		<date>
+			<fixedDate day="28" month="6" />
+		</date>
+		<name lang="uk">День Конституції</name>
+		<name lang="en">Constitution Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2022-01-01" validTo="2022-12-31">
+		<date>
+			<fixedDate day="28" month="7" />
+		</date>
+		<name lang="uk">День Української Державності</name>
+		<name lang="en">Statehood Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2022-12-31">
+		<date>
+			<fixedDate day="24" month="8" />
+		</date>
+		<name lang="uk">День Незалежності</name>
+		<name lang="en">Independence Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2015-01-01" validTo="2022-12-31">
+		<date>
+			<fixedDate day="14" month="10" />
+		</date>
+		<name lang="uk">День захисника України</name>
+		<name lang="en">Defender of Ukraine Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
 	<holiday validFrom="2015-01-01" validTo="2017-12-31">
 		<date>
 			<fixedDate day="2" month="5" />
