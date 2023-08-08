@@ -30,7 +30,6 @@
 		</date>
 		<name lang="pt">Dia Nacional do Esforço Armado</name>
 		<name lang="en">Day of the Armed Struggle</name>
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2014-01-01">
