@@ -62,7 +62,6 @@
 		</date>
 		<name lang="en">National Day for Truth and Reconciliation</name>
 		<name lang="fr">Journée nationale de la vérité et de la réconciliation</name>
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">

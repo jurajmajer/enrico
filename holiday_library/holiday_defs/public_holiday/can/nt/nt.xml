@@ -56,13 +56,12 @@
 		<name lang="fr">Premier lundi d'août</name>
 	</holiday>
 	
-	<holiday validFrom="2023-01-01">
+	<holiday validFrom="2022-01-01">
 		<date>
 			<fixedDate day="30" month="9" />
 		</date>
 		<name lang="en">National Day for Truth and Reconciliation</name>
 		<name lang="fr">Journée nationale de la vérité et de la réconciliation</name>
-		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2011-01-01">

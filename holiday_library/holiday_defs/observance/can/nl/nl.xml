@@ -70,6 +70,14 @@
 		<name lang="fr">Bataille de la Boyne</name>
 	</holiday>
 	
+	<holiday validFrom="2023-01-01" holidayType="observance">
+		<date>
+			<fixedDate day="30" month="9" />
+		</date>
+		<name lang="en">National Day for Truth and Reconciliation</name>
+		<name lang="fr">Journée nationale de la vérité et de la réconciliation</name>
+	</holiday>
+	
 	<holiday validFrom="2011-01-01" holidayType="observance">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="1" month="10" nth="2" />

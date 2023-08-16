@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="can">
+
+	<metadata>
+		<reference>https://www2.gnb.ca/content/gnb/en/departments/elg/local_government/content/governance/content/days_of_rest_act.html</reference>
+		<reference>https://www.peninsulagrouplimited.com/ca/resource-hub/stat-holidays-and-pay/new-brunswick-stat-holidays/</reference>
+	</metadata>
+	
+	<holiday validFrom="2023-01-01" holidayType="observance">
+		<date>
+			<fixedDate day="30" month="9" />
+		</date>
+		<name lang="en">National Day for Truth and Reconciliation</name>
+		<name lang="fr">Journée nationale de la vérité et de la réconciliation</name>
+	</holiday>
+
+</holidays>
