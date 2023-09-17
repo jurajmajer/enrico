@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="svk">
+	<metadata>
+		<reference>https://www.minedu.sk/data/att/26477.pdf</reference>
+	</metadata>
+	
+	<holiday validFrom="2025-01-01" validTo="2025-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<dateTo>
+			<fixedDate day="7" month="1" />
+		</dateTo>
+		<name lang="sk">Vianočné prázdniny</name>
+		<name lang="en">Christmas Holidays</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01" validTo="2025-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="17" month="4" />
+		</date>
+		<dateTo>
+			<fixedDate day="22" month="4" />
+		</dateTo>
+		<name lang="sk">Veľkonočné prázdniny</name>
+		<name lang="en">Easter Holidays</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01" validTo="2025-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="30" month="6" />
+		</date>
+		<dateTo>
+			<fixedDate day="1" month="9" />
+		</dateTo>
+		<name lang="sk">Letné prázdniny</name>
+		<name lang="en">Summer Holidays</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01" validTo="2025-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="30" month="10" />
+		</date>
+		<dateTo>
+			<fixedDate day="31" month="10" />
+		</dateTo>
+		<name lang="sk">Jesenné prázdniny</name>
+		<name lang="en">Autumn Holidays</name>
+	</holiday>
+
+	<holiday validFrom="2025-01-01" validTo="2025-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="22" month="12" />
+		</date>
+		<dateTo>
+			<fixedDate day="31" month="12" />
+		</dateTo>
+		<name lang="sk">Vianočné prázdniny</name>
+		<name lang="en">Christmas Holidays</name>
+	</holiday>
+	
+</holidays>
