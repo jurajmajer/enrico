@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="bel">
+	<metadata>
+		<reference>http://www.enseignement.be/index.php?page=23953&amp;navi=323</reference>
+	</metadata>
+	
+	<holiday validFrom="2024-01-01" validTo="2024-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<dateTo>
+			<fixedDate day="5" month="1" />
+		</dateTo>
+		<name lang="fr">Vacances d'hiver (Noël)</name>
+		<name lang="en">Winter holidays (Christmas))</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01" validTo="2024-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="13" month="2" />
+		</date>
+		<name lang="fr">Mardi gras</name>
+		<name lang="en">Mardi Gras</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01" validTo="2024-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="26" month="2" />
+		</date>
+		<dateTo>
+			<fixedDate day="8" month="3" />
+		</dateTo>
+		<name lang="fr">Congé de détente (Carnaval)</name>
+		<name lang="en">Relaxation leave (Carnival)</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01" validTo="2024-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="1" month="4" />
+		</date>
+		<name lang="fr">Lundi de Pâques</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01" validTo="2024-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="29" month="4" />
+		</date>
+		<dateTo>
+			<fixedDate day="10" month="5" />
+		</dateTo>
+		<name lang="fr">Vacances de printemps (Pâques)</name>
+		<name lang="en">Spring break (Easter)</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01" validTo="2024-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="20" month="5" />
+		</date>
+		<name lang="fr">Lundi de Pentecôte</name>
+		<name lang="en">Pentecost Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01" validTo="2024-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="8" month="7" />
+		</date>
+		<dateTo>
+			<fixedDate day="23" month="8" />
+		</dateTo>
+		<name lang="fr">Vacances d'été</name>
+		<name lang="en">Summer vacation</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01" validTo="2024-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="27" month="9" />
+		</date>
+		<name lang="fr">Fête de la Communauté française</name>
+		<name lang="en">French Community Day</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01" validTo="2024-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="21" month="10" />
+		</date>
+		<dateTo>
+			<fixedDate day="1" month="11" />
+		</dateTo>
+		<name lang="fr">Congé d'automne (Toussaint)</name>
+		<name lang="en">Autumn break (All Saints' Day)</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01" validTo="2024-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="fr">Jour de l'Armistice</name>
+		<name lang="en">Armistice Day</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01" validTo="2024-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="23" month="12" />
+		</date>
+		<dateTo>
+			<fixedDate day="31" month="12" />
+		</dateTo>
+		<name lang="fr">Vacances d'hiver (Noël)</name>
+		<name lang="en">Winter holidays (Christmas)</name>
+	</holiday>
+	
+</holidays>

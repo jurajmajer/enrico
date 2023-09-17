@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="bel">
+	<metadata>
+		<reference>http://www.enseignement.be/index.php?page=23953&amp;navi=323</reference>
+	</metadata>
+	
+	<holiday validFrom="2025-01-01" validTo="2025-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<dateTo>
+			<fixedDate day="3" month="1" />
+		</dateTo>
+		<name lang="fr">Vacances d'hiver (Noël)</name>
+		<name lang="en">Winter holidays (Christmas))</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01" validTo="2025-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="24" month="2" />
+		</date>
+		<dateTo>
+			<fixedDate day="7" month="3" />
+		</dateTo>
+		<name lang="fr">Congé de détente (Carnaval)</name>
+		<name lang="en">Relaxation leave (Carnival)</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01" validTo="2025-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="21" month="4" />
+		</date>
+		<name lang="fr">Lundi de Pâques</name>
+		<name lang="en">Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01" validTo="2025-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="28" month="4" />
+		</date>
+		<dateTo>
+			<fixedDate day="9" month="5" />
+		</dateTo>
+		<name lang="fr">Vacances de printemps (Pâques)</name>
+		<name lang="en">Spring break (Easter)</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01" validTo="2025-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="29" month="5" />
+		</date>
+		<name lang="fr">Jeudi de l'Ascension</name>
+		<name lang="en">Ascension Thursday</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01" validTo="2025-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="9" month="6" />
+		</date>
+		<name lang="fr">Lundi de Pentecôte</name>
+		<name lang="en">Pentecost Monday</name>
+	</holiday>
+	
+</holidays>
