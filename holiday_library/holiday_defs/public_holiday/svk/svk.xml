@@ -87,14 +87,6 @@
 	
 	<holiday validFrom="1994-01-01">
 		<date>
-			<fixedDate day="1" month="9" />
-		</date>
-		<name lang="sk">Deň Ústavy Slovenskej republiky</name>
-		<name lang="en">Day of the Constitution of the Slovak Republic</name>
-	</holiday>
-	
-	<holiday validFrom="1994-01-01">
-		<date>
 			<fixedDate day="15" month="9" />
 		</date>
 		<name lang="sk">Sedembolestná Panna Mária</name>
@@ -142,6 +134,14 @@
 	</holiday>
 	
 	<!-- historical dates -->
+	<holiday validFrom="1994-01-01" validTo="2023-12-31">
+		<date>
+			<fixedDate day="1" month="9" />
+		</date>
+		<name lang="sk">Deň Ústavy Slovenskej republiky</name>
+		<name lang="en">Day of the Constitution of the Slovak Republic</name>
+	</holiday>
+	
 	<holiday validFrom="1952-01-01" validTo="1993-12-31">
 		<date>
 			<fixedDate day="1" month="1" />
