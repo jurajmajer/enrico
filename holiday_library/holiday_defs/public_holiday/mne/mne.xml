@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="mne">
+	<metadata>
+		<reference>https://www.cbcg.me/en/public-relations/information/working-days</reference>
+		<reference>https://me.usembassy.gov/holiday-calendar/</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="cnr">Nova godina</name>
+		<name lang="en">New Year's Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="2" month="1" />
+		</date>
+		<name lang="cnr">Nova godina</name>
+		<name lang="en">New Year's Day Holiday</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="6" month="1" />
+		</date>
+		<name lang="cnr">Badnji dan</name>
+		<name lang="en">Orthodox Christmas Eve</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="7" month="1" />
+		</date>
+		<name lang="cnr">Božić</name>
+		<name lang="en">Orthodox Christmas Day</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="8" month="1" />
+		</date>
+		<name lang="cnr">Božić</name>
+		<name lang="en">Orthodox Christmas Holiday</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="cnr">Praznik rada</name>
+		<name lang="en">Labour Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="2" month="5" />
+		</date>
+		<name lang="cnr">Praznik rada</name>
+		<name lang="en">Labour Day Holiday</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="cnr">Pravoslavni Veliki petak</name>
+		<name lang="en">Orthodox Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="cnr">Pravoslavni Veliki ponedjeljak</name>
+		<name lang="en">Orthodox Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="21" month="5" />
+		</date>
+		<name lang="cnr">Dan nezavisnosti Crne Gore</name>
+		<name lang="en">Independence Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="22" month="5" />
+		</date>
+		<name lang="cnr">Dan nezavisnosti Crne Gore</name>
+		<name lang="en">Independence Day Holiday</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="13" month="7" />
+		</date>
+		<name lang="cnr">Dan državnosti Crne Gore</name>
+		<name lang="en">Statehood Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="14" month="7" />
+		</date>
+		<name lang="cnr">Dan državnosti Crne Gore</name>
+		<name lang="en">Statehood Day Holiday</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="13" month="11" />
+		</date>
+		<name lang="cnr">Njegošev dan</name>
+		<name lang="en">Njegos's Day</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="14" month="11" />
+		</date>
+		<name lang="cnr">Njegošev dan</name>
+		<name lang="en">Njegos's Day Holiday</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+		<observanceRule dayOfWeek="1" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+</holidays>
