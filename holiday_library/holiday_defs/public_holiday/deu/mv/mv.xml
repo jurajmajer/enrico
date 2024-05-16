@@ -12,5 +12,13 @@
 		<name lang="de">Reformationstag</name>
 		<name lang="en">Reformation Day</name>
 	</holiday>
+	
+	<holiday validFrom="2023-01-01">
+		<date>
+			<fixedDate day="8" month="3" />
+		</date>
+		<name lang="de">Frauentag</name>
+		<name lang="en">International Women's Day</name>
+	</holiday>
 
 </holidays>
