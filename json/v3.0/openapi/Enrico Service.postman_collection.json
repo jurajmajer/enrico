@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "6e2e4f6b-38f3-438a-886e-2457305a1b95",
+		"_postman_id": "ed724a59-1af9-4de8-9766-ce2567c58896",
 		"name": "Enrico Service",
 		"description": "Enrico Service is a free service providing public holidays for several countries. You can use Enrico Service to display public holidays on your website or in your desktop application written in any programming language. Enrico Service is an open-source software  so you can study, contribute, change or use it. See Enrico source code on [Github](https://github.com/jurajmajer/enrico).\n\nContact Support:\n Email: enrico@kayaposoft.com",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10067893"
 	},
 	"item": [
 		{
@@ -331,6 +332,38 @@
 					]
 				},
 				"description": "Returns the list of countries where given date is a public holiday\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Next Workday",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/getNextWorkDay/?date={{today}}&country=nld&deltaDays=1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"getNextWorkDay",
+						""
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "{{today}}"
+						},
+						{
+							"key": "country",
+							"value": "nld"
+						},
+						{
+							"key": "deltaDays",
+							"value": "1"
+						}
+					]
+				}
 			},
 			"response": []
 		}
