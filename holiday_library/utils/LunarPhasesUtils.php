@@ -39,10 +39,10 @@ class LunarPhasesUtils {
 				$nextMoonPhase = $moonPhaseCalculator->next_full_moon();
 			}
 		}
-		$retVal = new EnricoDate(date("j", $nextMoonPhase), date("n", $nextMoonPhase), date("Y", $nextMoonPhase));
-		$retVal->hour = date("G", $nextMoonPhase);
-		$retVal->minute = date("i", $nextMoonPhase);
-		$retVal->second = date("s", $nextMoonPhase);
+		$retVal = new EnricoDate(date("j", intval($nextMoonPhase)), date("n", intval($nextMoonPhase)), date("Y", intval($nextMoonPhase)));
+		$retVal->hour = date("G", intval($nextMoonPhase));
+		$retVal->minute = date("i", intval($nextMoonPhase));
+		$retVal->second = date("s", intval($nextMoonPhase));
 		$retVal = $this->dateUtils->addSeconds($retVal, DateUtils::$diffToUTC[$countryCode] * 60 * 60);
 
         date_default_timezone_set($system_timezone);
