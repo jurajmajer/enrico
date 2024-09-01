@@ -69,7 +69,7 @@
 		<name lang="en">Defender of the Fatherland Day</name>
 	</holiday>
 	
-	<holiday validFrom="2011-01-01">
+	<holiday validFrom="2026-01-01">
 		<date>
 			<fixedDate day="8" month="3" />
 		</date>
@@ -115,6 +115,17 @@
 		</date>
 		<name lang="ru">День народного единства</name>
 		<name lang="en">Unity Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
+	</holiday>
+	
+	<!-- Historical dates -->
+	<holiday validFrom="2011-01-01" validTo="2024-12-31">
+		<date>
+			<fixedDate day="8" month="3" />
+		</date>
+		<name lang="ru">Восьмое марта</name>
+		<name lang="en">International Women's Day</name>
 		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="true" />
 		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="true" />
 	</holiday>
