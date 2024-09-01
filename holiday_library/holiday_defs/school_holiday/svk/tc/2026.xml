@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="svk">
+	<metadata>
+		<reference>https://www.minedu.sk/terminy-prazdnin/</reference>
+	</metadata>
+	
+	<holiday validFrom="2026-01-01" validTo="2026-12-31" holidayType="school_holiday">
+		<date>
+			<fixedDate day="23" month="2" />
+		</date>
+		<dateTo>
+			<fixedDate day="27" month="2" />
+		</dateTo>
+		<name lang="sk">Jarné prázdniny</name>
+		<name lang="en">Spring Holidays</name>
+	</holiday>
+	
+</holidays>
