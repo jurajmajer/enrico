@@ -20,4 +20,11 @@
 		<name lang="en">Father's Day</name>
 	</holiday>
 	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="11" month="11" />
+		</date>
+		<name lang="en">Remembrance Day</name>
+	</holiday>
+	
 </holidays>
