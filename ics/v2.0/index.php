@@ -166,7 +166,16 @@
 		if(strcmp($holidayType, "school_holiday") == 0) {
 			return "School Holidays";
 		}
-		return "Important Dates";
+		if(strcmp($holidayType, "other_day") == 0) {
+			return "Important Dates";
+		}
+		if(strcmp($holidayType, "extra_working_day") == 0) {
+			return "Extra Working Days";
+		}
+		if(strcmp($holidayType, "postal_holiday") == 0) {
+			return "Postal Holidays";
+		}
+		return "All Dates";
 	}
 	
 	function getUIDBase($countryCode, $region) {
