@@ -21,6 +21,22 @@
 		<name lang="en">Day after New Year's Day</name>
 	</holiday>
 	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="6" month="1" />
+		</date>
+		<name lang="ro">Bobotează</name>
+		<name lang="en">Epiphany</name>
+	</holiday>
+	
+	<holiday validFrom="2024-01-01">
+		<date>
+			<fixedDate day="7" month="1" />
+		</date>
+		<name lang="ro">Sfântul Ion</name>
+		<name lang="en">Saint John the Baptist</name>
+	</holiday>
+	
 	<holiday validFrom="2015-01-01">
 		<date>
 			<fixedDate day="24" month="1" />

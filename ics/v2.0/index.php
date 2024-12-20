@@ -152,6 +152,7 @@
 		if(strlen($region) > 0) {
 			$retVal .= " (" . $region . ")";
 		}
+		$retVal = strtoupper($retVal);
 		$retVal .= " " . getHolidayTypeString($holidayType);
 		return $retVal;
 	}
