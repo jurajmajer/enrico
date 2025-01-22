@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="bgr">
+	<metadata>
+		<reference>https://www.parliament.bg/en/24</reference>
+	</metadata>
+	
+	<!-- current dates -->
+	<holiday validFrom="2025-01-01">
+		<date>
+			<fixedDate day="1" month="1" />
+		</date>
+		<name lang="bg">Нова година</name>
+		<name lang="en">New Year’s Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<fixedDate day="3" month="3" />
+		</date>
+		<name lang="bg">Ден на Освобождението на България от османско иго</name>
+		<name lang="en">Liberation Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-2</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="bg">Велики петък</name>
+		<name lang="en">Orthodox Good Friday</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>-1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="bg">Велика събота</name>
+		<name lang="en">Orthodox Holy Saturday</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+		</date>
+		<name lang="bg">Великден неделя</name>
+		<name lang="en">Orthodox Easter Sunday</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>ORTHODOX_EASTER_SUNDAY</specialDate>
+				</baseDate>
+				<addDays>1</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="bg">Великден понеделник</name>
+		<name lang="en">Orthodox Easter Monday</name>
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<fixedDate day="1" month="5" />
+		</date>
+		<name lang="bg">Ден на труда и на международната работническа солидарност</name>
+		<name lang="en">Labour Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<fixedDate day="6" month="5" />
+		</date>
+		<name lang="bg">Гергьовден, ден на храбростта и Българската армия</name>
+		<name lang="en">Saint George's Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<fixedDate day="24" month="5" />
+		</date>
+		<name lang="bg">Ден на българската просвета и култура и на славянската писменост</name>
+		<name lang="en">Bulgarian Education and Culture and Slavonic Literature Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<fixedDate day="6" month="9" />
+		</date>
+		<name lang="bg">Ден на Съединението</name>
+		<name lang="en">Unification Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<fixedDate day="22" month="9" />
+		</date>
+		<name lang="bg">Ден на независимостта на България</name>
+		<name lang="en">Independence Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<fixedDate day="24" month="12" />
+		</date>
+		<name lang="bg">Бъдни вечер</name>
+		<name lang="en">Christmas Eve</name>
+		<observanceRule dayOfWeek="6" addDays="3" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="3" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<fixedDate day="25" month="12" />
+		</date>
+		<name lang="bg">Рождество Христово</name>
+		<name lang="en">Christmas Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
+	</holiday>
+	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<fixedDate day="26" month="12" />
+		</date>
+		<name lang="bg">Рождество Христово</name>
+		<name lang="en">Boxing Day</name>
+		<observanceRule dayOfWeek="6" addDays="2" additionalHoliday="false" />
+		<observanceRule dayOfWeek="7" addDays="2" additionalHoliday="false" />
+	</holiday>
+
+</holidays>
