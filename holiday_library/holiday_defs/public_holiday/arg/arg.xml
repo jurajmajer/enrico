@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="ago">
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="arg">
 	<metadata>
 		<reference>https://argentinadatos.com/docs/operations/get-feriados.html</reference>
 		<reference>https://feriadosargentina.aquiguardomiscosas.net/feriados.php</reference>

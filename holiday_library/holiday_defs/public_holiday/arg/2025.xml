@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="hun">
+<holidays xmlns="https://kayaposoft.com/enrico/xsd/1.0" country="arg">
 	<metadata>
-		<reference>https://www.rsm.hu/blog/munkaszuneti-napok-2025</reference>
+		<reference>https://argentinadatos.com/docs/operations/get-feriados.html</reference>
+		<reference>https://feriadosargentina.aquiguardomiscosas.net/feriados.php</reference>
+		<reference>https://en.wikipedia.org/wiki/Public_holidays_in_Argentina</reference>
 	</metadata>
 
 	<holiday validFrom="2025-01-01" validTo="2025-12-31">
 		<date>
 			<fixedDate day="2" month="5" />
 		</date>
-		<name lang="hu">Puente turístico no laborable</name>
+		<name lang="es">Puente turístico no laborable</name>
 		<name lang="en">Rest Day</name>
 	</holiday>
 	
@@ -16,7 +18,7 @@
 		<date>
 			<fixedDate day="15" month="8" />
 		</date>
-		<name lang="hu">Puente turístico no laborable</name>
+		<name lang="es">Puente turístico no laborable</name>
 		<name lang="en">Rest Day</name>
 	</holiday>
 	
@@ -24,7 +26,7 @@
 		<date>
 			<fixedDate day="21" month="11" />
 		</date>
-		<name lang="hu">Puente turístico no laborable</name>
+		<name lang="es">Puente turístico no laborable</name>
 		<name lang="en">Rest Day</name>
 	</holiday>
 
