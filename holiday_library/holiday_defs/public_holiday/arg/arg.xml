@@ -57,6 +57,18 @@
 				<baseDate>
 					<specialDate>EASTER_SUNDAY</specialDate>
 				</baseDate>
+				<addDays>-3</addDays>
+			</dateTransformation>
+		</date>
+		<name lang="es">Jueves Santo Festividad Cristiana</name>
+		<name lang="en">Maundy Thursday</name>
+	</holiday>
+	<holiday validFrom="2025-01-01">
+		<date>
+			<dateTransformation>
+				<baseDate>
+					<specialDate>EASTER_SUNDAY</specialDate>
+				</baseDate>
 				<addDays>-2</addDays>
 			</dateTransformation>
 		</date>
