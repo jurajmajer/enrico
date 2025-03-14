@@ -14,7 +14,7 @@
 	{
 		$parts = explode("-", $string);
 		if(count($parts) != 3)
-			throw new InvalidArgumentException("Invalid date '" . $string . "'! Date string must be in format dd-mm-YYYY, e.g. 15-01-2035");
+			throw new InvalidArgumentException("Invalid date '" . $string . "'! Date string must be in format YYYY-mm-dd, e.g. 2035-01-15");
 		return new EnricoDate($parts[2], $parts[1], $parts[0]);
 	}
 
