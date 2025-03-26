@@ -60,6 +60,7 @@
 		</date>
 		<name lang="mk">Рамазан Бајрам, Ramazan Bajram</name>
 		<name lang="en">Eid al-Fitr</name>
+		<observanceRule dayOfWeek="7" addDays="1" additionalHoliday="false" />
 	</holiday>
 	
 	<holiday validFrom="2017-01-01">
