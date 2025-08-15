@@ -108,6 +108,14 @@
 		<name lang="en">Independence Day</name>
 	</holiday>
 	
+	<holiday validFrom="2025-01-01">
+		<date>
+			<fixedDate day="24" month="12" />
+		</date>
+		<name lang="pl">Wigilia Bożego Narodzenia</name>
+		<name lang="en">Christmas Eve</name>
+	</holiday>
+	
 	<holiday validFrom="1952-01-01">
 		<date>
 			<fixedDate day="25" month="12" />
