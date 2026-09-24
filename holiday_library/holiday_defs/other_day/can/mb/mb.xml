@@ -6,7 +6,7 @@
 		<reference>https://en.wikipedia.org/wiki/Father%27s_Day</reference>
 	</metadata>
 	
-	<holiday validFrom="2018-01-01" holidayType="other_day">
+	<holiday validFrom="2018-01-01" validTo="2026-07-31" holidayType="other_day">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="7" month="3" nth="2" />
 		</date>
@@ -31,7 +31,7 @@
 		<name lang="fr">Fête des pères</name>
 	</holiday>
 	
-	<holiday validFrom="2018-01-01" holidayType="other_day">
+	<holiday validFrom="2018-01-01" validTo="2026-07-31" holidayType="other_day">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="7" month="11" nth="1" />
 		</date>

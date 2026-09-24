@@ -5,6 +5,15 @@
 		<reference>https://en.wikipedia.org/wiki/Father%27s_Day</reference>
 	</metadata>
 	
+	<holiday validFrom="2018-01-01" validTo="2026-08-31" holidayType="other_day">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="7" month="3" nth="2" />
+		</date>
+		<name lang="fr">Passage à l'heure d'été</name>
+		<name lang="en">Daylight Saving Time Starts</name>
+		<note lang="en">A one-hour shift occurs at 02:00 local time, the clock jumps forward to 03:00</note>
+	</holiday>
+	
 	<holiday validFrom="2018-01-01" holidayType="other_day">
 		<date>
 			<nthWeekdayRuleDate dayOfWeek="7" month="5" nth="2" />
@@ -19,6 +28,15 @@
 		</date>
 		<name lang="en">Father's Day</name>
 		<name lang="fr">Fête des pères</name>
+	</holiday>
+	
+	<holiday validFrom="2018-01-01" validTo="2026-08-31" holidayType="other_day">
+		<date>
+			<nthWeekdayRuleDate dayOfWeek="7" month="11" nth="1" />
+		</date>
+		<name lang="fr">Retour à l'heure normale</name>
+		<name lang="en">Daylight Saving Time Ends</name>
+		<note lang="en">A one-hour shift occurs at 02:00 local time, the clock jumps backward to 01:00</note>
 	</holiday>
 	
 </holidays>
